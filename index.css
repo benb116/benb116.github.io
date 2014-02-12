@@ -1,0 +1,115 @@
+body {
+	background-image:url(/Resources/escheresque_ste.png);
+	background-repeat:repeat;
+	margin-left: 80px;
+	font-family: "Helvetica";
+	height: 100%;}
+#Sidebar {
+	position: fixed;
+	left: 0; top:0; bottom:0;
+	width: 80px; height: 100%;}
+#BackBar {background-color: #000000}
+#CodeBar {background-color: #81F778;}
+#DesignBar {background-color: #668FF7}
+#SchoolBar {background-color: #FEFA44;}
+#ResearchBar {background-color: #EC4049;}
+#BottomLogo {
+	background-color: #000000;
+	color: white;}
+#LogoOrient {
+	transform:rotate(90deg);
+	-o-transform:rotate906deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	text-align: center;}
+#IconCol {
+	width: 80px;
+	text-align: center;
+	vertical-align: middle;
+	height: 100px;}
+#MenuBar {
+	position: absolute;
+	margin-top: 96px;
+	margin-left: -4px;
+	font-size: 50px;
+	width: 25%;}
+#ItemCol {
+	width: 75%;
+	min-width: 240px; max-width: 280px;
+	text-indent: 20px;
+	vertical-align: middle;
+	height: 100px;}
+#MenuLink {color:black; text-decoration: none;}
+#MenuLink:hover {color: white;}
+#HomeBody {margin-bottom: 129px;}
+#IntroHead {margin-top: 100px;}
+#topart {
+	margin-right: 10px;
+	display: inline-block;}
+#bighello {
+	font-weight: bold;
+	font-size: 4em;
+	padding-left: 10px;
+	color: white;
+	text-align: left;
+	display: inline-block;}
+#IntroHead, #BioCont, #RightMenu {
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	min-width: 1000px;}
+#BioPar {
+	text-align: justify;
+	line-height: 2em;
+	min-width: 420px;
+	width: 30%;
+	color: white;
+	text-indent: 2em;
+	margin-bottom: 20px;
+	display: inline-block;}
+#BottomMenu {
+	text-align: center;
+	position: relative;
+	margin-top: 80px;
+	width: 100%;
+	min-width:  300px;
+	color: white;
+	font-size: 30px;}
+#BottomMenuLink {
+	color: white;
+	margin-left: 10%; margin-right: 10%;
+	text-decoration: none;}
+#BottomMenuLink:hover {color: yellow;}
+#AnchorMargin {
+	position: relative;
+	height: 20px;
+	display: block;}
+#CodePage, #DesignPage, #SchoolPage, #ResearchPage {
+	position: relative;
+	clear: both;
+	margin-left: -2px;}
+#CodePage {
+	background-color: #81F778;
+	text-align: center;
+	display: inline-block;
+	margin-top: 15px;}
+#DesignPage {background-color: #668FF7;}
+#SchoolPage {background-color: #FEFA44;}
+#ResearchPage {background-color: #EC4049;}
+
+#CodeTable {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	margin-left: 50px; margin-right: 50px;
+	height: 115px; width: 440px;
+	padding-top: 10px;
+	background-color: white;
+	margin-bottom: 60px;
+	border: 0px;}
+#CodeTableIcon {
+	width: 140px;}
+#CodeTableItem {width: 300px;}
+#CodeItemTitle {font-size: 30px; text-align: left;}
+#CodeItemDescription {font-size: 16px; text-align: left;}
