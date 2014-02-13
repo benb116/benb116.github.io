@@ -8,25 +8,26 @@ body {
 	position: fixed;
 	left: 0; top:0; bottom:0;
 	width: 80px; height: 100%;}
-#BackBar {background-color: #000000}
-#CodeBar {background-color: #81F778;}
-#DesignBar {background-color: #668FF7}
-#SchoolBar {background-color: #FEFA44;}
-#ResearchBar {background-color: #EC4049;}
-#BottomLogo {
+.BackBar {background-color: #000000}
+.CodeBar {background-color: #81F778;}
+.DesignBar {background-color: #668FF7;}
+.SchoolBar {background-color: #FEFA44;}
+.ResearchBar {background-color: #EC4049;}
+.BottomLogo {
 	background-color: #000000;
 	color: white;}
-#LogoOrient {
+.LogoOrient {
 	transform:rotate(90deg);
 	-o-transform:rotate906deg);
 	-moz-transform:rotate(90deg);
 	-webkit-transform:rotate(90deg);
 	text-align: center;}
-#IconCol {
+.IconCol {
 	width: 80px;
 	text-align: center;
 	vertical-align: middle;
-	height: 100px;}
+	height: 100px;
+	z-index:10;}
 #MenuBar {
 	position: absolute;
 	margin-top: 96px;
@@ -35,14 +36,18 @@ body {
 	line-height: 100px;
 	width: 25%;
 	z-index:10;}
-#ItemCol {
+.ItemCol {
 	width: 75%;
 	min-width: 250px; max-width: 280px;
 	text-indent: 20px;
 	vertical-align: middle;
 	height: 100px;}
-#MenuLink {color:black; text-decoration: none;}
-#MenuLink:hover {color: white;}
+.MenuLink {color:black; text-decoration: none;
+	-webkit-transition: color .15s ease-in-out;
+	-moz-transition: color .15s ease-in-out;
+	-o-transition: color .15s ease-in-out;
+	transition: color .15s ease-in-out}
+.MenuLink:hover {color: white;}
 #HomeBody {margin-bottom: 129px;}
 #IntroHead {margin-top: 100px;}
 #topart {
@@ -78,11 +83,15 @@ body {
 	min-width:  900px;
 	color: white;
 	font-size: 30px;}
-#BottomMenuLink {
+.BottomMenuLink {
 	color: white;
 	margin-left: 10%; margin-right: 10%;
-	text-decoration: none;}
-#BottomMenuLink:hover {color: yellow;}
+	text-decoration: none;
+	-webkit-transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-o-transition: color .25s ease-in-out;
+	transition: color .25s ease-in-out}
+.BottomMenuLink:hover {color: yellow;}
 #AnchorMargin {
 	position: relative;
 	height: 20px;
@@ -100,19 +109,28 @@ body {
 #SchoolPage {background-color: #FEFA44;}
 #ResearchPage {background-color: #EC4049;}
 
-#CodeTable {
-	vertical-align: middle;
+#CodeHeader {
+	width: 100%;
+	margin: 0 auto;}
+.CodeTable {
 	display: inline-block;
 	position: relative;
-	margin-left: 40px; margin-right: 40px;
+	margin-left: 30px; margin-right: 30px;
 	height: 115px; width: 440px;
-	padding-top: 10px;
 	background-color: white;
 	margin-bottom: 60px;
 	z-index:10;
-	border:10px solid white;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;}
-#CodeTableIcon {
-	width: 140px;}
-#CodeTableItem {width: 300px;}
-#CodeItemTitle {font-size: 30px; text-align: left;}
-#CodeItemDescription {font-size: 16px; text-align: left;}
+	border:10px solid white;
+	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
+	-webkit-transition: border .25s ease-in-out;
+	-moz-transition: border .25s ease-in-out;
+	-o-transition: border .25s ease-in-out;
+	transition: border .25s ease-in-out}
+
+.CodeTable:hover {border:10px solid #3399FF;}
+.CodeTableIcon {width: 115px; z-index:10; height: 115px;}
+.CodeTableItem {width: 325px; z-index:10; height: 115px;}
+.CodeItemTitle {font-size: 30px; text-align: left; z-index:10;}
+.CodeItemDescription {font-size: 16px; text-align: left; z-index:10;}
+
+
