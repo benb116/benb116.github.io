@@ -99,20 +99,17 @@ body {
 #CodePage, #DesignPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
-	margin-left: -2px;
-	margin-top: 2px;}
+	margin-left: -2px;}
 #CodePage {
 	background-color: #81F778;
 	text-align: center;
 	display: inline-block;
 	margin-top: 15px;}
-#DesignPage {background-color: #668FF7;
-	display: inline-block;
-	width: 100%;}
+#DesignPage {background-color: #668FF7;}
 #SchoolPage {background-color: #FEFA44;}
 #ResearchPage {background-color: #EC4049;}
 
-#CodeHeader, {
+#CodeHeader {
 	width: 100%;
 	margin: 0 auto;}
 .CodeTable {
@@ -129,48 +126,11 @@ body {
 	-moz-transition: border .25s ease-in-out;
 	-o-transition: border .25s ease-in-out;
 	transition: border .25s ease-in-out}
+
 .CodeTable:hover {border:10px solid #3399FF;}
 .CodeTableIcon {width: 115px; z-index:10; height: 115px;}
 .CodeTableItem {width: 325px; z-index:10; height: 115px;}
 .CodeItemTitle {font-size: 30px; text-align: left; z-index:10;}
 .CodeItemDescription {font-size: 16px; text-align: left; z-index:10;}
 
-#DesignHeader {
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;}
-#ModGuitarBlock {
-	display: inline-block;
-	position: relative;
-	background-color: white;
-	border:10px solid white;
-	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	width: 650px;
-	margin-left: 40px;
-	margin-bottom: 60px;
-	text-align: center;}
-#ModGuitarTitle {
-	font-size: 1.5em; text-decoration: none;
-	text-align: center; line-height: 1.5em;
-	color: black;}
-.ImageHover {
-	width: 650px;}
-.ImageHover img.top {
-	position:absolute;
-	left:0;
-	-webkit-transition: opacity 0.5s ease-in-out;
-	-moz-transition: opacity 0.5s ease-in-out;
-	-o-transition: opacity 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out;}
-.ImageHover img.top:hover {opacity: 0;}
-#ModGuitarBottom {
-	margin-left: 20px; margin-right: 20px;}
-.DownloadButton {
-	margin: 0 auto;
-	margin-top: 50px; margin-bottom: 30px;
-	width: 240px; height: 16px; 
-	z-index:10; display: block;
-	background-color: blue;
-	color: white; text-decoration: none; vertical-align: middle;
-	border:10px solid blue;
-	-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
+
