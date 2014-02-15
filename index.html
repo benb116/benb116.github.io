@@ -7,12 +7,33 @@
 		<meta name="Description" content="Ben Bernstein - Site" />
 		<link rel="shortcut icon" href="/Resources/favicon.png" />
 
+		<!--http://css-tricks.com/snippets/jquery/smooth-scrolling/-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+		</script>
 	</head>
 	<body>
+		<a id="Top" style="position:absolute;top:0;"></a>
 		<table id="Sidebar">
 	    	<tr class="BackBar">
 	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#top" style="text-decoration:none;display:block;">
+	    			<a class="MenuLink" href="#Top" style="text-decoration:none;display:block;">
 	    					<img src="/Resources/RolloverBackArrow.png" width="60" height="60">
 	    			</a>
 	    		</td>
@@ -83,7 +104,7 @@
 	       		<a class="BottomMenuLink" href="/Resources/Credits.txt" style="text-decoration:none;">Credits</a>
 	   		</div>
 		</div>
-		<div id="AnchorMargin">
+		<div class="AnchorMargin">
 			<a id="Code"></a>
 		</div>
 		<div id="CodePage">
@@ -148,9 +169,10 @@
 				</tr>
 			</table>
 		</div>
-		<a id="Design"></a>
+		<div class="AnchorMargin">
+			<a id="Design"></a>
+		</div>
 		<div id="DesignPage">
-		
 			<div id="DesignHeader">
 				<p style="font-size:2em;font-weight:bold;line-spacing:0.5em;">Design</p>
 				<p style="font-size:1em;line-spacing:0.5em;margin-bottom:40px;">Sketches, Sketchup, and more.</p>
@@ -171,13 +193,16 @@
 					</div>
 				</a>
 			</div>
-
 		</div>
-		<a id="School"></a>
+		<div class="AnchorMargin">
+			<a id="School"></a>
+		</div>
 		<div id="SchoolPage">
 		Coming Soon.
 		</div>
-		<a id="Research"></a>
+		<div class="AnchorMargin">
+			<a id="Research"></a>
+		</div>
 		<div id="ResearchPage">
 		Nothing here (yet).
 		</div>

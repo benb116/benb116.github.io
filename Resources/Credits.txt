@@ -8,3 +8,5 @@ Laptop by Steve Stomp from The Noun Project
 Globe by Nicholas Menghini from The Noun Project
 Code by Luboš Volkov from The Noun Project
 Design by Michela Tannoia from The Noun Project
+
+Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/

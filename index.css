@@ -48,7 +48,7 @@ body {
 	-o-transition: color .15s ease-in-out;
 	transition: color .15s ease-in-out}
 .MenuLink:hover {color: white;}
-#HomeBody {margin-bottom: 129px;}
+#HomeBody {margin-bottom: 100px;}
 #IntroHead {margin-top: 100px;}
 #topart {
 	margin-right: 10px;
@@ -92,20 +92,24 @@ body {
 	-o-transition: color .25s ease-in-out;
 	transition: color .25s ease-in-out}
 .BottomMenuLink:hover {color: yellow;}
-#AnchorMargin {
+.AnchorMargin {
 	position: relative;
-	height: 20px;
-	display: block;}
+	display: block;
+	border: 0px;
+	margin-left: -2px;
+	width: 100%;
+}
 #CodePage, #DesignPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
 	margin-left: -2px;
-	margin-top: 2px;}
+	margin-top: 15px;
+	width: 100%;}
 #CodePage {
 	background-color: #81F778;
 	text-align: center;
 	display: inline-block;
-	margin-top: 15px;}
+}
 #DesignPage {background-color: #668FF7;
 	display: inline-block;
 	width: 100%;}
