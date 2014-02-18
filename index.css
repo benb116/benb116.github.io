@@ -9,6 +9,7 @@ body {
 	left: 0; top:0; bottom:0;
 	width: 80px; height: 100%;}
 .BackBar {background-color: #000000}
+#BackToTop {}
 .CodeBar {background-color: #81F778;}
 .DesignBar {background-color: #668FF7;}
 .SchoolBar {background-color: #FEFA44;}
@@ -28,9 +29,9 @@ body {
 	vertical-align: middle;
 	height: 100px;
 	z-index:10;}
+#HomeBody {margin-bottom: 100px; margin-top: 104px;}
 #MenuBar {
 	position: absolute;
-	margin-top: 96px;
 	margin-left: -4px;
 	font-size: 50px;
 	line-height: 100px;
@@ -48,8 +49,6 @@ body {
 	-o-transition: color .15s ease-in-out;
 	transition: color .15s ease-in-out}
 .MenuLink:hover {color: white;}
-#HomeBody {margin-bottom: 100px;}
-#IntroHead {margin-top: 100px;}
 #topart {
 	margin-right: 10px;
 	display: inline-block;}
@@ -60,11 +59,11 @@ body {
 	color: white;
 	text-align: left;
 	display: inline-block;}
-#IntroHead, #BioCont, #RightMenu {
+#IntroHead {
 	text-align: center;
 	display: inline-block;
 	position: relative;
-	width: 100%;
+	margin: 0 auto;
 	min-width: 1000px;}
 #BioPar {
 	text-align: justify;
@@ -75,6 +74,12 @@ body {
 	text-indent: 2em;
 	margin-bottom: 20px;
 	display: inline-block;}
+#SpotifyFrame {
+	display: inline-block;
+	position: absolute;
+	top: 100px; 
+	right: 30px;
+	width: 300px; height: 420px;}
 #BottomMenu {
 	text-align: center;
 	position: relative;
@@ -97,8 +102,7 @@ body {
 	display: block;
 	border: 0px;
 	margin-left: -2px;
-	width: 100%;
-}
+	width: 100%;}
 #CodePage, #DesignPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
@@ -108,8 +112,7 @@ body {
 #CodePage {
 	background-color: #81F778;
 	text-align: center;
-	display: inline-block;
-}
+	display: inline-block;}
 #DesignPage {background-color: #668FF7;
 	display: inline-block;
 	width: 100%;}
@@ -119,6 +122,14 @@ body {
 #CodeHeader, {
 	width: 100%;
 	margin: 0 auto;}
+#GithubIcon {
+	opacity: .5;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;}
+#GithubIcon:hover {
+	opacity: 1;}
 .CodeTable {
 	display: inline-block;
 	position: relative;
@@ -157,8 +168,7 @@ body {
 	font-size: 1.5em; text-decoration: none;
 	text-align: center; line-height: 1.5em;
 	color: black;}
-.ImageHover {
-	width: 650px;}
+.ImageHover {}
 .ImageHover img.top {
 	position:absolute;
 	left:0;
@@ -167,7 +177,7 @@ body {
 	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;}
 .ImageHover img.top:hover {opacity: 0;}
-#ModGuitarBottom {
+.ModGuitarBottom {
 	margin-left: 20px; margin-right: 20px;}
 .DownloadButton {
 	margin: 0 auto;

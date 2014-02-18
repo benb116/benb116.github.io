@@ -33,7 +33,7 @@
 		<table id="Sidebar">
 	    	<tr class="BackBar">
 	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Top" style="text-decoration:none;display:block;">
+	    			<a id="BackToTop" href="#Top">
 	    					<img src="/Resources/RolloverBackArrow.png" width="60" height="60">
 	    			</a>
 	    		</td>
@@ -98,6 +98,9 @@
 			  		</div>
 		  		</div>
 	    	</div>
+	    	<div id="SpotifyFrame">
+		  			<iframe src="https://embed.spotify.com/?uri=spotify:user:127742539:starred&theme=white" width="300" height="420" frameborder="0" allowtransparency="true"></iframe>
+		  	</div>
 		  	<div id="BottomMenu">
 	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf" style="text-decoration:none;">Resume</a>
 	    		<a class="BottomMenuLink" href="/contact" style="text-decoration:none;">Contact</a>
@@ -109,7 +112,7 @@
 		</div>
 		<div id="CodePage">
 			<div id="CodeHeader">
-					<p style="font-size:2em;font-weight:bold;line-spacing:0.5em;">Code</p>
+					<a href="http://github.com/benb116"><img src="/Resources/Code/Github_Icon.png" style="margin-top:40px;" id="GithubIcon"></a><span style="font-size:48px;font-weight:bold;margin:10px;">Code</span>
 					<p style="font-size:1em;line-spacing:0.5em;margin-bottom:40px;">Most of my projects are written in Applescript, but I'm starting to branch out into Python, HTML + CSS, and more.</p>
 			</div>
 			<table class="CodeTable" id="MusiNotifyTable">
@@ -181,12 +184,12 @@
 			<div id="ModGuitarBlock">
 				<p id="ModGuitarTitle">ModGuitar</p>
 				<div class="ImageHover">
-					<img class="bottom" src="/Resources/Design/Expanded_Bottom.png" width="600px" style="margin-left:20px;">
-					<img class="top" src="/Resources/Design/Expanded.jpg" width="600px" style="margin-left:20px;">
+					<img class="bottom" src="/Resources/Design/Expanded_Bottom.png" width="600" style="margin-left:20px;">
+					<img class="top" src="/Resources/Design/Expanded.jpg" width="600" style="margin-left:20px;">
 				</div>
 				<p style="font-size:16px;line-height:20px;">A modular, full-sized guitar that collapses and fits in a backpack. <br> Ideal for travel and avoiding oversized baggage fees.</p>
-				<img id="ModGuitarBottom" src="/Resources/Design/Compressed.png" width="280">
-				<img id="ModGuitarBottom" src="/Resources/Design/Compressed_Bottom.png" width="280">
+				<img class="ModGuitarBottom" src="/Resources/Design/Compressed.png" width="280">
+				<img class="ModGuitarBottom" src="/Resources/Design/Compressed_Bottom.png" width="280">
 				<a href="/Resources/Design/ModGuitar.skp" style="color:white;text-decoration:none;font-weight:bold;">
 					<div class="DownloadButton">
 						Download SketchUp file
