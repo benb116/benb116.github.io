@@ -2,9 +2,12 @@
 <html>
 	<head>
 		<title>Ben Bernstein</title>
-		<link rel="stylesheet" href="/index.css">
+		<link rel="stylesheet" media='screen and (min-width: 1051px)'href="/index.css">
+		<link rel='stylesheet' media='screen and (max-width: 1050px)' href='/medium.css' />
+		<!--<link rel="stylesheet" href="/index.css">-->
 		<meta charset="utf-8">
-		<meta name="Description" content="Ben Bernstein - Site" />
+		<meta name="Description" content="Ben Bernstein - A Website" />
+		<!--<meta name="viewport" content="width=device-width">-->
 		<link rel="shortcut icon" href="/Resources/favicon.png" />
 
 		<!--http://css-tricks.com/snippets/jquery/smooth-scrolling/-->
@@ -34,34 +37,34 @@
 	    	<tr class="BackBar">
 	    		<td class="IconCol">
 	    			<a id="BackToTop" href="#Top">
-	    					<img src="/Resources/RolloverBackArrow.png" width="60" height="60">
+	    				<img src="/Resources/RolloverBackArrow.png" width="60" height="60">
 	    			</a>
 	    		</td>
 	    	</tr>
 	    	<tr class="CodeBar">
 	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Code" style="text-decoration:none;display:block;">
+	    			<a class="MenuLink" href="#Code">
 	    				<img src="/Icons%20and%20Attr/Code/icon_20826.png" width="60" height="50">
 	    			</a>
 	    		</td>
 	    	</tr>
 	    	<tr class="DesignBar">
 	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Design" style="text-decoration:none;display:block;">
+	    			<a class="MenuLink" href="#Design">
 	    				<img src="/Icons%20and%20Attr/Design/icon_22131.png" width="60" height="60">
 	    			</a>
 	    		</td>
 	    	</tr>
 	   		<tr class="SchoolBar">
 	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#School" style="text-decoration:none;display:block;">
+	    			<a class="MenuLink" href="#School">
 	    				<img src="/Icons%20and%20Attr/Book/icon_1300.png" width="60" height="60">
 	    			</a>
 	    		</td>
 	    	</tr>
 	  		<tr class="ResearchBar">
 	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Research" style="text-decoration:none;display:block;">
+	    			<a class="MenuLink" href="#Research">
 	    				<img src="/Icons%20and%20Attr/Earth/icon_10812.png" width="60" height="60">
 	    			</a>
 	    		</td>
@@ -73,16 +76,16 @@
 		<div id="HomeBody">
 			<table id="MenuBar">
 		    	<tr class="CodeBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Code" style="text-decoration:none;display:block;">Code</a></td>
+		    		<td class="ItemCol"><a class="MenuLink" href="#Code">Code</a></td>
 		    	</tr>
 		    	<tr class="DesignBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Design" style="text-decoration:none;display:block;">Design</a></td>
+		    		<td class="ItemCol"><a class="MenuLink" href="#Design">Design</a></td>
 		    	</tr>
 		   		<tr class="SchoolBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#School" style="text-decoration:none;display:block;">School</a></td>
+		    		<td class="ItemCol"><a class="MenuLink" href="#School">School</a></td>
 		    	</tr>
 		  		<tr class="ResearchBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Research" style="text-decoration:none;display:block;">Research</a></td>
+		    		<td class="ItemCol"><a class="MenuLink" href="#Research">Research</a></td>
 		    	</tr>
 		    </table>
 	   		<div id="IntroHead">
@@ -98,23 +101,38 @@
 			  		</div>
 		  		</div>
 	    	</div>
+
 	    	<div id="SpotifyFrame">
 		  			<!--<iframe src="https://embed.spotify.com/?uri=spotify:user:127742539:starred&theme=white" width="300" height="420" frameborder="0" allowtransparency="true"></iframe>
 		  			<a href="http://www.last.fm/user/Benb116/?chartstyle=basic10"><img src="http://imagegen.last.fm/basic10/otracks/Benb116.gif" border="0" /></a>-->
 		  	</div>
 		  	<div id="BottomMenu">
-	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf" style="text-decoration:none;">Resume</a>
-	    		<a class="BottomMenuLink" href="/contact" style="text-decoration:none;">Contact</a>
-	       		<a class="BottomMenuLink" href="/Resources/Credits.txt" style="text-decoration:none;">Credits</a>
+	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf" style="text-decoration:none;">Resume</a><a class="BottomMenuLink" href="/contact" style="text-decoration:none;">Contact</a><a class="BottomMenuLink" href="/Resources/Credits.txt" style="text-decoration:none;">Credits</a>
 	   		</div>
+
+			<table id="MobileBar">
+		    	<tr class="CodeBar">
+		    		<td class="ItemCol"><a class="MenuLink" href="#Code">Code</a></td>
+		    	</tr>
+		    	<tr class="DesignBar">
+		    		<td class="ItemCol"><a class="MenuLink" href="#Design">Design</a></td>
+		    	</tr>
+		   		<tr class="SchoolBar">
+		    		<td class="ItemCol"><a class="MenuLink" href="#School">School</a></td>
+		    	</tr>
+		  		<tr class="ResearchBar">
+		    		<td class="ItemCol"><a class="MenuLink" href="#Research">Research</a></td>
+		    	</tr>
+		    </table>
+
 		</div>
 		<div class="AnchorMargin">
 			<a id="Code"></a>
 		</div>
 		<div id="CodePage">
 			<div id="CodeHeader">
-					<a href="http://github.com/benb116"><img src="/Resources/Code/Github_Icon.png" style="margin-top:40px;" id="GithubIcon"></a><span style="font-size:48px;font-weight:bold;margin:10px;">Code</span>
-					<p style="font-size:1em;line-spacing:0.5em;margin-bottom:40px;">Most of my projects are written in Applescript, but I'm starting to branch out into Python, HTML + CSS, and more.</p>
+				<h1><a href="http://github.com/benb116"><img src="/Resources/Code/Github_Icon.png" style="display:inline-block;"></a>Code</h1>
+				<p>Most of my projects are written in Applescript, but I'm starting to branch out into Python, HTML + CSS, and more.</p>
 			</div>
 			<table class="CodeTable" id="MusiNotifyTable">
 				<tr>
@@ -178,7 +196,7 @@
 		</div>
 		<div id="DesignPage">
 			<div id="DesignHeader">
-				<span style="font-size:48px;font-weight:bold;margin-top:40px;">Design</span>
+				<span style="font-size:3em;font-weight:bold;margin-top:40px;">Design</span>
 				<p style="font-size:1em;line-spacing:0.5em;margin-bottom:40px;">Sketches, Sketchup, and more.</p>
 			</div>
 
@@ -188,7 +206,7 @@
 					<img class="bottom" src="/Resources/Design/Expanded_Bottom.png" width="600" style="margin-left:20px;">
 					<img class="top" src="/Resources/Design/Expanded.jpg" width="600" style="margin-left:20px;">
 				</div>
-				<p style="font-size:16px;line-height:20px;">A modular, full-sized guitar that collapses and fits in a backpack. <br> Ideal for travel and avoiding oversized baggage fees.</p>
+				<p style="font-size:1em;line-height:1em;">A modular, full-sized guitar that collapses and fits in a backpack. <br> Ideal for travel and avoiding oversized baggage fees.</p>
 				<img class="ModGuitarBottom" src="/Resources/Design/Compressed.png" width="280">
 				<img class="ModGuitarBottom" src="/Resources/Design/Compressed_Bottom.png" width="280">
 				<a href="/Resources/Design/ModGuitar.skp" style="color:white;text-decoration:none;font-weight:bold;">

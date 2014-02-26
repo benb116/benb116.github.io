@@ -1,58 +1,13 @@
 body {
 	background-image:url(/Resources/escheresque_ste.png);
 	background-repeat:repeat;
-	margin-left: 80px;
 	font-family: "Helvetica";
-	width: calc(100% - 80px;)
-	-o-width: calc(100% - 80px;)
-	-moz-width: calc(100% - 80px;)
-	-webkit-width: calc(100% - 80px;)}
-#Sidebar {
-	position: fixed;
-	left: 0; top:0;
-	width: 80px; height: 100%;}
-.BackBar {background-color: #000000}
-.CodeBar {background-color: #81F778;}
-.DesignBar {background-color: #668FF7;}
-.SchoolBar {background-color: #FEFA44;}
-.ResearchBar {background-color: #EC4049;}
-.BottomLogo {
-	background-color: #000000;
-	color: white;}
-.LogoOrient {
-	transform:rotate(90deg);
-	-o-transform:rotate906deg);
-	-moz-transform:rotate(90deg);
-	-webkit-transform:rotate(90deg);
-	text-align: center;}
-.IconCol, .ItemCol {
-	height: 100px;
-	vertical-align: middle;}
-.IconCol {
-	width: 80px;
-	text-align: center;
-	z-index:10;}
-#HomeBody {margin-bottom: 100px; margin-top: 104px;}
-#MenuBar {
-	position: absolute;
-	margin-left: -4px;
-	font-size: 3em;
-	line-height: 2em;
-	width: 23%;
-	min-width: 240px;
-	z-index:10;}
-.ItemCol {
-	width: 270px;
-	min-width: 250px; max-width: 280px;
-	text-indent: 20px;}
-.MenuLink {color:black; text-decoration: none;
-	-webkit-transition: color .15s ease-in-out;
-	-moz-transition: color .15s ease-in-out;
-	-o-transition: color .15s ease-in-out;
-	transition: color .15s ease-in-out;
-	text-decoration:none;
-	display:block;}
-.MenuLink:hover {color: white;}
+	margin: 0 auto;}
+
+#Sidebar {display: none;}
+#MenuBar {display: none;}
+#HomeBody {margin-bottom: 100px; margin-top: 10%;}
+
 #topart {
 	padding-right: 10px;
 	display: inline-block;}
@@ -67,7 +22,9 @@ body {
 	text-align: center;
 	display: inline-block;
 	position: relative;
-	margin: 0 auto;}
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 50px;}
 #BioPar {
 	text-align: justify;
 	line-height: 2em;
@@ -77,26 +34,42 @@ body {
 	text-indent: 2em;
 	margin-bottom: 20px;
 	display: inline-block;}
-#MobileBar {display: none;}
-#SpotifyFrame {
-	display: inline-block;
-	position: absolute;
-	top: 100px; 
-	right: 30px;
-	width: 300px; height: 420px;}
+
+#MobileBar {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 3em;
+	line-height: 2em;
+	z-index:10;
+	text-align: center;
+	max-width: 400px;}
+.ItemCol {height: 100px;}
+.MenuLink {color:black; text-decoration: none;
+	-webkit-transition: color .15s ease-in-out;
+	-moz-transition: color .15s ease-in-out;
+	-o-transition: color .15s ease-in-out;
+	transition: color .15s ease-in-out;
+	text-decoration:none;
+	display:block;
+	max-width: 400px;}
+.MenuLink:hover {color: white;}
+.BackBar {background-color: #000000}
+.CodeBar {background-color: #81F778;}
+.DesignBar {background-color: #668FF7;}
+.SchoolBar {background-color: #FEFA44;}
+.ResearchBar {background-color: #EC4049;}
 #BottomMenu {
 	text-align: center;
 	position: relative;
-	margin-top: 130px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	width: 100%;
-	min-width: 900px;
 	color: white;
 	font-size: 30px;}
 .BottomMenuLink {
 	color: white;
-	width: 1000px;
 	text-decoration: none;
-	margin: 10%;}
+	margin: 5%;}
 .BottomMenuLink:hover {color: yellow;}
 .AnchorMargin {
 	position: relative;
@@ -109,7 +82,7 @@ body {
 	clear: both;
 	margin-left: -2px;
 	margin-top: 15px;
-	width: 100%;}
+}
 #CodePage {
 	background-color: #81F778;
 	text-align: center;
@@ -124,6 +97,7 @@ h1 {font-size: 3em;}
 #CodeHeader img {
 	padding-right: 10px;
 }
+#CodeHeader p {width: 90%; text-align: center;}
 #GithubIcon {}
 #GithubIcon:hover {}
 .CodeTable {
