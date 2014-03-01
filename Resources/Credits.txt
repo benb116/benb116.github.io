@@ -7,6 +7,6 @@ Book by John Caserta from The Noun Project
 Laptop by Steve Stomp from The Noun Project
 Globe by Nicholas Menghini from The Noun Project
 Code by Luboš Volkov from The Noun Project
-Design by Michela Tannoia from The Noun Project
+Music by Cris Dobbins from The Noun Project
 
 Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/
