@@ -3,7 +3,8 @@ body {
 	background-repeat:repeat;
 	font-family: "Helvetica";
 	margin: 0 auto;
-	max-width: 100%;}
+	max-width: 100%;
+	width: 100%;}
 
 #Sidebar {display: none;}
 #MenuBar {display: none;}
@@ -11,10 +12,13 @@ body {
 
 #topart {
 	padding-right: 10px;
-	display: inline-block;}
+	display: inline-block;
+	width: 150px; height: 150px;
+	background: url('Resources/pic.jpg') no-repeat;
+	background-size: 150px}
 #bighello {
 	font-weight: bold;
-	font-size: 4em;
+	font-size: 500%;
 	padding-left: 10px;
 	color: white;
 	text-align: left;
@@ -23,18 +27,31 @@ body {
 	text-align: center;
 	display: inline-block;
 	position: relative;
-	width: 100%;
 	margin: 0 auto;
 	padding-top: 50px;}
 #BioPar {
 	text-align: justify;
-	line-height: 2em;
-	min-width: 420px;
-	width: 30%;
+	line-height: 200%;
+	width: 80%;
+	font-size: 100%;
+	min-width: 480px;
 	color: white;
 	text-indent: 2em;
-	margin-bottom: 20px;
+	margin-top: 15px;
 	display: inline-block;}
+#BottomMenu {
+	text-align: center;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 100%;
+	color: white;
+	font-size: 200%;}
+.BottomMenuLink {
+	color: white;
+	text-decoration: none;
+	margin: 5%;}
+.BottomMenuLink:hover {color: yellow;}
 
 #MobileBar {
 	width: 100%;
@@ -59,19 +76,6 @@ body {
 .MusicBar {background-color: #668FF7;}
 .SchoolBar {background-color: #FEFA44;}
 .ResearchBar {background-color: #EC4049;}
-#BottomMenu {
-	text-align: center;
-	position: relative;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 100%;
-	color: white;
-	font-size: 30px;}
-.BottomMenuLink {
-	color: white;
-	text-decoration: none;
-	margin: 5%;}
-.BottomMenuLink:hover {color: yellow;}
 .AnchorMargin {
 	position: relative;
 	display: block;
@@ -82,18 +86,26 @@ body {
 	position: relative;
 	clear: both;
 	margin-left: -2px;
-	margin-top: 15px;}
-#CodePage {
-	background-color: #81F778;
+	margin-top: 15px;
+	width: 100%;
 	text-align: center;
 	display: inline-block;}
-#MusicPage {background-color: #668FF7;
-	display: inline-block;
-	width: 100%;}
+#CodePage {background-color: #81F778;}
+#MusicPage {background-color: #668FF7;}
 #SchoolPage {background-color: #FEFA44;}
 #ResearchPage {background-color: #EC4049;}
 
-h1 {font-size: 3em; width: 100%; padding: 0 20px 0 20px;}
+#PageHeader {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;}
+#PageHeader img {
+	margin-right: 10px;
+	display: inline-block;}
+h1 {font-size: 3em;}
+
 #CodeHeader img {
 	padding-right: 10px;
 	display: inline-block;}
@@ -122,10 +134,3 @@ h1 {font-size: 3em; width: 100%; padding: 0 20px 0 20px;}
 	text-decoration: none; display: block; color: black;}
 .CodeItemDescription {font-size: 1em; text-align: left; z-index:10;
 	text-decoration: none; display: block; color: black;}
-
-#MusicHeader {
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px;}

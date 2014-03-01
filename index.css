@@ -55,7 +55,10 @@ body {
 .MenuLink:hover {color: white;}
 #topart {
 	padding-right: 10px;
-	display: inline-block;}
+	display: inline-block;
+	width: 150px; height: 150px;
+	background: url('Resources/pic.jpg') no-repeat;
+	background-size: 150px}
 #bighello {
 	font-weight: bold;
 	font-size: 4em;
@@ -114,8 +117,7 @@ body {
 	display: inline-block;}
 #CodePage {background-color: #81F778;}
 #MusicPage {background-color: #668FF7;}
-#SchoolPage {background-color: #FEFA44;
-	text-align: center;}
+#SchoolPage {background-color: #FEFA44;}
 #ResearchPage {background-color: #EC4049;}
 
 #PageHeader {
@@ -151,6 +153,3 @@ h1 {font-size: 3em;}
 	text-decoration: none; display: block; color: black;}
 .CodeItemDescription {font-size: 1em; text-align: left; z-index:10;
 	text-decoration: none; display: block; color: black;}
-
-
-
