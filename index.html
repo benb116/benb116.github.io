@@ -30,6 +30,7 @@
 		  });
 		});
 		</script>
+
 	</head>
 	<body>
 		<a id="Top" style="position:absolute;top:0;"></a>
@@ -37,7 +38,16 @@
 	    	<tr class="BackBar">
 	    		<td class="IconCol">
 	    			<a id="BackToTop" href="#Top">
-	    				<img src="/Resources/RolloverBackArrow.png" width="60" height="60">
+	    				<img src="/Resources/RolloverBackArrow.png" width="60" height="60" id="UpArrow">
+
+	    				<!--http://stackoverflow.com/questions/11434735/change-css-after-a-certain-amount-of-scroll-->
+	    				
+	    				<script type="text/javascript">
+	    					var $logo = $('#UpArrow');
+							$(document).scroll(function() {
+							    $logo.css({opacity: $(this).scrollTop() > 700? "1":"0"});
+							});
+	    				</script>
 	    			</a>
 	    		</td>
 	    	</tr>
@@ -69,9 +79,7 @@
 	    			</a>
 	    		</td>
 	    	</tr>
-	    	<tr class="BottomLogo">
-				<td class="LogoOrient">Ben Bernstein</td>
-			</tr>
+	    	<tr class="BottomLogo"><td class="LogoOrient">Ben Bernstein</td></tr>
 	    </table>
 		<div id="HomeBody">
 			<table id="MenuBar">
@@ -183,6 +191,32 @@
 				<h1>Music</h1>
 				<p>What I'm listening to and what I'm playing.</p>
 			</div>
+
+			<div id="NowPlaying">
+				<!--http://www.w3schools.com/xml/xml_dom.asp-->
+
+				<span id="name"></span><span> - By </span><span id="artist"></span>
+
+				<script>
+					if (window.XMLHttpRequest)
+					  {// code for IE7+, Firefox, Chrome, Opera, Safari
+					  xmlhttp=new XMLHttpRequest();
+					  }
+					else
+					  {// code for IE6, IE5
+					  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+					  }
+					xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=27b5672d0a9b8a34c2da46e140be0fa7",false);
+					xmlhttp.send();
+					xmlDoc=xmlhttp.responseXML;
+
+					document.getElementById("name").innerHTML=
+					xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+					document.getElementById("artist").innerHTML=
+					xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+				</script>
+			</div>
+
 		</div>
 		<div class="AnchorMargin"><a id="School"></a></div>
 		<div id="SchoolPage">
