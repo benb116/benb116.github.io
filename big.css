@@ -1,0 +1,45 @@
+body {
+	margin-left: 80px;
+	width: calc(100% - 80px;)
+	-o-width: calc(100% - 80px;)
+	-moz-width: calc(100% - 80px;)
+	-webkit-width: calc(100% - 80px;)}
+#Sidebar {
+	position: fixed;
+	left: 0; top:0;
+	width: 80px; height: 100%;}
+#UpArrow {opacity: 0;
+	-webkit-transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-o-transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out;}
+.BottomLogo {
+	background-color: #000000;
+	color: white;}
+.LogoOrient {
+	transform:rotate(90deg);
+	-o-transform:rotate906deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	text-align: center;}
+#MenuBar {
+	position: absolute;
+	margin-left: -4px;
+	font-size: 3em;
+	line-height: 2em;
+	width: 23%;
+	min-width: 240px;
+	z-index:10;}
+.ItemCol {text-indent: 20px;}
+#MobileBar {display: none;}
+#bighello {font-size: 4em;}
+#BioPar {
+	line-height: 2em;
+	min-width: 420px;
+	width: 30%;
+	text-indent: 2em;
+	margin-bottom: 20px;}
+#BottomMenu {
+	margin-top: 130px;
+	font-size: 30px;	
+	min-width: 900px;}

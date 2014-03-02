@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 	<head>
+		<link rel="stylesheet" href="/index.css">
 		<title>Ben Bernstein</title>
-		<link rel="stylesheet" media='screen and (min-width: 1051px)'href="/index.css">
+		<link rel="stylesheet" media='screen and (min-width: 1051px)'href="/big.css">
 		<link rel='stylesheet' media='screen and (max-width: 1050px)' href='/medium.css' />
-		<!--<link rel="stylesheet" href="/index.css">-->
 		<meta charset="utf-8">
 		<meta name="Description" content="Ben Bernstein - A Website" />
 		<!--<meta name="viewport" content="width=device-width">-->
@@ -206,7 +206,7 @@
 					  {// code for IE6, IE5
 					  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 					  }
-					xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=27b5672d0a9b8a34c2da46e140be0fa7",false);
+					xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=1",false);
 					xmlhttp.send();
 					xmlDoc=xmlhttp.responseXML;
 

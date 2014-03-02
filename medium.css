@@ -10,48 +10,20 @@ body {
 #MenuBar {display: none;}
 #HomeBody {margin-bottom: 100px; margin-top: 5%;}
 
-#topart {
-	padding-right: 10px;
-	display: inline-block;
-	width: 150px; height: 150px;
-	background: url('Resources/pic.jpg') no-repeat;
-	background-size: 150px}
-#bighello {
-	font-weight: bold;
-	font-size: 500%;
-	padding-left: 10px;
-	color: white;
-	text-align: left;
-	display: inline-block;}
+#bighello {font-size: 500%;}
 #IntroHead {
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	margin: 0 auto;
 	padding-top: 50px;}
 #BioPar {
-	text-align: justify;
 	line-height: 200%;
 	width: 80%;
 	font-size: 100%;
 	min-width: 480px;
-	color: white;
 	text-indent: 2em;
-	margin-top: 15px;
-	display: inline-block;}
+	margin-top: 15px;}
 #BottomMenu {
-	text-align: center;
-	position: relative;
 	margin-top: 30px;
 	margin-bottom: 50px;
-	width: 100%;
-	color: white;
 	font-size: 200%;}
-.BottomMenuLink {
-	color: white;
-	text-decoration: none;
-	margin: 5%;}
-.BottomMenuLink:hover {color: yellow;}
 
 #MobileBar {
 	width: 100%;
@@ -62,77 +34,5 @@ body {
 	text-align: center;
 	max-width: 400px;}
 .ItemCol {height: 100px;}
-.MenuLink {color:black; text-decoration: none;
-	-webkit-transition: color .15s ease-in-out;
-	-moz-transition: color .15s ease-in-out;
-	-o-transition: color .15s ease-in-out;
-	transition: color .15s ease-in-out;
-	text-decoration:none;
-	display:block;
-	max-width: 400px;}
+.MenuLink {max-width: 400px;}
 .MenuLink:hover {color: white;}
-.BackBar {background-color: #000000}
-.CodeBar {background-color: #81F778;}
-.MusicBar {background-color: #668FF7;}
-.SchoolBar {background-color: #FEFA44;}
-.ResearchBar {background-color: #EC4049;}
-.AnchorMargin {
-	position: relative;
-	display: block;
-	border: 0px;
-	margin-left: -2px;
-	width: 100%;}
-#CodePage, #MusicPage, #SchoolPage, #ResearchPage {
-	position: relative;
-	clear: both;
-	margin-left: -2px;
-	margin-top: 15px;
-	width: 100%;
-	text-align: center;
-	display: inline-block;}
-#CodePage {background-color: #81F778;}
-#MusicPage {background-color: #668FF7;}
-#SchoolPage {background-color: #FEFA44;}
-#ResearchPage {background-color: #EC4049;}
-
-#PageHeader {
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px;}
-#PageHeader img {
-	margin-right: 10px;
-	display: inline-block;}
-h1 {font-size: 3em;}
-
-#CodeHeader img {
-	padding-right: 10px;
-	display: inline-block;}
-#CodeHeader p {margin: 40px;}
-#GithubIcon {}
-#GithubIcon:hover {}
-.CodeTable {
-	display: inline-block;
-	position: relative;
-	height: 115px; width: 440px;
-	background-color: white;
-	margin-left: 35px; margin-right: 35px;
-	margin-bottom: 50px;
-	z-index:10;
-	border:10px solid white;
-	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	-webkit-transition: border .25s ease-in-out;
-	-moz-transition: border .25s ease-in-out;
-	-o-transition: border .25s ease-in-out;
-	transition: border .25s ease-in-out;}
-.CodeTable a {}
-.CodeTable:hover {border:10px solid #3399FF;}
-.CodeTableIcon {width: 115px; height: 115px; }
-.CodeTableItem {width: 325px; z-index:10; height: 115px;}
-.CodeItemTitle {font-size: 30px; text-align: left; z-index:10;
-	text-decoration: none; display: block; color: black;}
-.CodeItemDescription {font-size: 1em; text-align: left; z-index:10;
-	text-decoration: none; display: block; color: black;}
-	
-#NowPlaying {margin-bottom: 30px;}

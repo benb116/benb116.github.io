@@ -1,35 +1,12 @@
 body {
 	background-image:url(/Resources/escheresque_ste.png);
 	background-repeat:repeat;
-	margin-left: 80px;
-	font-family: "Helvetica";
-	width: calc(100% - 80px;)
-	-o-width: calc(100% - 80px;)
-	-moz-width: calc(100% - 80px;)
-	-webkit-width: calc(100% - 80px;)}
-#Sidebar {
-	position: fixed;
-	left: 0; top:0;
-	width: 80px; height: 100%;}
-#UpArrow {opacity: 0;
-	-webkit-transition: opacity .15s ease-in-out;
-	-moz-transition: opacity .15s ease-in-out;
-	-o-transition: opacity .15s ease-in-out;
-	transition: opacity .15s ease-in-out;}
+	font-family: "Helvetica";}
 .BackBar {background-color: #000000}
-.CodeBar {background-color: #81F778;}
-.MusicBar {background-color: #668FF7;}
-.SchoolBar {background-color: #FEFA44;}
-.ResearchBar {background-color: #EC4049;}
-.BottomLogo {
-	background-color: #000000;
-	color: white;}
-.LogoOrient {
-	transform:rotate(90deg);
-	-o-transform:rotate906deg);
-	-moz-transform:rotate(90deg);
-	-webkit-transform:rotate(90deg);
-	text-align: center;}
+.CodeBar, #CodePage {background-color: #81F778;}
+.MusicBar, #MusicPage {background-color: #668FF7;}
+.SchoolBar, #SchoolPage {background-color: #FEFA44;}
+.ResearchBar, #ResearchPage {background-color: #EC4049;}
 .IconCol, .ItemCol {
 	height: 100px;
 	vertical-align: middle;}
@@ -38,14 +15,6 @@ body {
 	text-align: center;
 	z-index:10;}
 #HomeBody {margin-bottom: 100px; margin-top: 104px;}
-#MenuBar {
-	position: absolute;
-	margin-left: -4px;
-	font-size: 3em;
-	line-height: 2em;
-	width: 23%;
-	min-width: 240px;
-	z-index:10;}
 .ItemCol {
 	width: 270px;
 	min-width: 250px; max-width: 280px;
@@ -66,7 +35,6 @@ body {
 	background-size: 150px}
 #bighello {
 	font-weight: bold;
-	font-size: 4em;
 	padding-left: 10px;
 	color: white;
 	text-align: left;
@@ -78,14 +46,8 @@ body {
 	margin: 0 auto;}
 #BioPar {
 	text-align: justify;
-	line-height: 2em;
-	min-width: 420px;
-	width: 30%;
 	color: white;
-	text-indent: 2em;
-	margin-bottom: 20px;
 	display: inline-block;}
-#MobileBar {display: none;}
 #SpotifyFrame {
 	display: inline-block;
 	position: absolute;
@@ -95,16 +57,12 @@ body {
 #BottomMenu {
 	text-align: center;
 	position: relative;
-	margin-top: 130px;
 	width: 100%;
-	min-width: 900px;
-	color: white;
-	font-size: 30px;}
+	color: white;}
 .BottomMenuLink {
 	color: white;
-	width: 1000px;
 	text-decoration: none;
-	margin: 10%;}
+	margin-left: 10%; margin-right: 10%;}
 .BottomMenuLink:hover {color: yellow;}
 .AnchorMargin {
 	position: relative;
@@ -120,13 +78,9 @@ body {
 	width: 100%;
 	text-align: center;
 	display: inline-block;}
-#CodePage {background-color: #81F778;}
-#MusicPage {background-color: #668FF7;}
-#SchoolPage {background-color: #FEFA44;}
-#ResearchPage {background-color: #EC4049;}
 
 #PageHeader {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 40px;
