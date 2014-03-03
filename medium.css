@@ -36,3 +36,6 @@ body {
 .ItemCol {height: 100px;}
 .MenuLink {max-width: 400px;}
 .MenuLink:hover {color: white;}
+
+#NowPlaying {margin: 0 auto;
+	margin-bottom: 30px;}
