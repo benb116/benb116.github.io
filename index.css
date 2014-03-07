@@ -23,7 +23,6 @@ body {
 	-moz-transition: color .15s ease-in-out;
 	-o-transition: color .15s ease-in-out;
 	transition: color .15s ease-in-out;
-	text-decoration:none;
 	display:block;}
 .MenuLink:hover {color: white;}
 #topart {
@@ -61,7 +60,7 @@ body {
 .BottomMenuLink {
 	color: white;
 	text-decoration: none;
-	margin-left: 10%; margin-right: 10%;}
+	padding: 10%;}
 .BottomMenuLink:hover {color: yellow;}
 .AnchorMargin {
 	position: relative;
@@ -78,16 +77,22 @@ body {
 	text-align: center;
 	display: inline-block;}
 
-#PageHeader {
+.PageHeader {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 40px;}
-#PageHeader img {
-	margin-right: 10px;
-	display: inline-block;}
 h1 {font-size: 3em;}
+.HeaderIcon {
+	margin-right: 10px; margin-left: 10px;
+	display: inline-block;
+	opacity: .5;
+	-webkit-transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-o-transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out;}
+.HeaderIcon:hover {opacity: 1;}
 
 .CodeTable {
 	display: inline-block;
@@ -113,11 +118,12 @@ h1 {font-size: 3em;}
 	text-decoration: none; display: block; color: black;}
 
 #NowPlaying {
+	display: inline-block;
+	position: relative;
 	width: 400px;
 	background-color: white;
-	border:10px solid white;
+	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	margin-left: 80px;
 	margin-bottom: 30px;}
 #TrackLink {text-decoration: none; color: black}
 #TrackLink:hover {text-decoration: underline;}
@@ -137,8 +143,8 @@ h1 {font-size: 3em;}
 .pulse-grow {
   -webkit-animation-name: pulse-grow;
   animation-name: pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;

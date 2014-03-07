@@ -7,3 +7,4 @@ end repeat
 
 
 (*do shell script "rsync -va --delete /Library/Webserver/Documents/ /Users/Ben/Dropbox/Developer/benb116.github.io/"*)
+(*sudo chmod -R a+rX /Library/WebServer/Document*)

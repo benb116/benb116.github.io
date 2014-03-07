@@ -23,7 +23,8 @@ body {
 #BottomMenu {
 	margin-top: 30px;
 	margin-bottom: 50px;
-	font-size: 200%;}
+	font-size: 200%;
+	max-width: 100%;}
 
 #MobileBar {
 	width: 100%;

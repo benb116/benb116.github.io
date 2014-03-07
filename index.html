@@ -19,7 +19,7 @@
 	    	<tr class="BackBar">
 	    		<td class="IconCol">
 	    			<a id="BackToTop" href="#Top">
-	    				<img src="/Resources/RolloverBackArrow.png" width="60" height="60" id="UpArrow">	    				
+	    				<img src="/Resources/RolloverBackArrow.png" width="45" height="50" id="UpArrow">	    				
 	    				<script>ShowArrow()</script>
 	    			</a>
 	    		</td>
@@ -106,8 +106,8 @@
 		</div>
 		<div class="AnchorMargin"><a id="Code"></a></div>
 		<div id="CodePage">
-			<div id="PageHeader">
-				<h1><a href="http://github.com/benb116"><img src="/Resources/Code/Github_Icon.png"></a>Code</h1>
+			<div class="PageHeader">
+				<h1><a href="http://github.com/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Code/Github_Icon.png"></a>Code</h1>
 				<p>Most of my projects are written in Applescript, but I'm starting to branch out into Python, HTML + CSS, and more.</p>
 			</div>
 			<a href="https://github.com/benb116/MusiNotify"><table class="CodeTable" id="MusiNotifyTable">
@@ -160,8 +160,8 @@
 		</div>
 		<div class="AnchorMargin"><a id="Music"></a></div>
 		<div id="MusicPage">
-			<div id="PageHeader">
-				<h1>Music</h1>
+			<div class="PageHeader">
+				<h1><a href="http://last.fm/user/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Music/lastfm_icon.png"></a>Music<a href="http://open.spotify.com/user/127742539/starred" target="_blank"><img class="HeaderIcon" src="/Resources/Music/spotify_icon.png"></a></h1>
 				<p>What I'm listening to and what I'm playing.</p>
 			</div>
 
@@ -169,31 +169,32 @@
 				<!--http://www.w3schools.com/xml/xml_dom.asp-->
 				<a href="http://www.last.fm/user/Benb116/now" style="text-decoration:none;color:black;"><h2 id="NowRecent">Recently Played</h2></a>
 
-				<img src="" id="TrackArt" class="pulse-grow">
+				<img src="/Resources/Music/BlankAlbum.png" id="TrackArt" class="pulse-grow">
 				<br>
 				<a id="TrackLink"><h3 id="TrackName"></h3></a>
 				<span>By </span><span id="TrackArtist"></span>
 				<br>
+				<br>
 
 				<script>
-				GetRecentPlay()
-				window.setInterval(function(){
-					GetLastFMData()
-				}, 5000);
+					GetRecentPlay()
+					window.setInterval(function(){
+						GetLastFMData()
+					}, 1000);
+					GetRecentPlay()
 				</script>
 			</div>
-
 		</div>
 		<div class="AnchorMargin"><a id="School"></a></div>
 		<div id="SchoolPage">
-			<div id="PageHeader">
+			<div class="PageHeader">
 				<h1>School</h1>
 				<p>Coming Soon.</p>
 			</div>
 		</div>
 		<div class="AnchorMargin"><a id="Research"></a></div>
 		<div id="ResearchPage">
-			<div id="PageHeader">
+			<div class="PageHeader">
 				<h1>Research</h1>
 				<p>Nothing here (yet).</p>
 			</div>
