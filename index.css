@@ -1,12 +1,11 @@
 body {
 	background-image:url(/Resources/escheresque_ste.png);
-	background-repeat:repeat;
-	font-family: "Helvetica";}
+	font-family: "Arial";}
 .BackBar {background-color: #000000}
 .CodeBar, #CodePage {background-color: #81F778;}
-.MusicBar, #MusicPage {background-color: #668FF7;}
-.SchoolBar, #SchoolPage {background-color: #FEFA44;}
-.ResearchBar, #ResearchPage {background-color: #EC4049;}
+.MusicBar, #MusicPage {background-color: #71A9FF;}
+.SchoolBar, #SchoolPage {background-color: #FFFF66;}
+.ResearchBar, #ResearchPage {background-color: #FF4D4D;}
 .IconCol, .ItemCol {
 	height: 100px;
 	vertical-align: middle;}
@@ -102,13 +101,12 @@ h1 {font-size: 3em;}
 	margin-bottom: 50px;
 	background-color: white;
 	z-index:10;
-	border:10px solid white;
+	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
 	-webkit-transition: border .25s ease-in-out;
 	-moz-transition: border .25s ease-in-out;
 	-o-transition: border .25s ease-in-out;
 	transition: border .25s ease-in-out;}
-.CodeTable a {}
 .CodeTable:hover {border:10px solid #3399FF;}
 .CodeTableIcon {width: 115px; height: 115px; }
 .CodeTableItem {width: 325px; z-index:10; height: 115px;}
@@ -124,7 +122,11 @@ h1 {font-size: 3em;}
 	background-color: white;
 	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	margin-bottom: 30px;}
+	margin-bottom: 30px;
+	padding-bottom: 20px;}
+#NowPlaying img {  
+    box-shadow: 0px 5px 10px #888888;
+}  
 #TrackLink {text-decoration: none; color: black}
 #TrackLink:hover {text-decoration: underline;}
 
@@ -133,12 +135,14 @@ h1 {font-size: 3em;}
   to {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+    box-shadow: 0px 8px 15px 2px #888888;
   }}
 @keyframes pulse-grow {
   to {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
+    box-shadow: 0px 8px 15px 2px #888888;
   }}
 .pulse-grow {
   -webkit-animation-name: pulse-grow;
@@ -150,19 +154,5 @@ h1 {font-size: 3em;}
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-  animation-direction: alternate;}
-
-#MusicSeeMore {
-	width: 350px; height: 40px;
-	background-color: #E6E6E6;
-	display: block;
-	margin: 0 auto;
-	margin-top: 20px;
-	font-size: 20px; line-height: 40px;
-	border:3px solid #E6E6E6;
-	-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;
-	-webkit-transition: border .25s ease-in-out;-moz-transition: border .25s ease-in-out;-o-transition: border .25s ease-in-out;transition: border .25s ease-in-out;
-	-webkit-transition: height .25s ease-in-out;-moz-transition: height .25s ease-in-out;-o-transition: height .25s ease-in-out;transition: height .25s ease-in-out;}
-#MusicSeeMore:hover {
-	border:3px solid gray;
-	height: 200px;}
+  animation-direction: alternate;
+}
