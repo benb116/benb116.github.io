@@ -20,6 +20,7 @@ function ShowArrow(){
 	var $logo = $('#UpArrow');
 	$(document).scroll(function() {
 	    $logo.css({opacity: $(this).scrollTop() > 700? "1":"0"});
+	   	$logo.css({display: $(this).scrollTop() > 300? "inline-block":"none"});
 	});
 }
 
@@ -38,9 +39,9 @@ function GetRecentPlay(){
 
 	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArt").src=xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue;
 	document.getElementById("TrackArt").className="Other";
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
+	document.getElementById("TrackArt").src=xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue;
 }
 
 function GetLastFMData(){
