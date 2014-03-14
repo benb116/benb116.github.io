@@ -54,12 +54,12 @@ body {
 #BottomMenu {
 	text-align: center;
 	position: relative;
-	width: 100%;
 	color: white;}
 .BottomMenuLink {
 	color: white;
 	text-decoration: none;
-	margin: 9%; padding: 1%;}
+	display: inline;
+	margin-left: 10%; margin-right: 10%;}
 .BottomMenuLink:hover {color: yellow;}
 
 .AnchorMargin {
@@ -154,8 +154,8 @@ h1 {font-size: 3em; font-weight: lighter;}
 .pulse-grow {
   -webkit-animation-name: pulse-grow;
   animation-name: pulse-grow;
-  -webkit-animation-duration: .173410405s;
-  animation-duration: .173410405s;
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -180,7 +180,7 @@ h1 {font-size: 3em; font-weight: lighter;}
 	background-color: black; color: white; font-family: "Comic Sans MS" Sans;
 	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	margin-right: 30px; margin-bottom: 30px;
+	margin-bottom: 30px;
 	padding-bottom: 20px; padding-top: -20px;}
 #EdCareer dl {margin-left: 30px; margin-right: 30px;}
 #EdCareer dt {font-weight: bold; padding-top: 15px;}
