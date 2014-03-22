@@ -15,100 +15,47 @@
 	</head>
 	<body>
 		<a id="Top" style="position:absolute;top:0;"></a>
-		<table id="Sidebar">
-	    	<tr class="BackBar">
-	    		<td class="IconCol">
-	    			<a id="BackToTop" href="#Top">
-	    				<img src="/Resources/RolloverBackArrow.png" width="45" height="50" id="UpArrow">	    				
-	    				<script>ShowArrow()</script>
-	    			</a>
-	    		</td>
-	    	</tr>
-	    	<tr class="CodeBar">
-	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Code">
-	    				<img src="/Icons%20and%20Attr/Code/icon_20826.png" width="60" height="50">
-	    			</a>
-	    		</td>
-	    	</tr>
-	    	<tr class="MusicBar">
-	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Music">
-	    				<img src="/Icons%20and%20Attr/Music/icon_8996.png" width="60" height="60">
-	    			</a>
-	    		</td>
-	    	</tr>
-	   		<tr class="SchoolBar">
-	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#School">
-	    				<img src="/Icons%20and%20Attr/Book/icon_1300.png" width="60" height="60">
-	    			</a>
-	    		</td>
-	    	</tr>
-	  		<tr class="ResearchBar">
-	    		<td class="IconCol">
-	    			<a class="MenuLink" href="#Research">
-	    				<img src="/Icons%20and%20Attr/Earth/icon_10812.png" width="60" height="60">
-	    			</a>
-	    		</td>
-	    	</tr>
-	    	<tr class="BottomLogo"><td class="LogoOrient">Ben Bernstein</td></tr>
-	    </table>
-		<div id="HomeBody">
-			<table id="MenuBar">
-		    	<tr class="CodeBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Code">Code</a></td>
-		    	</tr>
-		    	<tr class="MusicBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Music">Music</a></td>
-		    	</tr>
-		   		<tr class="SchoolBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#School">School</a></td>
-		    	</tr>
-		  		<tr class="ResearchBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Research">Research</a></td>
-		    	</tr>
-		    </table>
+		<div id="Sidebar">
+			<a href="#Top"><div class="SideCell BackBar" id="BackCell"></div></a>
+			<a href="#Code"><div class="SideCell CodeBar" id="CodeCell">&nbsp;</div></a>
+			<a href="#Music"><div class="SideCell MusicBar" id="MusicCell">&nbsp;</div></a>
+			<a href="#School"><div class="SideCell SchoolBar" id="SchoolCell">&nbsp;</div></a>
+			<a href="#Research"><div class="SideCell ResearchBar" id="ResearchCell">&nbsp;</div></a>
+		</div>	
+		<section id="HomeBody">
+			<div id="MenuBar">
+		    	<a href="#Code" class="MenuLink"><div class="MenuCell CodeBar">Code</div></a>
+				<a href="#Music" class="MenuLink"><div class="MenuCell MusicBar">Music</div></a>
+				<a href="#School" class="MenuLink"><div class="MenuCell SchoolBar">School</div></a>
+				<a href="#Research" class="MenuLink"><div class="MenuCell ResearchBar">Research</div></a>
+		    </div>
 	   		<div id="IntroHead">
 	   			<div id="topart"></div>
 			    <div id="bighello">
 			   		Hi. <br> I'm Ben.
 			    </div>
-	    		<div id="BioCont">
-			    	<div id="BioPar">
-			    		<span>I'm a senior in high school who's fascinated by technology and engineering. I'm also interested in science, sports, history, music, and economics. When I'm not on my computer, I like to hang out with friends, watch TV, or play the guitar. I hope to go into the field of robotics and change the world. Check out some of my work below! </span>
-			  		</div>
-		  		</div>
 	    	</div>
-
+	    	<div id="BioPar">
+	    		<span>I'm a senior in high school who's fascinated by technology and engineering. I'm also interested in science, sports, history, music, and economics. When I'm not on my computer, I like to hang out with friends, watch TV, or play the guitar. I hope to go into the field of robotics and change the world. </span>
+	  		</div>
 		  	<div id="BottomMenu">
-	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf">Resume</a><a class="BottomMenuLink" href="/contact">Contact</a><a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
+	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf">Resume</a>
+	    		<a class="BottomMenuLink" href="/contact">Contact</a>
+	    		<a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
 	   		</div>
 
-	   		<div id="SpotifyFrame">
-		  		
-		  	</div>
-
-			<table id="MobileBar">
-		    	<tr class="CodeBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Code">Code</a></td>
-		    	</tr>
-		    	<tr class="MusicBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Music">Music</a></td>
-		    	</tr>
-		   		<tr class="SchoolBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#School">School</a></td>
-		    	</tr>
-		  		<tr class="ResearchBar">
-		    		<td class="ItemCol"><a class="MenuLink" href="#Research">Research</a></td>
-		    	</tr>
-		    </table>
-		</div>
+			<div id="MobileBar">
+		    	<a href="#Code" class="MenuLink"><div class="MenuCell CodeBar">Code</div></a>
+				<a href="#Music" class="MenuLink"><div class="MenuCell MusicBar">Music</div></a>
+				<a href="#School" class="MenuLink"><div class="MenuCell SchoolBar">School</div></a>
+				<a href="#Research" class="MenuLink"><div class="MenuCell ResearchBar">Research</div></a>
+		    </div>
+		</section>
 		<div class="AnchorMargin"><a id="Code"></a></div>
-		<div id="CodePage">
+		<section id="CodePage">
 			<div class="PageHeader">
 				<h1><a href="http://github.com/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Code/Github_Icon.png"></a>Code</h1>
-				<p>Most of my projects are written in Applescript, but I'm starting to branch out into Python, HTML + CSS, and more.</p>
+				<p>Most of my projects are written in Applescript, but I'm starting to branch out into HTML + CSS, Python, and more.</p>
 			</div>
 			<a href="https://github.com/benb116/MusiNotify"><table class="CodeTable" id="MusiNotifyTable">
 				<tr>
@@ -116,20 +63,20 @@
 					<td class="CodeTableItem">
 						<table>
 							<tr><td class="CodeItemTitle">MusiNotify</td></tr>
-							<tr><td class="CodeItemDescription">Notification support for iTunes and Spotify</td></tr>
+							<tr><td class="CodeItemDescription">Notifications for iTunes and Spotify</td></tr>
 							<tr><td class="CodeItemLang">Applescript, Shell</td></tr>
 						</table>
 					</td>
 				</tr>
 			</table></a>
-			<a href="https://github.com/benb116/March-Madness-Analyzer"><table class="CodeTable" id="MarchMadnessTable">
+			<a href="https://github.com/benb116/Gone-Phishing"><table class="CodeTable">
 				<tr>
-					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Basketball/icon_2711.png" width="100" height="100"></td>
+					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Fishing/icon_8702.png" width="100" height="100"></td>
 					<td class="CodeTableItem">
 						<table>
-							<tr><td class="CodeItemTitle">Bracket Analyzer</td></tr>
-							<tr><td class="CodeItemDescription">Analyzing the past to predict the future</td></tr>
-							<tr><td class="CodeItemLang">Applescript</td></tr>
+							<tr><td class="CodeItemTitle">Gone Phishing</td></tr>
+							<tr><td class="CodeItemDescription">A phishing attack for Macd</td></tr>
+							<tr><td class="CodeItemLang">Applescript, Shell</td></tr>
 						</table>
 					</td>
 				</tr>
@@ -146,6 +93,18 @@
 					</td>
 				</tr>
 			</table></a>
+			<a href="https://github.com/benb116/March-Madness-Analyzer"><table class="CodeTable" id="MarchMadnessTable">
+				<tr>
+					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Basketball/icon_2711.png" width="100" height="100"></td>
+					<td class="CodeTableItem">
+						<table>
+							<tr><td class="CodeItemTitle">Bracket Analyzer</td></tr>
+							<tr><td class="CodeItemDescription">Analyzing the past to predict the future</td></tr>
+							<tr><td class="CodeItemLang">Applescript</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table></a>
 			<a href="https://github.com/benb116/Other"><table class="CodeTable" id="OtherTable">
 				<tr>
 					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Dots/icon_27116.png" width="100" height="100"></td>
@@ -158,12 +117,9 @@
 					</td>
 				</tr>
 			</table></a>
-			<a href="https://github.com/benb116/Gone-Phishing">
-				<table class="CodeTable"></table>
-			</a>
-		</div>
+		</section>
 		<div class="AnchorMargin"><a id="Music"></a></div>
-		<div id="MusicPage">
+		<section id="MusicPage">
 			<div class="PageHeader">
 				<h1><a href="http://last.fm/user/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Music/lastfm_icon.png"></a>Music<a href="http://open.spotify.com/user/127742539/starred" target="_blank"><img class="HeaderIcon" src="/Resources/Music/spotify_icon.png"></a></h1>
 				<p>What I'm listening to.</p>
@@ -184,9 +140,9 @@
 					GetRecentPlay()
 				</script>
 			</div>
-		</div>
+		</section>
 		<div class="AnchorMargin"><a id="School"></a></div>
-		<div id="SchoolPage">
+		<section id="SchoolPage">
 			<div class="PageHeader">
 				<h1>School</h1>
 				<p>Learning in the past, present, and future.</p>
@@ -198,31 +154,18 @@
 						<dd><i>Other areas of study:</i> Electrical Engineering, Economics, Product Design</dd>
 					</dt>
 					<dt>Jack M. Barrack Hebrew Academy - Class of 2014</dt>
-						<dd><i>Areas of Study:</i> English, History, Math, Science, Spanish, Hebrew, Jewish Studies, and Bible.</dd>
+						<dd><i>Areas of study:</i> English, History, Math, Science, Spanish, Hebrew, Jewish Studies, and Bible.</dd>
 						<dd></dd>
 				</dl>
 				<div id="Eraser">&nbsp;</div><div id="Chalk">&nbsp;</div>
 			</div>
-			<div id="BookReports">
-				<h3>Book Reports for Hebrew Literature.</h3>
-				<ul id="BookList">
-					<li><a href="/Resources/School/Book%20Reports/בדהרה א'.pdf">בדהרה - חלק א</a></li>
-					<li><a href="/Resources/School/Book%20Reports/בדהרה ב'.pdf">בדהרה - חלק ב</a></li>
-					<li><a href="/Resources/School/Book%20Reports/"></a></li>
-					<li><a href="/Resources/School/Book%20Reports/"></a></li>
-					<li><a href="/Resources/School/Book%20Reports/"></a></li>
-					<li><a href="/Resources/School/Book%20Reports/"></a></li>
-					<li><a href="/Resources/School/Book%20Reports/"></a></li>
-					<li><a href="/Resources/School/Book%20Reports/"></a></li>
-				</ul>
-			</div>
-		</div>
+		</section>
 		<div class="AnchorMargin"><a id="Research"></a></div>
-		<div id="ResearchPage">
+		<section id="ResearchPage">
 			<div class="PageHeader">
 				<h1>Research</h1>
 				<p>Nothing here (yet).</p>
 			</div>
-		</div>
+		</section>
 	</body>
 </html>

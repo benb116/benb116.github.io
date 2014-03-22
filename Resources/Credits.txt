@@ -8,6 +8,7 @@ Laptop by Steve Stomp from The Noun Project
 Globe by Nicholas Menghini from The Noun Project
 Code by Luboš Volkov from The Noun Project
 Music by Cris Dobbins from The Noun Project
+Fishing Hook by Massimiliano Mauro from The Noun Project
 
 Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/
 (adapted) Now Playing script - http://www.w3schools.com/xml/xml_dom.asp

@@ -6,60 +6,37 @@ body {
 .MusicBar, #MusicPage {background-color: #71A9FF;}
 .SchoolBar, #SchoolPage {background-color: #FFFF66;}
 .ResearchBar, #ResearchPage {background-color: #FF4D4D;}
-.IconCol, .ItemCol {
-	height: 100px;
-	vertical-align: middle;}
-.IconCol {
-	width: 80px;
-	text-align: center;
-	z-index:10;}
-#HomeBody {margin-bottom: 100px; margin-top: 104px;}
-.ItemCol {
-	width: 270px;
-	min-width: 250px; max-width: 280px;}
+
 .MenuLink {color:black; text-decoration: none;
 	-webkit-transition: color .15s ease-in-out;
 	-moz-transition: color .15s ease-in-out;
 	-o-transition: color .15s ease-in-out;
 	transition: color .15s ease-in-out;
 	display:block;}
-.MenuLink:hover {color: white;}
-#topart {
-	padding-right: 10px;
+
+#IntroHead {
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: 2vh;}
+#topart{
 	display: inline-block;
 	width: 150px; height: 150px;
-	background: url('Resources/pic.jpg') no-repeat;
-	background-size: 150px}
-#bighello {
-	font-weight: bold;
-	padding-left: 10px;
-	color: white;
+	margin-right: 20px;
+	background-image: url(/Resources/pic.jpg);
+	background-size: 150px;}
+#bighello {font-size: 4.5em; font-weight: bold; color: white;
 	text-align: left;
 	display: inline-block;}
-#IntroHead {
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	margin: 0 auto;}
 #BioPar {
-	text-align: justify;
-	color: white;
-	display: inline-block;}
-#SpotifyFrame {
-	display: inline-block;
-	position: absolute;
-	top: 100px; 
-	right: 30px;
-	width: 300px; height: 420px;}
-#BottomMenu {
-	text-align: center;
-	position: relative;
-	color: white;}
+	width: 40%;
+	margin: auto;
+	text-align: justify; text-indent: 4vh;
+	font-size: 2vh; color: white;
+	line-height: 2em;}
 .BottomMenuLink {
 	color: white;
-	text-decoration: none;
-	display: inline;
-	margin-left: 10%; margin-right: 10%;}
+	text-decoration: none;}
 .BottomMenuLink:hover {color: yellow;}
 
 .AnchorMargin {
@@ -77,20 +54,19 @@ body {
 	text-align: center;
 	display: inline-block;
 	padding-bottom: 30px;
-	border:10px;
-	-webkit-border-top-right-radius:10px; -webkit-border-bottom-right-radius:10px;
-	-moz-border-top-right-radius:10px; 	-moz-border-bottom-right-radius:10px;
-	-ms-border-top-right-radius:10px; 	-ms-border-bottom-right-radius:10px;
-	-o-border-top-right-radius:10px; 	-o-border-bottom-right-radius:10px;
-	border-top-right-radius:10px; 	border-bottom-right-radius:10px;
-	}
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-ms-border-radius:10px;
+	-o-border-radius:10px; 
+	border-radius:10px;}
 .PageHeader {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 40px;}
-h1 {font-size: 3em; font-weight: lighter;}
+h1 {font-size: 3em; font-weight: lighter;
+	line-height: 1em;}
 .HeaderIcon {
 	margin-right: 10px; margin-left: 10px;
 	display: inline-block;
@@ -163,20 +139,12 @@ h1 {font-size: 3em; font-weight: lighter;}
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
-#BookReports {display: none;
-	position: relative;
-	width: 400px;
-	background-color: white;
-	border:10px solid #E6E6E6;
-	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	padding-bottom: 20px;}
-#BookReports li {list-style: none; font-size: 1.5em;}
-#BookReports a {text-decoration: none; color: black;}
 
-#EdCareer {display: inline-block;
+#EdCareer {display: block;
+	margin: 0 auto;
 	position: relative;
 	text-align: left;
-	max-width: 500px; height: 250px;
+	width: 500px; height: 250px;
 	background-color: black; color: white; font-family: "Comic Sans MS" Sans;
 	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
@@ -185,7 +153,6 @@ h1 {font-size: 3em; font-weight: lighter;}
 #EdCareer dl {margin-left: 30px; margin-right: 30px;}
 #EdCareer dt {font-weight: bold; padding-top: 15px;}
 #EdCareer dd {margin-left: 40px; text-indent: -20px;}
-
 #Eraser {width: 30px; height: 7px; background-color: white;
 	position: absolute; bottom: 0; left: 65px;
 	display: block; z-index: 12;
