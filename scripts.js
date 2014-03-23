@@ -27,10 +27,9 @@ function SmoothScroll(){
 }
 
 function ShowArrow(){
-	var $logo = $('#UpArrow');
+	var $logo = $('#BackCell');
 	$(document).scroll(function() {
-	    $logo.css({opacity: $(this).scrollTop() > 700? "1":"0"});
-	   	$logo.css({display: $(this).scrollTop() > 300? "inline-block":"none"});
+	    $logo.css({background-image: $(this).scrollTop() > 700? url(/Icons%20and%20Attr/Home/icon_293.png):""});
 	});
 }
 
