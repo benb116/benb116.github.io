@@ -81,7 +81,6 @@ h1 {font-size: 3em; font-weight: lighter;
 	display: inline-block;
 	position: relative;
 	height: 115px; width: 440px;
-	margin-left: 25px; margin-right: 25px;
 	margin-bottom: 50px;
 	background-color: white;
 	z-index:10;

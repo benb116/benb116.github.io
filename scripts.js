@@ -26,13 +26,6 @@ function SmoothScroll(){
 		});
 }
 
-function ShowArrow(){
-	var $logo = $('#BackCell');
-	$(document).scroll(function() {
-	    $logo.css({background-image: $(this).scrollTop() > 700? url(/Icons%20and%20Attr/Home/icon_293.png):""});
-	});
-}
-
 function GetRecentPlay(){
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
