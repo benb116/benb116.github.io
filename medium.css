@@ -1,34 +1,22 @@
 body {
-	background-image:url(/Resources/escheresque_ste.png);
-	background-repeat:repeat;
 	font-family: "Helvetica";
 	margin: 0 auto;
-	max-width: 100%;
 	width: 100%;}
 
 #Sidebar {display: none;}
 #MenuBar {display: none;}
-#HomeBody {margin-bottom: 100px; margin-top: 5%;}
+#HomeBody {margin-bottom: 80px;}
 
-#IntroHead {
-	width: 100%;
-	margin-top: 100px;
-	text-align: center;
-	margin-bottom: 20px;}
 #BioPar {
 	width: 70%; min-width: 450px;
-	margin: auto;
-	text-align: justify; text-indent: 4vh;
-	font-size: 1em; color: white;
-	line-height: 2em;
 	margin-bottom: 50px;}
-#BottomMenu {
+#RightMenu {
 	margin: auto;
 	width: 100%;
 	text-align: center;
 	font-size: 2em;
 	margin-bottom: 50px;}
-.BottomMenuLink {margin: 30px;}
+.RightMenuLink {margin: 30px;}
 
 #MobileBar {
 	font-size: 3em;
@@ -43,7 +31,12 @@ body {
 	font-size: 1em;
 	vertical-align: middle; text-align: center;
 	display: table-cell;}
+.MenuLink {-webkit-transition: color .15s ease-in-out;
+	-moz-transition: color .15s ease-in-out;
+	-o-transition: color .15s ease-in-out;
+	transition: color .15s ease-in-out;}
 .MenuLink:hover {color: white;}
 
-#NowPlaying {margin: 0 auto;
+#NowPlaying {
+	margin: 0 auto;
 	margin-bottom: 30px;}

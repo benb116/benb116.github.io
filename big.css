@@ -7,7 +7,7 @@ body {
 
 #Sidebar {
 	height: 100%; width: 80px;
-	background-color: black;
+	background-color: #373737;
 	position: fixed; top:0; left: 0;}
 .SideCell {
 	width: 100%; height: 100px;
@@ -15,14 +15,19 @@ body {
 	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position: center;
-	display: inline-block;
-	border-top:2px solid black;}
-#BackCell {background-image:url(/Icons%20and%20Attr/Home/icon_293.png);}
-#CodeCell {background-image:url(/Icons%20and%20Attr/Code/icon_20826_2.png);}
-#MusicCell {background-image:url(/Icons%20and%20Attr/Music/icon_8996.png);}
+	display: inline-block;}
+#BackCell {background-image:url(/Icons%20and%20Attr/Home/icon_293.svg);}
+#CodeCell {background-image:url(/Icons%20and%20Attr/Code/icon_20826.svg);}
+#MusicCell {background-image:url(/Icons%20and%20Attr/Music/icon_8996.svg);}
 #SchoolCell {background-image:url(/Icons%20and%20Attr/Book/icon_1300.png);}
-#ResearchCell {background-image:url(/Icons%20and%20Attr/Earth/icon_10812.png);}
+#ResearchCell {background-image:url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
 
+#HomeBody {
+	width: 100%; height: 92vh;
+	display: inline-block;
+	min-height: 600px;}
+
+#UnderBanner:hover {box-shadow: 0 12px 12px gray;}
 .MenuCell {
 	width: 20%; height: 100px;
 	min-width: 250px;
@@ -30,9 +35,8 @@ body {
 	vertical-align: middle; text-align: left; text-indent: 20px;
 	-webkit-transition: text-indent .15s ease-in-out; -moz-transition: text-indent .15s ease-in-out; -o-transition: text-indent .15s ease-in-out; transition: text-indent .15s ease-in-out;
 	display: table-cell;
-	border-top:2px solid black;
 	margin-left: 2px;}
-.MenuCell:hover {text-indent: 40px; color: black;}
+.MenuCell:hover {text-indent: 40px;}
 #MenuBar {
 	position: absolute;
 	margin-left: -2px;
@@ -40,44 +44,15 @@ body {
 	line-height: 2em;
 	width: 23%;
 	min-width: 240px;
-	z-index:10;	margin-top: 98px;}
+	z-index:10;	margin-top: 96px;}
 #MobileBar {display: none;}
 
-#HomeBody {width: 100%; height: 95vh;
-display: inline-block;
-min-height: 600px;}
-
-#IntroHead {
-	width: 100%;
-	margin-top: 100px;
-	text-align: center;
-	margin-bottom: 15px;}
-#topart{
-	display: inline-block;
-	width: 150px; height: 150px;
-	margin-right: 20px;
-	background-image: url(/Resources/pic.jpg);
-	background-size: 150px;}
-#bighello {font-size: 4.5em; font-weight: bold; color: white;
-	text-align: left;
-	display: inline-block;}
-#BioPar {
-	width: 450px;
-	margin: auto;
-	text-align: justify; text-indent: 30px;
-	font-size: 1em; color: white;
-	line-height: 2em;}
-#BottomMenu {
-	text-align: center;
+#IntroHead {display: inline-block;}
+#BioPar {width: 450px;}
+#RightMenu {
 	position: absolute;
-	bottom: 10vh;
-	width: 90%;
-	color: white;
-	font-size: 2em;}
-.BottomMenuLink {
-	color: white;
-	text-decoration: none;
-	display: inline;
-	margin-left: 10%; margin-right: 10%;}
+	top: 170px; right: 100px;
+	font-size: 2em; line-height: 2em;}
+.RightMenuLink {display: block;}
 
-.CodeTable {margin-left: 25px; margin-right: 25px;}
+.CodeTable {margin-left: 3%; margin-right: 3%;}

@@ -1,43 +1,54 @@
 body {
-	background-image:url(/Resources/escheresque_ste.png);
-	font-family: "Arial";}
-.BackBar {background-color: #000000}
+	background-color: #E6E6E6;
+	font-family: "Helvetica";}
 .CodeBar, #CodePage {background-color: #81F778;}
-.MusicBar, #MusicPage {background-color: #71A9FF;}
+.MusicBar, #MusicPage {background-color: #5C85FF;}
 .SchoolBar, #SchoolPage {background-color: #FFFF66;}
 .ResearchBar, #ResearchPage {background-color: #FF4D4D;}
 
-.MenuLink {color:black; text-decoration: none;
-	-webkit-transition: color .15s ease-in-out;
-	-moz-transition: color .15s ease-in-out;
-	-o-transition: color .15s ease-in-out;
-	transition: color .15s ease-in-out;
+#BannerWrap {
+	position: absolute; top: 0px; right: 0px;
+	width: 300px; height: 300px;
+	display: block;
+	overflow: hidden;}
+#UnderBanner {
+	position: absolute;
+	top: 70px; right: -50px; margin-right: -20px;
+	text-align: center; line-height: 30px;
+	display: block; width: 300px; height: 30px;
+	background-color: red; color: white; font-weight: bold;
+	box-shadow: 0 10px 10px gray;  
+	overflow: hidden;
+	transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
+	-webkit-transition: box-shadow .15s ease-in-out; -moz-transition: box-shadow .15s ease-in-out; -o-transition: box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
+
+.MenuLink {
+	color:black; text-decoration: none;
 	display:block;}
 
 #IntroHead {
 	width: 100%;
 	margin-top: 100px;
 	text-align: center;
-	margin-bottom: 2vh;}
+	margin-bottom: 20px;}
 #topart{
 	display: inline-block;
 	width: 150px; height: 150px;
 	margin-right: 20px;
 	background-image: url(/Resources/pic.jpg);
 	background-size: 150px;}
-#bighello {font-size: 4.5em; font-weight: bold; color: white;
+#bighello {
+	font-size: 4.5em; color: black;
 	text-align: left;
 	display: inline-block;}
 #BioPar {
-	width: 40%;
-	margin: auto;
-	text-align: justify; text-indent: 4vh;
-	font-size: 2vh; color: white;
-	line-height: 2em;}
-.BottomMenuLink {
-	color: white;
+	text-align: justify; text-indent: 30px;
+	line-height: 2em; font-size: 1em;
+	margin: auto;}
+.RightMenuLink {
+	color: #414141;
 	text-decoration: none;}
-.BottomMenuLink:hover {color: yellow;}
+.RightMenuLink:hover {color: black;}
 
 .AnchorMargin {
 	position: relative;
@@ -48,17 +59,13 @@ body {
 #CodePage, #MusicPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
-	margin-left: -2px;
-	margin-top: 15px;
+	margin-left: -2px; margin-top: 15px;
 	width: 100%;
 	text-align: center;
 	display: inline-block;
 	padding-bottom: 30px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	-ms-border-radius:10px;
-	-o-border-radius:10px; 
-	border-radius:10px;}
+	-webkit-border-top-right-radius:10px; -moz-border-top-right-radius:10px; -ms-border-top-right-radius:10px; -o-border-top-right-radius:10px;  border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px; -moz-border-bottom-right-radius:10px; -ms-border-bottom-right-radius:10px; -o-border-bottom-right-radius:10px;  border-bottom-right-radius:10px}
 .PageHeader {
 	width: 90%;
 	margin: 0 auto;
@@ -86,16 +93,14 @@ h1 {font-size: 3em; font-weight: lighter;
 	z-index:10;
 	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	-webkit-transition: border .25s ease-in-out;
-	-moz-transition: border .25s ease-in-out;
-	-o-transition: border .25s ease-in-out;
-	transition: border .25s ease-in-out;}
+	-webkit-transition: border .25s ease-in-out; -moz-transition: border .25s ease-in-out; -o-transition: border .25s ease-in-out; transition: border .25s ease-in-out;}
 .CodeTable:hover {border:10px solid #3399FF;}
 .CodeTableIcon {width: 115px; height: 115px; }
-.CodeTableItem {width: 325px; z-index:10; height: 115px;}
-.CodeItemTitle {font-size: 30px; text-align: left; color: black;}
-.CodeItemDescription {font-size: 1em; text-align: left; color: black;}
-.CodeItemLang {font-style: 1em; text-align: left; color: gray;}
+.CodeTableItem {width: 325px; height: 115px;}
+.CodeItemTitle {font-size: 30px; color: black;}
+.CodeItemDescription {font-size: 1em; color: black;}
+.CodeItemLang {font-style: 1em; color: gray;}
+.CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left;}
 
 #NowPlaying {
 	display: inline-block;
@@ -106,9 +111,7 @@ h1 {font-size: 3em; font-weight: lighter;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
 	margin-bottom: 30px;
 	padding-bottom: 20px;}
-#NowPlaying img {  
-    box-shadow: 0px 5px 10px #888888;
-}  
+#NowPlaying img {box-shadow: 0px 5px 10px #888888;}  
 #TrackLink {text-decoration: none; color: black;}
 #TrackLink:hover {text-decoration: underline;}
 
@@ -139,7 +142,8 @@ h1 {font-size: 3em; font-weight: lighter;
   animation-direction: alternate;
 }
 
-#EdCareer {display: block;
+#EdCareer {
+	display: block;
 	margin: 0 auto;
 	position: relative;
 	text-align: left;
@@ -152,12 +156,14 @@ h1 {font-size: 3em; font-weight: lighter;
 #EdCareer dl {margin-left: 30px; margin-right: 30px;}
 #EdCareer dt {font-weight: bold; padding-top: 15px;}
 #EdCareer dd {margin-left: 40px; text-indent: -20px;}
-#Eraser {width: 30px; height: 7px; background-color: white;
+#Eraser {
+	width: 30px; height: 7px; background-color: white;
 	position: absolute; bottom: 0; left: 65px;
 	display: block; z-index: 12;
 	border: 1px solid black;
 	border-top: 3px solid gray;}
-#Chalk {width: 15px; height: 3px; background-color: white;
+#Chalk {
+	width: 15px; height: 3px; background-color: white;
 	position: absolute; bottom: 0; right: 150px;
 	display: block; z-index: 12;
 	border: 1px solid black;}
