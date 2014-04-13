@@ -1,5 +1,4 @@
 body {
-	font-family: "Helvetica";
 	margin: 0 auto;
 	width: 100%;}
 
@@ -36,7 +35,7 @@ body {
 	-o-transition: color .15s ease-in-out;
 	transition: color .15s ease-in-out;}
 .MenuLink:hover {color: white;}
-
+.CodeTable {margin-left: 3%; margin-right: 3%;}
 #NowPlaying {
 	margin: 0 auto;
 	margin-bottom: 30px;}

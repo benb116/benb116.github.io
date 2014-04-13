@@ -1,10 +1,10 @@
 body {
 	background-color: #E6E6E6;
 	font-family: "Helvetica";}
-.CodeBar, #CodePage {background-color: #81F778;}
-.MusicBar, #MusicPage {background-color: #5C85FF;}
-.SchoolBar, #SchoolPage {background-color: #FFFF66;}
-.ResearchBar, #ResearchPage {background-color: #FF4D4D;}
+.CodeBar, #CodePage {background-color: #2ecc71;}
+.MusicBar, #MusicPage {background-color: #3498db;}
+.SchoolBar, #SchoolPage {background-color: #f1c40f;}
+.ResearchBar, #ResearchPage {background-color: #e74c3c;}
 
 #BannerWrap {
 	position: absolute; top: 0px; right: 0px;
@@ -18,9 +18,9 @@ body {
 	display: block; width: 300px; height: 30px;
 	background-color: red; color: white; font-weight: bold;
 	box-shadow: 0 10px 10px gray;  
-	overflow: hidden;
 	transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
 	-webkit-transition: box-shadow .15s ease-in-out; -moz-transition: box-shadow .15s ease-in-out; -o-transition: box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
+#UnderBanner:hover {box-shadow: 0 12px 12px gray;}
 
 .MenuLink {
 	color:black; text-decoration: none;
@@ -61,23 +61,22 @@ body {
 	clear: both;
 	margin-left: -2px; margin-top: 15px;
 	width: 100%;
-	text-align: center;
+	text-align: center; color: white;
 	display: inline-block;
-	padding-bottom: 30px;
-	-webkit-border-top-right-radius:10px; -moz-border-top-right-radius:10px; -ms-border-top-right-radius:10px; -o-border-top-right-radius:10px;  border-top-right-radius:10px;
-	-webkit-border-bottom-right-radius:10px; -moz-border-bottom-right-radius:10px; -ms-border-bottom-right-radius:10px; -o-border-bottom-right-radius:10px;  border-bottom-right-radius:10px}
+	padding-bottom: 30px;}
 .PageHeader {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 40px;}
-h1 {font-size: 3em; font-weight: lighter;
+.PageHeader h1 {font-size: 3em; font-weight: normal;
 	line-height: 1em;}
+.PageHeader p {font-weight: bold;}
 .HeaderIcon {
 	margin-right: 10px; margin-left: 10px;
 	display: inline-block;
-	opacity: .5;
+	opacity: .65;
 	-webkit-transition: opacity .15s ease-in-out;
 	-moz-transition: opacity .15s ease-in-out;
 	-o-transition: opacity .15s ease-in-out;
@@ -103,31 +102,26 @@ h1 {font-size: 3em; font-weight: lighter;
 .CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left;}
 
 #NowPlaying {
-	display: inline-block;
-	position: relative;
-	width: 400px;
-	background-color: white;
-	border:10px solid #E6E6E6;
+	width: 400px; height: 450px; color: white;
+	border:10px solid #E6E6E6; display: inline-block;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
 	margin-bottom: 30px;
 	padding-bottom: 20px;}
-#NowPlaying img {box-shadow: 0px 5px 10px #888888;}  
-#TrackLink {text-decoration: none; color: black;}
+#TrackLink {text-decoration: none; color: white;}
 #TrackLink:hover {text-decoration: underline;}
+#TrackArtist {text-decoration: none;}
 
 /* Pulse Grow - Hover.css (http://ianlunn.co.uk/)*/
 @-webkit-keyframes pulse-grow {
   to {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: 0px 8px 15px 2px #888888;
   }}
 @keyframes pulse-grow {
   to {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: 0px 8px 15px 2px #888888;
   }}
 .pulse-grow {
   -webkit-animation-name: pulse-grow;

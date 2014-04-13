@@ -8,14 +8,17 @@ body {
 #Sidebar {
 	height: 100%; width: 80px;
 	background-color: #373737;
-	position: fixed; top:0; left: 0;}
+	position: fixed; top:0; left: 0;
+	/*box-shadow: 8px 0 10px 0px gray;*/}
 .SideCell {
 	width: 100%; height: 100px;
 	color: white;
-	background-size: 80%;
+	background-size: 75%;
 	background-repeat: no-repeat;
 	background-position: center;
-	display: inline-block;}
+	display: inline-block;
+	-webkit-transition: background-size .15s ease-in-out; -moz-transition: background-size .15s ease-in-out; -o-transition: background-size .15s ease-in-out; transition: background-size .15s ease-in-out;}
+.SideCell:hover {background-size: 85%}
 #BackCell {background-image:url(/Icons%20and%20Attr/Home/icon_293.svg);}
 #CodeCell {background-image:url(/Icons%20and%20Attr/Code/icon_20826.svg);}
 #MusicCell {background-image:url(/Icons%20and%20Attr/Music/icon_8996.svg);}
@@ -23,15 +26,14 @@ body {
 #ResearchCell {background-image:url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
 
 #HomeBody {
-	width: 100%; height: 92vh;
+	width: 100%; height: 92vh; min-height: 600px; max-height: 700px;
 	display: inline-block;
 	min-height: 600px;}
 
-#UnderBanner:hover {box-shadow: 0 12px 12px gray;}
 .MenuCell {
 	width: 20%; height: 100px;
 	min-width: 250px;
-	font-size: 1em;
+	font-size: 1em; color: white;
 	vertical-align: middle; text-align: left; text-indent: 20px;
 	-webkit-transition: text-indent .15s ease-in-out; -moz-transition: text-indent .15s ease-in-out; -o-transition: text-indent .15s ease-in-out; transition: text-indent .15s ease-in-out;
 	display: table-cell;
@@ -48,11 +50,19 @@ body {
 #MobileBar {display: none;}
 
 #IntroHead {display: inline-block;}
-#BioPar {width: 450px;}
+#BioPar {width: 430px;}
 #RightMenu {
 	position: absolute;
-	top: 170px; right: 100px;
+	top: 150px; right: 7%;
 	font-size: 2em; line-height: 2em;}
-.RightMenuLink {display: block;}
+.RightMenuLink {
+	display: block; width: 150px; height: 60px;
+	line-height: 2em;
+	vertical-align: middle;
+	margin-bottom: 20px;}
+
+#CodePage, #MusicPage, #SchoolPage, #ResearchPage {
+	-webkit-border-top-right-radius:10px; -moz-border-top-right-radius:10px; -ms-border-top-right-radius:10px; -o-border-top-right-radius:10px;  border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px; -moz-border-bottom-right-radius:10px; -ms-border-bottom-right-radius:10px; -o-border-bottom-right-radius:10px;  border-bottom-right-radius:10px}
 
 .CodeTable {margin-left: 3%; margin-right: 3%;}

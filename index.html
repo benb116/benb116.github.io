@@ -10,7 +10,7 @@
 		<meta name="Description" content="Ben Bernstein - A Website" />
 		<link rel="shortcut icon" href="/Resources/favicon.png" />
 		<script>GATrack()</script>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>SmoothScroll()</script>
 	</head>
 	<body>
@@ -127,10 +127,9 @@
 				<h1><a href="http://last.fm/user/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Music/lastfm_icon.png"></a>Music<a href="http://open.spotify.com/user/127742539/starred" target="_blank"><img class="HeaderIcon" src="/Resources/Music/spotify_icon.png"></a></h1>
 				<p>What I'm listening to.</p>
 			</div>
-
 			<div id="NowPlaying">
 				<!--http://www.w3schools.com/xml/xml_dom.asp-->
-				<a href="http://www.last.fm/user/Benb116/now" style="text-decoration:none;color:black;"><h2 id="NowRecent">Recently Played</h2></a>
+				<a href="http://www.last.fm/user/Benb116/now" style="text-decoration:none;color:white;"><h2 id="NowRecent">Recently Played</h2></a>
 
 				<img src="/Resources/Music/BlankAlbum.png" id="TrackArt" class="">
 				<br>
@@ -138,16 +137,16 @@
 				<span>By </span><span id="TrackArtist"></span>
 
 				<script>
-					GetRecentPlay()
-					window.setInterval(function(){GetLastFMData()}, 5000);
-					GetRecentPlay()
+					GetRecentPlay();
+					window.setInterval(function(){GetLastFMData()}, 1000);
+					GetRecentPlay();
 				</script>
 			</div>
 		</section>
 		<div class="AnchorMargin"><a id="School"></a></div>
 		<section id="SchoolPage">
 			<div class="PageHeader">
-				<h1>School</h1>
+				<h1><a href="http://jbha.org" target="_blank"><img class="HeaderIcon" src="/Resources/School/JBHA.png" width="40" height="40"></a>School<a href="http://upenn.edu" target="_blank"><img class="HeaderIcon" src="/Resources/School/Penn.png" width="40" height="40"></a></h1>
 				<p>Learning in the past, present, and future.</p>
 			</div>
 			<div id="EdCareer">
