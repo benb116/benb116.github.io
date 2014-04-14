@@ -40,7 +40,7 @@ function GetRecentPlay(){
 	xmlDoc=xmlhttp.responseXML;
 
 	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+	document.getElementById("TrackArtist").innerHTML="By " + xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArt").className="Other";
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArt").src=xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue;
@@ -61,15 +61,21 @@ function GetLastFMData(){
 
 	/*document.getElementById("NowRecent").innerHTML=*/
 	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+	document.getElementById("TrackArtist").innerHTML="By " + xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArt").src=xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue;
-	var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
-	if(playval == "true") {
-		document.getElementById("NowRecent").innerHTML="Now Playing";
-		document.getElementById("TrackArt").className="pulse-grow";
-	} else {
-		document.getElementById("NowRecent").innerHTML="Recently Played";
-		document.getElementById("TrackArt").className="Other";
+	try {
+		var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
+		if(playval == "true") {
+			document.getElementById("NowRecent").innerHTML="Now Playing";
+			document.getElementById("TrackArt").className="pulse-grow";
+		} else {
+			document.getElementById("NowRecent").innerHTML="Recently Played";
+			document.getElementById("TrackArt").className="Other";
+		}
+	} 
+	catch(err) 
+	{
+		console.log("No Now-Playing track found.")
 	}
 }

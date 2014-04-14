@@ -9,29 +9,27 @@
 		<meta charset="utf-8">
 		<meta name="Description" content="Ben Bernstein - A Website" />
 		<link rel="shortcut icon" href="/Resources/favicon.png" />
-		<script>GATrack()</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script>SmoothScroll()</script>
+		<script>GATrack()</script>
+		<script type="text/Javascript" src="jquery.js"></script>
 	</head>
 	<body>
 		<a id="Top" style="position:absolute;top:0;"></a>
 		<div id="BannerWrap">
 			<a href="https://github.com/benb116/BenB116.github.io"><div id="UnderBanner">Still under construction.</div></a>
 		</div>
-		<div id="Sidebar">
-			<a href="#Top"><div class="SideCell BackBar" id="BackCell"></div></a>
-			<a href="#Code"><div class="SideCell CodeBar" id="CodeCell">&nbsp;</div></a>
-			<a href="#Music"><div class="SideCell MusicBar" id="MusicCell">&nbsp;</div></a>
-			<a href="#School"><div class="SideCell SchoolBar" id="SchoolCell">&nbsp;</div></a>
-			<a href="#Research"><div class="SideCell ResearchBar" id="ResearchCell">&nbsp;</div></a>
+		<div id="TopBar">
+			<div id="IconCircle"><div id="IconOverlay"></div></div>
+			<div id="MenuContainer">
+				<a href="#Top"><div class="MenuItem" id="AboutCell">Ben</div></a>
+				<a href="#Code"><div class="MenuItem" id="CodeCell">Code</div></a>
+				<a href="#Music"><div class="MenuItem" id="MusicCell">Music</div></a>
+				<a href="#School"><div class="MenuItem" id="SchoolCell">School</div></a>
+				<a href="#Research"><div class="MenuItem" id="ResearchCell">Research</div></a>
+			</div>
 		</div>	
 		<section id="HomeBody">
-			<div id="MenuBar">
-		    	<a href="#Code" class="MenuLink"><div class="MenuCell CodeBar">Code</div></a>
-				<a href="#Music" class="MenuLink"><div class="MenuCell MusicBar">Music</div></a>
-				<a href="#School" class="MenuLink"><div class="MenuCell SchoolBar">School</div></a>
-				<a href="#Research" class="MenuLink"><div class="MenuCell ResearchBar">Research</div></a>
-		    </div>
 	   		<div id="IntroHead">
 	   			<div id="topart"></div>
 			    <div id="bighello">
@@ -41,10 +39,8 @@
 		    		<span>I'm a senior in high school who's fascinated by technology and engineering. I'm also interested in science, sports, history, music, and economics. When I'm not on my computer, I like to hang out with friends, watch TV, or play the guitar. I hope to go into the field of robotics and change the world. </span>
 		  		</div>
   	    	</div>
-		  	<div id="RightMenu">
-	    		<a class="RightMenuLink" href="/Resources/Resume.pdf">Resume</a>
-	    		<a class="RightMenuLink" href="/contact">Contact</a>
-	    		<a class="RightMenuLink" href="/Resources/Credits.txt">Credits</a>
+		  	<div id="BottomMenu">
+	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf">Resume</a><a class="BottomMenuLink" href="/contact">Contact</a><a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
 	   		</div>
 
 			<div id="MobileBar">
@@ -134,11 +130,11 @@
 				<img src="/Resources/Music/BlankAlbum.png" id="TrackArt" class="">
 				<br>
 				<a id="TrackLink"><h3 id="TrackName"></h3></a>
-				<span>By </span><span id="TrackArtist"></span>
+				<span id="TrackArtist"></span>
 
 				<script>
 					GetRecentPlay();
-					window.setInterval(function(){GetLastFMData()}, 1000);
+					window.setInterval(function(){GetLastFMData()}, 5000);
 					GetRecentPlay();
 				</script>
 			</div>

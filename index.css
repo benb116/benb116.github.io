@@ -1,13 +1,10 @@
 body {
 	background-color: #E6E6E6;
-	font-family: "Helvetica";}
-.CodeBar, #CodePage {background-color: #2ecc71;}
-.MusicBar, #MusicPage {background-color: #3498db;}
-.SchoolBar, #SchoolPage {background-color: #f1c40f;}
-.ResearchBar, #ResearchPage {background-color: #e74c3c;}
+	font-family: "Helvetica";
+	margin: 0 auto;
+	width: 100%}
 
 #BannerWrap {
-	position: absolute; top: 0px; right: 0px;
 	width: 300px; height: 300px;
 	display: block;
 	overflow: hidden;}
@@ -21,10 +18,6 @@ body {
 	transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
 	-webkit-transition: box-shadow .15s ease-in-out; -moz-transition: box-shadow .15s ease-in-out; -o-transition: box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
 #UnderBanner:hover {box-shadow: 0 12px 12px gray;}
-
-.MenuLink {
-	color:black; text-decoration: none;
-	display:block;}
 
 #IntroHead {
 	width: 100%;
@@ -45,21 +38,25 @@ body {
 	text-align: justify; text-indent: 30px;
 	line-height: 2em; font-size: 1em;
 	margin: auto;}
-.RightMenuLink {
+.BottomMenuLink {
 	color: #414141;
 	text-decoration: none;}
-.RightMenuLink:hover {color: black;}
+.BottomMenuLink:hover {color: black;}
 
 .AnchorMargin {
 	position: relative;
 	display: block;
 	border: 0px;
 	margin-left: -2px;
-	width: 100%;}
+	width: 100%; height: 50px;}
+.CodeBar, #CodePage {background-color: #2ecc71;}
+.MusicBar, #MusicPage {background-color: #3498db;}
+.SchoolBar, #SchoolPage {background-color: #f1c40f;}
+.ResearchBar, #ResearchPage {background-color: #e74c3c;}
 #CodePage, #MusicPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
-	margin-left: -2px; margin-top: 15px;
+	margin-left: -2px;
 	width: 100%;
 	text-align: center; color: white;
 	display: inline-block;
@@ -89,7 +86,6 @@ body {
 	height: 115px; width: 440px;
 	margin-bottom: 50px;
 	background-color: white;
-	z-index:10;
 	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
 	-webkit-transition: border .25s ease-in-out; -moz-transition: border .25s ease-in-out; -o-transition: border .25s ease-in-out; transition: border .25s ease-in-out;}
@@ -106,7 +102,7 @@ body {
 	border:10px solid #E6E6E6; display: inline-block;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
 	margin-bottom: 30px;
-	padding-bottom: 20px;}
+	padding-bottom: 40px;}
 #TrackLink {text-decoration: none; color: white;}
 #TrackLink:hover {text-decoration: underline;}
 #TrackArtist {text-decoration: none;}
@@ -153,11 +149,11 @@ body {
 #Eraser {
 	width: 30px; height: 7px; background-color: white;
 	position: absolute; bottom: 0; left: 65px;
-	display: block; z-index: 12;
+	display: block;
 	border: 1px solid black;
 	border-top: 3px solid gray;}
 #Chalk {
 	width: 15px; height: 3px; background-color: white;
 	position: absolute; bottom: 0; right: 150px;
-	display: block; z-index: 12;
+	display: block;
 	border: 1px solid black;}

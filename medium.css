@@ -1,9 +1,7 @@
-body {
-	margin: 0 auto;
-	width: 100%;}
-
-#Sidebar {display: none;}
+#TopBar {display: none;}
 #MenuBar {display: none;}
+#BannerWrap {position: absolute; top: 0px; right: 0px;}
+
 #HomeBody {margin-bottom: 80px;}
 
 #BioPar {
@@ -30,12 +28,14 @@ body {
 	font-size: 1em;
 	vertical-align: middle; text-align: center;
 	display: table-cell;}
-.MenuLink {-webkit-transition: color .15s ease-in-out;
+
+.MenuLink {
+	color:black; text-decoration: none;
+	display:block;
+	-webkit-transition: color .15s ease-in-out;
 	-moz-transition: color .15s ease-in-out;
 	-o-transition: color .15s ease-in-out;
 	transition: color .15s ease-in-out;}
 .MenuLink:hover {color: white;}
 .CodeTable {margin-left: 3%; margin-right: 3%;}
-#NowPlaying {
-	margin: 0 auto;
-	margin-bottom: 30px;}
+#NowPlaying {margin: 0 auto; margin-bottom: 30px;}

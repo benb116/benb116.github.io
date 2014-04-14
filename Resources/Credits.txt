@@ -3,7 +3,6 @@ Credits -
 Homepage Background: Escheresque from subtlepatterns.com
 Basketball Hoop by Gabriele Fumero from The Noun Project
 Home by Edward Boatman from The Noun Project
-Book by John Caserta from The Noun Project
 Laptop by Steve Stomp from The Noun Project
 Globe by Nicholas Menghini from The Noun Project
 Code by Luboš Volkov from The Noun Project
@@ -11,6 +10,6 @@ Music by Cris Dobbins from The Noun Project
 Fishing Hook by Massimiliano Mauro from The Noun Project
 
 Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/
-(adapted) Now Playing script - http://www.w3schools.com/xml/xml_dom.asp
+Now Playing script (adapted) - http://www.w3schools.com/xml/xml_dom.asp
 Hide Arrow script - http://stackoverflow.com/questions/11434735/change-css-after-a-certain-amount-of-scroll
 Pulse CSS Effect - https://github.com/IanLunn/Hover
