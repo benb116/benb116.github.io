@@ -2,17 +2,17 @@
 <html>
 	<head>
 		<title>Ben Bernstein</title>
+		<meta name="Description" content="Ben Bernstein - A Website" />
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="/Icons%20and%20Attr/User/icon_419.png"/>
 		<link rel="stylesheet" href="/index.css">
 		<link rel="stylesheet" media='screen and (min-width: 1051px)'href="/big.css">
 		<link rel='stylesheet' media='screen and (max-width: 1050px)' href='/medium.css' />
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="scripts.js"></script>
-		<meta charset="utf-8">
-		<meta name="Description" content="Ben Bernstein - A Website" />
-		<link rel="shortcut icon" href="/Resources/favicon.png" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="jquery.js"></script>
 		<script>SmoothScroll()</script>
 		<script>GATrack()</script>
-		<script type="text/Javascript" src="jquery.js"></script>
 	</head>
 	<body>
 		<a id="Top" style="position:absolute;top:0;"></a>
@@ -40,7 +40,7 @@
 		  		</div>
   	    	</div>
 		  	<div id="BottomMenu">
-	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf">Resume</a><a class="BottomMenuLink" href="/contact">Contact</a><a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
+	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf">Resume</a><a class="BottomMenuLink" href="mailto:benb116@gmail.com">Contact</a><a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
 	   		</div>
 
 			<div id="MobileBar">
@@ -54,7 +54,7 @@
 		<section id="CodePage">
 			<div class="PageHeader">
 				<h1><a href="http://github.com/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Code/Github_Icon.png"></a>Code</h1>
-				<p>Most of my projects are written in Applescript, but I'm starting to branch out into HTML + CSS, Python, and more.</p>
+				<p>Most of my projects are written in Applescript, but I'm starting to branch out into HTML + CSS, Javascript, Python, and more.</p>
 			</div>
 			<a href="https://github.com/benb116/MusiNotify"><table class="CodeTable" id="MusiNotifyTable">
 				<tr>
@@ -120,24 +120,55 @@
 		<div class="AnchorMargin"><a id="Music"></a></div>
 		<section id="MusicPage">
 			<div class="PageHeader">
-				<h1><a href="http://last.fm/user/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Music/lastfm_icon.png"></a>Music<a href="http://open.spotify.com/user/127742539/starred" target="_blank"><img class="HeaderIcon" src="/Resources/Music/spotify_icon.png"></a></h1>
+				<h1><a href="http://last.fm/user/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Music/lastfm_icon.png"></a>Music<a href="http://open.spotify.com/user/127742539/" target="_blank"><img class="HeaderIcon" src="/Resources/Music/spotify_icon.png"></a></h1>
 				<p>What I'm listening to.</p>
 			</div>
 			<div id="NowPlaying">
 				<!--http://www.w3schools.com/xml/xml_dom.asp-->
-				<a href="http://www.last.fm/user/Benb116/now" style="text-decoration:none;color:white;"><h2 id="NowRecent">Recently Played</h2></a>
+				<a href="http://www.last.fm/user/Benb116/now" target="_blank" style="text-decoration:none;color:black;"><h2 id="NowRecent">Recently Played</h2></a>
 
-				<img src="/Resources/Music/BlankAlbum.png" id="TrackArt" class="">
+				<div id="TrackArt" class=""></div>
 				<br>
 				<a id="TrackLink"><h3 id="TrackName"></h3></a>
 				<span id="TrackArtist"></span>
 
 				<script>
 					GetRecentPlay();
-					window.setInterval(function(){GetLastFMData()}, 5000);
+					window.setInterval(function(){GetNowPlaying()}, 5000);
 					GetRecentPlay();
 				</script>
 			</div>
+			<div id="TopArtists">
+				<h2>Top Artists</h2>
+				<a href="" id="ArtLink0"><div class="TopArtist" id="Art0">
+					<span class="TopArtistName" id="ArtName0"></span>
+				</div></a>
+				<a href="" id="ArtLink1"><div class="TopArtist" id="Art1">
+					<span class="TopArtistName" id="ArtName1"></span>
+				</div></a>
+				<a href="" id="ArtLink2"><div class="TopArtist" id="Art2">
+					<span class="TopArtistName" id="ArtName2"></span>
+				</div></a>
+				<a href="" id="ArtLink3"><div class="TopArtist" id="Art3">
+					<span class="TopArtistName" id="ArtName3"></span>
+				</div></a>
+				<a href="" id="ArtLink4"><div class="TopArtist" id="Art4">
+					<span class="TopArtistName" id="ArtName4"></span>
+				</div></a>
+				<a href="" id="ArtLink5"><div class="TopArtist" id="Art5">
+					<span class="TopArtistName" id="ArtName5"></span>
+				</div></a>
+				<a href="" id="ArtLink6"><div class="TopArtist" id="Art6">
+					<span class="TopArtistName" id="ArtName6"></span>
+				</div></a>
+				<a href="" id="ArtLink7"><div class="TopArtist" id="Art7">
+					<span class="TopArtistName" id="ArtName7"></span>
+				</div></a>
+				<script type="text/javascript">
+					GetTopArtists();
+				</script>
+			</div>
+			
 		</section>
 		<div class="AnchorMargin"><a id="School"></a></div>
 		<section id="SchoolPage">

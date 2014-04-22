@@ -1,9 +1,9 @@
-body {margin-top: 60px;}
+body {margin-top: 40px;}
 
 #TopBar {
 	height: 50px; width: 100%;
 	background-color: #424242;
-	position: fixed; top:0; left: 0;
+	position: fixed; top:-125px; left: 0;
 	z-index: 2;}
 #IconCircle {
 	border-radius: 50%;
@@ -11,7 +11,7 @@ body {margin-top: 60px;}
 	background-color: #424242;
 	position: absolute; top: -125px; left: -125px;}
 #IconOverlay {
-	position: fixed; top: 15px; left: 10px;
+	position: fixed; top: -125px; left: 10px;
 	width: 70px; height: 70px;
 	background-size: 100%; background-repeat: no-repeat;}
 #MenuContainer {
@@ -24,30 +24,48 @@ body {margin-top: 60px;}
 	line-height: 50px; text-align: center;
 	display: inline-block;
 	margin: 0;
-	-webkit-transition: background-color .15s ease-in-out; -moz-transition: background-color .15s ease-in-out; -o-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out;
-}
-#CodeCell:hover {background-color: #2ecc71;}
-#MusicCell:hover {background-color: #3498db;}
-#SchoolCell:hover {background-color: #f1c40f;}
-#ResearchCell:hover {background-color: #e74c3c;}
+	-webkit-transition: background-color .35s ease-in-out; -moz-transition: background-color .35s ease-in-out; -o-transition: background-color .35s ease-in-out; transition: background-color .35s ease-in-out;}
+#CodeCell:hover {background-color: #27ae60;}
+#MusicCell:hover {background-color: #2980b9;}
+#SchoolCell:hover {background-color: #f39c12;}
+#ResearchCell:hover {background-color: #c0392b;}
 
 #BannerWrap {position: absolute; top: 50px; right: 0px;}
 
 #HomeBody {
-	width: 100%; height: 80vh; min-height: 400px; max-height: 700px;
+	width: 100%; height: 83vh; min-height: 400px; max-height: 700px;
 	display: inline-block;}
 #MobileBar {display: none;}
 
-#IntroHead {display: inline-block;}
-#BioPar {width: 50%; min-width: 430px;}
+#IntroHead {display: inline-block; margin-top: 10%;}
+#BioPar {width: 50%; min-width: 430px; max-width: 630px;}
 #BottomMenu {
-	margin-top: 30px;
 	font-size: 2em; line-height: 2em;
-	width: 100%; text-align: center;}
+	width: 100%; text-align: center;
+	margin-top: 30%;}
 .BottomMenuLink {
 	display: inline-block; 
 	width: 25%;
-	line-height: 2em; vertical-align: middle;
-	margin-bottom: 20px;}
+	line-height: 2em; vertical-align: middle;}
 
 .CodeTable {margin-left: 3%; margin-right: 3%;}
+
+#NowPlaying {width: 30%;}
+#TrackArt {
+	width: 19vw; height: 19vw;
+	background-size: 19vw;}
+#TopArtists {width: 50%; padding-bottom: 50px;}
+.TopArtist {
+	width: 11vw; height: 11vw;
+	opacity: .5;
+	-webkit-transition: opacity .15s ease-in-out; -moz-transition: opacity .15s ease-in-out; -o-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
+.TopArtist:hover {opacity: 1;}
+.TopArtistName {
+	position: absolute; bottom: 0; left: 50%; margin-left: -50%; width: 100%;
+	background-color: black;
+	opacity: .8;}
+
+
+
+
+

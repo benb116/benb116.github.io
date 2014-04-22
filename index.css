@@ -2,12 +2,14 @@ body {
 	background-color: #E6E6E6;
 	font-family: "Helvetica";
 	margin: 0 auto;
-	width: 100%}
+	width: 100%;
+	font-size: 1em;}
 
 #BannerWrap {
 	width: 300px; height: 300px;
 	display: block;
-	overflow: hidden;}
+	overflow: hidden;
+	opacity: 0;}
 #UnderBanner {
 	position: absolute;
 	top: 70px; right: -50px; margin-right: -20px;
@@ -21,9 +23,9 @@ body {
 
 #IntroHead {
 	width: 100%;
-	margin-top: 100px;
 	text-align: center;
-	margin-bottom: 20px;}
+	margin-bottom: 20px;
+	opacity: 0;}
 #topart{
 	display: inline-block;
 	width: 150px; height: 150px;
@@ -40,23 +42,25 @@ body {
 	margin: auto;}
 .BottomMenuLink {
 	color: #414141;
-	text-decoration: none;}
+	text-decoration: none;
+	width: 100%; text-align: center;}
 .BottomMenuLink:hover {color: black;}
+
+#HomeBody {text-align: center;}
 
 .AnchorMargin {
 	position: relative;
 	display: block;
 	border: 0px;
-	margin-left: -2px;
+	margin-left: -2px; margin-top: -20px;
 	width: 100%; height: 50px;}
-.CodeBar, #CodePage {background-color: #2ecc71;}
-.MusicBar, #MusicPage {background-color: #3498db;}
-.SchoolBar, #SchoolPage {background-color: #f1c40f;}
-.ResearchBar, #ResearchPage {background-color: #e74c3c;}
+.CodeBar, #CodePage {background-color: #27ae60;}
+.MusicBar, #MusicPage {background-color: #2980b9;}
+.SchoolBar, #SchoolPage {background-color: #f39c12;}
+.ResearchBar, #ResearchPage {background-color: #c0392b;}
 #CodePage, #MusicPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
-	margin-left: -2px;
 	width: 100%;
 	text-align: center; color: white;
 	display: inline-block;
@@ -69,27 +73,24 @@ body {
 	margin-bottom: 40px;}
 .PageHeader h1 {font-size: 3em; font-weight: normal;
 	line-height: 1em;}
-.PageHeader p {font-weight: bold;}
 .HeaderIcon {
 	margin-right: 10px; margin-left: 10px;
 	display: inline-block;
 	opacity: .65;
-	-webkit-transition: opacity .15s ease-in-out;
-	-moz-transition: opacity .15s ease-in-out;
-	-o-transition: opacity .15s ease-in-out;
-	transition: opacity .15s ease-in-out;}
+	-webkit-transition: opacity .15s ease-in-out; -moz-transition: opacity .15s ease-in-out; -o-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
 .HeaderIcon:hover {opacity: 1;}
 
 .CodeTable {
 	display: inline-block;
 	position: relative;
-	height: 115px; width: 440px;
+	width: 440px;
 	margin-bottom: 50px;
 	background-color: white;
 	border:10px solid #E6E6E6;
-	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	-webkit-transition: border .25s ease-in-out; -moz-transition: border .25s ease-in-out; -o-transition: border .25s ease-in-out; transition: border .25s ease-in-out;}
-.CodeTable:hover {border:10px solid #3399FF;}
+	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
+	-webkit-transition: -webkit-box-shadow .1s ease-in-out; -moz-transition: -moz-box-shadow .1s ease-in-out; -o-transition: box-shadow .1s ease-in-out; transition: box-shadow .1s ease-in-out;}
+.CodeTable:hover {
+	-webkit-box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58); -moz-box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58); box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58);}
 .CodeTableIcon {width: 115px; height: 115px; }
 .CodeTableItem {width: 325px; height: 115px;}
 .CodeItemTitle {font-size: 30px; color: black;}
@@ -97,15 +98,30 @@ body {
 .CodeItemLang {font-style: 1em; color: gray;}
 .CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left;}
 
-#NowPlaying {
-	width: 400px; height: 450px; color: white;
-	border:10px solid #E6E6E6; display: inline-block;
-	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
-	margin-bottom: 30px;
-	padding-bottom: 40px;}
-#TrackLink {text-decoration: none; color: white;}
+#NowPlaying, #TopArtists {
+	color: white;
+	display: inline-block;
+	vertical-align: top; text-align: center;
+	padding: 20px; padding-top: 0;
+	margin-left: 15px; margin-right: 15px; margin-bottom: 40px;
+	background-color: white; color: black;
+	border:10px solid #E6E6E6;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.58); -moz-box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.58);}
+#TopArtists {width: 50%; padding-bottom: 50px;}
+#TrackArt {
+	background-image: url(/Resources/Music/BlankAlbum.png);
+	display: inline-block;
+	background-repeat: no-repeat; background-size: 19vw;}
+#TrackLink {text-decoration: none; color: black;}
 #TrackLink:hover {text-decoration: underline;}
 #TrackArtist {text-decoration: none;}
+
+.TopArtist {
+	display: inline-block; position: relative;
+	padding: 3px; margin-bottom: 4px; vertical-align: top;
+	color: white;
+	background-image: url('/Resources/Music/BlankAlbum.png');
+	background-size: cover; background-repeat: no-repeat; background-position: center;}
 
 /* Pulse Grow - Hover.css (http://ianlunn.co.uk/)*/
 @-webkit-keyframes pulse-grow {

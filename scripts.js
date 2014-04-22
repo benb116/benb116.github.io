@@ -40,13 +40,13 @@ function GetRecentPlay(){
 	xmlDoc=xmlhttp.responseXML;
 
 	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArtist").innerHTML="By " + xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArt").className="Other";
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArt").src=xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue;
+	document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
 }
 
-function GetLastFMData(){
+function GetNowPlaying(){
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -61,9 +61,15 @@ function GetLastFMData(){
 
 	/*document.getElementById("NowRecent").innerHTML=*/
 	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArtist").innerHTML="By " + xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArt").src=xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue;
+	try {
+		document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
+	}
+	catch(err)
+	{
+	document.getElementById("TrackArt").style.backgroundImage =  "url(/Resources/Music/BlankAlbum.png)";
+	}
 	try {
 		var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
 		if(playval == "true") {
@@ -76,6 +82,42 @@ function GetLastFMData(){
 	} 
 	catch(err) 
 	{
-		console.log("No Now-Playing track found.")
+		console.log("No Now-Playing track found.");
 	}
 }
+
+function GetTopArtists() {
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=9",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+
+	for (var i = 0; i < 8; i++) {
+		var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
+		document.getElementById("Art"+i.toString()).style.backgroundImage = "url("+imageLink+")";
+
+		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+		document.getElementById("ArtName"+i.toString()).innerHTML=ArtistName;
+
+		var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
+		document.getElementById("ArtLink"+i.toString()).href=ArtistLink;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -8,6 +8,7 @@ Globe by Nicholas Menghini from The Noun Project
 Code by Luboš Volkov from The Noun Project
 Music by Cris Dobbins from The Noun Project
 Fishing Hook by Massimiliano Mauro from The Noun Project
+User by Edward Boatman from The Noun Project
 
 Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/
 Now Playing script (adapted) - http://www.w3schools.com/xml/xml_dom.asp
