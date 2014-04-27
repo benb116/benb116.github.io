@@ -1,0 +1,52 @@
+body {font-size: 200%;}
+
+#TopBar {display: none;}
+#MenuBar {display: none;}
+.hover {display: none;}
+#BannerWrap {display: none;}
+
+#HomeImage {
+	height: 60em;
+	background-size: 260%;}
+
+#IntroHead {margin-top: 20%;}
+#topart {
+	width: 7em; height: 7em;
+	background-size: 7em;
+	margin-right: 20px;}
+#bighello {
+	font-size: 3.5em;}
+#BioPar {
+	width: 70%; min-width: 450px;
+	margin-bottom: 50px;}
+#BottomMenu {
+	margin-top: 90vh; margin-bottom: 50px;}
+.BottomMenuLink {
+	font-size: 2em; line-height: 2em;
+	display: inline-block; width: 30%;}
+
+#MobileBar {
+	font-size: 2.5em;
+	line-height: 2em;
+	height: 10em; width: 10em;
+	margin: 0 auto;
+	display: inline-block;}
+.MenuCell {
+	height: 1em; width: 10em;
+	font-size: 1em;
+	vertical-align: middle; text-align: center;
+	display: table-cell;}
+
+.MenuLink {
+	color: white; text-decoration: none;
+	display: block;}
+
+#NowPlaying {width: 40%;}
+#TrackArt {
+	width: 35vw; height: 35vw;
+	background-size: 35vw;}
+#TopArtists {width: 80%; padding-bottom: 50px;}
+.TopArtist {
+	width: 18vw; height: 18vw;
+	opacity: 1;}
+.TopArtistName {display: none;}

@@ -1,10 +1,12 @@
-body {margin-top: 40px;}
+body {margin-top: 40px;
+	font-size: 100%;}
 
 #TopBar {
 	height: 50px; width: 100%;
 	background-color: #424242;
 	position: fixed; top:-125px; left: 0;
-	z-index: 2;}
+	z-index: 2;
+	font-family: 'Open Sans', 'sans-serif';}
 #IconCircle {
 	border-radius: 50%;
 	width: 250px; height: 250px; 
@@ -35,18 +37,28 @@ body {margin-top: 40px;}
 #HomeBody {
 	width: 100%; height: 83vh; min-height: 400px; max-height: 700px;
 	display: inline-block;}
+#HomeImage {background-size: 100%; height: 100vh;}
+#CodePage {margin-top: 25vh;}
+
 #MobileBar {display: none;}
 
-#IntroHead {display: inline-block; margin-top: 10%;}
-#BioPar {width: 50%; min-width: 430px; max-width: 630px;}
+#IntroHead {
+	display: inline-block; margin-top: 10%;
+	font-size: 4.5em;}
+#topart {
+	width: 150px; height: 150px;
+	background-size: 150px;}
+#BioPar {width: 50%; min-width: 430px; max-width: 600px;
+	font-size: .23em;}
 #BottomMenu {
 	font-size: 2em; line-height: 2em;
 	width: 100%; text-align: center;
-	margin-top: 30%;}
+	margin-top: 50vh;
+	font-family: 'Open Sans', 'sans-serif';}
 .BottomMenuLink {
 	display: inline-block; 
 	width: 25%;
-	line-height: 2em; vertical-align: middle;}
+	line-height: 4em; vertical-align: middle;}
 
 .CodeTable {margin-left: 3%; margin-right: 3%;}
 

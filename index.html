@@ -6,8 +6,11 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="/Icons%20and%20Attr/User/icon_419.png"/>
 		<link rel="stylesheet" href="/index.css">
-		<link rel="stylesheet" media='screen and (min-width: 1051px)'href="/big.css">
-		<link rel='stylesheet' media='screen and (max-width: 1050px)' href='/medium.css' />
+		<link rel="stylesheet" media='screen and (min-width: 1051px) and (-webkit-min-device-pixel-ratio: 1)'href="/big.css">
+		<link rel='stylesheet' media='screen and (max-width: 1050px) and (-webkit-min-device-pixel-ratio: 1)' href='/medium.css' />
+		<link rel="stylesheet" media='screen and (min-width: 1051px) and (-webkit-min-device-pixel-ratio: 2)'href="/bigretina.css">
+		<link rel='stylesheet' media='screen and (max-width: 1050px) and (-webkit-min-device-pixel-ratio: 2)' href='/mediumretina.css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans|Istok+Web|Sniglet|Open+Sans' rel='stylesheet' type='text/css'>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="scripts.js"></script>
 		<script src="jquery.js"></script>
@@ -24,13 +27,14 @@
 			<div id="MenuContainer">
 				<a href="#Top"><div class="MenuItem" id="AboutCell">Ben</div></a>
 				<a href="#Code"><div class="MenuItem" id="CodeCell">Code</div></a>
-				<a href="#Music"><div class="MenuItem" id="MusicCell">Music</div></a>
 				<a href="#School"><div class="MenuItem" id="SchoolCell">School</div></a>
+				<a href="#Music"><div class="MenuItem" id="MusicCell">Music</div></a>
 				<a href="#Research"><div class="MenuItem" id="ResearchCell">Research</div></a>
 			</div>
 		</div>	
 		<section id="HomeBody">
-	   		<div id="IntroHead">
+	   		<div id="HomeBlack"><div id="HomeImage"></div></div>
+		   	<div id="IntroHead">
 	   			<div id="topart"></div>
 			    <div id="bighello">
 			   		Hi. <br> I'm Ben.
@@ -40,7 +44,9 @@
 		  		</div>
   	    	</div>
 		  	<div id="BottomMenu">
-	    		<a class="BottomMenuLink" href="/Resources/Resume.pdf">Resume</a><a class="BottomMenuLink" href="mailto:benb116@gmail.com">Contact</a><a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
+	    		<a class="BottomMenuLink" target="_blank" href="/Resources/Resume.pdf"><span>Resume</span></a>
+	    		<a class="BottomMenuLink" href="mailto:benb116@gmail.com">Contact</a>
+	    		<a class="BottomMenuLink" href="/Resources/Credits.txt">Credits</a>
 	   		</div>
 
 			<div id="MobileBar">
@@ -48,79 +54,78 @@
 				<a href="#Music" class="MenuLink"><div class="MenuCell MusicBar">Music</div></a>
 				<a href="#School" class="MenuLink"><div class="MenuCell SchoolBar">School</div></a>
 				<a href="#Research" class="MenuLink"><div class="MenuCell ResearchBar">Research</div></a>
-		    </div>
+		    </div>	
 		</section>
 		<div class="AnchorMargin"><a id="Code"></a></div>
 		<section id="CodePage">
 			<div class="PageHeader">
-				<h1><a href="http://github.com/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Code/Github_Icon.png"></a>Code</h1>
+				<h1>Code</h1>
 				<p>Most of my projects are written in Applescript, but I'm starting to branch out into HTML + CSS, Javascript, Python, and more.</p>
 			</div>
-			<a href="https://github.com/benb116/MusiNotify"><table class="CodeTable" id="MusiNotifyTable">
-				<tr>
-					<td class="CodeTableIcon"><img src="/Resources/Code/MusiNotify.png" width="100" height="100"></td>
-					<td class="CodeTableItem">
-						<table>
-							<tr><td class="CodeItemTitle">MusiNotify</td></tr>
-							<tr><td class="CodeItemDescription">Notifications for iTunes and Spotify</td></tr>
-							<tr><td class="CodeItemLang">Applescript, Shell</td></tr>
-						</table>
-					</td>
-				</tr>
-			</table></a>
-			<a href="https://github.com/benb116/Gone-Phishing"><table class="CodeTable">
-				<tr>
-					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Fishing/icon_8702.svg" width="100" height="100"></td>
-					<td class="CodeTableItem">
-						<table>
-							<tr><td class="CodeItemTitle">Gone Phishing</td></tr>
-							<tr><td class="CodeItemDescription">A phishing attack for Mac</td></tr>
-							<tr><td class="CodeItemLang">Applescript, Shell</td></tr>
-						</table>
-					</td>
-				</tr>
-			</table></a>
-			<a href="https://github.com/benb116/BenB116.github.io"><table class="CodeTable" id="WebsiteTable">
-				<tr>
-					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Laptop/icon_9074.svg" width="100" height="100"></td>
-					<td class="CodeTableItem">
-						<table>
-							<tr><td class="CodeItemTitle">BenBernste.in</td></tr>
-							<tr><td class="CodeItemDescription">This website: hosted on Github</td></tr>
-							<tr><td class="CodeItemLang">HTML, CSS, Javascript</td></tr>
-						</table>
-					</td>
-				</tr>
-			</table></a>
-			<a href="https://github.com/benb116/March-Madness-Analyzer"><table class="CodeTable" id="MarchMadnessTable">
-				<tr>
-					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Basketball/icon_2711.svg" width="100" height="100"></td>
-					<td class="CodeTableItem">
-						<table>
-							<tr><td class="CodeItemTitle">Bracket Analyzer</td></tr>
-							<tr><td class="CodeItemDescription">Analyzing the past to predict the future</td></tr>
-							<tr><td class="CodeItemLang">Applescript</td></tr>
-						</table>
-					</td>
-				</tr>
-			</table></a>
-			<a href="https://github.com/benb116/Other"><table class="CodeTable" id="OtherTable">
-				<tr>
-					<td class="CodeTableIcon"><img src="/Icons%20and%20Attr/Dots/icon_27116.svg" width="100" height="100"></td>
-					<td class="CodeTableItem">
-						<table>
-							<tr><td class="CodeItemTitle">Other</td></tr>
-							<tr><td class="CodeItemDescription">The uncategorized and the simple</td></tr>
-							<tr><td class="CodeItemLang">Applescript, Python</td></tr>
-						</table>
-					</td>
-				</tr>
-			</table></a>
+			<a href="https://github.com/benb116/MusiNotify"><div class="CodeTable">
+					<div class="CodeTableIcon" id="MusiNotifyTable"></div>
+					<div class="CodeTableItem">
+							<div class="CodeItemTitle">MusiNotify</div>
+							<div class="CodeItemDescription">A phishing attack for Mac</div>
+							<div class="CodeItemLang">Applescript, Shell</div>
+					</div>
+			</div></a>
+			<a href="https://github.com/benb116/Gone-Phishing"><div class="CodeTable">
+					<div class="CodeTableIcon" id="GonePhishingTable"></div>
+					<div class="CodeTableItem">
+							<div class="CodeItemTitle">Gone Phishing</div>
+							<div class="CodeItemDescription">Notifications for iTunes and Spotify</div>
+							<div class="CodeItemLang">Applescript, Shell</div>
+					</div>
+			</div></a>
+			<a href="https://github.com/benb116/BenB116.github.io"><div class="CodeTable">
+					<div class="CodeTableIcon" id="WebsiteTable"></div>
+					<div class="CodeTableItem">
+							<div class="CodeItemTitle">BenBernste.in</div>
+							<div class="CodeItemDescription">This website: hosted on Github</div>
+							<div class="CodeItemLang">HTML, CSS, Javascript</div>
+					</div>
+			</div></a>
+			<a href="https://github.com/benb116/March-Madness-Analyzer"><div class="CodeTable">
+					<div class="CodeTableIcon" id="BasketballTable"></div>
+					<div class="CodeTableItem">
+							<div class="CodeItemTitle">Bracket Analyzer</div>
+							<div class="CodeItemDescription">Analyzing the past to predict the future</div>
+							<div class="CodeItemLang">Applescript</div>
+					</div>
+			</div></a>
+			<a href="https://github.com/benb116/Other"><div class="CodeTable">
+					<div class="CodeTableIcon" id="OtherTable"></div>
+					<div class="CodeTableItem">
+							<div class="CodeItemTitle">Other</div>
+							<div class="CodeItemDescription">The uncategorized and the simple</div>
+							<div class="CodeItemLang">Applescript, Python</div>
+					</div>
+			</div></a>
+		</section>
+		<div class="AnchorMargin"><a id="School"></a></div>
+		<section id="SchoolPage">
+			<div class="PageHeader">
+				<h1>School</h1>
+				<p>Learning in the past, present, and future.</p>
+			</div>
+			<div id="EdCareer">
+				<dl>
+					<dt><a href="http://seas.upenn.edu" target="_blank" class="EduLink">University of Pennsylvania</a> - Starting Fall of 2014
+						<dd><i>Major:</i> Mechanical Engineering, Concentration in Robotics</dd>
+						<dd><i>Other areas of study:</i> Electrical Engineering, Economics, Product Design</dd>
+					</dt>
+					<dt><a href="http://jbha.org" target="_blank" class="EduLink">Jack M. Barrack Hebrew Academy</a> - Class of 2014</dt>
+						<dd><i>Areas of study:</i> English, History, Math, Science, Spanish, Hebrew, Jewish Studies, and Bible.</dd>
+						<dd></dd>
+				</dl>
+				<div id="Eraser">&nbsp;</div><div id="Chalk">&nbsp;</div>
+			</div>
 		</section>
 		<div class="AnchorMargin"><a id="Music"></a></div>
 		<section id="MusicPage">
 			<div class="PageHeader">
-				<h1><a href="http://last.fm/user/benb116" target="_blank"><img class="HeaderIcon" src="/Resources/Music/lastfm_icon.png"></a>Music<a href="http://open.spotify.com/user/127742539/" target="_blank"><img class="HeaderIcon" src="/Resources/Music/spotify_icon.png"></a></h1>
+				<h1>Music</h1>
 				<p>What I'm listening to.</p>
 			</div>
 			<div id="NowPlaying">
@@ -167,26 +172,6 @@
 				<script type="text/javascript">
 					GetTopArtists();
 				</script>
-			</div>
-			
-		</section>
-		<div class="AnchorMargin"><a id="School"></a></div>
-		<section id="SchoolPage">
-			<div class="PageHeader">
-				<h1><a href="http://jbha.org" target="_blank"><img class="HeaderIcon" src="/Resources/School/JBHA.png" width="40" height="40"></a>School<a href="http://upenn.edu" target="_blank"><img class="HeaderIcon" src="/Resources/School/Penn.png" width="40" height="40"></a></h1>
-				<p>Learning in the past, present, and future.</p>
-			</div>
-			<div id="EdCareer">
-				<dl>
-					<dt>University of Pennsylvania - SEAS Class of 2018
-						<dd><i>Major:</i> Mechanical Engineering, Concentration in Robotics</dd>
-						<dd><i>Other areas of study:</i> Electrical Engineering, Economics, Product Design</dd>
-					</dt>
-					<dt>Jack M. Barrack Hebrew Academy - Class of 2014</dt>
-						<dd><i>Areas of study:</i> English, History, Math, Science, Spanish, Hebrew, Jewish Studies, and Bible.</dd>
-						<dd></dd>
-				</dl>
-				<div id="Eraser">&nbsp;</div><div id="Chalk">&nbsp;</div>
 			</div>
 		</section>
 		<div class="AnchorMargin"><a id="Research"></a></div>

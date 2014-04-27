@@ -1,9 +1,8 @@
 body {
 	background-color: #E6E6E6;
-	font-family: "Helvetica";
+	font-family: "Helvetica"; font-size: 1em;
 	margin: 0 auto;
-	width: 100%;
-	font-size: 1em;}
+	width: 100%;}
 
 #BannerWrap {
 	width: 300px; height: 300px;
@@ -12,41 +11,53 @@ body {
 	opacity: 0;}
 #UnderBanner {
 	position: absolute;
-	top: 70px; right: -50px; margin-right: -20px;
-	text-align: center; line-height: 30px;
-	display: block; width: 300px; height: 30px;
-	background-color: red; color: white; font-weight: bold;
-	box-shadow: 0 10px 10px gray;  
+	top: 70px; right: -50px;
+	margin-right: -20px;
+	text-align: center; 
+	line-height: 30px;
+	display: block;
+	width: 300px; height: 30px;
+	background-color: red; 
+	color: white; font-weight: bold;
 	transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
 	-webkit-transition: box-shadow .15s ease-in-out; -moz-transition: box-shadow .15s ease-in-out; -o-transition: box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
-#UnderBanner:hover {box-shadow: 0 12px 12px gray;}
 
 #IntroHead {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 20px;
+	color: white;
 	opacity: 0;}
 #topart{
 	display: inline-block;
-	width: 150px; height: 150px;
-	margin-right: 20px;
-	background-image: url(/Resources/pic.jpg);
-	background-size: 150px;}
+	background-image: url(/Resources/pic.jpg);}
 #bighello {
-	font-size: 4.5em; color: black;
+	font-family: 'Istok Web', 'sans-serif';
 	text-align: left;
-	display: inline-block;}
+	display: inline-block;
+	line-height: 1.15em;}
 #BioPar {
 	text-align: justify; text-indent: 30px;
-	line-height: 2em; font-size: 1em;
-	margin: auto;}
+	line-height: 2em;
+	margin: auto;
+	font-family: 'PT Sans', 'sans-serif';}
 .BottomMenuLink {
-	color: #414141;
+	color: #E6E6E6;
 	text-decoration: none;
-	width: 100%; text-align: center;}
-.BottomMenuLink:hover {color: black;}
+	text-align: center;}
+.BottomMenuLink:hover {color: white;}
 
 #HomeBody {text-align: center;}
+#HomeBlack {width: 100%;
+	background-color: black;
+	position: absolute; top: 0;
+	z-index: -1;}
+#HomeImage {
+	width: 100%;
+	background-image: url(/Resources/Yosemite.jpg);
+	background-repeat: no-repeat; background-position: center top;
+	opacity: .5;}
+#CodePage {margin-top: 50vh;}
 
 .AnchorMargin {
 	position: relative;
@@ -62,41 +73,53 @@ body {
 	position: relative;
 	clear: both;
 	width: 100%;
-	text-align: center; color: white;
+	text-align: center;
+	color: white;
 	display: inline-block;
 	padding-bottom: 30px;}
 .PageHeader {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px;}
-.PageHeader h1 {font-size: 3em; font-weight: normal;
+	text-align: center;}
+.PageHeader p {font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em;}
+.PageHeader h1 {
+	font-size: 3em;	font-family: 'Istok Web', 'sans-serif'; font-weight: normal;
 	line-height: 1em;}
-.HeaderIcon {
-	margin-right: 10px; margin-left: 10px;
-	display: inline-block;
-	opacity: .65;
-	-webkit-transition: opacity .15s ease-in-out; -moz-transition: opacity .15s ease-in-out; -o-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
-.HeaderIcon:hover {opacity: 1;}
 
 .CodeTable {
 	display: inline-block;
 	position: relative;
-	width: 440px;
-	margin-bottom: 50px;
+	width: 26em; height: 7em;
+	margin-bottom: 50px; padding: 10px;
 	background-color: white;
-	border:10px solid #E6E6E6;
+	border:.5em solid #E6E6E6;
 	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
 	-webkit-transition: -webkit-box-shadow .1s ease-in-out; -moz-transition: -moz-box-shadow .1s ease-in-out; -o-transition: box-shadow .1s ease-in-out; transition: box-shadow .1s ease-in-out;}
 .CodeTable:hover {
 	-webkit-box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58); -moz-box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58); box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58);}
-.CodeTableIcon {width: 115px; height: 115px; }
-.CodeTableItem {width: 325px; height: 115px;}
-.CodeItemTitle {font-size: 30px; color: black;}
+.CodeTableIcon {
+	display: table-cell;
+	width: 8em; height: 7em;
+	background-size: 7em; background-repeat: no-repeat; background-position: center;}
+.CodeTableItem {
+	display: table-cell; 
+	padding-left: 1em;
+	width: 18em; height: 7em; 
+	vertical-align: middle;
+	line-height: 1.25em;
+}
+.CodeItemTitle {
+	font-size: 2em; color: black; 
+	line-height: 1.25em;}
 .CodeItemDescription {font-size: 1em; color: black;}
 .CodeItemLang {font-style: 1em; color: gray;}
 .CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left;}
+
+#MusiNotifyTable {background-image: url(/Resources/Code/MusiNotify.png);}
+#GonePhishingTable {background-image: url(/Icons%20and%20Attr/Fishing/icon_8702.svg);}
+#WebsiteTable {background-image: url(/Icons%20and%20Attr/Laptop/icon_9074.svg);}
+#BasketballTable {background-image: url(/Icons%20and%20Attr/Basketball/icon_2711.svg);}
+#OtherTable {background-image: url(/Icons%20and%20Attr/Dots/icon_27116.svg);}
 
 #NowPlaying, #TopArtists {
 	color: white;
@@ -109,8 +132,8 @@ body {
 	-webkit-box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.58); -moz-box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.58);}
 #TopArtists {width: 50%; padding-bottom: 50px;}
 #TrackArt {
-	background-image: url(/Resources/Music/BlankAlbum.png);
 	display: inline-block;
+	background-image: url(/Resources/Music/BlankAlbum.png);
 	background-repeat: no-repeat; background-size: 19vw;}
 #TrackLink {text-decoration: none; color: black;}
 #TrackLink:hover {text-decoration: underline;}
@@ -118,7 +141,8 @@ body {
 
 .TopArtist {
 	display: inline-block; position: relative;
-	padding: 3px; margin-bottom: 4px; vertical-align: top;
+	padding: 3px; margin-bottom: 4px; 
+	vertical-align: top;
 	color: white;
 	background-image: url('/Resources/Music/BlankAlbum.png');
 	background-size: cover; background-repeat: no-repeat; background-position: center;}
@@ -152,24 +176,36 @@ body {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	text-align: left;
-	width: 500px; height: 250px;
-	background-color: black; color: white; font-family: "Comic Sans MS" Sans;
+	text-align: left; 
+	width: 80%; max-width: 500px; min-height: 250px;
+	background-color: black; 
+	color: white; font-family: 'Sniglet', 'cursive'; font-size: 1em;
+	line-height: 1.5em;
 	border:10px solid #E6E6E6;
 	-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;
 	margin-bottom: 30px;
 	padding-bottom: 20px; padding-top: -20px;}
 #EdCareer dl {margin-left: 30px; margin-right: 30px;}
-#EdCareer dt {font-weight: bold; padding-top: 15px;}
-#EdCareer dd {margin-left: 40px; text-indent: -20px;}
+#EdCareer dt {
+	font-weight: bold;
+	padding-top: 15px;}
+.EduLink {
+	text-decoration: none;
+	color: white;}
+.EduLink:hover {font-style: italic;}
+#EdCareer dd {
+	margin-left: 40px;
+	text-indent: -20px;}
 #Eraser {
-	width: 30px; height: 7px; background-color: white;
+	width: 30px; height: 7px;
+	background-color: white;
 	position: absolute; bottom: 0; left: 65px;
 	display: block;
 	border: 1px solid black;
 	border-top: 3px solid gray;}
 #Chalk {
-	width: 15px; height: 3px; background-color: white;
+	width: 15px; height: 3px; 
+	background-color: white;
 	position: absolute; bottom: 0; right: 150px;
 	display: block;
 	border: 1px solid black;}
