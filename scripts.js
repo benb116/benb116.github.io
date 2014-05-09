@@ -4,7 +4,7 @@ function GATrack(){
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-49014722-1', 'benbernste.in');
+	ga('create', 'UA-49014722-1', 'benbernstein.me');
 	ga('send', 'pageview');
 }
 
@@ -43,7 +43,13 @@ function GetRecentPlay(){
 	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArt").className="Other";
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
+	try {
+		document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
+	}
+	catch(err)
+	{
+	document.getElementById("TrackArt").style.backgroundImage =  "url(/Resources/Music/BlankAlbum.png)";
+	}
 }
 
 function GetNowPlaying(){
@@ -100,7 +106,7 @@ function GetTopArtists() {
 	xmlDoc=xmlhttp.responseXML;
 
 	for (var i = 0; i < 8; i++) {
-		var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
+		var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+2)].childNodes[0].nodeValue;
 		document.getElementById("Art"+i.toString()).style.backgroundImage = "url("+imageLink+")";
 
 		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
@@ -110,14 +116,3 @@ function GetTopArtists() {
 		document.getElementById("ArtLink"+i.toString()).href=ArtistLink;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

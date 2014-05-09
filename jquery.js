@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    
-    $('#IntroHead').delay(1000).animate({opacity: 1}, 1000);
+
+    $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
     $('#TopBar').delay(2000).animate({top: 0}, 500);
     $('#IconOverlay').delay(2000).animate({top: "15px"}, 500);
     $('#BottomMenu').delay(2000).animate({"margin-top": "6.5%"}, 500);
@@ -14,13 +14,19 @@ $(document).ready(function() {
     setTimeout(function(){$('#MusicCell').removeClass("MusicBar");},4300);
     setTimeout(function(){$('#ResearchCell').removeClass("ResearchBar");},4500);
 
+
+    SmoothScroll();
+    GATrack();
+    GetRecentPlay();
+    window.setInterval(function(){GetNowPlaying()}, 5000);
+    GetTopArtists();
+
     $(window).scroll(function() {    
-        var scroll = $(window).scrollTop() + 300;
         var CodeAnchor = $('#CodePage').offset().top;
         var MusicAnchor = $('#MusicPage').offset().top;
         var SchoolAnchor = $('#SchoolPage').offset().top;
         var ResearchAnchor = $('#ResearchPage').offset().top - 200;
-        CurrentPage = "Home";
+        var scroll = $(window).scrollTop() + 300;
 
         if (scroll < CodeAnchor) {
             $('#IconOverlay').css('background-image', '');
@@ -50,9 +56,9 @@ $(document).ready(function() {
             $('#ResearchCell').removeClass("ResearchBar");
         }
         var windowWidth = $(window).width();
-        if (scroll < 800 && windowWidth > 1050) {
+        if (scroll < 900 && windowWidth > 1050) {
             var actScroll = scroll - 300;
-            var opFrac = actScroll / 1000;
+            var opFrac = actScroll / 2000;
             var opVal = (.6 - opFrac).toString();
             $('#HomeImage').css('opacity', opVal);
         };

@@ -20,7 +20,8 @@ body {font-size: 100%;}
 	margin-top: 90vh; margin-bottom: 20px;}
 .BottomMenuLink {
 	font-size: 2em; line-height: 2em;
-	display: inline-block; width: 30%;}
+	display: inline-block; width: 30%;
+	color: white;}
 
 #MobileBar {
 	font-size: 2.5em;

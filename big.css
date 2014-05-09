@@ -51,14 +51,14 @@ body {margin-top: 40px;
 #BioPar {width: 50%; min-width: 430px; max-width: 600px;
 	font-size: .23em;}
 #BottomMenu {
-	font-size: 2em; line-height: 2em;
+	font-size: 2em; line-height: .5em;
 	width: 100%; text-align: center;
 	margin-top: 50vh;
 	font-family: 'Open Sans', 'sans-serif';}
 .BottomMenuLink {
 	display: inline-block; 
 	width: 25%;
-	line-height: 4em; vertical-align: middle;}
+	color: #808080;}
 
 .CodeTable {margin-left: 3%; margin-right: 3%;}
 

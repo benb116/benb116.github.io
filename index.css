@@ -1,5 +1,4 @@
 body {
-	background-color: #E6E6E6;
 	font-family: "Helvetica"; font-size: 1em;
 	margin: 0 auto;
 	width: 100%;}
@@ -40,17 +39,17 @@ body {
 	text-align: justify; text-indent: 30px;
 	line-height: 2em;
 	margin: auto;
-	font-family: 'PT Sans', 'sans-serif';}
+	font-family: 'PT Sans', 'serif';}
 .BottomMenuLink {
-	color: #E6E6E6;
 	text-decoration: none;
-	text-align: center;}
+	text-align: center;
+	-webkit-transition: color .15s ease-in-out; -moz-transition: color .15s ease-in-out; -o-transition: color .15s ease-in-out; transition: color .15s ease-in-out;}
 .BottomMenuLink:hover {color: white;}
 
 #HomeBody {text-align: center;}
 #HomeBlack {width: 100%;
 	background-color: black;
-	position: absolute; top: 0;
+	position: fixed; top: 0;
 	z-index: -1;}
 #HomeImage {
 	width: 100%;
@@ -68,7 +67,7 @@ body {
 .MusicBar, #MusicPage {background-color: #2980b9;}
 .SchoolBar, #SchoolPage {background-color: #f39c12;}
 .ResearchBar, #ResearchPage {background-color: #c0392b;}
-#CodePage, #MusicPage, #SchoolPage, #ResearchPage {
+#CodePage, #MusicPage, #SchoolPage, #ResearchPage, #Footer {
 	position: relative;
 	clear: both;
 	width: 100%;
@@ -76,6 +75,7 @@ body {
 	color: white;
 	display: inline-block;
 	padding-bottom: 30px;}
+#Footer {height: 100px;}
 .PageHeader {
 	width: 100%;
 	margin: 0 auto;
@@ -105,7 +105,7 @@ body {
 	padding-left: 1em;
 	width: 18em; height: 7em; 
 	vertical-align: middle;
-	line-height: 1.25em;
+	line-height: 1.4em;
 }
 .CodeItemTitle {
 	font-size: 2em; color: black; 
