@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MusiNotify - Notifications for iTunes and Spotify</title>
+		<link rel="shortcut icon" href="/MusiNotify/Resources/Icon.png"/>
+		<link rel="stylesheet" href="/MusiNotify/musinotify.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="/MusiNotify/musinotify.js"></script>
+		<meta charset="utf-8">
+		<meta name="Description" content="A notification plugin for iTunes and Spotify" />
+	</head>
+	<body>
+		<div id="MacMenuBar">
+			<img src="/MusiNotify/Resources/NotifIcon.png" id="MenuBarIcon">
+		</div>
+		
+		<table class="Notification" id="Not1">
+			<tr>
+				<td class="NotifIcon"><img src="/MusiNotify/Resources/iTunes.png" width="30" height="30"></td>
+				<td>
+					<table class="NotifInfo">
+						<tr class="NotifTitle"><td>Under The Bridge</td></tr>
+						<tr class="NotifSubtitle"><td>By Red Hot Chili Peppers</td></tr>
+						<tr class="NotifMessage"><td>On Blood Sugar Sex Magic</td></tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="Notification" id="Not2">
+			<tr>
+				<td class="NotifIcon"><img src="/MusiNotify/Resources/Spotify.png" width="30" height="30"></td>
+				<td>
+					<table class="NotifInfo">
+						<tr class="NotifTitle"><td>Thunderstruck</td></tr>
+						<tr class="NotifSubtitle"><td>By AC/DC</td></tr>
+						<tr class="NotifMessage"><td>On The Razor's Edge</td></tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<section id="HomePage">
+			<div id="CenterHead">
+				MusiNotify
+			</div>
+			<h2>Notification support for iTunes and Spotify.</h2>
+			<h2>Mac OS X 10.8+</h2>
+			<a href="https://github.com/benb116/MusiNotify/blob/master/MusiNotify.app.zip?raw=true"><div class="Button" id="Download">
+				Download .zip
+			</div></a>
+			<a href="https://github.com/benb116/MusiNotify" target="_blank"><div class="Button">
+				Github Page
+			</div></a>
+		</section>
+        
+		<section id="Features">
+			<h1>Features</h1>
+			<div class="Feature" id="PlayBack">
+                <span class="FeatureTitle">Works Silently</span>
+                <span class="FeatureDesc">MusiNotify runs seamlessly in the background, sending notifications without disturbance.</span>
+            </div>
+            <div class="Feature" id="SliderBack">
+                <span class="FeatureTitle">Easy to Customize</span>
+                <span class="FeatureDesc">Preferences allow for complete control over notification content and style, as well as options for the app itself.</span>
+            </div>
+            <div class="Feature" id="SyncBack">
+                <span class="FeatureTitle">Auto-Updates</span>
+                <span class="FeatureDesc">Checks for new versions and alerts the user with update information. Installs new versions by itself.</span>
+            </div>
+            <div class="Feature" id="GearBack">
+                <span class="FeatureTitle">Smart Handling</span>
+                <span class="FeatureDesc">Fine grain management over notifications in the sidebar. Adds and removes notifications to match user's preferences.</span>
+            </div>
+		</section>
+        
+        <div id="Sidebar">
+            <div class="AppName" id="iTunesName">iTunes</div>
+            <div class="SideNot">
+                <span><b>Under The Bridge</b></span>
+                <span><b>By Red Hot Chili Peppers</b></span>
+                <span>On Blood Sugar Sex Magic</span>
+            </div>
+            <div class="SideNot">
+                <span><b>One</b></span>
+                <span><b>Two</b></span>
+                <span>Three</span>
+            </div>
+            <div class="SideNot">
+                <span><b>One</b></span>
+                <span><b>Two</b></span>
+                <span>Three</span>
+            </div>
+            <div class="AppName" id="SpotifyName">Spotify</div>
+            <div class="SideNot">
+                <span><b>Thunderstruck</b></span>
+                <span><b>By AC/DC</b></span>
+                <span>On The Razor's Edge</span>
+            </div>
+            <div class="SideNot">
+                <span><b>One</b></span>
+                <span><b>Two</b></span>
+                <span>Three</span>
+            </div>
+            <div class="SideNot">
+                <span><b>One</b></span>
+                <span><b>Two</b></span>
+                <span>Three</span>
+            </div>
+        </div>
+	</body>
+</html>

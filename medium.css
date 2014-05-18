@@ -2,11 +2,8 @@ body {font-size: 100%;}
 
 #TopBar {display: none;}
 #MenuBar {display: none;}
+.hover {display: none;}
 #BannerWrap {display: none;}
-
-#HomeImage {
-	background-size: 200%;
-	height: 65em;}
 
 #IntroHead {margin-top: 15%;}
 #topart {
@@ -17,11 +14,10 @@ body {font-size: 100%;}
 	font-size: 4.5em;}
 #BioPar {width: 70%; min-width: 450px;}
 #BottomMenu {
-	margin-top: 90vh; margin-bottom: 20px;}
+	margin-top: 90vh; margin-bottom: 50px;}
 .BottomMenuLink {
 	font-size: 2em; line-height: 2em;
-	display: inline-block; width: 30%;
-	color: white;}
+	display: inline-block; width: 30%;}
 
 #MobileBar {
 	font-size: 2.5em;
@@ -39,6 +35,11 @@ body {font-size: 100%;}
 	color: white; text-decoration: none;
 	display: block;}
 .CodeTable {margin-left: 3%; margin-right: 3%;}
+
+#EdCareer {
+    width: 80%; min-width: 600px;
+	font-size: 1.3em;}
+
 #NowPlaying {width: 40%;}
 #TrackArt {
 	width: 35vw; height: 35vw;
@@ -48,3 +49,5 @@ body {font-size: 100%;}
 	width: 18vw; height: 18vw;
 	opacity: 1;}
 .TopArtistName {display: none;}
+
+.BottomFirst, .BottomLast {font-size: 5em;}

@@ -3,16 +3,19 @@ $(document).ready(function() {
     $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
     $('#TopBar').delay(2000).animate({top: 0}, 500);
     $('#IconOverlay').delay(2000).animate({top: "15px"}, 500);
-    $('#BottomMenu').delay(2000).animate({"margin-top": "6.5%"}, 500);
+    $('#BottomMenu').delay(2000).animate({"margin-top": "5%"}, 500);
     $('#CodePage').delay(2000).animate({"margin-top": "0"}, 500);
-    $('#BannerWrap').delay(3000).animate({opacity: 1}, 1000);
+    $('#DownArrow').delay(2000).animate({"margin-top": "0"}, 500);
+    $('#BannerWrap').delay(4500).animate({opacity: 1}, 1000);
 
-    setTimeout(function(){$('#CodeCell').addClass("CodeBar");},3500);
-    setTimeout(function(){$('#SchoolCell').addClass("SchoolBar");},3700);
-    setTimeout(function(){$('#MusicCell').addClass("MusicBar"); $('#CodeCell').removeClass("CodeBar");},3900);
-    setTimeout(function(){$('#ResearchCell').addClass("ResearchBar"); $('#SchoolCell').removeClass("SchoolBar");},4100);
-    setTimeout(function(){$('#MusicCell').removeClass("MusicBar");},4300);
-    setTimeout(function(){$('#ResearchCell').removeClass("ResearchBar");},4500);
+    setTimeout(function(){$('#CodeCell').addClass("CodeBar");},3300);
+    setTimeout(function(){$('#SchoolCell').addClass("SchoolBar");},3500);
+    setTimeout(function(){$('#MusicCell').addClass("MusicBar"); $('#CodeCell').removeClass("CodeBar");},3700);
+    setTimeout(function(){$('#ResearchCell').addClass("ResearchBar"); $('#SchoolCell').removeClass("SchoolBar");},3900);
+    setTimeout(function(){$('#MusicCell').removeClass("MusicBar");},4100);
+    setTimeout(function(){$('#ResearchCell').removeClass("ResearchBar");},4300);
+
+    setTimeout(function(){$('#DownArrow').addClass("hover");},15000);
 
 
     SmoothScroll();
@@ -55,12 +58,5 @@ $(document).ready(function() {
         } else {
             $('#ResearchCell').removeClass("ResearchBar");
         }
-        var windowWidth = $(window).width();
-        if (scroll < 900 && windowWidth > 1050) {
-            var actScroll = scroll - 300;
-            var opFrac = actScroll / 2000;
-            var opVal = (.6 - opFrac).toString();
-            $('#HomeImage').css('opacity', opVal);
-        };
     });
 });

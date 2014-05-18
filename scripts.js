@@ -48,7 +48,7 @@ function GetRecentPlay(){
 	}
 	catch(err)
 	{
-	document.getElementById("TrackArt").style.backgroundImage =  "url(/Resources/Music/BlankAlbum.png)";
+	document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
 	}
 }
 
@@ -74,7 +74,7 @@ function GetNowPlaying(){
 	}
 	catch(err)
 	{
-	document.getElementById("TrackArt").style.backgroundImage =  "url(/Resources/Music/BlankAlbum.png)";
+	document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
 	}
 	try {
 		var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;

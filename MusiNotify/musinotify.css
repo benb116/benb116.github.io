@@ -1,0 +1,136 @@
+body {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-family: 'Helvetica';}
+
+#MacMenuBar {
+	width: 100%; height: 20px;
+	position: absolute; top: 0;
+	background-color: #E0E0E0;
+	display: block;
+	z-index: 10;
+	-webkit-box-shadow: 0 5px 5px black;
+	        box-shadow: 0 5px 5px black;}
+#MenuBarIcon {
+	position: absolute; top: 0; right: 15px;}
+#HomePage {
+	height: 75%; width: 100%;
+	background-image:url(/MusiNotify/Resources/escheresque_ste.png);
+	padding-bottom: 60px;
+	-webkit-box-shadow: 5px 0px 5px 0px #1A1A1A;
+	        box-shadow: 5px 0px 5px 0px #1A1A1A;}
+#CenterHead {
+	width: 100%;
+	color: white;
+	font-size: 10em;
+	padding-top: 100px;
+	display: block;}
+h2 {color: white;
+	display: block;
+	width: 100%;}
+
+.Notification {
+	position: absolute; top: -70px; right: 10px;
+	width: 320px;
+	background-color: #F9F9F9;
+	border: 3px solid #F9F9F9;-o-border-radius:5px;border-radius:5px;
+    -webkit-transition: -webkit-transform .75s ease-in-out;
+    -webkit-box-shadow: 0 6px 6px black;
+            box-shadow: 0 6px 6px black;}
+.NotifIcon {width: 40px; vertical-align: top; padding-top: 5px;}
+.NotifInfo {text-align: left;}
+.NotifTitle {font-size: 15px; font-weight: bold;}
+.NotifSubtitle {font-weight: bold;}
+.NotifSubtitle, .NotifMessage {font-size: 12px;}
+
+.NotifAnim1{-webkit-transform:translate(0px,100px);-ms-transform:translate(0px,100px);transform:translate(0px,100px);}
+.NotifAnim2{-webkit-transform:translate(350px, 100px);-ms-transform:translate(350px, 100px);transform:translate(350px, 100px);}
+
+.Button {
+	display: inline-block; width: 240px; height: 60px;
+	line-height: 60px; font-size: 25px; font-weight: bold;
+	margin: 20px;
+	background-color: #0044cc;
+	color: white; background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc)); background-image: -webkit-linear-gradient(top, #0088cc, #0044cc); background-image: -webkit-gradient(linear, left top, left bottom, from(#0088cc), to(#0044cc)); background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	border: 3px; border-color: #0044cc #0044cc #002a80; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);-o-border-radius:5px;border-radius:5px;}
+.Button:hover { background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0066cc), to(#0044cc)); background-image: -webkit-linear-gradient(top, #0066cc, #0044cc); background-image: -webkit-gradient(linear, left top, left bottom, from(#0066cc), to(#0044cc)); background-image: linear-gradient(to bottom, #0066cc, #0044cc);
+	}
+#Features {width: 100%;
+    background-color: #f5f5f5;
+	display: block;
+	-webkit-box-shadow: 5px 0px 5px 0px #1A1A1A;
+	        box-shadow: 5px 0px 5px 0px #1A1A1A;}
+h1 {font-size: 60px; padding-top: 40px; font-weight: normal; margin: 0;}
+.Feature {
+	width: 28em; height: 8em;
+	display: inline-block; position: relative;
+	margin: 2%;
+    border: 1em solid #f5f5f5;
+    text-align: left; text-indent: 9em;
+    background-repeat: no-repeat; -webkit-background-size: 7em  ; background-size: 7em  ;
+}
+
+#Sidebar {
+	position: fixed;
+	top: 0; right: 0px; bottom: 0;
+	width: 250px;
+	background-color: #333333;
+	z-index: -1;
+	color: white;
+	padding-top: 25px;
+	text-align: left;
+}
+
+.AppName {
+	display: block;
+	width: 100%; height: 20px;
+	background-color: black;
+	font-weight: bold; text-indent: 40px;
+	border-bottom: 2px solid black;
+	background-repeat: no-repeat;
+	-webkit-background-size: 20px;
+	        background-size: 20px;
+	background-position: 10px;}
+#iTunesName {background-image: url(/MusiNotify/Resources/iTunes.png);}
+#SpotifyName {background-image: url(/MusiNotify/Resources/Spotify.png);}
+.SideNot {
+	line-height: 1.25em; text-indent: 35px;
+	font-size: .85em;
+	padding: 5px;
+	border-bottom: 1px solid black;}
+
+.SideNot span {display: block;}
+
+.FeatureTitle {
+    display: block;
+    font-size: 2em; font-weight: bold; 
+}
+
+.FeatureDesc {
+    display: block;
+    width: 20em; margin-left: 9em; text-indent: 0;
+    line-height: 1.5em;
+}
+
+#PlayBack {
+    background-image: url(Icons/Play/icon_8304.svg) 
+}
+
+#SliderBack {
+    background-image: url(Icons/Sliders/icon_29995.svg);
+}
+
+#SyncBack {
+    background-image: url(Icons/Sync/icon_15460.svg)
+}
+
+#GearBack {
+    background-image: url(Icons/Gear/icon_21831.svg)
+}
+
+body {
+    font-family: 'Helvetica';
+}
+
+

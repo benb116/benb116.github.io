@@ -15,7 +15,7 @@ body {margin-top: 40px;
 #IconOverlay {
 	position: fixed; top: -125px; left: 10px;
 	width: 70px; height: 70px;
-	background-size: 100%; background-repeat: no-repeat;}
+    background-size: 100%; background-repeat: no-repeat;}
 #MenuContainer {
 	height: 50px; background-color: #424242;
 	text-align: center;
@@ -26,30 +26,48 @@ body {margin-top: 40px;
 	line-height: 50px; text-align: center;
 	display: inline-block;
 	margin: 0;
-	-webkit-transition: background-color .35s ease-in-out; -moz-transition: background-color .35s ease-in-out; -o-transition: background-color .35s ease-in-out; transition: background-color .35s ease-in-out;}
+	-webkit-transition: background-color .35s ease-in-out; transition: background-color .35s ease-in-out;}
 #CodeCell:hover {background-color: #27ae60;}
 #MusicCell:hover {background-color: #2980b9;}
 #SchoolCell:hover {background-color: #f39c12;}
 #ResearchCell:hover {background-color: #c0392b;}
 
-#BannerWrap {position: absolute; top: 50px; right: 0px;}
+#BannerWrap {
+	position: absolute; top: 50px; right: 0px;width: 300px; height: 300px;
+	display: block;
+	overflow: hidden;
+	opacity: 0;}
+#UnderBanner {
+	position: absolute;
+	top: 70px; right: -50px;
+	margin-right: -20px;
+	text-align: center; 
+	line-height: 30px;
+	display: block;
+	width: 300px; height: 30px;
+	background-color: white; 
+	color: black; font-weight: normal;
+	font-family: 'PT Sans', 'serif';
+                    transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
+	-webkit-transition: -webkit-box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
 
 #HomeBody {
 	width: 100%; height: 83vh; min-height: 400px; max-height: 700px;
 	display: inline-block;}
-#HomeImage {background-size: 100%; height: 100vh;}
-#CodePage {margin-top: 25vh;}
-
-#MobileBar {display: none;}
-
 #IntroHead {
 	display: inline-block; margin-top: 10%;
 	font-size: 4.5em;}
 #topart {
 	width: 150px; height: 150px;
-	background-size: 150px;}
+    background-size: 150px;
+	border-radius: 5px;}
 #BioPar {width: 50%; min-width: 430px; max-width: 600px;
 	font-size: .23em;}
+#DownArrow {
+	display: inline-block;
+	width: 4em; height: 4em;
+	background-image: url(/Icons%20and%20Attr/Down/icon_22174.svg);
+	margin-top: 50vh;}
 #BottomMenu {
 	font-size: 2em; line-height: .5em;
 	width: 100%; text-align: center;
@@ -57,27 +75,66 @@ body {margin-top: 40px;
 	font-family: 'Open Sans', 'sans-serif';}
 .BottomMenuLink {
 	display: inline-block; 
-	width: 25%;
-	color: #808080;}
+	width: 25%;}
+#MobileBar {display: none;}
 
+/* Hover */
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(5px); transform: translateY(5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(10px); transform: translateY(10px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(5px); transform: translateY(5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(10px); transform: translateY(10px);
+  }
+}
+
+.hover {
+	display: inline-block;
+	-webkit-transition-duration: 0.5s; transition-duration: 0.5s;
+	-webkit-transition-property: -webkit-transform; transition-property: transform;
+	-webkit-transform: translateZ(0); transform: translateZ(0);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px);
+	-webkit-animation-name: hover; animation-name: hover;
+	-webkit-animation-duration: 1s; animation-duration: 1s;
+	-webkit-animation-delay: 0.3s; animation-delay: 0.3s;
+	-webkit-animation-timing-function: linear; animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite; animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate; animation-direction: alternate;
+}
+
+#CodePage {margin-top: 25vh;}
 .CodeTable {margin-left: 3%; margin-right: 3%;}
+
+#EdCareer {
+	width: 60%; min-width: 500px;
+    font-size: 1.3em;}
 
 #NowPlaying {width: 30%;}
 #TrackArt {
 	width: 19vw; height: 19vw;
-	background-size: 19vw;}
+	-webkit-background-size: 19vw;
+	        background-size: 19vw;}
 #TopArtists {width: 50%; padding-bottom: 50px;}
 .TopArtist {
 	width: 11vw; height: 11vw;
 	opacity: .5;
-	-webkit-transition: opacity .15s ease-in-out; -moz-transition: opacity .15s ease-in-out; -o-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
+	-webkit-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
 .TopArtist:hover {opacity: 1;}
 .TopArtistName {
 	position: absolute; bottom: 0; left: 50%; margin-left: -50%; width: 100%;
 	background-color: black;
 	opacity: .8;}
 
-
-
-
-
+.BottomFirst, .BottomLast {font-size: 7em;}
