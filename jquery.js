@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#BottomMenu').delay(2000).animate({"margin-top": "5%"}, 500);
     $('#CodePage').delay(2000).animate({"margin-top": "0"}, 500);
     $('#DownArrow').delay(2000).animate({"margin-top": "0"}, 500);
-    $('#BannerWrap').delay(4500).animate({opacity: 1}, 1000);
+    $('#BannerWrap').delay(2500).animate({opacity: 1}, 1000);
 
     setTimeout(function(){$('#CodeCell').addClass("CodeBar");},3300);
     setTimeout(function(){$('#SchoolCell').addClass("SchoolBar");},3500);
@@ -17,12 +17,11 @@ $(document).ready(function() {
 
     setTimeout(function(){$('#DownArrow').addClass("hover");},15000);
 
-
     SmoothScroll();
     GATrack();
+    GetTopArtists();
     GetRecentPlay();
     window.setInterval(function(){GetNowPlaying()}, 5000);
-    GetTopArtists();
 
     $(window).scroll(function() {    
         var CodeAnchor = $('#CodePage').offset().top;
@@ -58,5 +57,10 @@ $(document).ready(function() {
         } else {
             $('#ResearchCell').removeClass("ResearchBar");
         }
+    });
+
+    cheet('j e w', function () {
+        $('#IntroHead').prepend("<p>Very nice!</p>");
+        $('#IntroHead').prepend("<iframe width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
     });
 });

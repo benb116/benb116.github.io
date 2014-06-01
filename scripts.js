@@ -93,6 +93,8 @@ function GetNowPlaying(){
 }
 
 function GetTopArtists() {
+	var retina = window.devicePixelRatio > 1;
+
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -106,7 +108,12 @@ function GetTopArtists() {
 	xmlDoc=xmlhttp.responseXML;
 
 	for (var i = 0; i < 8; i++) {
-		var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+2)].childNodes[0].nodeValue;
+		if (retina == true) {
+			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+4)].childNodes[0].nodeValue;
+		}
+		else {
+			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
+		}
 		document.getElementById("Art"+i.toString()).style.backgroundImage = "url("+imageLink+")";
 
 		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;

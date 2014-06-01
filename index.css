@@ -2,7 +2,7 @@ body {
 	font-family: 'Open Sans', 'sans-serif'; font-size: 1em;
 	margin: 0 auto;
 	width: 100%;
-	background-color: #E6E6E6;}
+	background-color: #F2F2F2;}
 
 #IntroHead {
 	width: 100%;
@@ -55,16 +55,15 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;}
-.PageHeader p {font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em;}
+.PageHeader p {font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em; font-weight: lighter;}
 .PageHeader h1 {
-	font-size: 3em;	font-family: 'Istok Web', 'sans-serif'; font-weight: normal;
-	line-height: 1em;}
+	font-size: 3em;	font-family: 'Istok Web', 'sans-serif'; font-weight: normal;}
 
 .CodeTable {
 	display: inline-block;
 	position: relative;
-	width: 26em; height: 7em;
-	margin: 25px; padding: 10px;
+	width: 26em;
+	margin: 25px; padding: 10px; vertical-align: top;
 	background-color: white;
 	border:.5em solid white;
 	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
@@ -101,7 +100,7 @@ body {
 	text-align: left;
 	margin-left: 15px; margin-right: 15px; margin-bottom: 40px;
 	padding-top: -20px; padding-left: 20px; padding-bottom: 10%;
-    background-color: black; 
+	background-color: #242424;
 	border:10px solid #E6E6E6;-o-border-radius:10px;border-radius:10px;
     font-family: 'Sniglet', 'cursive';
     line-height: 1.5em;}
@@ -116,6 +115,7 @@ body {
 #EdCareer dd {
 	margin-left: 40px;
 	text-indent: -20px;}
+#EdCareer i {margin-right: 10px;}
 #Eraser {
 	width: 45px; height: 10px;
 	background-color: white;
@@ -176,3 +176,7 @@ body {
 
 .BottomFirst {color: black;}
 .BottomLast {color: gray;}
+#BBLogo {
+	display: inline-block;
+	background-image: url(/Resources/Logo.svg); background-position: center; background-repeat: no-repeat;
+	margin-right: 1em;}
