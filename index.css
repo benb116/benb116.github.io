@@ -2,7 +2,8 @@ body {
 	font-family: 'Open Sans', 'sans-serif'; font-size: 1em;
 	margin: 0 auto;
 	width: 100%;
-	background-color: #F2F2F2;}
+	background-color: #F2F2F2;
+}
 
 #IntroHead {
 	width: 100%;
@@ -12,7 +13,8 @@ body {
 	opacity: 0;}
 #topart{
 	display: inline-block;
-	background-image: url(/Resources/pic.jpg);}
+	background-image: url(/Resources/pic.jpg);
+	border-radius: 5px;}
 #bighello {
 	font-family: 'Istok Web', 'sans-serif';
 	text-align: left;
@@ -21,7 +23,7 @@ body {
 #BioPar {
 	text-align: justify; text-indent: 30px;
 	line-height: 2em;
-	margin: auto;
+	margin: auto; margin-top: 10px;
 	font-family: 'PT Sans', 'serif';}
 .BottomMenuLink {
 	text-decoration: none;
@@ -55,11 +57,13 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;}
-.PageHeader p {font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em; font-weight: lighter;}
+.PageHeader p {
+	font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em; font-weight: lighter;}
 .PageHeader h1 {
-	font-size: 3em;	font-family: 'Istok Web', 'sans-serif'; font-weight: normal;}
+	font-size: 3em;	font-family: 'Istok Web', 'sans-serif'; font-weight: normal;
+	line-height: .75em;}
 
-.CodeTable {
+.CodeCard {
 	display: inline-block;
 	position: relative;
 	width: 26em;
@@ -68,13 +72,13 @@ body {
 	border:.5em solid white;
 	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
 	-webkit-transition: -webkit-box-shadow .1s ease-in-out; transition: box-shadow .1s ease-in-out;}
-.CodeTable:hover {
+.CodeCard:hover {
 	-webkit-box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58); box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58);}
-.CodeTableIcon {
+.CodeCardIcon {
 	display: table-cell;
 	width: 8em; height: 7em;
 	background-size: 7em; background-repeat: no-repeat; background-position: center;}
-.CodeTableItem {
+.CodeCardItem {
 	display: table-cell; 
 	padding-left: 1em;
 	width: 18em; height: 7em; 
@@ -95,10 +99,9 @@ body {
 
 #EdCareer{
 	display: inline-block;
-	margin: 0 auto;
+	margin: 15px auto;
 	position: relative;
 	text-align: left;
-	margin-left: 15px; margin-right: 15px; margin-bottom: 40px;
 	padding-top: -20px; padding-left: 20px; padding-bottom: 10%;
 	background-color: #242424;
 	border:10px solid #E6E6E6;-o-border-radius:10px;border-radius:10px;
@@ -143,7 +146,8 @@ body {
 	display: inline-block;
 	background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);
 	background-repeat: no-repeat; -webkit-background-size: 19vw; background-size: 19vw;
-	background-color: black;}
+	background-color: black;
+	background-position: center;}
 #TrackLink {text-decoration: none; color: white;}
 #TrackLink:hover {text-decoration: underline;}
 #TrackArtist {text-decoration: none;}
@@ -180,3 +184,5 @@ body {
 	display: inline-block;
 	background-image: url(/Resources/Logo.svg); background-position: center; background-repeat: no-repeat;
 	margin-right: 1em;}
+
+.GlassesClass {-webkit-filter: blur(4px);}

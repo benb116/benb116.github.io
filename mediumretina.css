@@ -3,12 +3,20 @@ body {font-size: 200%;}
 #IntroHead {margin-top: 20%;}
 #topart {
 	width: 7em; height: 7em;
-	background-size: 7em;}
+	background-size: 7em;
+	border-radius: 15px;}
 #bighello {
 	font-size: 3.5em;}
-#BioPar {margin-bottom: 50px;}
+#BioPar {
+	margin-bottom: 50px;
+	font-size: 1em;}
 #BottomMenu {margin-bottom: 80px;}
 
 #EdCareer {
 	width: 90%;
 	font-size: 0.75em;}
+
+.BottomFirst, .BottomLast {font-size: 4em;}
+#BBLogo {
+	width: 6em; height: 3em;
+	background-size: 6em;}
