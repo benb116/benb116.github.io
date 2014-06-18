@@ -1,6 +1,5 @@
 Credits - 
 
-Homepage Background: Escheresque from subtlepatterns.com
 Basketball Hoop by Gabriele Fumero from The Noun Project
 Home by Edward Boatman from The Noun Project
 Laptop by Steve Stomp from The Noun Project
@@ -9,6 +8,8 @@ Code by Luboš Volkov from The Noun Project
 Music by Cris Dobbins from The Noun Project
 Fishing Hook by Massimiliano Mauro from The Noun Project
 User by Edward Boatman from The Noun Project
+Envelope by Jon Testa from The Noun Project
+Resume by Stephen Borengasser from The Noun Project
 
 Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/
 Now Playing script (adapted) - http://www.w3schools.com/xml/xml_dom.asp

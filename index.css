@@ -1,7 +1,7 @@
 body {
 	font-family: 'Open Sans', 'sans-serif'; font-size: 1em;
 	margin: 0 auto;
-	width: 100%;
+	width: 100%; height: 100%;
 	background-color: #F2F2F2;
 }
 
@@ -33,6 +33,18 @@ body {
 .BottomMenuLink:hover {color: black;}
 
 #HomeBody {text-align: center;}
+
+#HomeBlack {
+	display: none;
+	width: 100%;
+	background-color: black;
+	position: fixed; top: 0;
+	z-index: -1;}
+#HomeImage {
+	width: 100%;
+	background-image: url(/Resources/Yosemite.jpg);
+	background-repeat: no-repeat; background-position: center top;
+	opacity: .6;}
 
 .AnchorMargin {
 	position: relative;

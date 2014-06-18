@@ -48,32 +48,27 @@ body {margin-top: 40px;
 	background-color: white; 
 	color: black; font-weight: normal;
 	font-family: 'PT Sans', 'serif';
-                    transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
+    transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
 	-webkit-transition: -webkit-box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
 
 #HomeBody {
-	width: 100%; height: 75%; min-height: 400px;
-	display: inline-block;}
+	display: block;
+	width: 100%; min-height: 400px;}
+#HomeImage {background-size: 100%; height: 100vh;}
+
 #IntroHead {
 	display: inline-block; margin-top: 10%;
 	font-size: 4.5em;}
 #topart {
-	width: 150px; height: 150px;
-    background-size: 150px;}
+	width: 2em; height: 2em;
+    background-size: 2em;}
 #BioPar {width: 50%; min-width: 430px; max-width: 600px;
 	font-size: .23em;}
-#DownArrow {
-	display: inline-block;
-	width: 4em; height: 4em;
-	background-position: 50% 50%;
-	background-image: url(/Icons%20and%20Attr/Down/icon_22174.svg);
-	margin-top: 0;
-	opacity: 0;}
 #BottomMenu {
 	font-size: 2em; line-height: .5em;
 	width: 100%; text-align: center;
 	font-family: 'Open Sans', 'sans-serif';
-	margin-top: 2%;
+	margin-top: 5%;
 	opacity: 0;}
 .BottomMenuLink {
 	display: inline-block; 

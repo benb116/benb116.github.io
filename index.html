@@ -8,8 +8,7 @@
 		<link rel="stylesheet" href="/index.css">
 		<link rel="stylesheet" media='screen and (min-width: 1051px)' href="/big.css">
 		<link rel='stylesheet' media='screen and (max-width: 1050px)' href='/medium.css' />
-		<link rel="stylesheet" media='screen and (min-width: 1051px) and (-webkit-min-device-pixel-ratio: 2)' href="/bigretina.css">
-		<link rel='stylesheet' media='screen and (max-width: 1050px) and (-webkit-min-device-pixel-ratio: 2)' href='/mediumretina.css' />
+		<link rel='stylesheet' media='screen and (width: 568px) and (-webkit-min-device-pixel-ratio: 2)' href='/mediumretina.css' />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans|Istok+Web|Sniglet|Open+Sans' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="scripts.js"></script>
@@ -32,6 +31,7 @@
 			</div>
 		</div>	
 		<section id="HomeBody">
+	   		<div id="HomeBlack"><div id="HomeImage"></div></div>
 		   	<div id="IntroHead">
 	   			<div id="topart"></div>
 			    <div id="bighello">
@@ -42,12 +42,10 @@
 		  		</div>
   	    	</div>
 
-	   		<a href="#Code"><div id="DownArrow"></div></a>
-
 		  	<div id="BottomMenu">
-	    		<a class="BottomMenuLink" target="_blank" href="/Resources/Resume.pdf">Resume</a>
-	    		<a class="BottomMenuLink" href="mailto:benb116@gmail.com">Contact</a>
-	    		<a class="BottomMenuLink" target="_blank" href="/Resources/Credits.txt">Credits</a>
+	    		<a class="BottomMenuLink" id="ResumeLink" target="_blank" href="/Resources/Resume.pdf">Resume</a>
+	    		<a class="BottomMenuLink" id="ContactLink" href="mailto:benb116@gmail.com">Contact</a>
+	    		<a class="BottomMenuLink" id="CreditsLink" target="_blank" href="/Resources/Credits.txt">Credits</a>
 	   		</div>
 
 			<div id="MobileBar">

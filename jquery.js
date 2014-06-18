@@ -3,7 +3,6 @@ $(document).ready(function() {
     $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
     $('#TopBar').delay(2500).animate({top: 0}, 500);
     $('#IconOverlay').delay(2500).animate({top: "15px"}, 500);
-    $('#DownArrow').delay(3000).animate({opacity: 1}, 500);
     $('#BottomMenu').delay(3000).animate({opacity: 1}, 500);
     $('#BannerWrap').delay(3000).animate({opacity: 1}, 500);
 
@@ -65,12 +64,26 @@ $(document).ready(function() {
         }
     });
 
-    /*Cheat Codes Below*/
+    $('#ResumeLink').hover(
+        function () {$('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr/Resume/icon_30547.svg)');}, 
+        function () {$('#IconOverlay').css('background-image', '');
+    });
+    $('#ContactLink').hover(
+        function () {$('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr/Envelope/icon_13468.svg)');}, 
+        function () {$('#IconOverlay').css('background-image', '');
+    });
+    $('#CreditsLink').hover(
+        function () {$('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr//List/icon_11515.svg)');}, 
+        function () {$('#IconOverlay').css('background-image', '');
+    });
+
+    /*Easter Eggs Below*/
     window.cheatsenabled = false;
     cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () { 
         if (window.cheatsenabled == false) {
             window.cheatsenabled = true;
-            alert('You have enabled cheat codes. Try to find them all! \n\nType the Konami code again to disable cheat codes.'); 
+            alert('You have enabled easter eggs. Try to find them all! \n\nType the Konami code again to disable easter eggs.'); 
+            
             cheet('j e w', function () {
                 $('#IntroHead').prepend("<p>Very nice!</p>");
                 $('#IntroHead').prepend("<iframe width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
@@ -79,11 +92,19 @@ $(document).ready(function() {
             cheet('g l a s s e s', function () {
                 $('body').toggleClass('GlassesClass');
             });
+
+            cheet('b a c k', function () {
+                $('#HomeBlack').css('display', 'block');
+                $('#IntroHead').css('color', 'white');
+                $('.BottomMenuLink').css('color', 'white');
+            });
+
         } else {
             window.cheatsenabled = false;
-            alert('You have disabled cheat codes.'); 
+            alert('You have disabled easter eggs.'); 
             cheet.disable('j e w');
             cheet.disable('g l a s s e s');
+            cheet.disable('b a c k');
         };
     });
 

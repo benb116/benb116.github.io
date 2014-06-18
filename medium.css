@@ -5,11 +5,11 @@ body {font-size: 100%;}
 .hover {display: none;}
 #BannerWrap {display: none;}
 
-#IntroHead {margin-top: 15%;}
+#IntroHead {margin-top: 14%;}
 #topart {
 	width: 9em; height: 9em;
 	background-size: 9em;
-	margin-right: 20px;}
+	margin-right: 13px;}
 #bighello {
 	font-size: 4.5em;}
 #BioPar {
