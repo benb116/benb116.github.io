@@ -2,8 +2,7 @@ body {
 	font-family: 'Open Sans', 'sans-serif'; font-size: 1em;
 	margin: 0 auto;
 	width: 100%; height: 100%;
-	background-color: #F2F2F2;
-}
+	background-color: #F2F2F2;}
 
 #IntroHead {
 	width: 100%;
@@ -95,14 +94,15 @@ body {
 	padding-left: 1em;
 	width: 18em; height: 7em; 
 	vertical-align: middle;
-	line-height: 1.4em;
-}
+	line-height: 1.4em;}
+
 .CodeItemTitle {
 	font-size: 2em; color: black; 
 	line-height: 1.25em;}
 .CodeItemDescription {font-size: 1em; color: black;}
 .CodeItemLang {font-style: 1em; color: gray;}
 .CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left;}
+
 #MusiNotifyTable {background-image: url(/Resources/Code/MusiNotify.png);}
 #GonePhishingTable {background-image: url(/Icons%20and%20Attr/Fishing/icon_8702.svg);}
 #WebsiteTable {background-image: url(/Icons%20and%20Attr/Laptop/icon_9074.svg);}
@@ -110,7 +110,7 @@ body {
 #OtherTable {background-image: url(/Icons%20and%20Attr/Dots/icon_27116.svg);}
 
 #EdCareer{
-	display: inline-block;
+	display: block;
 	margin: 15px auto;
 	position: relative;
 	text-align: left;
@@ -145,14 +145,29 @@ body {
 	display: block;
 	border: 1px solid black;}
 
+#MetLet {
+	display: inline-block;
+	position: relative;
+	margin: 10px auto;
+	font-size: 2em;
+    max-width: 90%;}
+.MetLetCover {
+    width: 280px; height: 400px; margin: 5px;
+    display: inline-block;
+    background-position: center; background-size: cover;}
+#MetLet2012F {background-image: url(/Resources/School/Met%20Let/2012Fthumb.jpg);}
+#MetLet2013S {background-image: url(/Resources/School/Met%20Let/2013sthumb.jpg);}
+#MetLet2013F {background-image: url(/Resources/School/Met%20Let/2013Fthumb.jpg);}
+#MetLet2013W {background-image: url(/Resources/School/Met%20Let/2013Wthumb.jpg);}
+#MetLet2014S {background-image: url(/Resources/School/Met%20Let/2014sthumb.jpg);}
+
 #NowPlaying, #TopArtists {
 	color: white;
 	display: inline-block;
 	vertical-align: top; text-align: center;
 	padding: 20px; padding-top: 0;
 	margin-left: 15px; margin-right: 15px; margin-bottom: 40px;
-	border:10px solid white;
-}
+	border:10px solid white;}
 #TopArtists {width: 50%; padding-bottom: 50px;}
 #TrackArt {
 	display: inline-block;

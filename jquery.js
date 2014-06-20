@@ -85,8 +85,12 @@ $(document).ready(function() {
             alert('You have enabled easter eggs. Try to find them all! \n\nType the Konami code again to disable easter eggs.'); 
             
             cheet('j e w', function () {
-                $('#IntroHead').prepend("<p>Very nice!</p>");
-                $('#IntroHead').prepend("<iframe width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
+                $('#IntroHead').prepend("<p class=\"jew\">Very nice!</p>");
+                $('#IntroHead').prepend("<iframe class=\"jew\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
+            });
+
+            cheet('n a z i', function () {
+                $('.jew').remove();
             });
 
             cheet('g l a s s e s', function () {
@@ -97,12 +101,14 @@ $(document).ready(function() {
                 $('#HomeBlack').css('display', 'block');
                 $('#IntroHead').css('color', 'white');
                 $('.BottomMenuLink').css('color', 'white');
+                $('.BottomFirst').css('color', 'white');
             });
 
         } else {
             window.cheatsenabled = false;
             alert('You have disabled easter eggs.'); 
             cheet.disable('j e w');
+            cheet.disable('n a z i');
             cheet.disable('g l a s s e s');
             cheet.disable('b a c k');
         };
