@@ -148,13 +148,14 @@ body {
 #MetLet {
 	display: inline-block;
 	position: relative;
-	margin: 10px auto;
-	font-size: 2em;
+	margin: 10px auto; padding-top: 30px;
+	font-size: 1.5em;
     max-width: 90%;}
 .MetLetCover {
     width: 280px; height: 400px; margin: 5px;
     display: inline-block;
-    background-position: center; background-size: cover;}
+    background-position: center; background-size: cover;
+	-webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58);}
 #MetLet2012F {background-image: url(/Resources/School/Met%20Let/2012Fthumb.jpg);}
 #MetLet2013S {background-image: url(/Resources/School/Met%20Let/2013Sthumb.jpg);}
 #MetLet2013F {background-image: url(/Resources/School/Met%20Let/2013Fthumb.jpg);}

@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
     $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
-    $('#TopBar').delay(2500).animate({top: 0}, 500);
-    $('#IconOverlay').delay(2500).animate({top: "15px"}, 500);
-    $('#BottomMenu').delay(3000).animate({opacity: 1}, 500);
-    $('#BannerWrap').delay(3000).animate({opacity: 1}, 500);
+    $('#TopBar').delay(1500).animate({top: 0}, 500);
+    $('#IconOverlay').delay(1500).animate({top: "15px"}, 500);
+    $('#BottomMenu').delay(2000).animate({opacity: 1}, 500);
+    $('#BannerWrap').delay(2000).animate({opacity: 1}, 500);
 
     /*setTimeout(function(){
         $('#CodeCell').addClass("CodeBar");
@@ -25,8 +25,7 @@ $(document).ready(function() {
     SmoothScroll();
     GATrack();
     GetTopArtists();
-    GetRecentPlay();
-    window.setInterval(function(){GetNowPlaying()}, 5000);
+    GetNowPlaying();
 
     $(window).scroll(function() {    
         var CodeAnchor = $('#CodePage').offset().top;
@@ -100,6 +99,7 @@ $(document).ready(function() {
             cheet('b a c k', function () {
                 $('#HomeBlack').css('display', 'block');
                 $('#IntroHead').css('color', 'white');
+                $('#PennLink').css('color', 'white');
                 $('.BottomMenuLink').css('color', 'white');
                 $('.BottomFirst').css('color', 'white');
             });
