@@ -10,7 +10,7 @@ function GATrack(){
 
 function SmoothScroll(){
 	$(function() {
-		  $('a[href*=#]:not([href=#])').click(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
 		      var target = $(this.hash);
@@ -22,34 +22,8 @@ function SmoothScroll(){
 		        return false;
 		      }
 		    }
-		  });
 		});
-}
-
-function GetRecentPlay(){
-	if (window.XMLHttpRequest)
-	  {// code for IE7+, Firefox, Chrome, Opera, Safari
-	  xmlhttp=new XMLHttpRequest();
-	  }
-	else
-	  {// code for IE6, IE5
-	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-	  }
-	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=1",false);
-	xmlhttp.send();
-	xmlDoc=xmlhttp.responseXML;
-
-	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArt").className="Other";
-	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
-	try {
-		document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
-	}
-	catch(err)
-	{
-	document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
-	}
+	});
 }
 
 function GetNowPlaying(){

@@ -1,4 +1,4 @@
-Credits - 
+Icons - 
 
 Basketball Hoop by Gabriele Fumero from The Noun Project
 Home by Edward Boatman from The Noun Project
@@ -11,6 +11,10 @@ User by Edward Boatman from The Noun Project
 Envelope by Jon Testa from The Noun Project
 Resume by Stephen Borengasser from The Noun Project
 
+Scripts, Plugins, and Effects - 
+
 Smooth Scrolling script - http://css-tricks.com/snippets/jquery/smooth-scrolling/
 Now Playing script (adapted) - http://www.w3schools.com/xml/xml_dom.asp
 Pulse CSS Effect - https://github.com/IanLunn/Hover
+cheet.js easter egg plugin - https://github.com/namuol/cheet.js
+Alertify.js notification plugin - http://fabien-d.github.io/alertify.js/

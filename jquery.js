@@ -20,8 +20,6 @@ $(document).ready(function() {
         $('#ResearchCell').removeClass("ResearchBar");
     },3800);*/
 
-    setTimeout(function(){$('#DownArrow').addClass("hover");},17000);
-
     SmoothScroll();
     GATrack();
     GetTopArtists();
@@ -75,16 +73,20 @@ $(document).ready(function() {
         function () {$('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr//List/icon_11515.svg)');}, 
         function () {$('#IconOverlay').css('background-image', '');
     });
+    $('#MetLetLink').click(function () {
+        $('#MetLet').slideToggle();
+    });
 
     /*Easter Eggs Below*/
     window.cheatsenabled = false;
+    alertify.set({ delay: 3000 });
     cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () { 
         if (window.cheatsenabled == false) {
             window.cheatsenabled = true;
-            alert('You have enabled easter eggs. Try to find them all! \n\nType the Konami code again to disable easter eggs.'); 
-            
+                alertify.log("You have enabled easter eggs."); 
+
             cheet('j e w', function () {
-                $('#IntroHead').prepend("<p class=\"jew\">Very nice!</p>");
+                alertify.log("Very nice! Great success!");
                 $('#IntroHead').prepend("<iframe class=\"jew\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
             });
 
@@ -97,16 +99,16 @@ $(document).ready(function() {
             });
 
             cheet('b a c k', function () {
+                alertify.log("Background enabled."); 
                 $('#HomeBlack').css('display', 'block');
                 $('#IntroHead').css('color', 'white');
-                $('#PennLink').css('color', 'white');
                 $('.BottomMenuLink').css('color', 'white');
                 $('.BottomFirst').css('color', 'white');
             });
 
         } else {
             window.cheatsenabled = false;
-            alert('You have disabled easter eggs.'); 
+            alertify.log("You have disabled easter eggs."); 
             cheet.disable('j e w');
             cheet.disable('n a z i');
             cheet.disable('g l a s s e s');
