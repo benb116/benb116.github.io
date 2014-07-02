@@ -39,7 +39,6 @@ function GetNowPlaying(){
 	xmlhttp.send();
 	xmlDoc=xmlhttp.responseXML;
 
-	/*document.getElementById("NowRecent").innerHTML=*/
 	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
 	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
@@ -49,6 +48,7 @@ function GetNowPlaying(){
 	catch(err)
 	{
 	document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
+	console.log("No album art found.");
 	}
 	try {
 		var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
@@ -67,8 +67,6 @@ function GetNowPlaying(){
 }
 
 function GetTopArtists() {
-	var retina = window.devicePixelRatio > 1;
-
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -82,12 +80,7 @@ function GetTopArtists() {
 	xmlDoc=xmlhttp.responseXML;
 
 	for (var i = 0; i < 8; i++) {
-		if (retina == true) {
-			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+4)].childNodes[0].nodeValue;
-		}
-		else {
-			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
-		}
+		var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
 		document.getElementById("Art"+i.toString()).style.backgroundImage = "url("+imageLink+")";
 
 		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;

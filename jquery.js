@@ -59,6 +59,14 @@ $(document).ready(function() {
         } else {
             $('#ResearchCell').removeClass("ResearchBar");
         }
+
+        var windowWidth = $(window).width();
+        if (scroll < 800 && windowWidth > 1050) {
+            var actScroll = scroll - 300;
+            var opFrac = actScroll / 1000;
+            var opVal = (.75 - opFrac).toString();
+            $('#HomeImage').css('opacity', opVal);
+        };
     });
 
     $('#ResumeLink').hover(
