@@ -33,12 +33,12 @@ $(document).ready(function() {
 	window.sidepos = "Closed"
 	$('#MenuBarIcon').click(function () {
 		if (window.sidepos == "Closed") {
-			$('#HomePage').animate({"margin-left": "-250px"}, 200);
-			$('#Features').animate({"margin-left": "-250px"}, 200);
+			$('#HomePage').velocity({"margin-left": "-250px"}, 200);
+			$('#Features').velocity({"margin-left": "-250px"}, 200);
 			window.sidepos = "Opened";
 		} else {
-			$('#HomePage').animate({"margin-left": "0"}, 200);
-			$('#Features').animate({"margin-left": "0"}, 200);
+			$('#HomePage').velocity({"margin-left": "0"}, 200);
+			$('#Features').velocity({"margin-left": "0"}, 200);
 			window.sidepos = "Closed";
 		};
 	});

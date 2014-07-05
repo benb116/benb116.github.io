@@ -118,15 +118,7 @@ body {margin-top: 40px;
 	-webkit-background-size: 19vw;
 	        background-size: 19vw;}
 #TopArtists {width: 50%; padding-bottom: 50px;}
-.TopArtist {
-	width: 11vw; height: 11vw;
-	opacity: .5;
-	-webkit-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
-.TopArtist:hover {opacity: 1;}
-.TopArtistName {
-	position: absolute; bottom: 0; left: 50%; margin-left: -50%; width: 100%;
-	background-color: black;
-	opacity: .8;}
+.TopArtist {width: 11vw; height: 11vw;}
 
 .BottomFirst, .BottomLast {font-size: 7em;}
 #BBLogo {

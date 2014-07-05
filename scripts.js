@@ -16,9 +16,7 @@ function SmoothScroll(){
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 500);
+		        $(target).velocity("scroll", 500);
 		        return false;
 		      }
 		    }
@@ -75,7 +73,7 @@ function GetTopArtists() {
 	  {// code for IE6, IE5
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	  }
-	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=9",false);
+	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=8",false);
 	xmlhttp.send();
 	xmlDoc=xmlhttp.responseXML;
 

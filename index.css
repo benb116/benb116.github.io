@@ -2,7 +2,8 @@ body {
 	font-family: 'Open Sans', 'sans-serif'; font-size: 1em;
 	margin: 0 auto;
 	width: 100%; height: 100%;
-	background-color: #F2F2F2;}
+	background-color: #F2F2F2;
+	-webkit-transition: -webkit-filter .5s ease-in-out;}
 
 #IntroHead {
 	width: 100%;
@@ -188,8 +189,14 @@ body {
 	vertical-align: top;
 	color: white;
 	background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);
-	-webkit-background-size: cover;
-	        background-size: cover; background-repeat: no-repeat; background-position: center;}
+	-webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-position: center;
+	opacity: .5;
+	-webkit-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
+.TopArtist:hover {opacity: 1;}
+.TopArtistName {
+	position: absolute; bottom: 0; left: 50%; margin-left: -50%; width: 100%;
+	background-color: black;
+	opacity: .8;}
 
 /* Pulse Grow - Hover.css (http://ianlunn.co.uk/)*/
 @-webkit-keyframes pulse-grow {

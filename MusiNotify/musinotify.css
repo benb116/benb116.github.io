@@ -13,7 +13,8 @@ body {
 	-webkit-box-shadow: 0 5px 5px black;
 	        box-shadow: 0 5px 5px black;}
 #MenuBarIcon {
-	position: absolute; top: 0; right: 15px;}
+	position: absolute; top: 0; right: 15px;
+	cursor: pointer;}
 #HomePage {
 	height: 75%; width: 100%;
 	background-image:url(/MusiNotify/Resources/escheresque_ste.png);

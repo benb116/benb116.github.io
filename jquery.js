@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-    $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
-    $('#TopBar').delay(1500).animate({top: 0}, 500);
-    $('#IconOverlay').delay(1500).animate({top: "15px"}, 500);
-    $('#BottomMenu').delay(2000).animate({opacity: 1}, 500);
-    $('#BannerWrap').delay(2000).animate({opacity: 1}, 500);
+    $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
+    $('#TopBar').delay(2000).velocity({top: 0}, 500);
+    $('#IconOverlay').delay(2000).velocity({top: "15px"}, 500);
+    $('#BottomMenu').delay(2500).velocity({opacity: 1}, 500);
+    $('#BannerWrap').delay(2500).velocity({opacity: 1}, 500);
 
     /*setTimeout(function(){
         $('#CodeCell').addClass("CodeBar");
@@ -59,14 +59,6 @@ $(document).ready(function() {
         } else {
             $('#ResearchCell').removeClass("ResearchBar");
         }
-
-        var windowWidth = $(window).width();
-        if (scroll < 800 && windowWidth > 1050) {
-            var actScroll = scroll - 300;
-            var opFrac = actScroll / 1000;
-            var opVal = (.75 - opFrac).toString();
-            $('#HomeImage').css('opacity', opVal);
-        };
     });
 
     $('#ResumeLink').hover(
@@ -88,10 +80,11 @@ $(document).ready(function() {
     /*Easter Eggs Below*/
     window.cheatsenabled = false;
     alertify.set({ delay: 3000 });
-    cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () { 
+    cheet('up up down down left right left right b a', function () { 
         if (window.cheatsenabled == false) {
             window.cheatsenabled = true;
-                alertify.log("You have enabled easter eggs."); 
+            alertify.log("You have enabled easter eggs."); 
+            $('#Top').velocity("scroll", 500);
 
             cheet('j e w', function () {
                 alertify.log("Very nice! Great success!");

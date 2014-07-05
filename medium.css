@@ -49,7 +49,6 @@ body {font-size: 100%;}
 .TopArtist {
 	width: 18vw; height: 18vw;
 	opacity: 1;}
-.TopArtistName {display: none;}
 
 .BottomFirst, .BottomLast {font-size: 5em;}
 #BBLogo {
