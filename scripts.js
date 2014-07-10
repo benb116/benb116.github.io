@@ -43,8 +43,7 @@ function GetNowPlaying(){
 	try {
 		document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
 	}
-	catch(err)
-	{
+	catch(err) {
 	document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
 	console.log("No album art found.");
 	}
@@ -58,8 +57,7 @@ function GetNowPlaying(){
 			document.getElementById("TrackArt").className="Other";
 		}
 	} 
-	catch(err) 
-	{
+	catch(err) {
 		console.log("No Now-Playing track found.");
 	}
 }

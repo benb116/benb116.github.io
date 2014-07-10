@@ -23,7 +23,7 @@ body {
 #BioPar {
 	text-align: justify; text-indent: 30px;
 	line-height: 2em;
-	margin: auto; margin-top: 10px;
+	margin: auto; margin-top: -15px;
 	font-family: 'PT Sans', 'serif';}
 .BottomMenuLink {
 	text-decoration: none;
@@ -71,11 +71,11 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;}
-.PageHeader p {
-	font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em; font-weight: lighter;}
 .PageHeader h1 {
 	font-size: 3em;	font-family: 'Istok Web', 'sans-serif'; font-weight: normal;
 	line-height: .75em;}
+.PageHeader h2 {
+	font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em; font-weight: lighter;}
 
 .CodeCard {
 	display: inline-block;
@@ -104,7 +104,7 @@ body {
 	line-height: 1.25em;}
 .CodeItemDescription {font-size: 1em; color: black;}
 .CodeItemLang {font-style: 1em; color: gray;}
-.CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left;}
+.CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left; display: block;}
 
 #MusiNotifyTable {background-image: url(/Resources/Code/MusiNotify.png);}
 #GonePhishingTable {background-image: url(/Icons%20and%20Attr/Fishing/icon_8702.svg);}

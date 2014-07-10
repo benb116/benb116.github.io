@@ -20,10 +20,8 @@ $(document).ready(function() {
         $('#ResearchCell').removeClass("ResearchBar");
     },3800);*/
 
-    SmoothScroll();
-    GATrack();
-    GetTopArtists();
     GetNowPlaying();
+    GetTopArtists();
 
     $(window).scroll(function() {    
         var CodeAnchor = $('#CodePage').offset().top;
@@ -41,19 +39,19 @@ $(document).ready(function() {
         } else {
             $('#CodeCell').removeClass("CodeBar"); 
         }
-         if (scroll >= SchoolAnchor && scroll < MusicAnchor) {
+        if (scroll >= SchoolAnchor && scroll < MusicAnchor) {
             $('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr/Book/icon_4584.svg)');
             $('#SchoolCell').addClass("SchoolBar");
         } else {
             $('#SchoolCell').removeClass("SchoolBar");
         }
-         if (scroll >= MusicAnchor && scroll < ResearchAnchor) {
+        if (scroll >= MusicAnchor && scroll < ResearchAnchor) {
             $('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr/Music/icon_8996.svg)');
             $('#MusicCell').addClass("MusicBar");
         } else {
             $('#MusicCell').removeClass("MusicBar");
         }
-         if (scroll >= ResearchAnchor) {
+        if (scroll >= ResearchAnchor) {
             $('#IconOverlay').css('background-image', 'url(/Icons%20and%20Attr/Earth/icon_10812.svg)');
             $('#ResearchCell').addClass("ResearchBar");
         } else {

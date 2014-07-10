@@ -38,8 +38,8 @@ body {font-size: 100%;}
 .CodeCard {margin-left: 3%; margin-right: 3%;}
 
 #EdCareer {
-    width: 80%; min-width: 600px;
-	font-size: 1.3em;}
+    width: 80%; min-width: 500px;
+	font-size: 1em;}
 
 #NowPlaying {width: 40%;}
 #TrackArt {
