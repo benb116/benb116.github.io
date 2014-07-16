@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
     $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
-    $('#TopBar').delay(2000).velocity({top: 0}, 500);
-    $('#IconOverlay').delay(2000).velocity({top: "15px"}, 500);
-    $('#BottomMenu').delay(2500).velocity({opacity: 1}, 500);
-    $('#BannerWrap').delay(2500).velocity({opacity: 1}, 500);
+    $('#TopBar').delay(1000).velocity({top: 0}, 500);
+    $('#IconOverlay').delay(1000).velocity({top: "15px"}, 500);
+    $('#BottomMenu').delay(1500).velocity({opacity: 1}, 500);
+    $('#BannerWrap').delay(1500).velocity({opacity: 1}, 500);
 
     /*setTimeout(function(){
         $('#CodeCell').addClass("CodeBar");
@@ -103,6 +103,7 @@ $(document).ready(function() {
                 $('#IntroHead').css('color', 'white');
                 $('.BottomMenuLink').css('color', 'white');
                 $('.BottomFirst').css('color', 'white');
+                $('#BBLogo').css('background-image', 'url(/Resources/Logo-white.svg)');
             });
 
         } else {
