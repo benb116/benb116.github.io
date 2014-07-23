@@ -6,20 +6,6 @@ $(document).ready(function() {
     $('#BottomMenu').delay(1500).velocity({opacity: 1}, 500);
     $('#BannerWrap').delay(1500).velocity({opacity: 1}, 500);
 
-    /*setTimeout(function(){
-        $('#CodeCell').addClass("CodeBar");
-        $('#SchoolCell').addClass("SchoolBar");
-        $('#MusicCell').addClass("MusicBar");
-        $('#ResearchCell').addClass("ResearchBar");
-    },3300);
-
-    setTimeout(function(){
-        $('#CodeCell').removeClass("CodeBar"); 
-        $('#SchoolCell').removeClass("SchoolBar"); 
-        $('#MusicCell').removeClass("MusicBar"); 
-        $('#ResearchCell').removeClass("ResearchBar");
-    },3800);*/
-
     GetNowPlaying();
     GetTopArtists();
 
@@ -78,11 +64,11 @@ $(document).ready(function() {
     BottomHover('#ContactLink', 'url(/Icons%20and%20Attr/Envelope/icon_13468.svg)');
     BottomHover('#CreditsLink', 'url(/Icons%20and%20Attr/List/icon_11515.svg)');
 
-
-
     $('#MetLetLink').click(function () {
         $('#MetLet').slideToggle();
     });
+
+    $("#CreditsLink").leanModal({ closeButton: ".modal_close" });
 
     /*Easter Eggs Below*/
     window.cheatsenabled = false;

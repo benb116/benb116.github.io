@@ -6,6 +6,29 @@ body {
 	text-align: center;
 	-webkit-transition: -webkit-filter .5s ease-in-out;}
 
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;}
+#Modal {
+	width: 700px;
+	padding: 10px;
+	background-color: white;
+	display: none;
+	font-size: 1em;}
+#Modal p {line-height: 0.5em;}
+.modal_close {
+	color: black;
+	text-decoration: none;
+	margin: 40px;
+	cursor: pointer;
+}
+
 #IntroHead {
 	width: 100%;
 	text-align: center;
@@ -201,14 +224,8 @@ body {
 	opacity: .8;}
 
 /* Pulse Grow - Hover.css (http://ianlunn.co.uk/)*/
-@-webkit-keyframes pulse-grow {
-  to {
-    -webkit-transform: scale(1.05); transform: scale(1.05);
-  }}
-@keyframes pulse-grow {
-  to {
-    -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05);
-  }}
+@-webkit-keyframes pulse-grow {to {-webkit-transform: scale(1.05); transform: scale(1.05);}}
+@keyframes pulse-grow {to {-webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05);}}
 .pulse-grow {
   -webkit-animation-name: pulse-grow; animation-name: pulse-grow;
   -webkit-animation-duration: .25s; animation-duration: .25s;
