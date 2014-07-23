@@ -4,23 +4,20 @@ function GATrack(){
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-49014722-1', 'benbernstein.me');
+	ga('create', 'UA-49014722-1', 'auto');
 	ga('send', 'pageview');
 }
 
 function SmoothScroll(){
-	$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $(target).velocity("scroll", 500);
-		        return false;
-		      }
-		    }
-		});
+	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $(target).velocity("scroll", 500);
+	        return false;
+	      }
+	    }
 	});
 }
 
@@ -44,8 +41,8 @@ function GetNowPlaying(){
 		document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
 	}
 	catch(err) {
-	document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
-	console.log("No album art found.");
+		document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
+		console.log("No album art found.");
 	}
 	try {
 		var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;

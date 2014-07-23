@@ -108,7 +108,7 @@ body {
 .CodeItemLang {font-style: 1em; color: gray;}
 .CodeItemTitle, .CodeItemDescription, .CodeItemLang {text-align: left; display: block;}
 
-#MusiNotifyTable {background-image: url(/Resources/Code/MusiNotify.png);}
+#MusiNotifyTable {background-image: url(/Resources/MusiNotify.png);}
 #GonePhishingTable {background-image: url(/Icons%20and%20Attr/Fishing/icon_8702.svg);}
 #WebsiteTable {background-image: url(/Icons%20and%20Attr/Laptop/icon_9074.svg);}
 #BasketballTable {background-image: url(/Icons%20and%20Attr/Basketball/icon_2711.svg);}
