@@ -21,7 +21,7 @@ function SmoothScroll(){
 	});
 }
 
-function GetNowPlaying(){
+function GetMusicInfo(){
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -57,9 +57,7 @@ function GetNowPlaying(){
 	catch(err) {
 		console.log("No Now-Playing track found.");
 	}
-}
 
-function GetTopArtists() {
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -83,3 +81,10 @@ function GetTopArtists() {
 		document.getElementById("ArtLink"+i.toString()).href=ArtistLink;
 	}
 }
+
+function BottomHover(id, imgurl) {
+    $(id).hover(
+        function () {$('#IconOverlay').css('background-image', imgurl);}, 
+        function () {$('#IconOverlay').css('background-image', window.CurrentIcon);
+    });
+};

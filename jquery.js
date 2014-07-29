@@ -6,8 +6,7 @@ $(document).ready(function() {
     $('#BottomMenu').delay(1500).velocity({opacity: 1}, 500);
     $('#BannerWrap').delay(1500).velocity({opacity: 1}, 500);
 
-    GetNowPlaying();
-    GetTopArtists();
+    GetMusicInfo();
 
     window.CurrentIcon = "";
     window.cheatsenabled = false;
@@ -50,25 +49,17 @@ $(document).ready(function() {
             $('#ResearchCell').removeClass("ResearchBar");
         }
 
-        $('#IconOverlay').css('background-image', window.CurrentIcon);
+        
+        if ($('#IconOverlay').css('background-image') != window.CurrentIcon) {
+            $('#IconOverlay').css('background-image', window.CurrentIcon);
+        };
     });
-
-    function BottomHover(id, imgurl) {
-        $(id).hover(
-            function () {$('#IconOverlay').css('background-image', imgurl);}, 
-            function () {$('#IconOverlay').css('background-image', window.CurrentIcon);
-        });
-    };
 
     BottomHover('#ResumeLink', 'url(/Icons%20and%20Attr/Resume/icon_30547.svg)');
     BottomHover('#ContactLink', 'url(/Icons%20and%20Attr/Envelope/icon_13468.svg)');
     BottomHover('#CreditsLink', 'url(/Icons%20and%20Attr/List/icon_11515.svg)');
 
-    $('#MetLetLink').click(function () {
-        $('#MetLet').slideToggle();
-    });
-
-    $("#CreditsLink").leanModal({ closeButton: ".modal_close" });
+    $("#CreditsLink").leanModal({ top : 70, closeButton: ".modal_close" });
 
     /*Easter Eggs Below*/
     window.cheatsenabled = false;
@@ -94,7 +85,7 @@ $(document).ready(function() {
                 $('#IntroHead').css('color', 'white');
                 $('.BottomMenuLink').css('color', 'white');
                 $('.BottomFirst').css('color', 'white');
-                $('#BBLogo').css('background-image', 'url(/Resources/Logo-white.svg)');
+                $('#BBLogo').css('background-image', 'url(/Resources/logo-white.svg)');
             });
         } else {
             window.cheatsenabled = false;
