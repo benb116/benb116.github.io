@@ -23,9 +23,9 @@ body {
 	display: none;
 	font-size: 1em;}
 .ModalColumn {
-	display:inline-block; width:49%;
-	vertical-align:top;
-	text-align:left; text-indent:0.5em;
+	display: inline-block; width: 49%;
+	vertical-align: top;
+	text-align: left; text-indent: 0.5em;
 }
 #Modal p {line-height: 0.5em;}
 .modal_close {
@@ -59,8 +59,63 @@ body {
 	text-align: center;
 	color: gray;
 	cursor: pointer;
-	-webkit-transition: color .15s ease-in-out; transition: color .15s ease-in-out;}
+	display: inline-block; 
+	width: 10%; height: 3em;}
 .BottomMenuLink:hover {color: black;}
+
+.BottomIcon {
+	width: 3em; height: 3em;
+	background-size: cover;
+	background-position: center;
+	display: inline-block;}
+.BottomText {-webkit-transition: color .15s ease-in-out; transition: color .15s ease-in-out;}
+#ResumeIcon {background-image: url(/Icons%20and%20Attr/Resume/icon_30547.svg);}
+#EmailIcon {background-image: url(/Icons%20and%20Attr/Envelope/icon_13468);}
+#LinkedInIcon {background-image: url(/Icons%20and%20Attr/Profiles/linkedin.svg);}
+#GithubIcon {background-image: url(/Icons%20and%20Attr/Profiles/github.svg);}
+#CreditsIcon {background-image: url(/Icons%20and%20Attr/List/icon_11515.svg);}
+
+/* Float */
+.float {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.float:hover, .float:focus, .float:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+/* Hover */
+@-webkit-keyframes hover {
+  50% {-webkit-transform: translateY(5px); transform: translateY(5px);}
+  100% {-webkit-transform: translateY(10px); transform: translateY(10px);}
+}
+
+@keyframes hover {
+  50% {-webkit-transform: translateY(5px); transform: translateY(5px);}
+  100% {-webkit-transform: translateY(10px); transform: translateY(10px);}
+}
+
+.hover {
+	display: inline-block;
+	-webkit-transition-duration: 0.5s; transition-duration: 0.5s;
+	-webkit-transition-property: -webkit-transform; transition-property: transform;
+	-webkit-transform: translateZ(0); transform: translateZ(0);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px);
+	-webkit-animation-name: hover; animation-name: hover;
+	-webkit-animation-duration: 1s; animation-duration: 1s;
+	-webkit-animation-delay: 0.3s; animation-delay: 0.3s;
+	-webkit-animation-timing-function: linear; animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite; animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate; animation-direction: alternate;
+}
 
 #HomeBody {text-align: center;}
 

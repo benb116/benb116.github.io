@@ -48,18 +48,17 @@ $(document).ready(function() {
         } else {
             $('#ResearchCell').removeClass("ResearchBar");
         }
-
         
         if ($('#IconOverlay').css('background-image') != window.CurrentIcon) {
             $('#IconOverlay').css('background-image', window.CurrentIcon);
         };
     });
 
-    BottomHover('#ResumeLink', 'url(/Icons%20and%20Attr/Resume/icon_30547.svg)');
-    BottomHover('#ContactLink', 'url(/Icons%20and%20Attr/Envelope/icon_13468.svg)');
-    BottomHover('#CreditsLink', 'url(/Icons%20and%20Attr/List/icon_11515.svg)');
-
     $("#CreditsLink").leanModal({ top : 70, closeButton: ".modal_close" });
+
+    $('.BottomMenuLink').hover(function () {
+        $('.BottomMenuLink').addClass('float');
+    });
 
     /*Easter Eggs Below*/
     window.cheatsenabled = false;

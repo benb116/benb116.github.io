@@ -82,9 +82,3 @@ function GetMusicInfo(){
 	}
 }
 
-function BottomHover(id, imgurl) {
-    $(id).hover(
-        function () {$('#IconOverlay').css('background-image', imgurl);}, 
-        function () {$('#IconOverlay').css('background-image', window.CurrentIcon);
-    });
-};

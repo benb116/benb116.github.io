@@ -15,11 +15,7 @@ body {font-size: 100%;}
 #BioPar {
 	width: 70%; min-width: 450px;
 	font-size: 1.25em;}
-#BottomMenu {margin-bottom: 50px;}
-.BottomMenuLink {
-	font-size: 2em; line-height: 2em;
-	display: inline-block; width: 30%;}
-
+#BottomMenu {margin: 50px 0 50px 0;}
 #MobileBar {
 	font-size: 2.5em;
 	line-height: 2em;

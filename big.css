@@ -1,5 +1,6 @@
 body {margin-top: 40px;
 	font-size: 100%;}
+#MobileBar {display: none;}
 
 #TopBar {
 	height: 50px; width: 100%;
@@ -63,43 +64,13 @@ body {margin-top: 40px;
     background-size: 2em;}
 #BioPar {width: 50%; min-width: 430px; max-width: 600px;
 	font-size: .23em;}
+
 #BottomMenu {
-	font-size: 2em; line-height: .5em;
+	font-size: 1em; line-height: .5em;
 	width: 100%; text-align: center;
 	font-family: 'Open Sans', 'sans-serif';
-	margin-top: 5%;
+	margin-top: 3%; margin-bottom: 2%;
 	opacity: 0;}
-.BottomMenuLink {
-	display: inline-block; 
-	width: 25%; height: 2em;
-	padding: .25em;}
-#MobileBar {display: none;}
-
-/* Hover */
-@-webkit-keyframes hover {
-  50% {-webkit-transform: translateY(5px); transform: translateY(5px);}
-  100% {-webkit-transform: translateY(10px); transform: translateY(10px);}
-}
-
-@keyframes hover {
-  50% {-webkit-transform: translateY(5px); transform: translateY(5px);}
-  100% {-webkit-transform: translateY(10px); transform: translateY(10px);}
-}
-
-.hover {
-	display: inline-block;
-	-webkit-transition-duration: 0.5s; transition-duration: 0.5s;
-	-webkit-transition-property: -webkit-transform; transition-property: transform;
-	-webkit-transform: translateZ(0); transform: translateZ(0);
-	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px);
-	-webkit-animation-name: hover; animation-name: hover;
-	-webkit-animation-duration: 1s; animation-duration: 1s;
-	-webkit-animation-delay: 0.3s; animation-delay: 0.3s;
-	-webkit-animation-timing-function: linear; animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite; animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate; animation-direction: alternate;
-}
 
 .CodeCard {margin-left: 3%; margin-right: 3%;}
 
