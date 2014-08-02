@@ -70,7 +70,7 @@ body {
 	display: inline-block;}
 .BottomText {-webkit-transition: color .15s ease-in-out; transition: color .15s ease-in-out;}
 #ResumeIcon {background-image: url(/Icons%20and%20Attr/Resume/icon_30547.svg);}
-#EmailIcon {background-image: url(/Icons%20and%20Attr/Envelope/icon_13468);}
+#EmailIcon {background-image: url(/Icons%20and%20Attr/Envelope/icon_13468.svg);}
 #LinkedInIcon {background-image: url(/Icons%20and%20Attr/Profiles/linkedin.svg);}
 #GithubIcon {background-image: url(/Icons%20and%20Attr/Profiles/github.svg);}
 #CreditsIcon {background-image: url(/Icons%20and%20Attr/List/icon_11515.svg);}
