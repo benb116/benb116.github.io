@@ -71,8 +71,13 @@ function GetMusicInfo(){
 	xmlDoc=xmlhttp.responseXML;
 
 	for (var i = 0; i < 8; i++) {
-		var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
-		document.getElementById("Art"+i.toString()).style.backgroundImage = "url("+imageLink+")";
+		try {
+			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
+			document.getElementById("Art"+i.toString()).style.backgroundImage = "url("+imageLink+")";
+		}
+		catch(err) {
+			console.log("No Artist image found for artist " + i.toString());
+		}
 
 		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
 		document.getElementById("ArtName"+i.toString()).innerHTML=ArtistName;

@@ -16,12 +16,10 @@ body {
     background: #000;
     display: none;}
 #Modal {
-	width: 700px;
 	padding: 10px;
 	background-color: white;
 	border-radius: 5px;
-	display: none;
-	font-size: 1em;}
+	display: none;}
 .ModalColumn {
 	display: inline-block; width: 49%;
 	vertical-align: top;
@@ -60,7 +58,7 @@ body {
 	color: gray;
 	cursor: pointer;
 	display: inline-block; 
-	width: 10%; height: 3em;}
+	height: 3em;}
 .BottomMenuLink:hover {color: black;}
 
 .BottomIcon {
@@ -258,7 +256,7 @@ h3 {font-size: 1.25em;}
 	vertical-align: top; text-align: center;
 	padding: 20px; padding-top: 0;
 	margin-left: 15px; margin-right: 15px; margin-bottom: 40px;
-	border:10px solid white;}
+	border: 10px solid white;}
 #TopArtists {width: 50%; padding-bottom: 50px;}
 #TrackArt {
 	display: inline-block;

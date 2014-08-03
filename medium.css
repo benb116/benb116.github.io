@@ -2,8 +2,10 @@ body {font-size: 100%;}
 
 #TopBar {display: none;}
 #MenuBar {display: none;}
-.hover {display: none;}
 #BannerWrap {display: none;}
+#Modal {
+	font-size: 1em;
+	width: 90%;}
 
 #IntroHead {margin-top: 14%;}
 #topart {
@@ -16,6 +18,7 @@ body {font-size: 100%;}
 	width: 70%; min-width: 450px;
 	font-size: 1.25em;}
 #BottomMenu {margin: 50px 0 50px 0;}
+.BottomMenuLink {width: 15%;}
 #MobileBar {
 	font-size: 2.5em;
 	line-height: 2em;

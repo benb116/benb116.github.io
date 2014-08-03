@@ -1,5 +1,8 @@
 body {font-size: 200%;}
 
+#Modal {
+	font-size: 0.75em;}
+
 #IntroHead {margin-top: 20%;}
 #topart {
 	width: 7em; height: 7em;
@@ -10,13 +13,18 @@ body {font-size: 200%;}
 #BioPar {
 	margin-bottom: 50px;
 	font-size: 1em;}
-#BottomMenu {margin-bottom: 80px;}
+#BottomMenu {margin-bottom: 150px;}
 
 #EdCareer {
 	width: 90%;
 	font-size: 0.75em;}
 
-.BottomFirst, .BottomLast {font-size: 4em;}
+#NowPlaying {width: 80%;}
+#TrackArt {
+	width: 70vw; height: 70vw;
+	background-size: 70vw;}
+.TopArtist {
+	width: 36vw; height: 36vw;}
 #BBLogo {
 	width: 6em; height: 3em;
 	background-size: 6em;}
