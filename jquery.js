@@ -1,12 +1,22 @@
 $(document).ready(function() {
 
-    $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
-    $('#TopBar').delay(1000).velocity({top: 0}, 500);
-    $('#IconOverlay').delay(1000).velocity({top: "15px"}, 500);
-    $('#BottomMenu').delay(1500).velocity({opacity: 1}, 500);
-    $('#BannerWrap').delay(1500).velocity({opacity: 1}, 500);
+    if ($('#MobileBar').css('display') == 'none') {
+        $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
+        $('#TopBar').delay(1000).velocity({top: 0}, 500);
+        $('#IconOverlay').delay(1000).velocity({top: "15px"}, 500);
+        $('#BottomMenu').delay(1500).velocity({opacity: 1}, 500);
+        $('#BannerWrap').delay(1500).velocity({opacity: 1}, 500);
+    } else {
+        $('#IntroHead').css('opacity', 1);
+        $('#TopBar').css('top', 0);
+        $('#IconOverlay').css('top', '15px');
+        $('#BottomMenu').css('opacity', 1);
+        $('#BannerWrap').css('opacity', 1);
+    };
 
     GetMusicInfo();
+    SmoothScroll();
+    GATrack();
 
     window.CurrentIcon = "";
     window.cheatsenabled = false;
@@ -83,7 +93,6 @@ $(document).ready(function() {
                 $('#HomeBlack').css('display', 'block');
                 $('#IntroHead').css('color', 'white');
                 $('.BottomMenuLink').css('color', 'white');
-                $('.BottomFirst').css('color', 'white');
                 $('#BBLogo').css('background-image', 'url(/Resources/logo-white.svg)');
             });
         } else {
