@@ -2,10 +2,10 @@ body {font-size: 100%;}
 
 #TopBar {display: none;}
 #MenuBar {display: none;}
-#BannerWrap {display: none;}
 #Modal {
 	font-size: 1em;
 	width: 90%;}
+#BannerWrap {top: 0;}
 
 #IntroHead {margin-top: 14%;}
 #topart {
@@ -45,7 +45,7 @@ body {font-size: 100%;}
 	width: 35vw; height: 35vw;
 	background-size: 35vw;}
 #TopArtists {width: 80%; padding-bottom: 50px;}
-.TopArtist {
+.ArtImage {
 	width: 18vw; height: 18vw;
 	opacity: 1;}
 
