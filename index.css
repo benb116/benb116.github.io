@@ -34,18 +34,18 @@ body {
 
 #BannerWrap {
 	position: absolute; right: 0px;
-	width: 300px; height: 300px;
+	width: 20em; height: 20em;
 	display: block;
 	overflow: hidden;
 	opacity: 0;}
 #UnderBanner {
 	position: absolute;
-	top: 70px; right: -50px;
-	margin-right: -20px;
+	top: 4em; right: -3em;
+	margin-right: -1em;
 	text-align: center; 
-	line-height: 30px;
+	line-height: 2em;
 	display: block;
-	width: 300px; height: 30px;
+	width: 20em; height: 2em;
 	background-color: white; 
 	color: black; font-weight: normal;
 	font-family: 'PT Sans', 'serif';
@@ -107,29 +107,6 @@ body {
 .float:hover, .float:focus, .float:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);}
-
-/* Hover */
-@-webkit-keyframes hover {
-  50% {-webkit-transform: translateY(5px); transform: translateY(5px);}
-  100% {-webkit-transform: translateY(10px); transform: translateY(10px);}}
-
-@keyframes hover {
-  50% {-webkit-transform: translateY(5px); transform: translateY(5px);}
-  100% {-webkit-transform: translateY(10px); transform: translateY(10px);}}
-
-.hover {
-	display: inline-block;
-	-webkit-transition-duration: 0.5s; transition-duration: 0.5s;
-	-webkit-transition-property: -webkit-transform; transition-property: transform;
-	-webkit-transform: translateZ(0); transform: translateZ(0);
-	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transform: translateY(0px); -ms-transform: translateY(0px); transform: translateY(0px);
-	-webkit-animation-name: hover; animation-name: hover;
-	-webkit-animation-duration: 1s; animation-duration: 1s;
-	-webkit-animation-delay: 0.3s; animation-delay: 0.3s;
-	-webkit-animation-timing-function: linear; animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite; animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate; animation-direction: alternate;}
 
 #HomeBody {text-align: center;}
 
@@ -261,11 +238,6 @@ h3 {font-size: 1.25em;}
     background-position: center;
     -webkit-background-size: cover; background-size: cover;
 	-webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58);}
-#MetLet2012F {background-image: url(/Resources/School/Met%20Let/2012Fthumb.jpg);}
-#MetLet2013S {background-image: url(/Resources/School/Met%20Let/2013Sthumb.jpg);}
-#MetLet2013F {background-image: url(/Resources/School/Met%20Let/2013Fthumb.jpg);}
-#MetLet2013W {background-image: url(/Resources/School/Met%20Let/2013Wthumb.jpg);}
-#MetLet2014S {background-image: url(/Resources/School/Met%20Let/2014Sthumb.jpg);}
 
 #NowPlaying, #TopArtists {
 	color: white;

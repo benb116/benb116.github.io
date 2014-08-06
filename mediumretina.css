@@ -2,6 +2,12 @@ body {font-size: 200%;}
 
 #Modal {font-size: 0.75em;}
 
+#UnderBanner {
+	margin-top: 0; margin-right: -2em;
+	line-height: 1em;
+	width: 20em;
+}
+
 #IntroHead {margin-top: 20%;}
 #topart {
 	width: 7em; height: 7em;
