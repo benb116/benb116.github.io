@@ -21,6 +21,7 @@ $(document).ready(function() {
     GATrack();
 
     window.CurrentIcon = "";
+    window.MetLetLoaded = false;
     window.cheatsenabled = false;
     $(window).scroll(function() { // As the user scrolls...
         // Determine anchor positions
@@ -66,13 +67,15 @@ $(document).ready(function() {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
         };
 
-        if (scroll >= SchoolAnchor) {
+        if (scroll >= SchoolAnchor && window.MetLetLoaded == false) {
             //Lazy load thumbnails when a user scrolls to the area
             $('#MetLet2012F').css('background-image', 'url(/Resources/School/Met%20Let/2012Fthumb.jpg)');
             $('#MetLet2013S').css('background-image', 'url(/Resources/School/Met%20Let/2013Sthumb.jpg)');
             $('#MetLet2013F').css('background-image', 'url(/Resources/School/Met%20Let/2013Fthumb.jpg)');
             $('#MetLet2013W').css('background-image', 'url(/Resources/School/Met%20Let/2013Wthumb.jpg)');
             $('#MetLet2014S').css('background-image', 'url(/Resources/School/Met%20Let/2014Sthumb.jpg)');
+            console.log("Met Let loaded.")
+            window.MetLetLoaded = true; // Prevents constant reloading and flashing on mobile browsers
         };
     });
 

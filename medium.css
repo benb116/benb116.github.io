@@ -4,7 +4,7 @@ body {font-size: 100%;}
 #MenuBar {display: none;}
 #Modal {
 	font-size: 1em;
-	width: 90%;}
+	width: 90%; max-width: 700px}
 #BannerWrap {top: 0;}
 
 #IntroHead {margin-top: 14%;}
