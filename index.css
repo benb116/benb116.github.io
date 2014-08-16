@@ -211,6 +211,15 @@ body {
 	margin-left: 40px;
 	text-indent: -20px;}
 #EdCareer i {margin-right: 10px;}
+#Bart {
+	display: block;
+	width: 100px; height: 210px;
+	background-image: url(/Resources/bart.png);
+	background-size: contain; background-repeat: no-repeat;
+	position: absolute; bottom: -5px; left: 400px;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out; transition: opacity .5s ease-in-out;}
+
 #Eraser {
 	width: 45px; height: 10px;
 	background-color: white;
@@ -218,12 +227,15 @@ body {
 	display: block;
 	border: 1px solid black;
 	border-top: 3px solid gray;}
-#Chalk {
+#WriteChalk {
 	width: 25px; height: 5px; 
+	border-radius: 1px;
 	background-color: white;
-	position: absolute; bottom: 0; right: 150px;
-	display: block;
-	border: 1px solid black;}
+	display: inline-block;
+	vertical-align: middle;
+	transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
+	margin-left: -7px;
+	-webkit-transition: opacity .5s ease-in-out; transition: opacity .5s ease-in-out;}
 
 #MetLet {
 	position: relative;

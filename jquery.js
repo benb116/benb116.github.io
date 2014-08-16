@@ -75,6 +75,7 @@ $(document).ready(function() {
             $('#MetLet2013W').css('background-image', 'url(/Resources/School/Met%20Let/2013Wthumb.jpg)');
             $('#MetLet2014S').css('background-image', 'url(/Resources/School/Met%20Let/2014Sthumb.jpg)');
             console.log("Met Let loaded.")
+            Write(); // Begin chalk animation
             window.MetLetLoaded = true; // Prevents constant reloading and flashing on mobile browsers
         };
     });
@@ -112,6 +113,12 @@ $(document).ready(function() {
                 $('.BottomMenuLink').css('color', 'white');
                 $('#BBLogo').css('background-image', 'url(/Resources/logo-white.svg)');
             });
+
+            cheet('b a r t', function () {
+                if ($('#Bart').css('opacity') == 0) {$('#Bart').css('opacity', 1);
+                } else {$('#Bart').css('opacity', 0);};
+            });
+
         } else {
             //Disable codes
             window.cheatsenabled = false;
@@ -120,6 +127,7 @@ $(document).ready(function() {
             cheet.disable('n a z i');
             cheet.disable('g l a s s e s');
             cheet.disable('b a c k');
+            cheet.disable('b a r t');
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
         };
     });

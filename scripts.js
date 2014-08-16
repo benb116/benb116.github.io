@@ -86,3 +86,32 @@ function GetMusicInfo(){
 		$('.ArtLink').get(i).href=ArtistLink;
 	}
 }
+
+function Write() {
+	console.log('Begin chalk animation')
+	var divtext = '<div id="WriteChalk">&nbsp;</div>';
+	window.newtext = '<i>Activities:</i>Grade Treasurer, Chief Layout Editor of Hebrew Newspaper';
+	var fulltext = ', Robotics Club, Annenberg Science Symposium';
+
+    $.each(fulltext.split(''), function(i, letter){
+
+        //we add 100*i ms delay to each letter 
+        setTimeout(function(){
+
+            //we add the letter to the container
+            //$('#container').html($('#container').html() + letter);
+        	newtext += letter
+        	var fullcode = window.newtext+divtext;
+        	$('#WriteChalk').velocity({'margin-top': "0em"}, 40);
+			setTimeout(function(){
+				$('#ChalkLine').html(fullcode);
+				$('#WriteChalk').velocity({'margin-top': "1em"}, 40);
+			}, 100);
+			if (i == 43) {
+				setTimeout(function(){
+					$('#WriteChalk').delay(1000).css('opacity', 0);
+				}, 100);
+			};
+        }, 150*(i+1));
+    });
+}
