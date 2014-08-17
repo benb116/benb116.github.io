@@ -93,8 +93,8 @@ $(document).ready(function() {
         if (window.cheatsenabled == false) {
             window.cheatsenabled = true;
             alertify.log("You have enabled easter eggs."); 
-            $('#Top').velocity("scroll", 500);
-
+            $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
+            
             // Define the cheat codes
             cheet('j e w', function () {
                 alertify.log("Very nice! Great success!");

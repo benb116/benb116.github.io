@@ -88,7 +88,7 @@ function GetMusicInfo(){
 }
 
 function Write() {
-	console.log('Begin chalk animation')
+	console.log('Begin chalk animation');
 	var divtext = '<div id="WriteChalk">&nbsp;</div>';
 	window.newtext = '<i>Activities:</i>Grade Treasurer, Chief Layout Editor of Hebrew Newspaper';
 	var fulltext = ', Robotics Club, Annenberg Science Symposium';
