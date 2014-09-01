@@ -16,7 +16,10 @@ $(document).ready(function() {
         $('#BannerWrap').css('opacity', 1);
     };
 
-    GetMusicInfo();
+    try {GetMusicInfo();}
+    catch(err) {
+        console.log('Error fetching MusicInfo: '+err)
+    }
     SmoothScroll();
     GATrack();
 
@@ -82,8 +85,8 @@ $(document).ready(function() {
 
     $("#CreditsLink").leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
 
-    $('.BottomMenuLink').hover(function () {
-        $('.BottomMenuLink').addClass('float'); // Make the BottomLinks float on hover
+    $('#BottomMenu a').hover(function () {
+        $('#BottomMenu a').addClass('float'); // Make the BottomLinks float on hover
     });
 
     // Easter eggs below

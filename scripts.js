@@ -58,6 +58,8 @@ function GetMusicInfo(){
 		console.log("No Now-Playing track found.");
 	}
 
+	var NumOfImage = document.getElementById('TopArtists').getElementsByTagName('div').length;
+
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -66,24 +68,25 @@ function GetMusicInfo(){
 	  {// code for IE6, IE5
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	  }
-	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=8",false);
+	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit="+NumOfImage,false);
 	xmlhttp.send();
 	xmlDoc=xmlhttp.responseXML;
 
-	for (var i = 0; i < 8; i++) {
+	for (var i = 0; i < NumOfImage; i++) {
 		try {
 			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
-			$('.ArtImage').get(i).style.backgroundImage = "url("+imageLink+")";
+			$('#TopArtists div').get(i).style.backgroundImage = "url("+imageLink+")";
 		}
 		catch(err) {
 			console.log("No Artist image found for artist " + i.toString());
 		}
 
 		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-		$('.ArtName').get(i).innerHTML=ArtistName;
+		$('#TopArtists span').get(i).innerHTML=ArtistName;
 
 		var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
-		$('.ArtLink').get(i).href=ArtistLink;
+		$('#TopArtists a').get(i).href=ArtistLink;
+		$('#TopArtists a').get(i).target='_blank'
 	}
 }
 

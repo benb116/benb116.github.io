@@ -4,7 +4,7 @@
 		<title>Ben Bernstein</title>
 		<meta name="Description" content="I'm a freshman at UPenn who's fascinated by technology and engineering. I'm also interested in science, sports, history, music, and economics." />
 		<meta charset="UTF-8">
-		<link rel="shortcut icon" href="/Icons%20and%20Attr/User/icon_419.png">
+		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="big.css" media='screen and (min-width: 1051px)'>
 		<link rel='stylesheet' href='medium.css' media='screen and (max-width: 1050px)'>
@@ -25,17 +25,17 @@
 		<div id="TopBar">
 			<div id="IconCircle"><div id="IconOverlay"></div></div>
 			<div id="MenuContainer">
-				<a href="#Top"><div class="MenuItem" id="AboutCell">Ben</div></a>
-				<a href="#Code"><div class="MenuItem" id="CodeCell">Code</div></a>
-				<a href="#School"><div class="MenuItem" id="SchoolCell">School</div></a>
-				<a href="#Music"><div class="MenuItem" id="MusicCell">Music</div></a>
-				<a href="#Research"><div class="MenuItem" id="ResearchCell">Research</div></a>
+				<a href="#Top"><div id="AboutCell">Ben</div></a>
+				<a href="#Code"><div id="CodeCell">Code</div></a>
+				<a href="#School"><div id="SchoolCell">School</div></a>
+				<a href="#Music"><div id="MusicCell">Music</div></a>
+				<a href="#Research"><div id="ResearchCell">Research</div></a>
 			</div>
 		</div>	
 		<section id="HomeBody">
 			<div id="Modal">
-				<h2 style="line-height:0.5em;">Credits</h2>
-				<div class="ModalColumn">
+				<h2>Credits</h2>
+				<div>
 					<h3>Icons - The Noun Project</h3>
 					<p>Basketball Hoop by Gabriele Fumero</p>
 					<p>Laptop by Steve Stomp</p>
@@ -48,7 +48,7 @@
 					<p>Resume by Stephen Borengasser</p>
 					<p>Easter Egg by Irene Hoffman</p>
 				</div>
-				<div class="ModalColumn">
+				<div>
 					<h3>Scripts, Plugins, & Effects</h3>
 					<a href="http://css-tricks.com/snippets/jquery/smooth-scrolling/"><p>Smooth Scrolling script</p></a>
 					<a href="http://www.w3schools.com/xml/xml_dom.asp"><p>Now Playing script (adapted)</p></a>
@@ -69,33 +69,33 @@
   			</div>
 
 		  	<div id="BottomMenu">
-				<a class="BottomMenuLink" id="ResumeLink" target="_blank" href="/Resources/Resume.pdf">
-					<div id="ResumeIcon" class="BottomIcon"></div>
-					<p class="BottomText">Resume</p>
+				<a id="ResumeLink" target="_blank" href="/Resources/Resume.pdf">
+					<div id="ResumeIcon"></div>
+					<p>Resume</p>
 				</a>
-				<a class="BottomMenuLink" id="ContactLink" href="mailto:benb116@gmail.com">
-					<div id="EmailIcon" class="BottomIcon"></div>
-					<p class="BottomText">Email</p>
+				<a id="ContactLink" href="mailto:benb116@gmail.com">
+					<div id="EmailIcon"></div>
+					<p>Email</p>
 				</a>
-				<a class="BottomMenuLink" id="LinkedInLink" target="_blank" href="https://www.linkedin.com/in/benvbernstein">
-					<div id="LinkedInIcon" class="BottomIcon"></div>
-					<p class="BottomText">LinkedIn</p>
+				<a id="LinkedInLink" target="_blank" href="https://www.linkedin.com/in/benvbernstein">
+					<div id="LinkedInIcon"></div>
+					<p>LinkedIn</p>
 				</a>
-				<a class="BottomMenuLink" id="GithubLink" target="_blank" href="https://github.com/benb116">
-					<div id="GithubIcon" class="BottomIcon"></div>
-					<p class="BottomText">Github</p>
+				<a id="GithubLink" target="_blank" href="https://github.com/benb116">
+					<div id="GithubIcon"></div>
+					<p>Github</p>
 				</a>
-				<a class="BottomMenuLink" id="CreditsLink" target="_blank" href="#Modal">
-					<div id="CreditsIcon" class="BottomIcon"></div>
-					<p class="BottomText">Credits</p>
+				<a id="CreditsLink" target="_blank" href="#Modal">
+					<div id="CreditsIcon"></div>
+					<p>Credits</p>
 				</a>
 	   		</div>
 
 			<div id="MobileBar">
-				<a href="#Code" class="MenuLink"><div class="MenuCell CodeBar">Code</div></a>
-				<a href="#School" class="MenuLink"><div class="MenuCell SchoolBar">School</div></a>
-				<a href="#Music" class="MenuLink"><div class="MenuCell MusicBar">Music</div></a>
-				<a href="#Research" class="MenuLink"><div class="MenuCell ResearchBar">Research</div></a>
+				<a href="#Code"><div class="CodeBar">Code</div></a>
+				<a href="#School"><div class="SchoolBar">School</div></a>
+				<a href="#Music"><div class="MusicBar">Music</div></a>
+				<a href="#Research"><div class="ResearchBar">Research</div></a>
 			</div>	
 		</section>
 		<div class="AnchorMargin"><a id="Code"></a></div>
@@ -105,43 +105,43 @@
 				<h2>Projects for Mac and for Web</h2>
 			</div>
 			<a href="/MusiNotify/"><div class="CodeCard">
-				<div class="CodeCardIcon" id="MusiNotifyTable"></div>
-				<div class="CodeCardItem">
-					<span class="CodeItemTitle">MusiNotify</span>
-					<span class="CodeItemDescription">Notifications for iTunes and Spotify</span>
-					<span class="CodeItemLang">Applescript, Shell</span>
+				<div id="MusiNotifyTable"></div>
+				<div>
+					<span>MusiNotify</span>
+					<span>Notifications for iTunes and Spotify</span>
+					<span>Applescript, Shell</span>
 				</div>
 			</div></a>
 			<a href="https://github.com/benb116/Gone-Phishing"><div class="CodeCard">
-				<div class="CodeCardIcon" id="GonePhishingTable"></div>
-				<div class="CodeCardItem">
-					<span class="CodeItemTitle">Gone Phishing</span>
-					<span class="CodeItemDescription">A phishing attack for Mac</span>
-					<span class="CodeItemLang">Applescript, Shell</span>
+				<div id="GonePhishingTable"></div>
+				<div>
+					<span>Gone Phishing</span>
+					<span>A phishing attack for Mac</span>
+					<span>Applescript, Shell</span>
 				</div>
 			</div></a>
 			<a href="https://github.com/benb116/BenB116.github.io"><div class="CodeCard">
-				<div class="CodeCardIcon" id="WebsiteTable"></div>
-				<div class="CodeCardItem">
-					<span class="CodeItemTitle">BenBernstein.me</span>
-					<span class="CodeItemDescription">This website: hosted on Github</span>
-					<span class="CodeItemLang">HTML, CSS, Javascript</span>
+				<div id="WebsiteTable"></div>
+				<div>
+					<span>BenBernstein.me</span>
+					<span>This website: hosted on Github</span>
+					<span>HTML, CSS, Javascript</span>
 				</div>
 			</div></a>
 			<a href="https://github.com/benb116/March-Madness-Analyzer"><div class="CodeCard">
-				<div class="CodeCardIcon" id="BasketballTable"></div>
-				<div class="CodeCardItem">
-					<span class="CodeItemTitle">Bracket Analyzer</span>
-					<span class="CodeItemDescription">Analyze the past. Predict the future.</span>
-					<span class="CodeItemLang">Applescript</span>
+				<div id="BasketballTable"></div>
+				<div>
+					<span>Bracket Analyzer</span>
+					<span>Analyze the past. Predict the future.</span>
+					<span>Applescript</span>
 				</div>
 			</div></a>
 			<a href="https://github.com/benb116/Other"><div class="CodeCard">
-				<div class="CodeCardIcon" id="OtherTable"></div>
-				<div class="CodeCardItem">
-					<span class="CodeItemTitle">Other</span>
-					<span class="CodeItemDescription">The uncategorized and the simple</span>
-					<span class="CodeItemLang">Applescript, Python</span>
+				<div id="OtherTable"></div>
+				<div>
+					<span>Other</span>
+					<span>The uncategorized and the simple</span>
+					<span>Applescript, Python</span>
 				</div>
 			</div></a>
 		</section>
@@ -166,11 +166,11 @@
 			</div>
 			<div id="MetLet">
 				<h3>M'et L'et Hebrew Newspaper</h3>
-				<a href="/Resources/School/Met%20Let/Fall%202012.pdf" target="_blank"><div class="MetLetCover" id="MetLet2012F"></div></a>
-				<a href="/Resources/School/Met%20Let/Winter%202013.pdf" target="_blank"><div class="MetLetCover" id="MetLet2013W"></div></a>
-				<a href="/Resources/School/Met%20Let/Spring%202013.pdf" target="_blank"><div class="MetLetCover" id="MetLet2013S"></div></a>
-				<a href="/Resources/School/Met%20Let/Fall%202013.pdf" target="_blank"><div class="MetLetCover" id="MetLet2013F"></div></a>
-				<a href="/Resources/School/Met%20Let/Spring%202014.pdf" target="_blank"><div class="MetLetCover" id="MetLet2014S"></div></a>
+				<a href="/Resources/School/Met%20Let/Fall%202012.pdf" target="_blank"><div id="MetLet2012F"></div></a>
+				<a href="/Resources/School/Met%20Let/Winter%202013.pdf" target="_blank"><div id="MetLet2013W"></div></a>
+				<a href="/Resources/School/Met%20Let/Spring%202013.pdf" target="_blank"><div id="MetLet2013S"></div></a>
+				<a href="/Resources/School/Met%20Let/Fall%202013.pdf" target="_blank"><div id="MetLet2013F"></div></a>
+				<a href="/Resources/School/Met%20Let/Spring%202014.pdf" target="_blank"><div id="MetLet2014S"></div></a>
 			</div>
 		</section>
 		<div class="AnchorMargin SchoolBar"><a id="Music"></a></div>
@@ -188,14 +188,14 @@
 			</div>
 			<div id="TopArtists">
 				<h2>Top Artists</h2>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
-				<a href="" class="ArtLink" target="_blank"><div class="ArtImage"><span class="ArtName"></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
+				<a><div><span></span></div></a>
 			</div>
 		</section>
 		<div class="AnchorMargin MusicBar"><a id="Research"></a></div>
@@ -206,7 +206,7 @@
 			</div>
 		</section>
 		<section id="Footer">
-			<div id="BBLogo"></div>
+			<a href="#Top"><div id="BBLogo"></div></a>
 		</section>
 	</body>
 </html>

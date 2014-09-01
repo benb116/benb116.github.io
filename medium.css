@@ -18,20 +18,20 @@ body {font-size: 100%;}
 	width: 70%; min-width: 450px;
 	font-size: 1.25em;}
 #BottomMenu {margin: 50px 0 50px 0;}
-.BottomMenuLink {width: 15%;}
+#BottomMenu a {width: 15%;}
 #MobileBar {
 	font-size: 2.5em;
 	line-height: 2em;
 	height: 10em; width: 10em;
 	margin: 0 auto;
 	display: inline-block;}
-.MenuCell {
+#MobileBar div {
 	height: 1em; width: 10em;
 	font-size: 1em;
 	vertical-align: middle; text-align: center;
 	display: table-cell;}
 
-.MenuLink {
+#MobileBar a {
 	color: white; text-decoration: none;
 	display: block;}
 .CodeCard {margin-left: 3%; margin-right: 3%;}
@@ -45,7 +45,7 @@ body {font-size: 100%;}
 	width: 35vw; height: 35vw;
 	background-size: 35vw;}
 #TopArtists {width: 80%; padding-bottom: 50px;}
-.ArtImage {
+#TopArtists div {
 	width: 18vw; height: 18vw;
 	opacity: 1;}
 
