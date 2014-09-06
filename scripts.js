@@ -86,7 +86,6 @@ function GetMusicInfo(){
 
 		var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
 		$('#TopArtists a').get(i).href=ArtistLink;
-		$('#TopArtists a').get(i).target='_blank'
 	}
 }
 

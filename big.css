@@ -5,6 +5,7 @@ body {
 #Modal {
 	font-size: 1em;
 	width: 700px;}
+#BannerWrap {top: 50px;}
 
 #TopBar {
 	height: 50px; width: 100%;
@@ -27,16 +28,25 @@ body {
 	margin-left: 125px; margin-right: 125px;}
 #MenuContainer div {
 	width: 19.5%; height: 50px;
+	max-width: 250px;
 	color: white; font-size: 30px; text-decoration: none;
 	line-height: 50px; text-align: center;
 	display: inline-block;
 	margin: 0;
-	-webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out;}
+	border-bottom-width: 3px; border-bottom-style: solid;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+  	-webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out;}
+#AboutCell {border-bottom-color: #757575;}
+#CodeCell {border-bottom-color: #27ae60;}
+#SchoolCell {border-bottom-color: #F3B712;}
+#MusicCell {border-bottom-color: #3A8FC7;}
+#ResearchCell {border-bottom-color: #c0392b;}
+
+#AboutCell:hover {background-color: #757575;}
 #CodeCell:hover {background-color: #27ae60;}
-#SchoolCell:hover {background-color: #F3BE12;}
-#MusicCell:hover {background-color: #2980b9;}
+#SchoolCell:hover {background-color: #F3B712;}
+#MusicCell:hover {background-color: #3A8FC7;}
 #ResearchCell:hover {background-color: #c0392b;}
-#BannerWrap {top: 50px;}
 
 #HomeBody {
 	display: block;
