@@ -192,7 +192,7 @@ body {
 #Bart {
 	display: block;
 	width: 100px; height: 210px;
-	background-image: url(/Resources/bart.png);
+	background-image: url(/Resources/School/bart.png);
 	background-size: contain; background-repeat: no-repeat;
 	position: absolute; bottom: -5px; left: 400px;
 	opacity: 0;

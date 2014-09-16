@@ -16,10 +16,8 @@ $(document).ready(function() {
         $('#BannerWrap').css('opacity', 1);
     };
 
-    try {GetMusicInfo();}
-    catch(err) {
-        console.log('Error fetching MusicInfo: '+err)
-    }
+    GetNowPlaying();
+    GetTopArtists();
     SmoothScroll();
     GATrack();
 
