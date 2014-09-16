@@ -85,9 +85,6 @@ $(document).ready(function() {
 
     $("#CreditsLink").leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
 
-    $('#BottomMenu a').hover(function () {
-        $('#BottomMenu a').addClass('float'); // Make the BottomLinks float on hover
-    });
 
     // Easter eggs below
     window.cheatsenabled = false;
@@ -96,12 +93,15 @@ $(document).ready(function() {
         if (window.cheatsenabled == false) {
             window.cheatsenabled = true;
             alertify.log("You have enabled easter eggs."); 
+            setTimeout(function(){
+                alertify.log("Type back, glasses, jew, or bart.");
+            },4000) 
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
             
             // Define the cheat codes
             cheet('j e w', function () {
-                alertify.log("Very nice! Great success!");
-                $('#IntroHead').prepend("<iframe class=\"jew\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
+                alertify.log("Type nazi to kill.");
+                $('#IntroHead').prepend("<iframe class=\"jew\" style=\"display: none;\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
             });
 
             cheet('n a z i', function () {$('.jew').remove();});
@@ -118,8 +118,12 @@ $(document).ready(function() {
             });
 
             cheet('b a r t', function () {
-                if ($('#Bart').css('opacity') == 0) {$('#Bart').css('opacity', 1);
-                } else {$('#Bart').css('opacity', 0);};
+                if ($('#Bart').css('opacity') == 0) {
+                    $('#Bart').css('opacity', 1);
+                    $('#School').velocity("scroll", 500);
+                } else {
+                    $('#Bart').css('opacity', 0);
+                };
             });
 
         } else {

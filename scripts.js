@@ -30,33 +30,40 @@ function GetMusicInfo(){
 	  {// code for IE6, IE5
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	  }
-	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=1",false);
-	xmlhttp.send();
-	xmlDoc=xmlhttp.responseXML;
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    {
+	    	xmlDoc=xmlhttp.responseXML;
 
-	document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
-	document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
-	try {
-		document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
-	}
-	catch(err) {
-		document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
-		console.log("No album art found.");
-	}
-	try {
-		var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
-		if(playval == "true") {
-			document.getElementById("NowRecent").innerHTML="Now Playing";
-			document.getElementById("TrackArt").className="pulse-grow";
-		} else {
-			document.getElementById("NowRecent").innerHTML="Recently Played";
-			document.getElementById("TrackArt").className="Other";
-		}
-	} 
-	catch(err) {
-		console.log("No Now-Playing track found.");
-	}
+			document.getElementById("TrackName").innerHTML=xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+			document.getElementById("TrackArtist").innerHTML=xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+			document.getElementById("TrackLink").href=xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
+			try {
+				document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
+			}
+			catch(err) {
+				document.getElementById("TrackArt").style.backgroundImage =  "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
+				console.log("No album art found.");
+			}
+			try {
+				var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
+				if(playval == "true") {
+					document.getElementById("NowRecent").innerHTML="Now Playing";
+					document.getElementById("TrackArt").className="pulse-grow";
+				} else {
+					document.getElementById("NowRecent").innerHTML="Recently Played";
+					document.getElementById("TrackArt").className="Other";
+				}
+			} 
+			catch(err) {
+				console.log("No Now-Playing track found.");
+			}
+			    }
+	  }
+	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=1",true);
+	xmlhttp.send();
+
 
 	var NumOfImage = document.getElementById('TopArtists').getElementsByTagName('div').length;
 
@@ -68,25 +75,31 @@ function GetMusicInfo(){
 	  {// code for IE6, IE5
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	  }
-	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit="+NumOfImage,false);
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    {
+			xmlDoc=xmlhttp.responseXML;
+
+			for (var i = 0; i < NumOfImage; i++) {
+				try {
+					var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
+					$('#TopArtists div').get(i).style.backgroundImage = "url("+imageLink+")";
+				}
+				catch(err) {
+					console.log("No Artist image found for artist " + i.toString());
+				}
+
+				var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+				$('#TopArtists span').get(i).innerHTML=ArtistName;
+
+				var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
+				$('#TopArtists a').get(i).href=ArtistLink;
+			}
+	    }
+	  }
+	xmlhttp.open("GET","http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit="+NumOfImage,true);
 	xmlhttp.send();
-	xmlDoc=xmlhttp.responseXML;
-
-	for (var i = 0; i < NumOfImage; i++) {
-		try {
-			var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+3)].childNodes[0].nodeValue;
-			$('#TopArtists div').get(i).style.backgroundImage = "url("+imageLink+")";
-		}
-		catch(err) {
-			console.log("No Artist image found for artist " + i.toString());
-		}
-
-		var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-		$('#TopArtists span').get(i).innerHTML=ArtistName;
-
-		var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
-		$('#TopArtists a').get(i).href=ArtistLink;
-	}
 }
 
 function Write() {

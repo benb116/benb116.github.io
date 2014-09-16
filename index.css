@@ -1,7 +1,6 @@
 body {
-	font-family: 'Open Sans', 'sans-serif'; font-size: 1em;
+	font-family: 'Open Sans', 'sans-serif';
 	margin: 0 auto;
-	width: 100%; height: 100%;
 	background-color: #F2F2F2;
 	text-align: center;
 	-webkit-transition: -webkit-filter .5s ease-in-out;}
@@ -34,28 +33,22 @@ body {
 
 #BannerWrap {
 	position: absolute; right: 0px;
-	width: 20em; height: 20em;
-	display: block;
+	width: 13em; height: 13em;
 	overflow: hidden;
 	opacity: 0;}
 #UnderBanner {
 	position: absolute;
-	top: 4em; right: -3em;
-	margin-right: -1em;
-	text-align: center; 
+	top: 4em; right: -4em;
+	text-align: center; text-indent: 2em;
 	line-height: 2em;
-	display: block;
 	width: 20em; height: 2em;
 	background-color: white; 
 	color: black; font-weight: normal;
 	font-family: 'PT Sans', 'serif';
-    transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);
-	-webkit-transition: -webkit-box-shadow .15s ease-in-out; transition: box-shadow .25s ease-in-out;}
-
+    transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
 
 #IntroHead {
 	width: 100%;
-	text-align: center;
 	margin-bottom: 20px;
 	color: black;
 	opacity: 0;}
@@ -75,13 +68,17 @@ body {
 	font-family: 'PT Sans', 'serif';}
 #BottomMenu a {
 	text-decoration: none;
-	text-align: center;
 	color: gray;
 	cursor: pointer;
 	display: inline-block; 
-	height: 3em;}
-#BottomMenu a:hover {color: black;}
-
+	height: 3em;
+	/*Float - Hover.css*/
+	-webkit-transition-duration: 0.3s; transition-duration: 0.3s;
+	-webkit-transition-property: -webkit-transform; transition-property: transform;
+	-webkit-transform: translateZ(0); transform: translateZ(0);}
+#BottomMenu a:hover {
+	color: black;
+	-webkit-transform: translateY(-5px); -ms-transform: translateY(-5px); transform: translateY(-5px);}
 #BottomMenu div {
 	width: 3em; height: 3em;
 	background-size: cover;
@@ -94,22 +91,7 @@ body {
 #GithubIcon {background-image: url(/Icons%20and%20Attr/Profiles/github.svg);}
 #CreditsIcon {background-image: url(/Icons%20and%20Attr/List/icon_11515.svg);}
 
-/* Float */
-.float {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);}
-.float:hover, .float:focus, .float:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);}
-
 #HomeBody {text-align: center;}
-
 #HomeBlack {
 	display: none;
 	width: 100%;
@@ -121,7 +103,6 @@ body {
 	background-image: url(/Resources/Yosemite.jpg);
 	background-repeat: no-repeat; background-position: center top;
 	opacity: .75;
-	-webkit-background-size: cover;
 	background-size: cover; height: 100vh;}
 
 .AnchorMargin {
@@ -160,15 +141,11 @@ body {
 	width: 26em;
 	margin: 25px; padding: 10px; vertical-align: top;
 	background-color: white;
-	border:.5em solid white;
-	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
-	-webkit-transition: -webkit-box-shadow .1s ease-in-out; transition: box-shadow .1s ease-in-out;}
-.CodeCard:hover {
-	-webkit-box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58); box-shadow: 0px 8px 4px -2px rgba(50, 50, 50, 0.58);}
+	border:.5em solid white; box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58); -webkit-transition: box-shadow .1s ease-in-out; transition: box-shadow .1s ease-in-out;}
+.CodeCard:hover { box-shadow: 0px 10px 10px -4px rgba(50, 50, 50, 0.58);}
 .CodeCard div:nth-child(1) {
 	display: table-cell;
 	width: 8em; height: 7em;
-	-webkit-background-size: 7em 7em;
 	background-size: 7em; background-repeat: no-repeat; background-position: center;}
 .CodeCard div:nth-child(2) {
 	display: table-cell; 
@@ -248,9 +225,7 @@ a[href^='/Resources/School/Met%20Let/'] div {
     width: 8.5em; height: 12em; margin: .5em;
     display: inline-block;
     background-color: white;
-    background-position: center;
-    -webkit-background-size: cover; background-size: cover;
-	-webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58); box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58);}
+    background-position: center; background-size: cover; box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.58);}
 
 #NowPlaying, #TopArtists {
 	color: white;
@@ -263,7 +238,7 @@ a[href^='/Resources/School/Met%20Let/'] div {
 #TrackArt {
 	display: inline-block;
 	background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);
-	background-repeat: no-repeat; -webkit-background-size: 19vw; background-size: 19vw;
+	background-repeat: no-repeat; background-size: 19vw;
 	background-color: black;
 	background-position: center;}
 #TrackLink {text-decoration: none; color: white;}
@@ -276,8 +251,7 @@ a[href^='/Resources/School/Met%20Let/'] div {
 	padding: 3px; margin-bottom: 4px; 
 	vertical-align: top;
 	color: white;
-	background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);
-	-webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-position: center;
+	background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg); background-size: cover; background-repeat: no-repeat; background-position: center;
 	opacity: .5;
 	-webkit-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
 #TopArtists div:hover {opacity: 1;}
