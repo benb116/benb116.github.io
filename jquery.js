@@ -81,7 +81,7 @@ $(document).ready(function() {
         };
     });
 
-    $("#CreditsLink").leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
+    $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
 
 
     // Easter eggs below

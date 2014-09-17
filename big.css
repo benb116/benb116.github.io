@@ -2,7 +2,7 @@ body {
 	margin-top: 40px;
 	font-size: 100%;}
 #MobileBar {display: none;}
-#Modal {
+.Modal {
 	font-size: 1em;
 	width: 700px;}
 #BannerWrap {top: 50px;}

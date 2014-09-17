@@ -33,7 +33,7 @@
 			</div>
 		</div>	
 		<section id="HomeBody">
-			<div id="Modal">
+			<div id="CreditModal" class="Modal">
 				<h2>Credits</h2>
 				<div>
 					<h3>Icons - The Noun Project</h3>
@@ -85,7 +85,7 @@
 					<div id="GithubIcon"></div>
 					<p>Github</p>
 				</a>
-				<a id="CreditsLink" href="#Modal">
+				<a id="CreditsLink" rel="leanModal" href="#CreditModal">
 					<div id="CreditsIcon"></div>
 					<p>Credits</p>
 				</a>
@@ -112,7 +112,7 @@
 					<span>Applescript, Shell</span>
 				</div>
 			</div></a>
-			<a href="https://github.com/benb116/Gone-Phishing"><div class="CodeCard">
+			<a  rel="leanModal" href="#GPModal"><div class="CodeCard">
 				<div id="GonePhishingTable"></div>
 				<div>
 					<span>Gone Phishing</span>
@@ -120,6 +120,12 @@
 					<span>Applescript, Shell</span>
 				</div>
 			</div></a>
+			<div id="GPModal" class="Modal">
+				<h2>Warning!</h2>
+				<p>This is a Github repository for malware designed for Mac OS X. Feel free to view the scripts, but don't download anything unless you know what it does. Make sure that you read the README file.</p>
+				<a href="https://github.com/benb116/Gone-Phishing">Link to Github Repo</a>
+				<a class="modal_close" style="display:block;">Close</a>
+			</div>
 			<a href="https://github.com/benb116/BenB116.github.io"><div class="CodeCard">
 				<div id="WebsiteTable"></div>
 				<div>
