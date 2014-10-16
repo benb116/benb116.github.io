@@ -1,7 +1,8 @@
 body {font-size: 200%;}
 
-.Modal {font-size: 0.75em;}
-
+.Modal {font-size: 0.75em; width: 100%;}
+#TopBar {display: none;}
+#BannerWrap {top:0;}
 #UnderBanner {
 	margin-top: 0; margin-right: -2em;
 	line-height: 2em;
@@ -11,15 +12,17 @@ body {font-size: 200%;}
 
 #IntroHead {margin-top: 20%;}
 #topart {
-	width: 7em; height: 7em;
-	background-size: 7em;
+	width: 1.5em; height: 1.5em;
+	background-size: 1.5em;
 	border-radius: 15px;}
 #bighello {
-	font-size: 3.5em;}
+	font-size: 0.75em;}
 #BioPar {
 	margin-bottom: 50px;
-	font-size: 1em;}
+	font-size: 0.25em;
+	width: 1000px;}
 #BottomMenu {margin-bottom: 150px;}
+#BottomMenu a {width: 15%;}
 
 #EdCareer {
 	width: 90%;

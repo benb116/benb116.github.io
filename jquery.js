@@ -76,7 +76,7 @@ $(document).ready(function() {
             $('#MetLet2013W').css('background-image', 'url(/Resources/School/Met%20Let/2013Wthumb.jpg)');
             $('#MetLet2014S').css('background-image', 'url(/Resources/School/Met%20Let/2014Sthumb.jpg)');
             console.log("Met Let loaded.")
-            Write(); // Begin chalk animation
+            //Write(); // Begin chalk animation
             window.MetLetLoaded = true; // Prevents constant reloading and flashing on mobile browsers
         };
     });

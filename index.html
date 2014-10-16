@@ -6,9 +6,9 @@
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="index.css"> <!--Base styles-->
-		<link rel="stylesheet" href="big.css" media='screen and (min-width: 1051px)'> <!--Style for large screens-->
-		<link rel='stylesheet' href='medium.css' media='screen and (max-width: 1050px)'> <!--Style for small screens-->
-		<link rel='stylesheet' href='mediumretina.css'  media='screen and (min-device-width: 320px) and (max-device-width: 568px)'> <!--Style targeting retina iOS devices-->
+		<link rel="stylesheet" href="big.css" media='screen and (min-width: 901px)'> <!--Style for large screens-->
+		<link rel='stylesheet' href='medium.css' media='screen and (max-width: 900px)'> <!--Style for small screens-->
+		<link rel='stylesheet' href='mediumretina.css'  media='screen and (device-aspect-ratio: 40/71)'> <!--Style targeting retina iOS devices-->
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans|Istok+Web|Sniglet|Open+Sans'>
 		<link rel="stylesheet" href="/Plugins/Alertify/alertify.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -25,11 +25,11 @@
 		<div id="TopBar">
 			<div id="IconCircle"><div id="IconOverlay"></div></div>
 			<div id="MenuContainer">
-				<a href="#Top"><div id="AboutCell">Ben</div></a>
-				<a href="#Code"><div id="CodeCell">Code</div></a>
-				<a href="#School"><div id="SchoolCell">School</div></a>
-				<a href="#Music"><div id="MusicCell">Music</div></a>
-				<a href="#Research"><div id="ResearchCell">Research</div></a>
+				<a href="#Top"><div class="ablock" id="AboutCell"><span class="TopBarWord">Ben</span><div class="TopBarIcon"></div></div></a>
+				<a href="#Code"><div class="ablock" id="CodeCell"><span class="TopBarWord">Code</span><div class="TopBarIcon"></div></div></a>
+				<a href="#School"><div class="ablock" id="SchoolCell"><span class="TopBarWord">School</span><div class="TopBarIcon"></div></div></a>
+				<a href="#Music"><div class="ablock" id="MusicCell"><span class="TopBarWord">Music</span><div class="TopBarIcon"></div></div></a>
+				<a href="#Research"><div class="ablock" id="ResearchCell"><span class="TopBarWord">Research</span><div class="TopBarIcon"></div></div></a>
 			</div>
 		</div>	
 		<section id="HomeBody">
@@ -47,6 +47,7 @@
 					<p>Envelope by Jon Testa</p>
 					<p>Resume by Stephen Borengasser</p>
 					<p>Easter Egg by Irene Hoffman</p>
+					<p>Warning by Icomatic</p>
 				</div>
 				<div>
 					<h3>Scripts, Plugins, & Effects</h3>
@@ -121,9 +122,9 @@
 				</div>
 			</div></a>
 			<div id="GPModal" class="Modal">
-				<h2>Warning!</h2>
-				<p>This is a Github repository for malware designed for Mac OS X. Feel free to view the scripts, but don't download anything unless you know what it does. Make sure that you read the README file.</p>
-				<a href="https://github.com/benb116/Gone-Phishing">Link to Github Repo</a>
+				<h2>Warning!</h2><div id="GPWarning"></div>
+				<p>This is a Github repository with malware designed for Mac OS X. Feel free to view the scripts, but don't download anything unless you know exactly what it does. Make sure that you read the README file.</p>
+				<a href="https://github.com/benb116/Gone-Phishing">Continue to Github Repo</a>
 				<a class="modal_close" style="display:block;">Close</a>
 			</div>
 			<a href="https://github.com/benb116/BenB116.github.io"><div class="CodeCard">
@@ -164,7 +165,7 @@
 						<dd><i>Other areas of study:</i>Electrical Engineering, Economics, Music, History</dd>
 					<dt><a href="http://jbha.org">Jack M. Barrack Hebrew Academy</a> - Class of 2014</dt>
 						<dd><i>Areas of study:</i>English, History, Math, Science, Spanish, Hebrew, Jewish Studies, Bible</dd>
-						<dd id="ChalkLine"><i>Activities:</i>Grade Treasurer, Chief Layout Editor of Hebrew Newspaper<div id="WriteChalk">&nbsp;</div></dd>
+						<dd id="ChalkLine"><i>Activities:</i>Grade Treasurer, Chief Layout Editor of Hebrew Newspaper, Robotics Club, Annenberg Science Symposium<div id="WriteChalk">&nbsp;</div></dd>
 				</dl>
 				<div id="Bart"></div>
 				<div id="Eraser"></div>
