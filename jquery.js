@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     if ($('#MobileBar').css('display') == 'none') { // No animations on mobile
         // Initial animations
         $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
