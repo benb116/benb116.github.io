@@ -49,13 +49,13 @@ body {
   	-webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out;}
 
 .TopBarIcon {background-repeat: no-repeat; background-position: center; background-size: 35px;
-	width: 50px; height: 50px; margin: auto}
+	width: 50px; height: 50px; margin: auto;}
 
-#AboutCell > div {background-image: url(/Icons%20and%20Attr/User/icon_419.svg)}
-#CodeCell > div {background-image: url(/Icons%20and%20Attr/Code/icon_20826.svg)}
-#SchoolCell > div {background-image: url(/Icons%20and%20Attr/Book/icon_4584.svg)}
-#MusicCell > div {background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg)}
-#ResearchCell > div {background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg)}
+#AboutCell > div {background-image: url(/Icons%20and%20Attr/User/icon_419.svg);}
+#CodeCell > div {background-image: url(/Icons%20and%20Attr/Code/icon_20826.svg);}
+#SchoolCell > div {background-image: url(/Icons%20and%20Attr/Book/icon_4584.svg);}
+#MusicCell > div {background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);}
+#ResearchCell > div {background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
 
 #AboutCell {border-bottom-color: #757575;}
 #CodeCell {border-bottom-color: #27ae60;}
