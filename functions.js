@@ -28,8 +28,11 @@ function GetNowPlaying(){
 	.done(function(data) {
 		xmlDoc=data;
 
-		document.getElementById("TrackName").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-		document.getElementById("TrackArtist").innerHTML = xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+		var thetrack = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+		var theartist = xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+
+		document.getElementById("TrackName").innerHTML = thetrack;
+		document.getElementById("TrackArtist").innerHTML = theartist;
 		document.getElementById("TrackLink").href = xmlDoc.getElementsByTagName("url")[0].childNodes[0].nodeValue;
 		try {
 			document.getElementById("TrackArt").style.backgroundImage =  "url("+(xmlDoc.getElementsByTagName("image")[3].childNodes[0].nodeValue)+")";
@@ -43,6 +46,7 @@ function GetNowPlaying(){
 			if(playval == "true") {
 				document.getElementById("NowRecent").innerHTML = "Now Playing";
 				document.getElementById("TrackArt").className = "pulse-grow";
+				getBPMInfo(theartist, thetrack)
 			} else {
 				document.getElementById("NowRecent").innerHTML = "Recently Played";
 				document.getElementById("TrackArt").className = "Other";
@@ -80,6 +84,21 @@ function GetTopArtists(){
 			$('#TopArtists a').get(i).href=ArtistLink;
 		}
 	})
+}
+
+function getBPMInfo(artist, track) {
+	var apiKey = 'TYVPU4DLLRB0DZMYD';
+	$.ajax({
+		url: "http://developer.echonest.com/api/v4/song/search?api_key="+apiKey+"&artist="+artist+"&title="+track+"&bucket=audio_summary"
+	})
+	.done(function(data) {
+		var songBPM = data.response.songs[0].audio_summary.tempo;
+		var BPS = songBPM / 60;
+		var halfPeriod = 1 / (2 * BPS);
+		console.log(halfPeriod)
+		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s')
+		$('.pulse-grow').css('animation-duration', halfPeriod+'s')
+	});
 }
 
 function Write() {
