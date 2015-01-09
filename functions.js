@@ -45,8 +45,8 @@ function GetNowPlaying(){
 			var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
 			if(playval == "true") {
 				document.getElementById("NowRecent").innerHTML = "Now Playing";
-				document.getElementById("TrackArt").className = "pulse-grow";
 				getBPMInfo(theartist, thetrack)
+				document.getElementById("TrackArt").className = "pulse-grow";
 			} else {
 				document.getElementById("NowRecent").innerHTML = "Recently Played";
 				document.getElementById("TrackArt").className = "Other";
@@ -93,9 +93,9 @@ function getBPMInfo(artist, track) {
 	})
 	.done(function(data) {
 		var songBPM = data.response.songs[0].audio_summary.tempo;
+		console.log(songBPM);
 		var BPS = songBPM / 60;
 		var halfPeriod = 1 / (2 * BPS);
-		console.log(halfPeriod)
 		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s')
 		$('.pulse-grow').css('animation-duration', halfPeriod+'s')
 	});
