@@ -182,7 +182,7 @@ body {
 	font-family: 'PT Sans', 'serif';
     transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
 
-
+#PCSTable {background-image: url(/Icons%20and%20Attr/Search/search_icon.svg);}
 #MusiNotifyTable {background-image: url(/Resources/MusiNotify.png);}
 #GonePhishingTable {background-image: url(/Icons%20and%20Attr/Fishing/icon_8702.svg);}
 #WebsiteTable {background-image: url(/Icons%20and%20Attr/Laptop/icon_9074.svg);}

@@ -118,7 +118,7 @@ $(document).ready(function() {
             cheet('b a r t', function () {
                 if ($('#Bart').css('opacity') == 0) {
                     $('#Bart').css('opacity', 1);
-                    $('#School').velocity("scroll", 500);
+                    $('#SchoolPage h2').velocity("scroll", 500);
                 } else {
                     $('#Bart').css('opacity', 0);
                 };

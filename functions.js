@@ -45,8 +45,8 @@ function GetNowPlaying(){
 			var playval = xmlDoc.getElementsByTagName("track")[0].attributes.getNamedItem("nowplaying").value;
 			if(playval == "true") {
 				document.getElementById("NowRecent").innerHTML = "Now Playing";
-				getBPMInfo(theartist, thetrack)
 				document.getElementById("TrackArt").className = "pulse-grow";
+				getBPMInfo(theartist, thetrack)
 			} else {
 				document.getElementById("NowRecent").innerHTML = "Recently Played";
 				document.getElementById("TrackArt").className = "Other";
@@ -89,7 +89,7 @@ function GetTopArtists(){
 function getBPMInfo(artist, track) {
 	var apiKey = 'TYVPU4DLLRB0DZMYD';
 	$.ajax({
-		url: "http://developer.echonest.com/api/v4/song/search?api_key="+apiKey+"&artist="+artist+"&title="+track+"&bucket=audio_summary"
+		url: "http://developer.echonest.com/api/v4/song/search?api_key="+apiKey+"&artist="+encodeURIComponent(artist)+"&title="+encodeURIComponent(track)+"&bucket=audio_summary"
 	})
 	.done(function(data) {
 		var songBPM = data.response.songs[0].audio_summary.tempo;
