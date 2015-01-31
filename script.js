@@ -26,42 +26,42 @@ $(document).ready(function() {
     window.cheatsenabled = false;
     $(window).scroll(function() { // As the user scrolls...
         // Determine anchor positions
+        var ResearchAnchor = $('#ResearchPage').offset().top;
         var CodeAnchor = $('#CodePage').offset().top;
-        var MusicAnchor = $('#MusicPage').offset().top;
         var SchoolAnchor = $('#SchoolPage').offset().top;
-        var ResearchAnchor = $('#ResearchPage').offset().top - 200; // Research section is smaller, this compensates
+        var MusicAnchor = $('#MusicPage').offset().top;
         var scroll = $(window).scrollTop() + 300; // Get current scroll. Offset changes the icon when most of the section is displayed. 
 
-        if (scroll < CodeAnchor) { // If at home
+        if (scroll < ResearchAnchor) { // If at home
             if (window.cheatsenabled == true) { // If cheats are enabled
                 window.CurrentIcon = "url(/Icons%20and%20Attr/Egg/icon_14559.svg)";
             } else {
                 window.CurrentIcon = "";
             };
         }  
-        if (scroll >= CodeAnchor && scroll < SchoolAnchor) { // If at Code section
+        if (scroll >= ResearchAnchor && scroll < CodeAnchor) { // If at Code section
+            window.CurrentIcon = "url(/Icons%20and%20Attr/Earth/icon_10812.svg)";
+            $('#ResearchCell').addClass("ResearchBar");
+        } else {
+            $('#ResearchCell').removeClass("ResearchBar");
+        }
+        if (scroll >= CodeAnchor && scroll < SchoolAnchor) { // If at School section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Code/icon_20826.svg)";
             $('#CodeCell').addClass("CodeBar"); // Add Menubar highlight
         } else {
             $('#CodeCell').removeClass("CodeBar"); // Remove Menubar highlight
         }
-        if (scroll >= SchoolAnchor && scroll < MusicAnchor) { // If at School section
+        if (scroll >= SchoolAnchor && scroll < MusicAnchor) { // If at Music section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Book/icon_4584.svg)";
             $('#SchoolCell').addClass("SchoolBar");
         } else {
             $('#SchoolCell').removeClass("SchoolBar");
         }
-        if (scroll >= MusicAnchor && scroll < ResearchAnchor) { // If at Music section
+        if (scroll >= MusicAnchor) { // If at Research section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
             $('#MusicCell').addClass("MusicBar");
         } else {
             $('#MusicCell').removeClass("MusicBar");
-        }
-        if (scroll >= ResearchAnchor) { // If at Research section
-            window.CurrentIcon = "url(/Icons%20and%20Attr/Earth/icon_10812.svg)";
-            $('#ResearchCell').addClass("ResearchBar");
-        } else {
-            $('#ResearchCell').removeClass("ResearchBar");
         }
         
         if ($('#IconOverlay').css('background-image') != window.CurrentIcon) {
@@ -82,7 +82,6 @@ $(document).ready(function() {
     });
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
-
 
     // Easter eggs below
     window.cheatsenabled = false;

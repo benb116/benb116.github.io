@@ -58,16 +58,16 @@ body {
 #ResearchCell > div {background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
 
 #AboutCell {border-bottom-color: #757575;}
-#CodeCell {border-bottom-color: #27ae60;}
+#CodeCell {border-bottom-color: #3A8FC7;}
 #SchoolCell {border-bottom-color: #F3B712;}
-#MusicCell {border-bottom-color: #3A8FC7;}
-#ResearchCell {border-bottom-color: #c0392b;}
+#MusicCell {border-bottom-color: #c0392b;}
+#ResearchCell {border-bottom-color: #27ae60;}
 
 #AboutCell:hover {background-color: #757575;}
-#CodeCell:hover {background-color: #27ae60;}
+#CodeCell:hover {background-color: #3A8FC7;}
 #SchoolCell:hover {background-color: #F3B712;}
-#MusicCell:hover {background-color: #3A8FC7;}
-#ResearchCell:hover {background-color: #c0392b;}
+#MusicCell:hover {background-color: #c0392b;}
+#ResearchCell:hover {background-color: #27ae60;}
 
 #HomeBody {
 	display: block;
@@ -91,6 +91,8 @@ body {
 #BottomMenu a {width: 10%;}
 
 .AnchorMargin {height: 49px;}
+
+.ResearchProject {width: 45%;}
 
 .CodeCard {margin-left: 3%; margin-right: 3%;}
 

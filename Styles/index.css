@@ -5,6 +5,7 @@ body {
 	text-align: center;
 	-webkit-transition: -webkit-filter .5s ease-in-out;
 	min-width: 500px;}
+a {color: white; text-decoration: underline;}
 
 #lean_overlay {
     position: fixed;
@@ -21,6 +22,7 @@ body {
 	color: black;
 	border-radius: 5px;
 	display: none;}
+.Modal a {color: black;}
 .Modal h2 {line-height: 0.5em;}
 #CreditModal div {
 	display: inline-block; width: 49%;
@@ -114,10 +116,11 @@ body {
 	border: 0px;
 	margin-top: -20px;
 	width: 100%;}
-.CodeBar, #CodePage {background-color: #27ae60;}
+.CodeBar, #CodePage {background-color: #3A8FC7;}
 .SchoolBar, #SchoolPage {background-color: #F3B712;}
-.MusicBar, #MusicPage {background-color: #3A8FC7;}
-.ResearchBar, #ResearchPage {background-color: #c0392b;}
+.MusicBar, #MusicPage {background-color: #c0392b;}
+.ResearchBar, #ResearchPage {background-color: #27ae60;}
+
 #CodePage, #MusicPage, #SchoolPage, #ResearchPage {
 	position: relative;
 	clear: both;
@@ -137,6 +140,24 @@ body {
 	font-family: 'PT Sans', 'sans-serif'; font-size: 1.25em; font-weight: lighter;
 	line-height: .5em;
 	margin-bottom: 2em;}
+
+.ResearchProject {display: inline-block; min-width: 500px;}
+.ResearchProject > span:nth-child(1) {font-size: 2em; padding-bottom: 2em;}
+.ResearchProject > div {
+	display: block;
+	width: 80%; height: 17em;
+	background: white;
+	position: relative;
+	margin: auto;
+	margin-top: 1em;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
+}
+.ResearchProject > p:nth-child(3) {width: 80%; display: inline-block; text-align: justify; font-size: 1em; line-height: 1.25em;}
+#VertFEA {background-image: url(/Resources/Research/VertebraeFEA.png);}
+
 
 .CodeCard {
 	display: inline-block;
@@ -210,9 +231,6 @@ body {
 #EdCareer dt {
 	font-weight: bold;
 	padding-top: 30px;}
-#EdCareer a {
-	text-decoration: underline;
-	color: white;}
 #EdCareer dd {
 	margin-left: 40px;
 	text-indent: -20px;}

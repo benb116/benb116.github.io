@@ -20,9 +20,10 @@ body {font-size: 200%;}
 #BioPar {
 	margin-bottom: 50px;
 	font-size: 0.25em;
-	width: 1000px;}
+	width: 80%; max-width: 80%;}
 #BottomMenu {margin-bottom: 150px;}
 #BottomMenu a {width: 15%;}
+.ResearchProject {width: 90%;}
 
 #EdCareer {
 	width: 90%;
@@ -32,8 +33,9 @@ body {font-size: 200%;}
 #TrackArt {
 	width: 70vw; height: 70vw;
 	background-size: 70vw;}
-.ArtImage {
-	width: 36vw; height: 36vw;}
+.ArtImage {width: 36vw; height: 36vw;}
+#TopArtists {width: 90%; padding-bottom: 50px;}
+#TopArtists div {width: 40vw; height: 40vw;}
 #BBLogo {
 	width: 6em; height: 3em;
 	background-size: 6em;}
