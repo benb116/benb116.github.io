@@ -18,6 +18,7 @@
 		<script type="text/javascript" src="/Plugins/Alertify/alertify.min.js"></script>
 		<script type="text/javascript" src="/Plugins/jquery.leanModal.min.js"></script>
 		<script type="text/javascript" src="/Plugins/jquery.velocity.min.js"></script>
+		<script type="text/javascript" src="/Plugins/responsiveslides.min.js"></script>
 		<!-- <script type="text/javascript" src="/Plugins/responsiveslides/responsiveslides.min.js"></script> -->
 		<script type="text/javascript" src="script.js"></script> <!--My javascript code-->
 	</head>
@@ -28,7 +29,7 @@
 			<div id="IconCircle"><div id="IconOverlay"></div></div>
 			<div id="MenuContainer">
 				<a href="#Top"><div class="ablock" id="AboutCell"><span class="TopBarWord">Ben</span><div class="TopBarIcon"></div></div></a>
-				<a href="#Research"><div class="ablock" id="ResearchCell"><span class="TopBarWord">Research</span><div class="TopBarIcon"></div></div></a>
+				<a href="#Projects"><div class="ablock" id="ProjectsCell"><span class="TopBarWord">Projects</span><div class="TopBarIcon"></div></div></a>
 				<a href="#Code"><div class="ablock" id="CodeCell"><span class="TopBarWord">Code</span><div class="TopBarIcon"></div></div></a>
 				<a href="#School"><div class="ablock" id="SchoolCell"><span class="TopBarWord">School</span><div class="TopBarIcon"></div></div></a>
 				<a href="#Music"><div class="ablock" id="MusicCell"><span class="TopBarWord">Music</span><div class="TopBarIcon"></div></div></a>
@@ -97,25 +98,49 @@
 	   		</div>
 
 			<div id="MobileBar">
-				<a href="#Research"><div class="ResearchBar">Research</div></a>
+				<a href="#Projects"><div class="ProjectsBar">Projects</div></a>
 				<a href="#Code"><div class="CodeBar">Code</div></a>
 				<a href="#School"><div class="SchoolBar">School</div></a>
 				<a href="#Music"><div class="MusicBar">Music</div></a>
 			</div>	
 		</section>
-		<div class="AnchorMargin"><a id="Research"></a></div>
-		<section id="ResearchPage">
+		<div class="AnchorMargin"><a id="Projects"></a></div>
+		<section id="ProjectsPage">
 			<div class="PageHeader">
-				<h1>Research</h1>
+				<h1>Projects</h1>
 				<h2>Starting small with big aspirations</h2>
-				<div class="ResearchProject">
+				<div class="Project">
 					<span>Vertebra Stress Analysis</span>
-					<div id="VertFEA"></div>
-					<p>For <a href="http://kodlab.seas.upenn.edu">Kodlab</a>'s new <a href="http://kodlab.seas.upenn.edu/Canid/Canid">Canid</a> flexible vertebrate robot, I ran FEA tests on various models of a vertebra component and considered alternate weight-saving options. After choosing the best design, I laser cut the new parts and assembled the two vertebrae.</p>
+					<div id="VertFEA">
+						<ul class="rslides">
+							<li><div style="background-image: url(/Resources/Projects/VertebraeFEA.png)"></div></li>
+							<li><div style="background-image:url(/Resources/Projects/VertImage.jpg)"></div></li>
+						</ul>
+					</div>
+					<p>For <a href="http://kodlab.seas.upenn.edu">Kodlab</a>'s new <a href="http://kodlab.seas.upenn.edu/Canid/Canid">Canid</a> flexible vertebrate robot, I ran FEA tests on various models of a vertebra component and considered alternate weight-saving options. After choosing the best design, I laser cut the new parts and assembled the new spine.</p>
 				</div>
+				<div class="Project">
+					<span>Nerf Dissection</span>
+					<div id="Maverick">
+						<ul class="rslides">
+							<li><iframe src="https://player.vimeo.com/video/123699909?byline=0&portrait=0&title=0&color=FFEA00" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
+							<li><div style="background-image:url(/Resources/Projects/MaverickSlice.png)"></div></li>
+							<li><div style="background-image:url(/Resources/Projects/MaverickFull.png)"></div></li>
+						</ul>
+						<!-- <iframe src="https://player.vimeo.com/video/123699909?byline=0&portrait=0&title=0&color=FFEA00" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+						<!-- <p><a href="https://vimeo.com/123699909">Nerf Dissection.mp4</a> from <a href="https://vimeo.com/user38858334">Ben Bernstein</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+					</div>
+					<p>For Introduction to Mechanical Design (MEAM 101), my group fully dissasembled a Nerf Maverick blaster, modeled each part in Solidworks, and created an <a href="https://grabcad.com/library/nerf-maverick-1/">assembly</a> of each piece followed by an explosion-collapse video.</p>
+				</div>
+				<div class="Project">
+					<span>Rotating Boom Joint</span>
+					<div id="BoomJoint"></div>
+					<p>In order to give Kodlab robots an extra degree of movement while connected to a test boom, I designed and assembled a bearing attachment. This allows the robot to rotate freely along the boom axis while remaining in a required area of the test region.</p>
+				</div>
+
 			</div>
 		</section>
-		<div class="AnchorMargin ResearchBar"><a id="Code"></a></div>
+		<div class="AnchorMargin ProjectsBar"><a id="Code"></a></div>
 		<section id="CodePage">
 			<div class="PageHeader">
 				<h1>Code</h1>

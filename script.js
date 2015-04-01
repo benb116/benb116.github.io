@@ -14,7 +14,7 @@ $(document).ready(function() {
         $('#IconOverlay').css('top', '15px');
         $('#BottomMenu').css('opacity', 1);
         $('#BannerWrap').css('opacity', 1);
-    };
+    }
 
     GetTopArtists();
     GetNowPlaying();
@@ -26,24 +26,24 @@ $(document).ready(function() {
     window.cheatsenabled = false;
     $(window).scroll(function() { // As the user scrolls...
         // Determine anchor positions
-        var ResearchAnchor = $('#ResearchPage').offset().top;
+        var ProjectsAnchor = $('#ProjectsPage').offset().top;
         var CodeAnchor = $('#CodePage').offset().top;
         var SchoolAnchor = $('#SchoolPage').offset().top;
         var MusicAnchor = $('#MusicPage').offset().top;
         var scroll = $(window).scrollTop() + 300; // Get current scroll. Offset changes the icon when most of the section is displayed. 
 
-        if (scroll < ResearchAnchor) { // If at home
+        if (scroll < ProjectsAnchor) { // If at home
             if (window.cheatsenabled == true) { // If cheats are enabled
                 window.CurrentIcon = "url(/Icons%20and%20Attr/Egg/icon_14559.svg)";
             } else {
                 window.CurrentIcon = "";
-            };
+            }
         }  
-        if (scroll >= ResearchAnchor && scroll < CodeAnchor) { // If at Code section
+        if (scroll >= ProjectsAnchor && scroll < CodeAnchor) { // If at Code section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Earth/icon_10812.svg)";
-            $('#ResearchCell').addClass("ResearchBar");
+            $('#ProjectsCell').addClass("ProjectsBar");
         } else {
-            $('#ResearchCell').removeClass("ResearchBar");
+            $('#ProjectsCell').removeClass("ProjectsBar");
         }
         if (scroll >= CodeAnchor && scroll < SchoolAnchor) { // If at School section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Code/icon_20826.svg)";
@@ -57,7 +57,7 @@ $(document).ready(function() {
         } else {
             $('#SchoolCell').removeClass("SchoolBar");
         }
-        if (scroll >= MusicAnchor) { // If at Research section
+        if (scroll >= MusicAnchor) { // If at Projects section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
             $('#MusicCell').addClass("MusicBar");
         } else {
@@ -66,33 +66,34 @@ $(document).ready(function() {
         
         if ($('#IconOverlay').css('background-image') != window.CurrentIcon) {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
-        };
+        }
 
-        if (scroll >= SchoolAnchor && window.MetLetLoaded == false) {
+        if (scroll >= SchoolAnchor && window.MetLetLoaded === false) {
             //Lazy load thumbnails when a user scrolls to the area
             $('#MetLet2012F').css('background-image', 'url(/Resources/School/Met%20Let/2012Fthumb.jpg)');
             $('#MetLet2013S').css('background-image', 'url(/Resources/School/Met%20Let/2013Sthumb.jpg)');
             $('#MetLet2013F').css('background-image', 'url(/Resources/School/Met%20Let/2013Fthumb.jpg)');
             $('#MetLet2013W').css('background-image', 'url(/Resources/School/Met%20Let/2013Wthumb.jpg)');
             $('#MetLet2014S').css('background-image', 'url(/Resources/School/Met%20Let/2014Sthumb.jpg)');
-            console.log("Met Let loaded.")
+            console.log("Met Let loaded.");
             //Write(); // Begin chalk animation
             window.MetLetLoaded = true; // Prevents constant reloading and flashing on mobile browsers
-        };
+        }
     });
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
+    $(".rslides").responsiveSlides({auto: false, pager: true});
 
     // Easter eggs below
     window.cheatsenabled = false;
     alertify.set({ delay: 3000 });
     cheet('up up down down left right left right b a', function () { // Konami code to enable
-        if (window.cheatsenabled == false) {
+        if (window.cheatsenabled === false) {
             window.cheatsenabled = true;
             alertify.log("You have enabled easter eggs."); 
             setTimeout(function(){
                 alertify.log("Type back, glasses, jew, or bart.");
-            },4000) 
+            },4000);
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
             
             // Define the cheat codes

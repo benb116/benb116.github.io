@@ -36,7 +36,8 @@ body {
 #MenuContainer {
 	height: 50px; background-color: #424242;
 	text-align: center;
-	margin-left: 125px; margin-right: 125px;}
+	margin-left: 125px; margin-right: 125px;
+	z-index: 100;}
 .ablock {
 	width: 19%; height: 50px;
 	max-width: 250px;
@@ -55,19 +56,19 @@ body {
 #CodeCell > div {background-image: url(/Icons%20and%20Attr/Code/icon_20826.svg);}
 #SchoolCell > div {background-image: url(/Icons%20and%20Attr/Book/icon_4584.svg);}
 #MusicCell > div {background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);}
-#ResearchCell > div {background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
+#ProjectsCell > div {background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
 
 #AboutCell {border-bottom-color: #757575;}
 #CodeCell {border-bottom-color: #3A8FC7;}
 #SchoolCell {border-bottom-color: #F3B712;}
 #MusicCell {border-bottom-color: #c0392b;}
-#ResearchCell {border-bottom-color: #27ae60;}
+#ProjectsCell {border-bottom-color: #27ae60;}
 
 #AboutCell:hover {background-color: #757575;}
 #CodeCell:hover {background-color: #3A8FC7;}
 #SchoolCell:hover {background-color: #F3B712;}
 #MusicCell:hover {background-color: #c0392b;}
-#ResearchCell:hover {background-color: #27ae60;}
+#ProjectsCell:hover {background-color: #27ae60;}
 
 #HomeBody {
 	display: block;
@@ -92,7 +93,7 @@ body {
 
 .AnchorMargin {height: 49px;}
 
-.ResearchProject {width: 45%;}
+.Project {width: 45%;}
 
 .CodeCard {margin-left: 3%; margin-right: 3%;}
 

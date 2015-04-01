@@ -55,7 +55,7 @@ a {color: white; text-decoration: underline;}
 	width: 100%;
 	display: block;
 	margin-bottom: 20px;
-	color: white;
+	color: black;
 	opacity: 0;}
 #topart{
 	display: inline-block;
@@ -73,7 +73,7 @@ a {color: white; text-decoration: underline;}
 	font-family: 'PT Sans', 'serif';}
 #BottomMenu a {
 	text-decoration: none;
-	color: #ABABAB;
+	color: gray;
 	cursor: pointer;
 	display: inline-block; 
 	height: 3em;
@@ -82,7 +82,7 @@ a {color: white; text-decoration: underline;}
 	-webkit-transition-property: -webkit-transform; transition-property: transform;
 	-webkit-transform: translateZ(0); transform: translateZ(0);}
 #BottomMenu a:hover {
-	color: white;
+	color: black;
 	-webkit-transform: translateY(-5px); -ms-transform: translateY(-5px); transform: translateY(-5px);}
 #BottomMenu div {
 	width: 3em; height: 3em;
@@ -98,7 +98,7 @@ a {color: white; text-decoration: underline;}
 
 #HomeBody {text-align: center;}
 #HomeBlack {
-	display: block;
+	display: none;
 	width: 100%;
 	background-color: black;
 	position: fixed; top: 0;
@@ -119,9 +119,9 @@ a {color: white; text-decoration: underline;}
 .CodeBar, #CodePage {background-color: #3A8FC7;}
 .SchoolBar, #SchoolPage {background-color: #F3B712;}
 .MusicBar, #MusicPage {background-color: #c0392b;}
-.ResearchBar, #ResearchPage {background-color: #27ae60;}
+.ProjectsBar, #ProjectsPage {background-color: #27ae60;}
 
-#CodePage, #MusicPage, #SchoolPage, #ResearchPage {
+#CodePage, #MusicPage, #SchoolPage, #ProjectsPage {
 	position: relative;
 	clear: both;
 	width: 100%;
@@ -141,23 +141,52 @@ a {color: white; text-decoration: underline;}
 	line-height: .5em;
 	margin-bottom: 2em;}
 
-.ResearchProject {display: inline-block; min-width: 500px;}
-.ResearchProject > span:nth-child(1) {font-size: 2em; padding-bottom: 2em;}
-.ResearchProject > div {
+.Project {display: inline-block; min-width: 500px;}
+.Project > span:nth-child(1) {font-size: 2em; padding-bottom: 2em;}
+.Project  div {
 	display: block;
 	width: 80%; height: 17em;
-	background: white;
 	position: relative;
 	margin: auto;
-	margin-top: 1em;
+	margin-top: 1em; 
 	background-position: center;
-	background-size: 100% 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
+	/*box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);*/
 }
-.ResearchProject > p:nth-child(3) {width: 80%; display: inline-block; text-align: justify; font-size: 1em; line-height: 1.25em;}
-#VertFEA {background-image: url(/Resources/Research/VertebraeFEA.png);}
+.Project > p:nth-child(3) {width: 80%; display: inline-block; text-align: justify; font-size: 1em; line-height: 1.25em; margin-bottom: 3em; margin-top: 3em;}
+#VertFEA {/*background-image: url(/Resources/Projects/VertebraeFEA.png)*/;}
+#BoomJoint {background-image: url(/Resources/Projects/BoomJoint.jpg);}
 
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides_tabs{margin: 0 auto;}
+.rslides_tabs li {display: inline; margin-left: 1em; margin-right: 1em;  -webkit-transition: font-weight .1s ease-in-out; transition: font-weight .1s ease-in-out;}
+.rslides_here {font-weight: bolder;}
+.rslides_tabs a {text-decoration: none;}
 
 .CodeCard {
 	display: inline-block;
@@ -322,7 +351,7 @@ a[href^='/Resources/School/Met%20Let/'] div {
 .BottomLast {color: gray;}
 #BBLogo {
 	display: inline-block;
-	background-image: url(/Resources/logo-white.svg); background-position: center; background-repeat: no-repeat;
+	background-image: url(/Resources/logo.svg); background-position: center; background-repeat: no-repeat;
 	margin: 2em;}
 
 .GlassesClass {-webkit-filter: blur(4px);}
