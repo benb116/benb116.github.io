@@ -16,8 +16,8 @@ $(document).ready(function() {
         $('#BannerWrap').css('opacity', 1);
     };
 
-    GetNowPlaying();
     GetTopArtists();
+    GetNowPlaying();
     SmoothScroll();
     GATrack();
 
@@ -110,18 +110,17 @@ $(document).ready(function() {
                 $('#HomeBlack').css('display', 'block');
                 //Change colors
                 $('#IntroHead').css('color', 'white');
-                $('.BottomMenuLink').css('color', 'white');
                 $('#BBLogo').css('background-image', 'url(/Resources/logo-white.svg)');
             });
 
-            cheet('b a r t', function () {
-                if ($('#Bart').css('opacity') == 0) {
-                    $('#Bart').css('opacity', 1);
-                    $('#SchoolPage h2').velocity("scroll", 500);
-                } else {
-                    $('#Bart').css('opacity', 0);
-                };
-            });
+            // cheet('b a r t', function () {
+            //     if ($('#Bart').css('opacity') == 0) {
+            //         $('#Bart').css('opacity', 1);
+            //         $('#SchoolPage h2').velocity("scroll", 500);
+            //     } else {
+            //         $('#Bart').css('opacity', 0);
+            //     };
+            // });
 
         } else {
             //Disable codes

@@ -55,7 +55,7 @@ a {color: white; text-decoration: underline;}
 	width: 100%;
 	display: block;
 	margin-bottom: 20px;
-	color: black;
+	color: white;
 	opacity: 0;}
 #topart{
 	display: inline-block;
@@ -73,7 +73,7 @@ a {color: white; text-decoration: underline;}
 	font-family: 'PT Sans', 'serif';}
 #BottomMenu a {
 	text-decoration: none;
-	color: gray;
+	color: #ABABAB;
 	cursor: pointer;
 	display: inline-block; 
 	height: 3em;
@@ -82,7 +82,7 @@ a {color: white; text-decoration: underline;}
 	-webkit-transition-property: -webkit-transform; transition-property: transform;
 	-webkit-transform: translateZ(0); transform: translateZ(0);}
 #BottomMenu a:hover {
-	color: black;
+	color: white;
 	-webkit-transform: translateY(-5px); -ms-transform: translateY(-5px); transform: translateY(-5px);}
 #BottomMenu div {
 	width: 3em; height: 3em;
@@ -98,14 +98,14 @@ a {color: white; text-decoration: underline;}
 
 #HomeBody {text-align: center;}
 #HomeBlack {
-	display: none;
+	display: block;
 	width: 100%;
 	background-color: black;
 	position: fixed; top: 0;
 	z-index: -1;}
 #HomeImage {
 	width: 100%;
-	background-image: url(/Resources/Yosemite.jpg);
+	background-image: url(/Resources/Yosemite2.jpg);
 	background-repeat: no-repeat; background-position: center top;
 	opacity: .75;
 	background-size: cover; height: 100vh;}
@@ -322,7 +322,7 @@ a[href^='/Resources/School/Met%20Let/'] div {
 .BottomLast {color: gray;}
 #BBLogo {
 	display: inline-block;
-	background-image: url(/Resources/Logo.svg); background-position: center; background-repeat: no-repeat;
+	background-image: url(/Resources/logo-white.svg); background-position: center; background-repeat: no-repeat;
 	margin: 2em;}
 
 .GlassesClass {-webkit-filter: blur(4px);}
