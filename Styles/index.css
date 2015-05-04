@@ -353,7 +353,7 @@ a[href^='/Resources/School/Met%20Let/'] div {
 .BottomLast {color: gray;}
 #BBLogo {
 	display: inline-block;
-	background-image: url(/Resources/logo.svg); background-position: center; background-repeat: no-repeat;
+	background-image: url(/Resources/Logo.svg); background-position: center; background-repeat: no-repeat;
 	margin: 2em;}
 
 .GlassesClass {-webkit-filter: blur(4px);}
