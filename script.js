@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    if ($('#MobileBar').css('display') == 'none') { // No animations on mobile
+    if ($('#MobileBar').css('display') == 'none' && 1 == 0) { // No animations on mobile
         // Initial animations
         $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
         $('#TopBar').delay(1000).velocity({top: 0}, 500);
