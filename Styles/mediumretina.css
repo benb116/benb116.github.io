@@ -1,41 +1,94 @@
-body {font-size: 200%;}
-
-.Modal {font-size: 0.75em; width: 100%;}
-#TopBar {display: none;}
-#BannerWrap {top:0;}
-#UnderBanner {
-	margin-top: 0; margin-right: -2em;
-	line-height: 2em;
-	width: 20em;
-	text-indent: 0em;
+body {
+    font-size: 200%;
 }
 
-#IntroHead {margin-top: 20%;}
+.Modal {
+    font-size: 0.75em;
+    width: 100%;
+}
+
+#TopBar {
+    display: none;
+}
+
+#BannerWrap {
+    top: 0;
+}
+
+#UnderBanner {
+    margin-top: 0;
+    margin-right: -2em;
+    line-height: 2em;
+    width: 20em;
+    text-indent: 0em;
+}
+
+#IntroHead {
+    margin-top: 20%;
+}
+
 #topart {
-	width: 1.5em; height: 1.5em;
-	background-size: 1.5em;
-	border-radius: 15px;}
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 1.5em;
+    border-radius: 15px;
+}
+
 #bighello {
-	font-size: 0.75em;}
+    font-size: 0.75em;
+}
+
 #BioPar {
-	margin-bottom: 50px;
-	font-size: 0.25em;
-	width: 80%; max-width: 80%;}
-#BottomMenu {margin-bottom: 150px;}
-#BottomMenu a {width: 15%;}
-.ResearchProject {width: 90%;}
+    margin-bottom: 50px;
+    font-size: 0.25em;
+    width: 80%;
+    max-width: 80%;
+}
+
+#BottomMenu {
+    margin-bottom: 150px;
+}
+
+#BottomMenu a {
+    width: 15%;
+}
+
+.ResearchProject {
+    width: 90%;
+}
 
 #EdCareer {
-	width: 90%;
-	font-size: 0.75em;}
+    width: 90%;
+    font-size: 0.75em;
+}
 
-#NowPlaying {width: 80%;}
+#NowPlaying {
+    width: 80%;
+}
+
 #TrackArt {
-	width: 70vw; height: 70vw;
-	background-size: 70vw;}
-.ArtImage {width: 36vw; height: 36vw;}
-#TopArtists {width: 90%; padding-bottom: 50px;}
-#TopArtists div {width: 40vw; height: 40vw;}
+    width: 70vw;
+    height: 70vw;
+    background-size: 70vw;
+}
+
+.ArtImage {
+    width: 36vw;
+    height: 36vw;
+}
+
+#TopArtists {
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+#TopArtists div {
+    width: 40vw;
+    height: 40vw;
+}
+
 #BBLogo {
-	width: 6em; height: 3em;
-	background-size: 6em;}
+    width: 6em;
+    height: 3em;
+    background-size: 6em;
+}

@@ -14,7 +14,7 @@ function SmoothScroll(){
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
-	        $(target).velocity("scroll", 500);
+	        $('html, body').animate({scrollTop: $(target).offset().top}, 500);
 	        return false;
 	      }
 	    }

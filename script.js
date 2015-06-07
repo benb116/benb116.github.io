@@ -2,11 +2,11 @@ $(document).ready(function() {
 
     if ($('#MobileBar').css('display') == 'none' && 1 == 0) { // No animations on mobile
         // Initial animations
-        $('#IntroHead').delay(500).velocity({opacity: 1}, 1000);
-        $('#TopBar').delay(1000).velocity({top: 0}, 500);
-        $('#IconOverlay').delay(1000).velocity({top: "15px"}, 500);
-        $('#BottomMenu').delay(1500).velocity({opacity: 1}, 500);
-        $('#BannerWrap').delay(1500).velocity({opacity: 1}, 500);
+        $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
+        $('#TopBar').delay(1000).animate({top: 0}, 500);
+        $('#IconOverlay').delay(1000).animate({top: "15px"}, 500);
+        $('#BottomMenu').delay(1500).animate({opacity: 1}, 500);
+        $('#BannerWrap').delay(1500).animate({opacity: 1}, 500);
     } else {
         //On mobile:
         $('#IntroHead').css('opacity', 1);
@@ -16,13 +16,12 @@ $(document).ready(function() {
         $('#BannerWrap').css('opacity', 1);
     }
 
-    GetTopArtists();
-    GetNowPlaying();
     SmoothScroll();
     GATrack();
 
     window.CurrentIcon = "";
     window.MetLetLoaded = false;
+    window.MusicLoaded = false;
     window.cheatsenabled = false;
     $(window).scroll(function() { // As the user scrolls...
         // Determine anchor positions
@@ -33,7 +32,7 @@ $(document).ready(function() {
         var scroll = $(window).scrollTop() + 300; // Get current scroll. Offset changes the icon when most of the section is displayed. 
 
         if (scroll < ProjectsAnchor) { // If at home
-            if (window.cheatsenabled == true) { // If cheats are enabled
+            if (window.cheatsenabled === true) { // If cheats are enabled
                 window.CurrentIcon = "url(/Icons%20and%20Attr/Egg/icon_14559.svg)";
             } else {
                 window.CurrentIcon = "";
@@ -79,9 +78,20 @@ $(document).ready(function() {
             //Write(); // Begin chalk animation
             window.MetLetLoaded = true; // Prevents constant reloading and flashing on mobile browsers
         }
+
+        if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
+            GetTopArtists();
+            GetNowPlaying();
+            window.MusicLoaded = true;
+        }
     });
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
+    $('#slickProjects').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    });
     $(".rslides").responsiveSlides({auto: false, pager: true});
 
     // Easter eggs below
@@ -117,7 +127,7 @@ $(document).ready(function() {
             // cheet('b a r t', function () {
             //     if ($('#Bart').css('opacity') == 0) {
             //         $('#Bart').css('opacity', 1);
-            //         $('#SchoolPage h2').velocity("scroll", 500);
+            //         $('#SchoolPage h2').animate("scroll", 500);
             //     } else {
             //         $('#Bart').css('opacity', 0);
             //     };

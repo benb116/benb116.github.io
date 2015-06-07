@@ -1,120 +1,272 @@
 body {
-	margin-top: 40px;
-	font-size: 100%;}
-#MobileBar {display: none;}
+    margin-top: 40px;
+    font-size: 100%;
+}
+
+#MobileBar {
+    display: none;
+}
+
 .Modal {
-	font-size: 1em;
-	width: 700px;}
-#BannerWrap {top: 50px;}
+    font-size: 1em;
+    width: 700px;
+}
+
+#BannerWrap {
+    top: 50px;
+}
 
 @media all and (min-width: 1051px) {
-	.TopBarWord {display: block;}
-	.TopBarIcon {display: none;}
+    .TopBarWord {
+        display: block;
+    }
+    .TopBarIcon {
+        display: none;
+    }
 }
+
 @media all and (max-width: 1050px) {
-	.TopBarWord {display: none;}
-	.TopBarIcon {display: block;}
-	#IconCircle {display: none;}
-	#MenuContainer {margin-left: 0; margin-right: 0;}
+    .TopBarWord {
+        display: none;
+    }
+    .TopBarIcon {
+        display: block;
+    }
+    #IconCircle {
+        display: none;
+    }
+    #MenuContainer {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 #TopBar {
-	height: 50px; width: 100%;
-	background-color: #424242;
-	position: fixed; top:-125px; left: 0;
-	z-index: 2;
-	font-family: 'Open Sans', 'sans-serif';}
+    height: 50px;
+    width: 100%;
+    background-color: #424242;
+    position: fixed;
+    top: -125px;
+    left: 0;
+    z-index: 2;
+}
+
 #IconCircle {
-	border-radius: 50%;
-	width: 250px; height: 250px; 
-	background-color: #424242;
-	position: absolute; top: -125px; left: -125px;}
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #424242;
+    position: absolute;
+    top: -125px;
+    left: -125px;
+}
+
 #IconOverlay {
-	position: fixed; top: -125px; left: 10px;
-	width: 70px; height: 70px;
-    background-size: 100%; background-repeat: no-repeat;}
+    position: fixed;
+    top: -125px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 #MenuContainer {
-	height: 50px; background-color: #424242;
-	text-align: center;
-	margin-left: 125px; margin-right: 125px;
-	z-index: 100;}
+    height: 50px;
+    background-color: #424242;
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 125px;
+    z-index: 100;
+}
+
 .ablock {
-	width: 19%; height: 50px;
-	max-width: 250px;
-	color: white; font-size: 30px; text-decoration: none;
-	line-height: 50px; text-align: center;
-	display: inline-block;
-	margin: 0;
-	border-bottom-width: 3px; border-bottom-style: solid;
-	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
-  	-webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out;}
+    width: 19%;
+    height: 50px;
+    max-width: 250px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
 
-.TopBarIcon {background-repeat: no-repeat; background-position: center; background-size: 35px;
-	width: 50px; height: 50px; margin: auto;}
+.TopBarIcon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
 
-#AboutCell > div {background-image: url(/Icons%20and%20Attr/User/icon_419.svg);}
-#CodeCell > div {background-image: url(/Icons%20and%20Attr/Code/icon_20826.svg);}
-#SchoolCell > div {background-image: url(/Icons%20and%20Attr/Book/icon_4584.svg);}
-#MusicCell > div {background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);}
-#ProjectsCell > div {background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg);}
+#AboutCell > div {
+    background-image: url(/Icons%20and%20Attr/User/icon_419.svg);
+}
 
-#AboutCell {border-bottom-color: #757575;}
-#CodeCell {border-bottom-color: #3A8FC7;}
-#SchoolCell {border-bottom-color: #F3B712;}
-#MusicCell {border-bottom-color: #c0392b;}
-#ProjectsCell {border-bottom-color: #27ae60;}
+#CodeCell > div {
+    background-image: url(/Icons%20and%20Attr/Code/icon_20826.svg);
+}
 
-#AboutCell:hover {background-color: #757575;}
-#CodeCell:hover {background-color: #3A8FC7;}
-#SchoolCell:hover {background-color: #F3B712;}
-#MusicCell:hover {background-color: #c0392b;}
-#ProjectsCell:hover {background-color: #27ae60;}
+#SchoolCell > div {
+    background-image: url(/Icons%20and%20Attr/Book/icon_4584.svg);
+}
+
+#MusicCell > div {
+    background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);
+}
+
+#ProjectsCell > div {
+    background-image: url(/Icons%20and%20Attr/Earth/icon_10812.svg);
+}
+
+#AboutCell {
+    border-bottom-color: #757575;
+}
+
+#CodeCell {
+    border-bottom-color: #3A8FC7;
+}
+
+#SchoolCell {
+    border-bottom-color: #F3B712;
+}
+
+#MusicCell {
+    border-bottom-color: #c0392b;
+}
+
+#ProjectsCell {
+    border-bottom-color: #27ae60;
+}
+
+#AboutCell:hover {
+    background-color: #757575;
+}
+
+#CodeCell:hover {
+    background-color: #3A8FC7;
+}
+
+#SchoolCell:hover {
+    background-color: #F3B712;
+}
+
+#MusicCell:hover {
+    background-color: #c0392b;
+}
+
+#ProjectsCell:hover {
+    background-color: #27ae60;
+}
 
 #HomeBody {
-	display: block;
-	width: 100%; min-height: 400px;}
+    display: block;
+    width: 100%;
+    min-height: 400px;
+}
 
 #IntroHead {
-	display: inline-block; margin-top: 10%;
-	font-size: 4.5em;}
+    display: inline-block;
+    margin-top: 10%;
+    font-size: 4.5em;
+}
+
 #topart {
-	width: 2em; height: 2em;
-    background-size: 2em;}
-#BioPar {width: 50%; min-width: 430px; max-width: 600px;
-	font-size: .23em;}
+    width: 2em;
+    height: 2em;
+    background-size: 2em;
+}
+
+#BioPar {
+    width: 50%;
+    min-width: 430px;
+    max-width: 600px;
+    font-size: .23em;
+}
 
 #BottomMenu {
-	font-size: 1em; line-height: .5em;
-	width: 100%; text-align: center;
-	font-family: 'Open Sans', 'sans-serif';
-	margin-top: 3%; margin-bottom: 3%;
-	opacity: 0;}
-#BottomMenu a {width: 10%;}
+    font-size: 1em;
+    line-height: .5em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    margin-top: 3%;
+    margin-bottom: 3%;
+    opacity: 0;
+}
 
-.AnchorMargin {height: 49px;}
+#BottomMenu a {
+    width: 10%;
+}
 
-.Project {width: 45%;}
+.AnchorMargin {
+    height: 49px;
+}
 
-.CodeCard {margin-left: 3%; margin-right: 3%;}
+.Project {
+    width: 45%;
+}
+
+.CodeCard {
+    margin-left: 3%;
+    margin-right: 3%;
+}
 
 #EdCareer {
-	width: 70%; min-width: 500px;
-    font-size: 1.3em;}
+    width: 70%;
+    min-width: 500px;
+    font-size: 1.3em;
+}
 
 a[href^='/Resources/School/Met%20Let/'] div {
-	opacity: .75; -webkit-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out;}
-a[href^='/Resources/School/Met%20Let/'] div:hover {opacity: 1;}
+    opacity: .75;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
 
+a[href^='/Resources/School/Met%20Let/'] div:hover {
+    opacity: 1;
+}
 
-#NowPlaying {width: 30%;}
+#NowPlaying {
+    width: 30%;
+}
+
 #TrackArt {
-	width: 19vw; height: 19vw; 
-	min-width: 250px; min-height: 250px;
-	background-size: contain;}
-#TopArtists {width: 50%; padding-bottom: 50px;}
-#TopArtists div {width: 11vw; height: 11vw;}
+    width: 19vw;
+    height: 19vw;
+    min-width: 250px;
+    min-height: 250px;
+    background-size: contain;
+}
 
-.BottomFirst, .BottomLast {font-size: 7em;}
+#TopArtists {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+#TopArtists div {
+    width: 11vw;
+    height: 11vw;
+}
+
+.BottomFirst,
+.BottomLast {
+    font-size: 7em;
+}
+
 #BBLogo {
-	width: 10em; height: 5em;
-	background-size: cover;}
+    width: 10em;
+    height: 5em;
+    background-size: cover;
+}
