@@ -92,7 +92,13 @@ $(document).ready(function() {
       slidesToShow: 2,
       slidesToScroll: 2
     });
-    $(".rslides").responsiveSlides({auto: false, pager: true});
+    $("div", ".Project").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        prevArrow: '',
+        nextArrow: ''
+    });
 
     selTags = [];
 

@@ -282,43 +282,36 @@ a {
     -moz-box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 7px -5px rgba(0,0,0,0.75);
 }
+
 .ProjectTagSel {
     background-color: #3A8FC7;
     color: white;
 }
-/*
-.ProjectTag:active{
-    -webkit-box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.75);
-    transition: all .01s;
-}*/
 
 .Project {
     display: inline-block;
-    min-width: 450px;
 }
 
 .Project > span:nth-child(1) {
     font-size: 2em;
-    margin-bottom: 3em;
+    display: inline-block;
+    margin-bottom: 1em;
 }
 
 .Project div {
     display: block;
-    width: 100%;
+    width: 90%;
     height: 17em;
     position: relative;
     margin: auto;
-    margin-top: 1em;
+    /*margin-top: 1em;*/
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .Project iframe {
-    width: 30em;
-    height: 100%;
+    width: 100%;
 }
 
 .Project > p:nth-child(3) {
@@ -331,54 +324,6 @@ a {
     margin-top: 3em;
 }
 
-.rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-}
-
-.rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-.rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
-}
-
-.rslides_tabs {
-    margin: 0 auto;
-    padding: 0;
-    margin-top: .5em;
-}
-
-.rslides_tabs li {
-    display: inline;
-    margin-left: 1em;
-    margin-right: 1em;
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-
-.rslides_here {
-    font-weight: bolder;
-    text-decoration: underline;
-}
-
-.rslides_tabs a {
-    text-decoration: none;
-}
-
 #slickProjects {
     width: 90%;
     display: inline-block;
@@ -387,6 +332,10 @@ a {
 .slick-prev,
 .slick-next {
     z-index: 20;
+}
+
+.slick-dots > li {
+    list-style: none;
 }
 
 .CodeCard {
