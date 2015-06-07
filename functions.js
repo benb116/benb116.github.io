@@ -46,7 +46,7 @@ function GetNowPlaying(){
 			if(playval == "true") {
 				document.getElementById("NowRecent").innerHTML = "Now Playing";
 				document.getElementById("TrackArt").className = "pulse-grow";
-				getBPMInfo(theartist, thetrack)
+				getBPMInfo(theartist, thetrack);
 			} else {
 				document.getElementById("NowRecent").innerHTML = "Recently Played";
 				document.getElementById("TrackArt").className = "Other";
@@ -56,7 +56,7 @@ function GetNowPlaying(){
 		catch(err) {
 			console.log("Error getting NowPlaying status: "+err);
 		}
-	})
+	});
 }
 
 function GetTopArtists(){
@@ -83,7 +83,7 @@ function GetTopArtists(){
 			var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
 			$('#TopArtists a').get(i).href=ArtistLink;
 		}
-	})
+	});
 }
 
 function getBPMInfo(artist, track) {
@@ -96,8 +96,8 @@ function getBPMInfo(artist, track) {
 		console.log(songBPM);
 		var BPS = songBPM / 60;
 		var halfPeriod = 1 / (2 * BPS);
-		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s')
-		$('.pulse-grow').css('animation-duration', halfPeriod+'s')
+		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s');
+		$('.pulse-grow').css('animation-duration', halfPeriod+'s');
 	});
 }
 
@@ -112,7 +112,7 @@ function Write() {
 	        setTimeout(function(){
 	            //we add the letter to the container
 	            //$('#container').html($('#container').html() + letter);
-	        	newtext += letter
+	        	newtext += letter;
 	        	var fullcode = window.newtext+divtext;
 	        	$('#WriteChalk').velocity({'margin-top': "0em"}, 40);
 				setTimeout(function(){
@@ -123,7 +123,7 @@ function Write() {
 					setTimeout(function(){
 						$('#WriteChalk').delay(1000).css('opacity', 0);
 					}, 100);
-				};
+				}
 	        }, 150*(i+1));
 	    });
 	} 

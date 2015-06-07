@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    if ($('#MobileBar').css('display') == 'none' && 1 == 0) { // No animations on mobile
+    if ($('#MobileBar').css('display') == 'none' && 1 === 0) { // No animations on mobile
         // Initial animations
         $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
         $('#TopBar').delay(1000).animate({top: 0}, 500);
@@ -90,9 +90,31 @@ $(document).ready(function() {
     $('#slickProjects').slick({
       infinite: true,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 2
     });
     $(".rslides").responsiveSlides({auto: false, pager: true});
+
+    selTags = [];
+
+    $('.ProjectTag').click(function() {
+        $(this).toggleClass('ProjectTagSel');
+        $('#slickProjects').slick('slickUnfilter');
+        var selClass = $(this).attr('attr');
+        var tagIndex = selTags.indexOf(selClass);
+        if (tagIndex == -1) {
+            selTags.push(selClass);
+        } else {
+            selTags.splice(tagIndex, 1);
+        }
+
+        $('.Project').removeClass('selProject');
+        for (var selTag in selTags) {
+            $('.'+selTags[selTag]).addClass('selProject');
+        }
+        if (selTags.length !== 0) {
+            $('#slickProjects').slick('slickFilter', '.selProject');
+        }
+    });
 
     // Easter eggs below
     window.cheatsenabled = false;
