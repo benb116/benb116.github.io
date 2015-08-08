@@ -331,7 +331,7 @@ a {
 
 .slick-prev,
 .slick-next {
-    z-index: 20;
+    z-index: 1;
 }
 
 .slick-dots > li {
