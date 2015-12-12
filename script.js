@@ -100,28 +100,6 @@ $(document).ready(function() {
         nextArrow: ''
     });
 
-    selTags = [];
-
-    $('.ProjectTag').click(function() {
-        $(this).toggleClass('ProjectTagSel');
-        $('#slickProjects').slick('slickUnfilter');
-        var selClass = $(this).attr('attr');
-        var tagIndex = selTags.indexOf(selClass);
-        if (tagIndex == -1) {
-            selTags.push(selClass);
-        } else {
-            selTags.splice(tagIndex, 1);
-        }
-
-        $('.Project').removeClass('selProject');
-        for (var selTag in selTags) {
-            $('.'+selTags[selTag]).addClass('selProject');
-        }
-        if (selTags.length !== 0) {
-            $('#slickProjects').slick('slickFilter', '.selProject');
-        }
-    });
-
     // Easter eggs below
     window.cheatsenabled = false;
     alertify.set({ delay: 3000 });
