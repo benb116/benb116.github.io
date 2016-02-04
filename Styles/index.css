@@ -306,7 +306,7 @@ a {
     margin: auto;
     /*margin-top: 1em;*/
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
