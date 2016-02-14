@@ -1,0 +1,228 @@
+#HomeBody {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+}
+#BannerWrap {
+	position: absolute;
+    top: 50px;
+	right: 0px;
+	width: 13em;
+	height: 13em;
+	overflow: hidden;
+	opacity: 0;
+}
+@media all and (max-width: 899px) {
+	#BannerWrap {
+		top: 0;
+	}
+}
+
+#UnderBanner {
+	position: absolute;
+	top: 4em;
+	right: -4em;
+	text-align: center;
+	text-indent: 2em;
+	line-height: 2em;
+	width: 20em;
+	height: 2em;
+	background-color: white;
+	color: black;
+	font-weight: normal;
+	font-family: 'PT Sans', 'serif';
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+#IntroHead {
+	width: 100%;
+	margin-bottom: 20px;
+	color: black;
+	opacity: 0;
+	display: inline-block;
+    margin-top: 10%;
+    font-size: 4.5em;
+}
+@media all and (max-width: 899px) {
+	#IntroHead {
+	    margin-top: 14%;
+	}
+}
+
+#topart {
+	display: inline-block;
+	background-image: url(/Resources/pic.jpg);
+	border-radius: 5px;
+    width: 2em;
+    height: 2em;
+    background-size: 2em;
+}
+@media all and (max-width: 899px) {
+	#topart {
+	    margin-right: 13px;
+	    margin-top: 1em;
+	}
+}
+
+#bighello {
+	font-family: 'Oxygen', 'sans-serif';
+	text-align: left;
+	display: inline-block;
+	line-height: 1.15em;
+}
+@media all and (max-width: 899px) {
+	#bighello {
+	    font-size: 1em;
+	}
+}
+#BioPar {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 2em;
+	margin: auto;
+	margin-top: -15px;
+	font-family: 'PT Sans', 'serif';
+}
+@media all and (min-width: 900px) {
+	#BioPar {
+	    width: 50%;
+	    min-width: 430px;
+	    max-width: 600px;
+	    font-size: .23em;
+	}
+}
+@media all and (max-width: 899px) {
+	#BioPar {
+	    width: 70%;
+	    min-width: 450px;
+	    font-size: .25em;
+	}
+}
+
+#BottomMenu {
+    font-size: 1em;
+    line-height: .5em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    margin-top: 3%;
+    margin-bottom: 3%;
+    opacity: 0;
+}
+@media all and (max-width: 899px) {
+	#BottomMenu {
+	    margin: 50px 0 100px 0;
+	}
+}
+#BottomMenu a {
+	text-decoration: none;
+	color: gray;
+	cursor: pointer;
+	display: inline-block;
+	height: 3em;
+    width: 10%;
+	/*Float - Hover.css*/
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+@media all and (max-width: 899px) {
+	#BottomMenu a {
+	    width: 15%;
+	}
+}
+#BottomMenu a:hover {
+	color: black;
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+#BottomMenu div {
+	width: 3em;
+	height: 3em;
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+}
+
+#BottomMenu p {
+	-webkit-transition: color .15s ease-in-out;
+	transition: color .15s ease-in-out;
+}
+
+#ResumeIcon {
+	background-image: url(/Icons%20and%20Attr/Resume/icon_30547.svg);
+}
+
+#EmailIcon {
+	background-image: url(/Icons%20and%20Attr/Envelope/icon_13468.svg);
+}
+
+#LinkedInIcon {
+	background-image: url(/Icons%20and%20Attr/Profiles/linkedin.svg);
+}
+
+#GithubIcon {
+	background-image: url(/Icons%20and%20Attr/Profiles/github.svg);
+}
+
+#CreditsIcon {
+	background-image: url(/Icons%20and%20Attr/List/icon_11515.svg);
+}
+
+#MobileBar {display: none;}
+@media all and (max-width: 899px) {
+	#MobileBar {
+	    font-size: 2.5em;
+	    line-height: 2em;
+	    height: 10em;
+	    width: 10em;
+	    margin: 0 auto;
+	    display: inline-block;
+	    font-family: 'Oxygen', 'sans-serif';
+	}
+}
+
+#MobileBar div {
+    height: 1em;
+    width: 10em;
+    font-size: 1em;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+#MobileBar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#HomeBody {
+	text-align: center;
+}
+
+#HomeBlack {
+	display: none;
+	width: 100%;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
+#HomeImage {
+	width: 100%;
+	background-image: url(/Resources/Yosemite2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	opacity: .75;
+	background-size: cover;
+	height: 100vh;
+}

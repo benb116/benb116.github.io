@@ -1,21 +1,3 @@
-body {
-    margin-top: 40px;
-    font-size: 100%;
-}
-
-#MobileBar {
-    display: none;
-}
-
-.Modal {
-    font-size: 1em;
-    width: 700px;
-}
-
-#BannerWrap {
-    top: 50px;
-}
-
 @media all and (min-width: 1051px) {
     .TopBarWord {
         display: block;
@@ -78,6 +60,9 @@ body {
     margin-left: 125px;
     margin-right: 125px;
     z-index: 100;
+}
+#MenuContainer > a {
+    text-decoration: none;
 }
 
 .ablock {
@@ -167,106 +152,4 @@ body {
 
 #ProjectsCell:hover {
     background-color: #27ae60;
-}
-
-#HomeBody {
-    display: block;
-    width: 100%;
-    min-height: 400px;
-}
-
-#IntroHead {
-    display: inline-block;
-    margin-top: 10%;
-    font-size: 4.5em;
-}
-
-#topart {
-    width: 2em;
-    height: 2em;
-    background-size: 2em;
-}
-
-#BioPar {
-    width: 50%;
-    min-width: 430px;
-    max-width: 600px;
-    font-size: .23em;
-}
-
-#BottomMenu {
-    font-size: 1em;
-    line-height: .5em;
-    width: 100%;
-    text-align: center;
-    font-family: 'Open Sans', 'sans-serif';
-    margin-top: 3%;
-    margin-bottom: 3%;
-    opacity: 0;
-}
-
-#BottomMenu a {
-    width: 10%;
-}
-
-.AnchorMargin {
-    height: 49px;
-}
-
-.Project {
-    width: 45%;
-}
-
-.CodeCard {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-#EdCareer {
-    width: 70%;
-    min-width: 500px;
-    font-size: 1.3em;
-}
-
-a[href^='/Resources/School/Met%20Let/'] div {
-    opacity: .75;
-    -webkit-transition: opacity .15s ease-in-out;
-    transition: opacity .15s ease-in-out;
-}
-
-a[href^='/Resources/School/Met%20Let/'] div:hover {
-    opacity: 1;
-}
-
-#NowPlaying {
-    width: 30%;
-}
-
-#TrackArt {
-    width: 19vw;
-    height: 19vw;
-    min-width: 250px;
-    min-height: 250px;
-    background-size: contain;
-}
-
-#TopArtists {
-    width: 50%;
-    padding-bottom: 50px;
-}
-
-#TopArtists div {
-    width: 11vw;
-    height: 11vw;
-}
-
-.BottomFirst,
-.BottomLast {
-    font-size: 7em;
-}
-
-#BBLogo {
-    width: 10em;
-    height: 5em;
-    background-size: cover;
 }

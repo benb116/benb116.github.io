@@ -10,29 +10,58 @@
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css"/>
 		<link rel="stylesheet" href="/Styles/index.css"> <!--Base styles-->
-		<link rel="stylesheet" href="/Styles/big.css" media='screen and (min-width: 901px)'> <!--Style for large screens-->
-		<link rel='stylesheet' href='/Styles/medium.css' media='screen and (max-width: 900px)'> <!--Style for small screens-->
-		<link rel='stylesheet' href='/Styles/mediumretina.css'  media='screen and (device-aspect-ratio: 40/71)'> <!--Style targeting retina iOS devices-->
+		<link rel="stylesheet" type="text/css" href="/Styles/Menu.css">
+		<link rel="stylesheet" type="text/css" href="/Styles/Hello.css">
+		<link rel="stylesheet" type="text/css" href="/Styles/Projects.css">
+		<link rel="stylesheet" type="text/css" href="/Styles/Code.css">
+		<link rel="stylesheet" type="text/css" href="/Styles/School.css">
+		<link rel="stylesheet" type="text/css" href="/Styles/Music.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript" src="functions.js"></script>
 		<script type="text/javascript" src="/Plugins/cheet.js"></script>
 		<script type="text/javascript" src="/Plugins/Alertify/alertify.min.js"></script>
 		<script type="text/javascript" src="/Plugins/jquery.leanModal.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.1/slick.min.js"></script>
-		<script type="text/javascript" src="script.js"></script> <!--My javascript code-->
+		<script type="text/javascript" src="/Plugins/patchpanel.min.js"></script>
+		<script type="text/javascript" src="script.js"></script> <!--My javascript code -->
 	</head>
 	<body>
 		<a id="Top" style="position:absolute;top:0;"></a> <!-- Top anchor with position:absolute at very top -->
 		<div id="TopBar">
 			<div id="IconCircle"><div id="IconOverlay"></div></div>
 			<div id="MenuContainer">
-				<a href="#Top"><div class="ablock" id="AboutCell"><span class="TopBarWord">Ben</span><div class="TopBarIcon"></div></div></a>
-				<a href="#Projects"><div class="ablock" id="ProjectsCell"><span class="TopBarWord">Projects</span><div class="TopBarIcon"></div></div></a>
-				<a href="#Code"><div class="ablock" id="CodeCell"><span class="TopBarWord">Code</span><div class="TopBarIcon"></div></div></a>
-				<a href="#School"><div class="ablock" id="SchoolCell"><span class="TopBarWord">School</span><div class="TopBarIcon"></div></div></a>
-				<a href="#Music"><div class="ablock" id="MusicCell"><span class="TopBarWord">Music</span><div class="TopBarIcon"></div></div></a>
+				<a href="#Top">
+				    <div class="ablock" id="AboutCell">
+				    	<span class="TopBarWord">Ben</span>
+				        <div class="TopBarIcon"></div>
+				    </div>
+				</a>
+				<a href="#Projects">
+				    <div class="ablock" id="ProjectsCell">
+				    	<span class="TopBarWord">Projects</span>
+				        <div class="TopBarIcon"></div>
+				    </div>
+				</a>
+				<a href="#Code">
+				    <div class="ablock" id="CodeCell">
+				    	<span class="TopBarWord">Code</span>
+				        <div class="TopBarIcon"></div>
+				    </div>
+				</a>
+				<a href="#School">
+				    <div class="ablock" id="SchoolCell">
+				    	<span class="TopBarWord">School</span>
+				        <div class="TopBarIcon"></div>
+				    </div>
+				</a>
+				<a href="#Music">
+				    <div class="ablock" id="MusicCell">
+				    	<span class="TopBarWord">Music</span>
+				        <div class="TopBarIcon"></div>
+				    </div>
+				</a>
 			</div>
-		</div>	
+		</div>
 		<section id="HomeBody">
 			<div id="CreditModal" class="Modal">
 				<h2>Credits</h2>
@@ -100,7 +129,7 @@
 				<a href="#Code"><div class="CodeBar">Code</div></a>
 				<a href="#School"><div class="SchoolBar">School</div></a>
 				<a href="#Music"><div class="MusicBar">Music</div></a>
-			</div>	
+			</div>
 		</section>
 		<div class="AnchorMargin"><a id="Projects"></a></div>
 		<section id="ProjectsPage">
@@ -108,102 +137,110 @@
 				<h1>Projects</h1>
 				<h2>Starting small with big aspirations</h2>
 			</div>
-			<!-- <div id="tagMenu">
-				<div class="ProjectTag" attr="Kodlab">Robotics</div>
-				<div class="ProjectTag" attr="MechDes">Mech Design</div>
-				<div class="ProjectTag" attr="MEAM101">For Class</div>
-				<div class="ProjectTag" attr="JustForFun">For Fun</div>
-			</div> -->
-			<div id="slickProjects">
-				<div class="Project Kodlab MechDes">
-					<span>Quadrupedal Robot</span>
-					<div id="BugBot">
-						<div style="background-image:url(/Resources/Projects/BugBot1.jpg)"></div>
-						<div style="background-image:url(/Resources/Projects/BugBot2.jpg)"></div>
-						<!-- <div style="background-image:url(/Resources/Projects/BugBot3.jpg)"></div> -->
-						<!-- <div><iframe src="https://player.vimeo.com/video/133205833?byline=0&portrait=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
-					</div>
-					<p>This is a robot I am building for <a href="http://kodlab.seas.upenn.edu">Kodlab</a>. I took an existing leg design and made a body that allowed for full range of motion while minimizing weight. In the future, I hope to test leaping capabilities, gait kinematics, and possibly alternate leg designs that are more flexible.</p>
-				</div>
-				<div class="Project MEAM201 MechDes">
-					<span>Eagles Stirling Engine</span>
-					<div id="Engine">
-						<div><iframe src="https://player.vimeo.com/video/149164270?byline=0&portrait=0&title=0&color=004953" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-						<div style="background-image:url(/Resources/Projects/EnginePhoto.jpg)"></div>
-						<div style="background-image:url(/Resources/Projects/EngineFront.jpg)"></div>
-						<div style="background-image:url(/Resources/Projects/EngineBack.jpg)"></div>
-
-					</div>
-					<p>For MEAM 201: Machine Design and Manufacturing, I made most of the parts of a previously designed Stirline engine. In order to add my personal touch to the project, I made the engine Eagles themed. During testing, the engine achieved a speed of 850 RPM. <a href="https://grabcad.com/library/eagles-themed-stirling-engine-1">View on GrabCad</a></p>
-				</div>
-				<div class="Project MEAM101 MechDes">
+			<div class="patch-container">
+				<div class="patch-item patch-button patch-third" data-patch-panel="Nerf">
+					<div></div>
 					<span>Nerf Dissection</span>
-					<div id="Maverick">
+				</div>
+				<div class="patch-panel" data-patch-panel="Nerf">
+					<div class="ProjectDesc">
+						<h3>Dissection and Modeling of a Nerf Blaster</h3>
+						<p>As part of the "Dissect" assignment in Introduction to Mechanical Design (MEAM 101), my group fully dissasembled a Nerf Maverick blaster, modeled each part in Solidworks, and created an full assembly followed by an explosion-collapse video. <a href="https://grabcad.com/library/nerf-maverick-1/">View on GrabCad</a></p>
+					</div>
+					<div class="ProjectMedia">
+						<iframe src="https://player.vimeo.com/video/123699909?byline=0&portrait=0&title=0&color=FFEE00" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						<div style="background-image:url(/Resources/Projects/MaverickFull.jpg)"></div>
-						<div><iframe src="https://player.vimeo.com/video/123699909?byline=0&portrait=0&title=0&color=FFEE00" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 						<div style="background-image:url(/Resources/Projects/MaverickSlice.jpeg)"></div>
 					</div>
-					<p>As part of the "Dissect" assignment in Introduction to Mechanical Design (MEAM 101), my group fully dissasembled a Nerf Maverick blaster, modeled each part in Solidworks, and created an full assembly followed by an explosion-collapse video. <a href="https://grabcad.com/library/nerf-maverick-1/">View on GrabCad</a></p>
 				</div>
-				<div class="Project MEAM101 MechDes">
+				<div class="patch-item patch-button patch-third" data-patch-panel="Tank">
+					<div></div>
 					<span>da Vinci's Tank</span>
-					<div id="daVinciTank">
+				</div>
+				<div class="patch-panel" data-patch-panel="Tank">
+					<div class="ProjectMedia">
 						<div style="background-image:url(/Resources/Projects/TankIso.jpg)"></div>
 						<div style="background-image:url(/Resources/Projects/TankExplode.jpg)"></div>
 						<div style="background-image:url(/Resources/Projects/TankSide.jpg)"></div>
 						<div style="background-image:url(/Resources/Projects/TankInside.jpg)"></div>
 					</div>
-					<p>In MEAM 101's "Machine" project, I created a small scale tank based on the drawings of Leonardo da Vinci. This build combined a centuries-old design with modern prototyping techniques, including 3D printing, to create a mobile working model (except for the cannons). <a href="https://grabcad.com/library/da-vinci-s-tank-1">View on GrabCad</a></p>
+					<div class="ProjectDesc">
+						<h3>Leonardo da Vinci's Tank</h3>
+						<p>In MEAM 101's "Machine" project, I created a small scale tank based on the drawings of Leonardo da Vinci. This build combined a centuries-old design with modern prototyping techniques, including 3D printing, to create a mobile working model (except for the cannons). <a href="https://grabcad.com/library/da-vinci-s-tank-1">View on GrabCad</a></p>
+					</div>
 				</div>
-				<div class="Project JustForFun">
-					<span>Motorized Two-Wheel Scooter</span>
-					<div id="Scooter">
-						<div style="background-image:url(/Resources/Projects/Scooter1.jpg)"></div>
+				<div class="patch-item patch-button patch-third" data-patch-panel="Hoverboard">
+					<div></div>
+					<span>Electric Scooter</span>
+				</div>
+				<div class="patch-panel" data-patch-panel="Hoverboard">
+					<div class="ProjectDesc">
+						<h3>Motorized Two-Wheel Scooter</h3>
+						<p>This is a model of the Phunkee Duck scooter board. The Phunkee Duck and its competitors are <a href="http://www.wired.com/2015/06/the-weird-story-of-the-viral-chinese-scooter-phunkeeduck-io-hawk/">almost all identical</a> and have an interesting shape. I also worked with PhotoView 360 in Solidworks to create more photo-realistic renderings. <a href="https://grabcad.com/library/phunkee-duck-1">View on GrabCad</a></p>
+					</div>
+					<div class="ProjectMedia">
 						<div style="background-image:url(/Resources/Projects/Scooter2.jpg)"></div>
+						<div style="background-image:url(/Resources/Projects/Scooter1.jpg)"></div>
 					</div>
-					<p>This is a model of the Phunkee Duck scooter board. The Phunkee Duck and its competitors are <a href="http://www.wired.com/2015/06/the-weird-story-of-the-viral-chinese-scooter-phunkeeduck-io-hawk/">almost all identical</a> and have an interesting shape. I also worked with PhotoView 360 in Solidworks to create more photo-realistic renderings. <a href="https://grabcad.com/library/phunkee-duck-1">View on GrabCad</a></p>
 				</div>
-				<div class="Project Kodlab">
+				<div class="patch-item patch-button patch-half patch-tall" data-patch-panel="BugBot">
+					<div></div>
+					<span>Quadrupedal Robot</span>
+				</div>
+				<div class="patch-panel" data-patch-panel="BugBot">
+					<div class="ProjectDesc">
+						<h3>Four-Legged Research Robot</h3>
+						<p>This is a robot I am building for <a href="http://kodlab.seas.upenn.edu">Kodlab</a>. I took an existing leg design and made a body that allowed for full range of motion while minimizing weight. In the future, I hope to test leaping capabilities, gait kinematics, and possibly alternate leg designs that are more flexible.</p>
+					</div>
+					<div class="ProjectMedia">
+						<div style="background-image:url(/Resources/Projects/BugBot1.jpg)"></div>
+						<div style="background-image:url(/Resources/Projects/BugBot2.jpg)"></div>
+					</div>
+				</div>
+				<div class="patch-item patch-button patch-half patch-tall" data-patch-panel="Engine">
+					<div></div>
+					<span>Eagles Stirling Engine</span>
+				</div>
+				<div class="patch-panel" data-patch-panel="Engine">
+					<div class="ProjectMedia">
+						<iframe src="https://player.vimeo.com/video/149164270?byline=0&portrait=0&title=0&color=004953" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div style="background-image:url(/Resources/Projects/EnginePhoto.jpg)"></div>
+						<div style="background-image:url(/Resources/Projects/EngineFront.jpg)"></div>
+						<div style="background-image:url(/Resources/Projects/EngineBack.jpg)"></div>
+					</div>
+					<div class="ProjectDesc">
+						<h3>Eagles-Themed Heat Engine</h3>
+						<p>For MEAM 201: Machine Design and Manufacturing, I made most of the parts of a previously designed Stirline engine. In order to add my personal touch to the project, I made the engine Eagles themed. During testing, the engine achieved a speed of 850 RPM. <a href="https://grabcad.com/library/eagles-themed-stirling-engine-1">View on GrabCad</a></p>
+					</div>
+				</div>
+				<!-- <div class="patch-item patch-button patch-fourth" data-patch-panel="6">
 					<span>Robot Camera Mount</span>
-					<div id="RobotFPV">
-						<div><iframe src="https://player.vimeo.com/video/130027325?byline=0&portrait=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-							<!-- <div style="background-image:url(/Resources/Projects/FPVMount.jpg)"></div> -->
-					</div>
-					<p>This is a GoPro mount for the robots at Kodlab. The camera motors and robot are controlled simultaneously, allowing the robot to move and look around at the same time. The video stream is sent back wirelessly to a screen attached to the joystick controller, so an operator can view the environment from the robot's perspective.</p>
 				</div>
-				<div class="Project MEAM101">
+				<div class="patch-panel" data-patch-panel="6">Six</div> -->
+				<div class="patch-item patch-button patch-third" data-patch-panel="Pressfit">
+					<div></div>
 					<span>Pressfit Buckyball</span>
-					<div id="Pressfit">
-						<div style="background-image: url(/Resources/Projects/PressRender.JPG)"></div>
+				</div>
+				<div class="patch-panel" data-patch-panel="Pressfit">
+					<div class="ProjectDesc">
+						<h3>Lasercut Geodesic Sphere</h3>
+						<p>This is a truncated icosahedron made from 20 hexagons and 12 pentagons. I lasercut all of the pieces and, after many tries, assembled the structure without any adhesives. There are more than 90 edges that are pressed together, and each edge has the same peg and slot design. <a href="https://grabcad.com/library/pressfit-buckyball-1">View on GrabCad</a></p>
+					</div>
+					<div class="ProjectMedia">
+						<div style="background-image: url(/Resources/Projects/PressRender.jpg)"></div>
 						<div style="background-image:url(/Resources/Projects/PressPic.jpg)"></div>
 					</div>
-					<p>This is a truncated icosahedron made from 20 hexagons and 12 pentagons. I lasercut all of the pieces and, after many tries, assembled the structure without any adhesives. There are more than 90 edges that are pressed together, and each edge has the same peg and slot design. <a href="https://grabcad.com/library/pressfit-buckyball-1">View on GrabCad</a></p>
 				</div>
-				<div class="Project Kodlab MechDes">
-					<span>Vertebra Stress Analysis</span>
-					<div id="VertFEA">
-						<div style="background-image:url(/Resources/Projects/VertebraeFEA.png)"></div>
-						<div style="background-image:url(/Resources/Projects/VertImage.jpg)"></div>
-					</div>
-					<p>For Kodlab's flexible vertebrate robot <a href="http://kodlab.seas.upenn.edu/Canid/Canid">Canid</a>, I ran FEA tests on various models of a vertebra component and considered alternate weight-saving options. After choosing the best design, I laser cut the new parts and assembled the new spine.</p>
-				</div>
-				<div class="Project JustForFun">
+				<div class="patch-item patch-button patch-third" data-patch-panel="PennArt">
+					<div></div>
 					<span>UPenn Art Models</span>
-					<div id="PennArt">
-						<div style="background-image:url(/Resources/Projects/PennRender.jpg)"></div>
-						<div style="background-image:url(/Resources/Projects/PennImage.jpg)"></div>
-					</div>
-					<p>As a design challenge, I decided to model two of UPenn's most well known pieces of art: The Button and Covenant. After scaling them down, I added some features to make the models printable. <a href="https://grabcad.com/library/upenn-art-1">View on GrabCad</a></p>
 				</div>
-				<div class="Project JustForFun">
-					<span>Carus Dock</span>
-					<div id="CarusDock">
-						<div style="background-image:url(/Resources/Projects/Carus1.jpg)"></div>
-						<div style="background-image:url(/Resources/Projects/Carus2.jpg)"></div>
-						<div style="background-image:url(/Resources/Projects/Carus3.jpg)"></div>
-					</div>
-					<p>For the <a href="https://grabcad.com/challenges/the-carus-dock-challenge">Carus Dock Challenge</a>, I designed a bedside dock that could charge both a modern iPhone and an Apple Watch. I took design cues from Carus' existing line of products and tried to create a unique and eye-catching prototype. <a href="https://grabcad.com/library/carus-unum-1">View on GrabCad</a></p>
+				<div class="patch-panel" data-patch-panel="PennArt">Eight</div>
+				<div class="patch-item patch-button patch-third" data-patch-panel="Carus">
+					<div></div>
+					<span>Carus Dock Challenge</span>
 				</div>
+				<div class="patch-panel" data-patch-panel="Carus">Nine</div>
 			</div>
 		</section>
 		<div class="AnchorMargin ProjectsBar"><a id="Code"></a></div>
@@ -316,7 +353,7 @@
 				<div id="TrackArt" data-adaptive-background='1' data-ab-css-background='1' cross-origin="anonymous"></div>
 				<br>
 				<a id="TrackLink"><p id="TrackName"></p></a>
-				<p id="TrackArtist"></p>
+				<span id="TrackArtist"></span>
 			</div>
 			<div id="TopArtists">
 				<h2>Top Artists</h2>
@@ -330,7 +367,7 @@
 				<a><div><span></span></div></a>
 			</div>
 		</section>
-		
+
 		<section id="Footer">
 			<a href="#Top"><div id="BBLogo"></div></a>
 		</section>

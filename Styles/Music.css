@@ -1,0 +1,140 @@
+
+#NowPlaying,
+#TopArtists {
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 20px;
+	padding-top: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 40px;
+	border: 10px solid white;
+}
+#NowPlaying {
+    width: 30%;
+}
+@media all and (max-width: 899px) {
+	#NowPlaying {
+	    width: 40%;
+	}
+}
+
+#TopArtists {
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+#TrackArt {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: center;
+	width: 19vw;
+    height: 19vw;
+    min-width: 250px;
+    min-height: 250px;
+    background-size: contain;
+}
+@media all and (max-width: 899px) {
+	#TrackArt {
+	    width: 35vw;
+	    height: 35vw;
+	    background-size: 35vw;
+	}
+}
+#TrackLink {
+	text-decoration: none;
+	color: white;
+}
+
+#TrackLink:hover {
+	text-decoration: underline;
+}
+
+#TrackName {
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+#TrackArtist {
+	text-decoration: none;
+	line-height: 0.5em;
+    width: 50%;
+    padding-bottom: 50px;
+}
+@media all and (max-width: 899px) {
+	#TopArtists {
+	    width: 80%;
+	}
+}
+
+#TopArtists div {
+	display: inline-block;
+	position: relative;
+	padding: 3px;
+	margin-bottom: 4px;
+	vertical-align: top;
+	color: white;
+	background-image: url(/Icons%20and%20Attr/Music/icon_8996.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: .5;
+	-webkit-transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out;
+	width: 11vw;
+    height: 11vw;
+}
+@media all and (max-width: 899px) {
+	#TopArtists div {
+	    width: 18vw;
+	    height: 18vw;
+	    opacity: 1;
+	}
+}
+
+#TopArtists div:hover {
+	opacity: 1;
+}
+
+#TopArtists span {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50%;
+	width: 100%;
+	background-color: black;
+	opacity: .8;
+}
+/* Pulse Grow - Hover.css (http://ianlunn.co.uk/)*/
+
+@-webkit-keyframes pulse-grow {
+	to {
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+}
+
+@keyframes pulse-grow {
+	to {
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+}
+
+.pulse-grow {
+	-webkit-animation-name: pulse-grow;
+	animation-name: pulse-grow;
+	-webkit-animation-duration: .25s;
+	animation-duration: .25s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}

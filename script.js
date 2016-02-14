@@ -62,7 +62,7 @@ $(document).ready(function() {
         } else {
             $('#MusicCell').removeClass("MusicBar");
         }
-        
+
         if ($('#IconOverlay').css('background-image') != window.CurrentIcon) {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
         }
@@ -87,17 +87,20 @@ $(document).ready(function() {
     });
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
-    $('#slickProjects').slick({
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2
-    });
-    $("div", ".Project").slick({
-        dots: true,
+    // $('#slickProjects').slick({
+    //   infinite: true,
+    //   slidesToShow: 2,
+    //   slidesToScroll: 2
+    // });
+    $(".ProjectMedia").slick({
+        // dots: true,
         infinite: true,
-        slidesToShow: 1,
-        prevArrow: '',
-        nextArrow: ''
+        slidesToShow: 1
+    });
+    $(".patch-container").patchpanel();
+    $('.patch-item').click(function(element) {
+        $(this).toggleClass('patch-active');
+        $('.patch-item').not(this).removeClass('patch-active');
     });
 
     // Easter eggs below
@@ -111,7 +114,7 @@ $(document).ready(function() {
                 alertify.log("Type back, glasses, jew, or bart.");
             },4000);
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
-            
+
             // Define the cheat codes
             cheet('j e w', function () {
                 alertify.log("Type nazi to kill.");

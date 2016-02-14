@@ -1,0 +1,125 @@
+.patch-button {
+  color: #FFF;
+  cursor: pointer;
+  font-size: 1.5em;
+  /*line-height: 150px;*/
+  position: relative;
+}
+.patch-button span{
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+}
+
+.patch-button:hover {
+  /*padding: solid 10px #FFF;*/
+  /*line-height: 144px;*/
+}
+
+.patch-container {
+  background-color: #2C3E50;
+  border-radius: 5px;
+  color: #FFF;
+  display: inline-block;
+  width: 85%;
+  flex-flow: row wrap;
+  /*margin: 4%;*/
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  zoom: 1;
+}
+
+.patch-item {
+  background-color: #000;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  height: 200px;
+  margin: 0.5%;
+  transition: box-shadow .3s ease-in-out;
+}
+.patch-item > div {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.75;
+	transition: opacity .15s ease-in-out;
+}
+.patch-item > div:hover {
+	opacity: 1;
+}
+.patch-active {
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
+	box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
+}
+.patch-third {
+	width: 32.333333%;
+}
+.patch-half {
+	width: 49%;
+}
+.patch-fourth {
+	width: 24%;
+}
+.patch-tall {
+	height: 300px;
+}
+.patch-panel {
+  background-color: #000;
+  border-radius: 4px;
+  color: #FFF;
+  display: none;
+  /*flex: 1 100%;*/
+  float: left;
+  /*font-size: 1.5em;*/
+  height: 300px;
+  margin: 0.5%;
+  width: 99%;
+}
+.patch-panel > div {
+	margin: 1%;
+	width: 45%;
+	height: 90%;
+	float: left;
+	padding: 2%;
+}
+.patch-panel p {
+	text-align: left;
+}
+.slick-slide {
+	width: 95%;
+	height: 225px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.patch-item[data-patch-panel='BugBot'] > div {
+	background-image: url('/Resources/Projects/BugBot1.jpg');
+}
+.patch-item[data-patch-panel='Engine'] > div {
+	background-image: url('/Resources/Projects/EnginePhoto.jpg');
+}
+.patch-item[data-patch-panel='Nerf'] > div {
+	background-image: url('/Resources/Projects/MaverickFull.jpg');
+}
+.patch-item[data-patch-panel='Tank'] > div {
+	background-image: url('/Resources/Projects/TankIso.jpg');
+}
+.patch-item[data-patch-panel='Hoverboard'] > div {
+	background-image: url('/Resources/Projects/Scooter1.jpg');
+}
+.patch-item[data-patch-panel='Pressfit'] > div {
+	background-image: url('/Resources/Projects/PressPic.jpg');
+}
+.patch-item[data-patch-panel='PennArt'] > div {
+	background-image: url('/Resources/Projects/PennRender.jpg');
+}
+.patch-item[data-patch-panel='Carus'] > div {
+	background-image: url('/Resources/Projects/Carus1.jpg');
+}

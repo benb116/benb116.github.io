@@ -1,0 +1,128 @@
+
+.CodeCard {
+	display: inline-block;
+	position: relative;
+	width: 26em;
+	margin: 25px;
+	padding: 10px;
+	vertical-align: top;
+	background-color: white;
+	border: .5em solid white;
+	box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.58);
+	-webkit-transition: box-shadow .1s ease-in-out;
+	transition: box-shadow .1s ease-in-out;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.CodeCard:hover {
+	box-shadow: 0px 10px 10px -4px rgba(50, 50, 50, 0.58);
+}
+
+.CodeCard > div:nth-child(1) {
+	display: table-cell;
+	width: 8em;
+	height: 7em;
+	background-size: 7em;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.CodeCard > div:nth-child(2) {
+	display: table-cell;
+	padding-left: 1em;
+	width: 18em;
+	height: 7em;
+	vertical-align: middle;
+	line-height: 1.4em;
+	text-indent: 0;
+}
+
+.CodeCard > div:nth-child(2) span:nth-child(1) {
+	font-size: 2em;
+	color: black;
+	line-height: 1.25em;
+}
+
+.CodeCard > div:nth-child(2) span:nth-child(2) {
+	font-size: 1em;
+	color: black;
+}
+
+.CodeCard > div:nth-child(2) span:nth-child(3) {
+	font-size: 1em;
+	color: gray;
+}
+
+.CodeCard > div:nth-child(2) span {
+	text-align: left;
+	display: block;
+}
+
+.CPWrap {
+	position: absolute;
+	top: -.5em;
+	right: -.5em;
+	width: 6.5em;
+	height: 6.5em;
+	overflow: hidden;
+}
+
+.CodeProgress {
+	position: absolute;
+	display: block;
+	top: 1.5em;
+	right: -2em;
+	text-align: center;
+	line-height: 2em;
+	width: 9em;
+	height: 2em;
+	background-color: red;
+	color: white;
+	font-weight: normal;
+	font-family: 'PT Sans', 'serif';
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+#PCSTable {
+	background-image: url(/Icons%20and%20Attr/Search/search_icon.svg);
+}
+
+#MusiNotifyTable {
+	background-image: url(/Resources/MusiNotify.png);
+}
+
+#GonePhishingTable {
+	background-image: url(/Icons%20and%20Attr/Fishing/icon_8702.svg);
+}
+
+#WebsiteTable {
+	background-image: url(/Icons%20and%20Attr/Laptop/icon_9074.svg);
+}
+
+#PinballTable {
+	background-image: url(/Icons%20and%20Attr/Pinball/icon_61489.svg);
+}
+
+#BasketballTable {
+	background-image: url(/Icons%20and%20Attr/Basketball/icon_2711.svg);
+}
+
+#OtherTable {
+	background-image: url(/Icons%20and%20Attr/Dots/icon_27116.svg);
+}
+
+#GPModal p {
+	padding: 0px 15px 15px 15px;
+}
+
+#GPWarning {
+	background-image: url(/Icons%20and%20Attr/Warning/icon_18974.svg);
+	width: 10em;
+	height: 10em;
+	background-size: contain;
+	display: inline-block;
+	text-align: center;
+}
