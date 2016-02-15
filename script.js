@@ -109,19 +109,19 @@ $(document).ready(function() {
     cheet('up up down down left right left right b a', function () { // Konami code to enable
         if (window.cheatsenabled === false) {
             window.cheatsenabled = true;
-            alertify.log("You have enabled easter eggs."); 
+            alertify.log("You have enabled easter eggs.");
             setTimeout(function(){
-                alertify.log("Type back, glasses, jew, or bart.");
+                alertify.log("Type back, glasses, or bart.");
             },4000);
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
 
             // Define the cheat codes
-            cheet('j e w', function () {
-                alertify.log("Type nazi to kill.");
-                $('#IntroHead').prepend("<iframe class=\"jew\" style=\"display: none;\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
-            });
+            // cheet('j e w', function () {
+            //     alertify.log("Type nazi to kill.");
+            //     $('#IntroHead').prepend("<iframe class=\"jew\" style=\"display: none;\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
+            // });
 
-            cheet('n a z i', function () {$('.jew').remove();});
+            // cheet('n a z i', function () {$('.jew').remove();});
 
             cheet('g l a s s e s', function () {$('body').toggleClass('GlassesClass');});
 

@@ -33,13 +33,13 @@
 
 .patch-item {
   background-color: #000;
-  border-radius: 4px;
   display: inline-block;
   box-sizing: border-box;
   float: left;
   height: 200px;
   margin: 0.5%;
   transition: box-shadow .3s ease-in-out;
+  border-radius: 5px;
 }
 .patch-item > div {
 	width: 100%;
@@ -48,6 +48,7 @@
 	background-size: cover;
 	opacity: 0.75;
 	transition: opacity .15s ease-in-out;
+  border-radius: 5px;
 }
 .patch-item > div:hover {
 	opacity: 1;
