@@ -61,6 +61,11 @@
     margin-right: 125px;
     z-index: 100;
 }
+@media all and (max-width: 899px) {
+    #MenuContainer {
+        margin: 0;
+    }
+}
 #MenuContainer > a {
     text-decoration: none;
 }

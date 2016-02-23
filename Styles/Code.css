@@ -62,7 +62,7 @@
 .CPWrap {
 	position: absolute;
 	top: -.5em;
-	right: -.5em;
+	left: -.5em;
 	width: 6.5em;
 	height: 6.5em;
 	overflow: hidden;
@@ -72,7 +72,7 @@
 	position: absolute;
 	display: block;
 	top: 1.5em;
-	right: -2em;
+	left: -2em;
 	text-align: center;
 	line-height: 2em;
 	width: 9em;
@@ -81,9 +81,9 @@
 	color: white;
 	font-weight: normal;
 	font-family: 'PT Sans', 'serif';
-	transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(4-5deg);
 }
 
 #PCSTable {

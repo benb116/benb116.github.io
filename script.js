@@ -126,21 +126,21 @@ $(document).ready(function() {
             cheet('g l a s s e s', function () {$('body').toggleClass('GlassesClass');});
 
             cheet('b a c k', function () {
-                alertify.log("Background enabled."); 
+                alertify.log("Background enabled.");
                 $('#HomeBlack').css('display', 'block');
                 //Change colors
                 $('#IntroHead').css('color', 'white');
                 $('#BBLogo').css('background-image', 'url(/Resources/logo-white.svg)');
             });
 
-            // cheet('b a r t', function () {
-            //     if ($('#Bart').css('opacity') == 0) {
-            //         $('#Bart').css('opacity', 1);
-            //         $('#SchoolPage h2').animate("scroll", 500);
-            //     } else {
-            //         $('#Bart').css('opacity', 0);
-            //     };
-            // });
+            cheet('b a r t', function () {
+                if ($('#Bart').css('opacity') == 0) {
+                    $('#Bart').css('opacity', 1);
+                    $('#SchoolPage h2').animate("scroll", 500);
+                } else {
+                    $('#Bart').css('opacity', 0);
+                };
+            });
 
         } else {
             //Disable codes
