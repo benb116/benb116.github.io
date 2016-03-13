@@ -46,17 +46,23 @@
 	height: 100%;
 	background-position: center;
 	background-size: cover;
-	opacity: 0.75;
+	/*opacity: 0.75;*/
 	transition: opacity .15s ease-in-out;
   border-radius: 5px;
 }
 .patch-item > div:hover {
 	opacity: 1;
 }
-.patch-active {/*
+/*.patch-active {
 	-webkit-box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
-	box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);*/
+	box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
+  opacity: 1;
+}*/
+.patch-item > div:not(.patch-open) {
+  opacity: 0.75;
+}
+.patch-open {
   opacity: 1;
 }
 .patch-third {

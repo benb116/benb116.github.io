@@ -23,12 +23,13 @@ $(document).ready(function() {
     window.MetLetLoaded = false;
     window.MusicLoaded = false;
     window.cheatsenabled = false;
+    // Determine anchor positions
+    var ProjectsAnchor = $('#ProjectsPage').offset().top;
+    var CodeAnchor = $('#CodePage').offset().top;
+    var SchoolAnchor = $('#SchoolPage').offset().top;
+    var MusicAnchor = $('#MusicPage').offset().top;
     $(window).scroll(function() { // As the user scrolls...
-        // Determine anchor positions
-        var ProjectsAnchor = $('#ProjectsPage').offset().top;
-        var CodeAnchor = $('#CodePage').offset().top;
-        var SchoolAnchor = $('#SchoolPage').offset().top;
-        var MusicAnchor = $('#MusicPage').offset().top;
+        
         var scroll = $(window).scrollTop() + 300; // Get current scroll. Offset changes the icon when most of the section is displayed. 
 
         if (scroll < ProjectsAnchor) { // If at home
@@ -99,8 +100,8 @@ $(document).ready(function() {
     });
     $(".patch-container").patchpanel();
     $('.patch-item').click(function(element) {
-        $(this).toggleClass('patch-active');
-        $('.patch-item').not(this).removeClass('patch-active');
+        $(this).find('div').toggleClass('patch-open');
+        $('.patch-item').not(this).find('div').removeClass('patch-open');
     });
 
     // Easter eggs below
@@ -136,7 +137,10 @@ $(document).ready(function() {
             cheet('b a r t', function () {
                 if ($('#Bart').css('opacity') == 0) {
                     $('#Bart').css('opacity', 1);
-                    $('#SchoolPage h2').animate("scroll", 500);
+                    // $('#SchoolPage h2').animate("scroll", 500);
+                    $('html,body').animate({
+                        scrollTop: SchoolAnchor
+                    }, 1000);
                 } else {
                     $('#Bart').css('opacity', 0);
                 };
