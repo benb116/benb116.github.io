@@ -93,11 +93,24 @@ $(document).ready(function() {
     //   slidesToShow: 2,
     //   slidesToScroll: 2
     // });
+    // $('.ProjectMedia').each(function(index) {
+    //     console.log($(this))
+    //     $(this).slick({
+    //         // dots: true,
+    //         infinite: true,
+    //         slidesToShow: 1,
+    //         initialSlide: 1
+    //         // lazyLoad: 'progressive'
+    //     });
+    // });
     $(".ProjectMedia").slick({
         // dots: true,
         infinite: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        initialSlide: 0,
+        lazyLoad: 'progressive'
     });
+    // $('.slick-track > div').css('width', '50%');
     $(".patch-container").patchpanel();
     $('.patch-item').click(function(element) {
         $(this).find('div').toggleClass('patch-open');

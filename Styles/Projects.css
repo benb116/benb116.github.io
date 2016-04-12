@@ -50,9 +50,6 @@
 	transition: opacity .15s ease-in-out;
   border-radius: 5px;
 }
-.patch-item > div:hover {
-	opacity: 1;
-}
 /*.patch-active {
 	-webkit-box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 0px 20px 5px rgba(255,255,255,1);
@@ -61,6 +58,9 @@
 }*/
 .patch-item > div:not(.patch-open) {
   opacity: 0.75;
+}
+.patch-item > div:hover {
+  opacity: 1;
 }
 .patch-open {
   opacity: 1;
@@ -85,26 +85,42 @@
   /*flex: 1 100%;*/
   float: left;
   /*font-size: 1.5em;*/
-  height: 300px;
+  height: 400px;
   margin: 0.5%;
   width: 99%;
 }
 .patch-panel > div {
 	margin: 1%;
-	width: 45%;
 	height: 90%;
 	float: left;
 	padding: 2%;
+}
+.ProjectMedia {
+  width: 60%;
+}
+.ProjectMedia > div {
+  width: 700px;
+  /* margin-left: 200px; */
+}
+.ProjectDesc {
+  width: 30%;
+  margin-left: 2%;
 }
 .patch-panel p {
 	text-align: left;
 }
 .slick-slide {
-	width: 95%;
-	height: 225px;
+	/* width: 95%; */
+	height: 325px;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.slick-prev {
+  left: 25px;
+}
+.slick-next {
+  right: 25px;
 }
 
 .patch-item[data-patch-panel='BugBot'] > div {
@@ -121,6 +137,9 @@
 }
 .patch-item[data-patch-panel='Hoverboard'] > div {
 	background-image: url('/Resources/Projects/Scooter1.jpg');
+}
+.patch-item[data-patch-panel='Longboard'] > div {
+  background-image: url('/Resources/Projects/FullRender.jpg');
 }
 .patch-item[data-patch-panel='Pressfit'] > div {
 	background-image: url('/Resources/Projects/PressPic.jpg');
