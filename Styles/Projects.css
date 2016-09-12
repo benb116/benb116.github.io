@@ -23,12 +23,10 @@
   display: inline-block;
   width: 85%;
   flex-flow: row wrap;
-  /*margin: 4%;*/
   overflow: auto;
   padding: 10px;
   position: relative;
   text-align: center;
-  zoom: 1;
 }
 
 .patch-item {
@@ -36,7 +34,7 @@
   display: inline-block;
   box-sizing: border-box;
   float: left;
-  height: 200px;
+  height: 300px;
   margin: 0.5%;
   transition: box-shadow .3s ease-in-out;
   border-radius: 5px;
@@ -139,7 +137,7 @@
 	background-image: url('/Resources/Projects/Scooter1.jpg');
 }
 .patch-item[data-patch-panel='Longboard'] > div {
-  background-image: url('/Resources/Projects/FullRender.jpg');
+  background-image: url('/Resources/Projects/BoardTop.jpg');
 }
 .patch-item[data-patch-panel='Pressfit'] > div {
 	background-image: url('/Resources/Projects/PressPic.jpg');
@@ -149,4 +147,7 @@
 }
 .patch-item[data-patch-panel='Carus'] > div {
 	background-image: url('/Resources/Projects/Carus1.jpg');
+}
+.patch-item[data-patch-panel='Guitar'] > div {
+  background-image: url('/Resources/Projects/GuitarTop.jpg')
 }
