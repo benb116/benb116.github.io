@@ -15,12 +15,12 @@
 	font-family: 'Sniglet', 'cursive';
 	line-height: 1.5em;
     width: 70%;
-    min-width: 500px;
+    min-width: 400px;
     font-size: 1.3em;
 }
 @media all and (max-width: 899px) {
 	#EdCareer {
-	    width: 80%;
+	    width: 70%;
 	    font-size: 1em;
 	}
 }

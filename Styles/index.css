@@ -4,7 +4,7 @@ body {
 	background-color: #F2F2F2;
 	text-align: center;
 	-webkit-transition: -webkit-filter .5s ease-in-out;
-	min-width: 500px;
+	min-width: 600px;
 	font-size: 16px;
 }
 @media all and (min-width: 900px) {
