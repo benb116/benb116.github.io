@@ -105,7 +105,7 @@ $(document).ready(function() {
     // });
     $(".ProjectMedia").slick({
         // dots: true,
-        infinite: true,
+        // infinite: true,
         slidesToShow: 1,
         initialSlide: 0,
         lazyLoad: 'progressive'

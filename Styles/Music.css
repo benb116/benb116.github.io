@@ -17,7 +17,7 @@
 }
 @media all and (max-width: 899px) {
 	#NowPlaying {
-	    width: 40%;
+	    width: 80%;
 	}
 }
 
@@ -39,9 +39,9 @@
 }
 @media all and (max-width: 899px) {
 	#TrackArt {
-	    width: 35vw;
-	    height: 35vw;
-	    background-size: 35vw;
+	    width: 400px;
+	    height: 400px;
+	    background-size: 100%;
 	}
 }
 #TrackLink {
@@ -90,9 +90,12 @@
 }
 @media all and (max-width: 899px) {
 	#TopArtists div {
-	    width: 18vw;
-	    height: 18vw;
+	    width: 200px;
+	    height: 200px;
 	    opacity: 1;
+	    margin-bottom: 10px;
+	    margin-left: 5px;
+	    margin-right: 5px;
 	}
 }
 

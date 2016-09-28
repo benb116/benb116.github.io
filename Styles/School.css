@@ -18,12 +18,6 @@
     min-width: 400px;
     font-size: 1.3em;
 }
-@media all and (max-width: 899px) {
-	#EdCareer {
-	    width: 70%;
-	    font-size: 1em;
-	}
-}
 
 #EdCareer ul {
 	padding-left: 5%;
@@ -50,6 +44,13 @@
 
 #EdCareer i {
 	margin-right: 10px;
+}
+
+@media all and (max-width: 899px) {
+	#EdCareer {
+	    width: 90%;
+	    font-size: 1em;
+	}
 }
 
 #Bart {

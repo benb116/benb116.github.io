@@ -72,11 +72,6 @@
 .patch-fourth {
 	width: 24%;
 }
-@media only screen and (max-width : 800px) {
-  .patch-half, .patch-third, .patch-fourth {
-    width: 100%;
-  }
-}
 .patch-tall {
 	height: 300px;
 }
@@ -88,7 +83,7 @@
   /*flex: 1 100%;*/
   float: left;
   /*font-size: 1.5em;*/
-  height: 400px;
+  min-height: 400px;
   margin: 0.5%;
   width: 99%;
 }
@@ -112,6 +107,25 @@
 .patch-panel p {
 	text-align: left;
 }
+@media only screen and (max-width : 800px) {
+  .patch-half, .patch-third, .patch-fourth {
+    width: 100%;
+  }
+  .ProjectDesc {
+    width: 95%;
+    padding: 20px;
+  }
+  .ProjectMedia {
+    width: 95%;
+  }
+  .slick-list {
+    display:  inline-block;
+    width: 90%;
+  }
+  .ProjectMedia > div {
+    width: 350px;
+  }
+}
 .slick-slide {
 	/* width: 95%; */
 	height: 325px;
@@ -121,6 +135,7 @@
 }
 .slick-prev {
   left: 25px;
+  z-index: 10;
 }
 .slick-next {
   right: 25px;
