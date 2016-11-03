@@ -20,7 +20,6 @@ $(document).ready(function() {
     GATrack();
 
     window.CurrentIcon = "";
-    window.MetLetLoaded = false;
     window.MusicLoaded = false;
     window.cheatsenabled = false;
     // Determine anchor positions
@@ -68,18 +67,6 @@ $(document).ready(function() {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
         }
 
-        // if (scroll >= SchoolAnchor && window.MetLetLoaded === false) {
-        //     //Lazy load thumbnails when a user scrolls to the area
-        //     $('#MetLet2012F').css('background-image', 'url(/Resources/School/Met%20Let/2012Fthumb.jpg)');
-        //     $('#MetLet2013S').css('background-image', 'url(/Resources/School/Met%20Let/2013Sthumb.jpg)');
-        //     $('#MetLet2013F').css('background-image', 'url(/Resources/School/Met%20Let/2013Fthumb.jpg)');
-        //     $('#MetLet2013W').css('background-image', 'url(/Resources/School/Met%20Let/2013Wthumb.jpg)');
-        //     $('#MetLet2014S').css('background-image', 'url(/Resources/School/Met%20Let/2014Sthumb.jpg)');
-        //     console.log("Met Let loaded.");
-        //     //Write(); // Begin chalk animation
-        //     window.MetLetLoaded = true; // Prevents constant reloading and flashing on mobile browsers
-        // }
-
         if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
             GetTopArtists();
             GetNowPlaying();
@@ -88,21 +75,6 @@ $(document).ready(function() {
     });
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
-    // $('#slickProjects').slick({
-    //   infinite: true,
-    //   slidesToShow: 2,
-    //   slidesToScroll: 2
-    // });
-    // $('.ProjectMedia').each(function(index) {
-    //     console.log($(this))
-    //     $(this).slick({
-    //         // dots: true,
-    //         infinite: true,
-    //         slidesToShow: 1,
-    //         initialSlide: 1
-    //         // lazyLoad: 'progressive'
-    //     });
-    // });
     $(".ProjectMedia").slick({
         // dots: true,
         // infinite: true,
@@ -110,7 +82,6 @@ $(document).ready(function() {
         initialSlide: 0,
         lazyLoad: 'progressive'
     });
-    // $('.slick-track > div').css('width', '50%');
     $(".patch-container").patchpanel();
     $('.patch-item').click(function(element) {
         $(this).find('div').toggleClass('patch-open');
@@ -128,14 +99,6 @@ $(document).ready(function() {
                 alertify.log("Type back, glasses, or bart.");
             },4000);
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
-
-            // Define the cheat codes
-            // cheet('j e w', function () {
-            //     alertify.log("Type nazi to kill.");
-            //     $('#IntroHead').prepend("<iframe class=\"jew\" style=\"display: none;\" width=\"100%\" height=\"150\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89125487&amp;auto_play=true&amp;hide_related=true&amp;visual=false\"></iframe>");
-            // });
-
-            // cheet('n a z i', function () {$('.jew').remove();});
 
             cheet('g l a s s e s', function () {$('body').toggleClass('GlassesClass');});
 
@@ -162,9 +125,7 @@ $(document).ready(function() {
         } else {
             //Disable codes
             window.cheatsenabled = false;
-            alertify.log("You have disabled easter eggs."); 
-            cheet.disable('j e w');
-            cheet.disable('n a z i');
+            alertify.log("You have disabled easter eggs.");
             cheet.disable('g l a s s e s');
             cheet.disable('b a c k');
             cheet.disable('b a r t');

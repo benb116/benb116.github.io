@@ -171,3 +171,6 @@
 .patch-item[data-patch-panel='Guitar'] > div {
   background-image: url('/Resources/Projects/GuitarTop.jpg')
 }
+.patch-item[data-patch-panel='Turbine'] > div {
+  background-image: url('/Resources/Projects/TurbineIso.jpg')
+}
