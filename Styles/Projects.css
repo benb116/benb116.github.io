@@ -88,24 +88,39 @@
   width: 99%;
 }
 .patch-panel > div {
-	margin: 1%;
 	height: 90%;
 	float: left;
-	padding: 2%;
 }
 .ProjectMedia {
-  width: 60%;
+  width: 600px;
+  margin-top:  3%;
+  margin-left:  3%;
 }
 .ProjectMedia > div {
-  width: 700px;
+  width: 600px;
+  display:  inline-block;
   /* margin-left: 200px; */
 }
 .ProjectDesc {
-  width: 30%;
+  width: 40%;
   margin-left: 2%;
+  margin: 1%;
+  padding: 2%;
 }
 .patch-panel p {
 	text-align: left;
+}
+.slick-slide {
+  /* width: 95%; */
+  height: 375px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-dots li.slick-active button:before, .slick-dots li button:before{
+  color:  white;
+  /* font-size: 1em; */
 }
 @media only screen and (max-width : 800px) {
   .patch-half, .patch-third, .patch-fourth {
@@ -122,24 +137,21 @@
     display:  inline-block;
     width: 90%;
   }
+  .slick-slide {
+    width: 95%;
+  }
   .ProjectMedia > div {
-    width: 350px;
+    /* width: 350px; */
   }
 }
-.slick-slide {
-	/* width: 95%; */
-	height: 325px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.slick-prev {
+
+/* .slick-prev {
   left: 25px;
   z-index: 10;
 }
 .slick-next {
   right: 25px;
-}
+} */
 
 .patch-item[data-patch-panel='BugBot'] > div {
 	background-image: url('/Resources/Projects/BugBot1.jpg');
