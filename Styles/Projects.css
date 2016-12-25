@@ -34,7 +34,7 @@
   display: inline-block;
   box-sizing: border-box;
   float: left;
-  height: 300px;
+  height: 250px;
   margin: 0.5%;
   transition: box-shadow .3s ease-in-out;
   border-radius: 5px;
@@ -73,7 +73,7 @@
 	width: 24%;
 }
 .patch-tall {
-	height: 300px;
+	height: 400px;
 }
 .patch-panel {
   background-color: #000;
@@ -92,18 +92,18 @@
 	float: left;
 }
 .ProjectMedia {
-  width: 550px;
-  margin-top:  3%;
-  margin-left:  3%;
+  width: 50%;
+  margin-top:  1%;
+  /* margin-left:  3%; */
 }
 .ProjectMedia > div {
-  width: 550px;
+  width: 600px;
   display:  inline-block;
   /* margin-left: 200px; */
 }
 .ProjectDesc {
-  width: 40%;
-  margin-left: 2%;
+  width: 43%;
+  /* margin-left: 2%; */
   margin: 1%;
   padding: 2%;
 }
@@ -176,6 +176,9 @@
 }
 .patch-item[data-patch-panel='PennArt'] > div {
 	background-image: url('/Resources/Projects/PennRender.jpg');
+}
+.patch-item[data-patch-panel='Menorah'] > div {
+  background-image: url('/Resources/Projects/MenorahFront.jpg');
 }
 .patch-item[data-patch-panel='Carus'] > div {
 	background-image: url('/Resources/Projects/Carus1.jpg');
