@@ -87,17 +87,37 @@ function GetTopArtists(){
 }
 
 function getBPMInfo(artist, track) {
-	var apiKey = 'TYVPU4DLLRB0DZMYD';
+	var apiKey = 'BQApXTtxlXkv7cBxESgW0tFcLJxmiKv-Q1XIHrzpD6p8Q8G2xVp-SlYZo_u2p-_JSQVakHOHX-kSKddu1LSKVkHPTxmiO5xaRRpcw_HB7rghC3NQ4Z2BuyOxRbfIMLc_S8j8PgXtzqCGdM4LPbc1S0VPGAGkdg';
 	$.ajax({
-		url: "http://developer.echonest.com/api/v4/song/search?api_key="+apiKey+"&artist="+encodeURIComponent(artist)+"&title="+encodeURIComponent(track)+"&bucket=audio_summary"
+		url: "https://api.spotify.com/v1/search?q=" + encodeURIComponent(track) + "&type=track",
 	})
-	.done(function(data) {
-		var songBPM = data.response.songs[0].audio_summary.tempo;
-		console.log(songBPM);
-		var BPS = songBPM / 60;
-		var halfPeriod = 1 / (2 * BPS);
-		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s');
-		$('.pulse-grow').css('animation-duration', halfPeriod+'s');
+	.done(function(response) {
+	  	// console.log(response.tracks);
+	  	i = 0;
+	  	var foundArtist = false
+	  	while (!foundArtist) {
+	  		var thisArtist = response.tracks.items[i].artists[0].name.toLowerCase();
+	  		if (thisArtist == artist.toLowerCase()) {
+	  			foundArtist = true;
+	  		} else {
+		  		i++;
+		  	}
+	  	}
+	  	var spotTrackID = response.tracks.items[i].id;
+	  	$.ajax({
+			url: "https://api.spotify.com/v1/audio-features/" + spotTrackID,
+			headers: {
+		       'Authorization': 'Bearer ' + apiKey
+		   	},
+		})
+		.done(function(response) {
+			var songBPM = response.tempo;
+			console.log(songBPM);
+			var BPS = songBPM / 60;
+			var halfPeriod = 1 / (2 * BPS);
+			$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s');
+			$('.pulse-grow').css('animation-duration', halfPeriod+'s');
+		});
 	});
 }
 
