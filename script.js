@@ -109,6 +109,16 @@ $(document).ready(function() {
                 //Change colors
                 $('#IntroHead').css('color', 'white');
                 $('#BBLogo').css('background-image', 'url(/Resources/logo-white.svg)');
+                $('#BottomMenu a').mouseover(function() {
+                    $(this).css('color', 'white');
+                }).mouseout(function(){
+                    $(this).css('color', '#b6b6b6');
+                });
+                $('#ResumeIcon').css('background-image', 'url(/Icons%20and%20Attr/Resume/icon_30547_white.svg)');
+                $('#EmailIcon').css('background-image', 'url(/Icons%20and%20Attr/Envelope/icon_13468_white.svg)');
+                $('#LinkedInIcon').css('background-image', 'url(/Icons%20and%20Attr/Profiles/linkedin_white.svg)');
+                $('#GithubIcon').css('background-image', 'url(/Icons%20and%20Attr/Profiles/github_white.svg)');
+                $('#CreditsIcon').css('background-image', 'url(/Icons%20and%20Attr/List/icon_11515_white.svg)');
             });
 
             cheet('b a r t', function () {

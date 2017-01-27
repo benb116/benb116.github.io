@@ -94,7 +94,7 @@ function getBPMInfo(artist, track) {
 	.done(function(response) {
 	  	// console.log(response.tracks);
 	  	i = 0;
-	  	var foundArtist = false
+	  	var foundArtist = false;
 	  	while (!foundArtist) {
 	  		var thisArtist = response.tracks.items[i].artists[0].name.toLowerCase();
 	  		if (thisArtist == artist.toLowerCase()) {
@@ -119,36 +119,4 @@ function getBPMInfo(artist, track) {
 			$('.pulse-grow').css('animation-duration', halfPeriod+'s');
 		});
 	});
-}
-
-function Write() {
-	console.log('Begin chalk animation');
-	var divtext = '<div id="WriteChalk">&nbsp;</div>';
-	window.newtext = '<i>Activities:</i>Grade Treasurer, Chief Layout Editor of Hebrew Newspaper, Robotics Club, ';
-	var fulltext = 'Annenberg Science Symposium';
-	try {
-		$.each(fulltext.split(''), function(i, letter){
-	        //we add 100*i ms delay to each letter 
-	        setTimeout(function(){
-	            //we add the letter to the container
-	            //$('#container').html($('#container').html() + letter);
-	        	newtext += letter;
-	        	var fullcode = window.newtext+divtext;
-	        	$('#WriteChalk').velocity({'margin-top': "0em"}, 40);
-				setTimeout(function(){
-					$('#ChalkLine').html(fullcode);
-					$('#WriteChalk').velocity({'margin-top': "1em"}, 40);
-				}, 100);
-				if (i == 43) {
-					setTimeout(function(){
-						$('#WriteChalk').delay(1000).css('opacity', 0);
-					}, 100);
-				}
-	        }, 150*(i+1));
-	    });
-	} 
-	catch(err) {
-		$('#ChalkLine').html(window.newtext + fulltext);
-	}
-    
 }
