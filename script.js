@@ -77,7 +77,7 @@ $(document).ready(function() {
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
     $(".ProjectMedia").slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         // infinite: true,
         slidesToShow: 1,
         initialSlide: 0,

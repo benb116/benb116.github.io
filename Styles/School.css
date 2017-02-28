@@ -5,8 +5,8 @@
 	margin: 15px auto;
 	position: relative;
 	text-align: left;
-	padding-left: 20px;
-	padding-bottom: 10%;
+	padding: 20px;
+	padding-bottom: 3%;
 	padding-top: 20px;
 	background-color: #242424;
 	border: 10px solid #E6E6E6;
@@ -15,13 +15,21 @@
 	font-family: 'Sniglet', 'cursive';
 	line-height: 1.5em;
     width: 70%;
+    min-height:  400px;
     min-width: 400px;
     font-size: 1.3em;
 }
 
+.EdBlock {
+	width: 45%;
+	margin:  1%;
+	display: inline-block;
+	vertical-align: top;
+}
+
 #EdCareer ul {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2.5%;
+	/* padding-right: 2.5%; */
 }
 
 #EdCareer li {
@@ -36,6 +44,9 @@
 	#EdCareer {
 	    width: 90%;
 	    font-size: 1em;
+	}
+	.EdBlock {
+		width: 90%;
 	}
 }
 
@@ -60,7 +71,7 @@
 	background-color: white;
 	position: absolute;
 	bottom: 0;
-	left: 130px;
+	left: 28%;
 	display: block;
 	border: 1px solid black;
 	border-top: 3px solid gray;
