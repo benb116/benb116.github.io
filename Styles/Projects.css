@@ -149,7 +149,7 @@
 }
 
 .patch-item[data-patch-panel='BugBot'] > div {
-	background-image: url('/Resources/Projects/BugBot/BugBot1.jpg');
+	background-image: url('/Resources/Projects/BugBot2/BugBot1.jpg');
 }
 .patch-item[data-patch-panel='Engine'] > div {
 	background-image: url('/Resources/Projects/Engine/EnginePhoto.jpg');
