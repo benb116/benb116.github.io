@@ -85,9 +85,16 @@ $(document).ready(function() {
     });
     $(".patch-container").patchpanel();
     $('.patch-item').click(function(element) {
+        calcAnchors();
         $(this).find('div').toggleClass('patch-open');
         $('.patch-item').not(this).find('div').removeClass('patch-open');
     });
+    function calcAnchors() {
+        ProjectsAnchor = $('#ProjectsPage').offset().top;
+        CodeAnchor = $('#CodePage').offset().top;
+        SchoolAnchor = $('#SchoolPage').offset().top;
+        MusicAnchor = $('#MusicPage').offset().top;
+    }
 
     // Easter eggs below
     window.cheatsenabled = false;
