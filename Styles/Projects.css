@@ -190,3 +190,6 @@
 .patch-item[data-patch-panel='Candy'] > div {
   background-image: url('/Resources/Projects/Candy/Flying.jpg')
 }
+.patch-item[data-patch-panel='Inject'] > div {
+  background-image: url('/Resources/Projects/Inject/Side.jpg')  
+}
