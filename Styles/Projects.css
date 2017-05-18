@@ -185,11 +185,14 @@
   background-image: url('/Resources/Projects/Robockey/Robockey2.jpg')
 }
 .patch-item[data-patch-panel='Check'] > div {
-  background-image: url('/Resources/Projects/Check/BoardSet.jpg')
+  background-image: url('/Resources/Projects/Check/BoardSet2.jpg')
 }
 .patch-item[data-patch-panel='Candy'] > div {
   background-image: url('/Resources/Projects/Candy/Flying.jpg')
 }
 .patch-item[data-patch-panel='Inject'] > div {
   background-image: url('/Resources/Projects/Inject/Side.jpg')  
+}
+.patch-item[data-patch-panel='CuttingEdge'] > div {
+  background-image: url('/Resources/Projects/CuttingEdge/CNCFull.jpg')  
 }
