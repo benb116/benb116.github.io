@@ -87,12 +87,12 @@ function GetTopArtists(){
 }
 
 function getBPMInfo(artist, track) {
-	var apiKey = 'BQAYSdC0scbTcEt7-3YB9i_If07-GlcmfkmY3N_zW5XXQ2C8KbEKUEVn8yWeq5iav4yDu39jHWnh1nPxORIfCyYXQJRvzgpN6KGdOC2NOP0lWZTLqy2gVK8qGaS311FacBt8TKR45Zz43Y31qbw179xM3-Nbk505qwWiDiqCxxr1Ow';
+	var apiKey = 'BQASJZm0XAT0TAb0Jf3819JWost1dSuJhq5eA-I_KkurCM3juUgmxueVxle5Czezg3gbdzkL1HmrfB4uTAxM1hmAGzu5Pc43ycHK5HecdHtvbtgsNVjQ6EKevAb5fWR9XN2mdLqvyt7bf_A4U9hUtpD3M3C8NYR3L5s0w0FmYJwmpA';
 	$.ajax({
 		url: "https://api.spotify.com/v1/search?q=" + encodeURIComponent(track) + "&type=track",
-		headers: {
-	       'Authorization': 'Bearer ' + apiKey
-	   	},
+		// headers: {
+	 //       'Authorization': 'Bearer ' + apiKey
+	 //   	},
 	})
 	.done(function(response) {
 	  	i = 0;
@@ -110,7 +110,7 @@ function getBPMInfo(artist, track) {
 	  	$.ajax({
 			url: "https://api.spotify.com/v1/audio-features/" + spotTrackID,
 			headers: {
-		       'Authorization': 'Bearer ' + 'BQAYSdC0scbTcEt7-3YB9i_If07-GlcmfkmY3N_zW5XXQ2C8KbEKUEVn8yWeq5iav4yDu39jHWnh1nPxORIfCyYXQJRvzgpN6KGdOC2NOP0lWZTLqy2gVK8qGaS311FacBt8TKR45Zz43Y31qbw179xM3-Nbk505qwWiDiqCxxr1Ow'
+		       'Authorization': 'Bearer ' + apiKey
 		   	},
 		})
 		.done(function(response) {
