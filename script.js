@@ -86,6 +86,9 @@ $(document).ready(function() {
     $(".patch-container").patchpanel();
     $('.patch-item').click(function(element) {
         calcAnchors();
+        if (!$(this).find('div').hasClass('patch-open')) {
+            ga('send', 'event', 'ProjectView', $(this)[0].dataset.patchPanel);
+        }
         $(this).find('div').toggleClass('patch-open');
         $('.patch-item').not(this).find('div').removeClass('patch-open');
     });
