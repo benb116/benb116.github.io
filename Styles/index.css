@@ -147,3 +147,45 @@ a {
 .GlassesClass {
 	-webkit-filter: blur(15px);
 }
+
+.Whiteboard {
+	margin-top: 3em;
+	display: inline-block;
+	width: 50%;
+	height: 25em;
+	/* font-family: 'Sniglet', 'cursive'; */
+	text-align: left;
+	padding-left: 3em;
+	color: black;
+	background-color: white;
+	border: 8px solid gray;
+	border-bottom-color: #E6E6E6;
+	border-radius: 5px;
+}
+.IdeaName {
+	font-size: 1.25em;
+	margin-top: 0.5em;
+}
+.IdeaDesc {
+	text-indent: 1.5em;
+}
+.IdeaName:nth-child(3n-1), .IdeaDesc:nth-child(3n) {
+	color: #ce5858;
+}
+.IdeaName:nth-child(3n+1), .IdeaDesc:nth-child(3n+2) {
+	color: #586bce;
+}
+.IdeaName:nth-child(3n+3), .IdeaDesc:nth-child(3n+4) {
+	color: #70bf89;
+}
+.WhiteEraser {
+	width: 45px;
+	height: 10px;
+	background-color: black;
+	bottom: 2.4em;
+	position: absolute;
+	right: 35%;
+	display: block;
+	border: 1px solid black;
+	border-top: 3px solid gray;
+}

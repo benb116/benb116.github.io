@@ -27,7 +27,12 @@ $(document).ready(function() {
     var CodeAnchor = $('#CodePage').offset().top;
     var SchoolAnchor = $('#SchoolPage').offset().top;
     var MusicAnchor = $('#MusicPage').offset().top;
-    $(window).scroll(function() { // As the user scrolls...
+    UpdateIcon();
+    $(window).scroll(function() {
+        UpdateIcon();
+    });
+
+    function UpdateIcon() { // As the user scrolls...
         
         var scroll = $(window).scrollTop() + 300; // Get current scroll. Offset changes the icon when most of the section is displayed. 
 
@@ -72,7 +77,7 @@ $(document).ready(function() {
             GetNowPlaying();
             window.MusicLoaded = true;
         }
-    });
+    }
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
     $(".ProjectMedia").slick({
@@ -85,12 +90,12 @@ $(document).ready(function() {
     });
     $(".patch-container").patchpanel();
     $('.patch-item').click(function(element) {
-        calcAnchors();
         if (!$(this).find('div').hasClass('patch-open')) {
             ga('send', 'event', 'ProjectView', $(this)[0].dataset.patchPanel);
         }
         $(this).find('div').toggleClass('patch-open');
         $('.patch-item').not(this).find('div').removeClass('patch-open');
+        calcAnchors();
     });
     function calcAnchors() {
         ProjectsAnchor = $('#ProjectsPage').offset().top;

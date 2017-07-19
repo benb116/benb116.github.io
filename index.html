@@ -22,8 +22,8 @@
 		<script defer type="text/javascript" src="/Plugins/cheet.js"></script>
 		<script defer type="text/javascript" src="/Plugins/Alertify/alertify.min.js"></script>
 		<script defer type="text/javascript" src="/Plugins/jquery.leanModal.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-		<script type="text/javascript" src="/Plugins/patchpanel.min.js"></script>
+		<script defer type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		<script defer type="text/javascript" src="/Plugins/patchpanel.min.js"></script>
 		<script defer type="text/javascript" src="script.js"></script> <!--My javascript code -->
 	</head>
 	<body>
@@ -83,6 +83,7 @@
 					<p>Search by Egor Culcea</p>
 					<p>Hockey Puck by anbileru</p>
 					<p>Sound Wave by Kid A</p>
+					<<p>Echo by Bastien Delmare</p>
 				</div>
 				<div>
 					<h3>Scripts, Plugins, & Effects</h3>
@@ -100,7 +101,7 @@
 	   		<div id="HomeBlack"><div id="HomeImage"></div></div>
 		   	<div id="IntroHead">
 	   			<div id="topart"></div>
-				<div id="bighello">Hi.<br>I'm Ben.</div>
+				<div id="bighello">Hi!<br>I'm Ben.</div>
 				<div id="BioPar"><p>I'm a rising senior at UPenn who's fascinated by technology and engineering. I'm also interested in science, sports, history, and music. When I'm not CAD-ing or coding, I like to hang out with friends, play the guitar, and longboard. I hope to work in robotics and mechanical design and eventually change the world.</p></div>
   			</div>
 
@@ -141,14 +142,16 @@
 				<h2>Starting small with big aspirations</h2>
 			</div>
 			<div class="patch-container">
+
 				<div class="patch-item patch-button patch-half patch-tall" data-patch-panel="Guitar">
-					<div></div>
+					<div><div class="ProjectOverlay"><div class="ProjectInProgress">In Progress</div></div></div>
 					<span>Rapid-Prototyped Guitar</span>
 				</div>
 				<div class="patch-panel" data-patch-panel="Guitar">
 					<div class="ProjectMedia">
 						<div style="background-image:url(/Resources/Projects/Guitar/GuitarFront.jpg)"></div>
 						<div style="background-image:url(/Resources/Projects/Guitar/GuitarIso.jpg)"></div>
+						<div style="background-image:url(/Resources/Projects/Guitar/GuitarBack.jpg)"></div>
 						<iframe src="" data-src="https://player.vimeo.com/video/217306976?byline=0&portrait=0&title=0&color=f44242" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="ProjectDesc">
@@ -158,7 +161,6 @@
 				</div>
 
 				<div class="patch-item patch-button patch-half patch-tall" data-patch-panel="Longboard">
-					<div></div>
 					<span>Aluminum Longboard</span>
 				</div>
 				<div class="patch-panel" data-patch-panel="Longboard">
@@ -404,9 +406,21 @@
 						<p>As a design challenge, I decided to model two of UPenn's most well known pieces of art: The Button and Covenant. After scaling them down, I added some features to make the models printable. <a href="https://grabcad.com/library/upenn-art-1">View on GrabCad</a></p>
 					</div>
 				</div>
-
 				<span style="float:right;display:inline-block;"><a href="http://patchpanel.alecortega.com/">Patch Panel</a> by Alec Ortega</span>
 			</div>
+			<!-- <div id="ProjectsWhiteboard" class="Whiteboard">
+				<h2>Future Ideas</h3>
+				<div class="IdeaName">AutoTab</div>
+				<div class="IdeaDesc">A guitar that tracks finger position and transcribes sheet music</div>
+				<div class="IdeaName">Turntable</div>
+				<div class="IdeaDesc">A fully functional record player with vintage inspiration and modern features</div>
+				<div class="IdeaName">Abra</div>
+				<div class="IdeaDesc">A "magic mirror" with gesture control</div>
+				<div class="IdeaName">Longboard Camera Mount</div>
+				<div class="IdeaDesc">A stabilized GoPro mount that fits any longboard</div>
+
+				<div class="WhiteEraser"></div>
+			</div> -->
 		</section>
 		<div class="AnchorMargin ProjectsBar"><a id="Code"></a></div>
 		<section id="CodePage">
@@ -455,6 +469,14 @@
 					<span>C</span>
 				</div>
 			</div></a>
+			<a href="https://github.com/benb116/EchoSpotifyScrobble"><div class="CodeCard">
+				<div id="EchoTable"></div>
+				<div>
+					<span>Echo.fm</span>
+					<span>Scrobble songs played on an Amazon Echo</span>
+					<span>Node.JS</span>
+				</div>
+			</div></a>
 			<a href="/MusiNotify/"><div class="CodeCard">
 				<div id="MusiNotifyTable"></div>
 				<div>
@@ -494,14 +516,6 @@
 					<span>Applescript</span>
 				</div>
 			</div></a>
-			<!-- <a href="https://github.com/benb116/Other"><div class="CodeCard">
-				<div id="OtherTable"></div>
-				<div>
-					<span>Other</span>
-					<span>The uncategorized and the simple</span>
-					<span>Applescript, Python</span>
-				</div>
-			</div></a> -->
 		</section>
 		<div class="AnchorMargin CodeBar"><a id="School"></a></div>
 		<section id="SchoolPage">
@@ -510,7 +524,6 @@
 				<h2>Learning in the past, present, and future</h2>
 			</div>
 			<div id="EdCareer">
-				<!-- <ul> -->
 				<div><ul>
 					<li><a href="http://seas.upenn.edu">University of Pennsylvania</a> - Class of 2018</li>
 					<li><ul>
@@ -524,17 +537,8 @@
 							<li>Silicon Garage: Introduction to circuits and Arduino</li>
 							<li>Integrated CAD, CAM, Analysis: Advanced manufacturing techniques</li>
 						</ul></li>
-						<li><i>Activities:</i><a href="http://kodlab.seas.upenn.edu">Kodlab Robotics</a>, <a href="http://www.pennelectricracing.com/">Penn Electric Racing</a>, <a href="http://www.bbbssepa.org/">Big Brothers Big Sisters</a></li>
 					</ul></li>
 				</ul></div>
-				<!-- <div class="EdBlock"><ul>
-					<li><a href="http://jbha.org">Jack M. Barrack Hebrew Academy</a> - Class of 2014</li>
-					<li><ul>
-						<li><i>Areas of study:</i>English, History, Math, Science, Spanish, Hebrew, Jewish Studies, Bible</li>
-						<li id="ChalkLine"><i>Activities:</i>Grade Treasurer, Chief Layout Editor of Hebrew Newspaper, Robotics Club, Annenberg Science Symposium<div id="WriteChalk">&nbsp;</div></li>
-					</ul></li>
-				</ul></div> -->
-				<!-- </ul> -->
 				<div id="Bart"></div>
 				<div id="Eraser"></div>
 				<div id="WriteChalk">&nbsp;</div>
