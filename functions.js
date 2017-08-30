@@ -87,41 +87,6 @@ function GetTopArtists(){
 }
 
 function getBPMInfo(artist, track) {
-	// var apiKey = 'BQASJZm0XAT0TAb0Jf3819JWost1dSuJhq5eA-I_KkurCM3juUgmxueVxle5Czezg3gbdzkL1HmrfB4uTAxM1hmAGzu5Pc43ycHK5HecdHtvbtgsNVjQ6EKevAb5fWR9XN2mdLqvyt7bf_A4U9hUtpD3M3C8NYR3L5s0w0FmYJwmpA';
-	// $.ajax({
-	// 	url: "https://api.spotify.com/v1/search?q=" + encodeURIComponent(track) + "&type=track",
-	// 	// headers: {
-	//  //       'Authorization': 'Bearer ' + apiKey
-	//  //   	},
-	// })
-	// .done(function(response) {
-	//   	i = 0;
-	//   	var foundArtist = false;
-	//   	while (!foundArtist) {
-	//   		var thisArtist = response.tracks.items[i].artists[0].name.toLowerCase();
-	//   		if (thisArtist == artist.toLowerCase()) {
-	//   			foundArtist = true;
-	//   		} else {
-	// 	  		i++;
-	// 	  	}
-	//   	}
-	//   	var spotTrackID = response.tracks.items[i].id;
-	//   	console.log(spotTrackID);
-	//   	$.ajax({
-	// 		url: "https://api.spotify.com/v1/audio-features/" + spotTrackID,
-	// 		headers: {
-	// 	       'Authorization': 'Bearer ' + apiKey
-	// 	   	},
-	// 	})
-	// 	.done(function(response) {
-	// 		var songBPM = response.tempo;
-	// 		console.log(songBPM);
-	// 		var BPS = songBPM / 60;
-	// 		var halfPeriod = 1 / (2 * BPS);
-	// 		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s');
-	// 		$('.pulse-grow').css('animation-duration', halfPeriod+'s');
-	// 	});
-	// });
 	$.get("http://www.penncoursesearch.com/last/tempo").done(function (songBPM) {
 		console.log(songBPM);
 		var BPS = songBPM / 60;
@@ -129,13 +94,4 @@ function getBPMInfo(artist, track) {
 		$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s');
 		$('.pulse-grow').css('animation-duration', halfPeriod+'s');
 	});
-}
-
-function ChangeBounce(data) {
-	var songBPM = data.tempo;
-	console.log(songBPM);
-	var BPS = songBPM / 60;
-	var halfPeriod = 1 / (2 * BPS);
-	$('.pulse-grow').css('-webkit-animation-duration', halfPeriod+'s');
-	$('.pulse-grow').css('animation-duration', halfPeriod+'s');
 }
