@@ -1,21 +1,4 @@
 $(document).ready(function() {
-
-    if ($('#MobileBar').css('display') == 'none' && 1 === 0) { // No animations on mobile
-        // Initial animations
-        $('#IntroHead').delay(500).animate({opacity: 1}, 1000);
-        $('#TopBar').delay(1000).animate({top: 0}, 500);
-        $('#IconOverlay').delay(1000).animate({top: "15px"}, 500);
-        $('#BottomMenu').delay(1500).animate({opacity: 1}, 500);
-        $('#BannerWrap').delay(1500).animate({opacity: 1}, 500);
-    } else {
-        //On mobile:
-        $('#IntroHead').css('opacity', 1);
-        $('#TopBar').css('top', 0);
-        $('#IconOverlay').css('top', '15px');
-        $('#BottomMenu').css('opacity', 1);
-        $('#BannerWrap').css('opacity', 1);
-    }
-
     SmoothScroll();
     GATrack();
 

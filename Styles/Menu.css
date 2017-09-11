@@ -28,7 +28,7 @@
     width: 100%;
     background-color: #424242;
     position: fixed;
-    top: -125px;
+    top: 0px;
     left: 0;
     z-index: 2;
 }
@@ -45,7 +45,7 @@
 
 #IconOverlay {
     position: fixed;
-    top: -125px;
+    top: 15px;
     left: 10px;
     width: 70px;
     height: 70px;
