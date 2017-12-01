@@ -55,11 +55,11 @@ $(document).ready(function() {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
         }
 
-        // if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
+        if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
         GetTopArtists();
         GetNowPlaying();
-            // window.MusicLoaded = true;
-        // }
+            window.MusicLoaded = true;
+        }
     }
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
@@ -95,7 +95,7 @@ $(document).ready(function() {
             window.cheatsenabled = true;
             alertify.log("You have enabled easter eggs.");
             setTimeout(function(){
-                alertify.log("Type back, glasses, or bart.");
+                alertify.log("Type back, glasses, astro, or bart.");
             },4000);
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
 
@@ -129,6 +129,15 @@ $(document).ready(function() {
                 } else {
                     $('#Bart').css('opacity', 0);
                 };
+            });
+
+            cheet('a s t r o', function () {    
+                var KICKASSVERSION='2.0';
+                var s = document.createElement('script');
+                s.type='text/javascript';
+                document.body.appendChild(s);
+                s.src='//hi.kickassapp.com/kickass.js';
+                void(0);
             });
 
         } else {
