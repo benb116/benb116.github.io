@@ -151,22 +151,23 @@
   z-index: 10;
 }
 
-.patch-item[data-patch-panel='BugBot'] > div {background-image: url('/Resources/Projects/BugBot2/BugBot1.jpg');}
-.patch-item[data-patch-panel='Engine'] > div {background-image: url('/Resources/Projects/Engine/EnginePhoto.jpg');}
-.patch-item[data-patch-panel='Nerf'] > div {background-image: url('/Resources/Projects/Nerf/MaverickFull.jpg');}
-.patch-item[data-patch-panel='Tank'] > div {background-image: url('/Resources/Projects/Tank/TankIso.jpg');}
-.patch-item[data-patch-panel='Hoverboard'] > div {background-image: url('/Resources/Projects/Scooter/Scooter1.jpg');}
-.patch-item[data-patch-panel='Longboard'] > div {background-image: url('/Resources/Projects/Board/BoardTop.jpg');}
-.patch-item[data-patch-panel='Pressfit'] > div {background-image: url('/Resources/Projects/Press/PressPic.jpg');}
-.patch-item[data-patch-panel='PennArt'] > div {background-image: url('/Resources/Projects/Penn/PennRender.jpg');}
-.patch-item[data-patch-panel='Menorah'] > div {background-image: url('/Resources/Projects/Menorah/MenorahFront.jpg');}
-.patch-item[data-patch-panel='Guitar'] > div {background-image: url('/Resources/Projects/Guitar/GuitarTop.jpg')}
-.patch-item[data-patch-panel='Turbine'] > div {background-image: url('/Resources/Projects/Turbine/TurbineIso.jpg')}
-.patch-item[data-patch-panel='Robockey'] > div {background-image: url('/Resources/Projects/Robockey/Robockey2.jpg')}
-.patch-item[data-patch-panel='Check'] > div {background-image: url('/Resources/Projects/Check/BoardSet2.jpg')}
-.patch-item[data-patch-panel='Candy'] > div {background-image: url('/Resources/Projects/Candy/Flying.jpg')}
-.patch-item[data-patch-panel='Inject'] > div {background-image: url('/Resources/Projects/Inject/Side.jpg')}
+.patch-item[data-patch-panel='BugBot']      > div {background-image: url('/Resources/Projects/BugBot2/BugBot1.jpg');}
+.patch-item[data-patch-panel='Engine']      > div {background-image: url('/Resources/Projects/Engine/EnginePhoto.jpg');}
+.patch-item[data-patch-panel='Nerf']        > div {background-image: url('/Resources/Projects/Nerf/MaverickFull.jpg');}
+.patch-item[data-patch-panel='Tank']        > div {background-image: url('/Resources/Projects/Tank/TankIso.jpg');}
+.patch-item[data-patch-panel='Hoverboard']  > div {background-image: url('/Resources/Projects/Scooter/Scooter1.jpg');}
+.patch-item[data-patch-panel='Longboard']   > div {background-image: url('/Resources/Projects/Board/BoardTop.jpg');}
+.patch-item[data-patch-panel='Pressfit']    > div {background-image: url('/Resources/Projects/Press/PressPic.jpg');}
+.patch-item[data-patch-panel='PennArt']     > div {background-image: url('/Resources/Projects/Penn/PennRender.jpg');}
+.patch-item[data-patch-panel='Menorah']     > div {background-image: url('/Resources/Projects/Menorah/MenorahLit.jpg');}
+.patch-item[data-patch-panel='Guitar']      > div {background-image: url('/Resources/Projects/Guitar/GuitarTop.jpg')}
+.patch-item[data-patch-panel='Turbine']     > div {background-image: url('/Resources/Projects/Turbine/TurbineIso.jpg')}
+.patch-item[data-patch-panel='Robockey']    > div {background-image: url('/Resources/Projects/Robockey/Robockey2.jpg')}
+.patch-item[data-patch-panel='Check']       > div {background-image: url('/Resources/Projects/Check/BoardSet2.jpg')}
+.patch-item[data-patch-panel='Candy']       > div {background-image: url('/Resources/Projects/Candy/Flying.jpg')}
+.patch-item[data-patch-panel='Inject']      > div {background-image: url('/Resources/Projects/Inject/Side.jpg')}
 .patch-item[data-patch-panel='CuttingEdge'] > div {background-image: url('/Resources/Projects/CuttingEdge/CNCFull.jpg')}
+.patch-item[data-patch-panel='PCB']         > div {background-image: url('/Resources/Projects/PCB/PCBFront.jpg')}
 
 .ProjectOverlay {
 	width:10em;
