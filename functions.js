@@ -23,7 +23,7 @@ function SmoothScroll(){
 
 function GetNowPlaying(){
 	$.ajax({
-		url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=1"
+		url: "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Benb116&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=1"
 	})
 	.done(function(data) {
 		xmlDoc=data;
@@ -63,7 +63,7 @@ function GetTopArtists(){
 	var NumOfImage = document.getElementById('TopArtists').getElementsByTagName('div').length;
 
 	$.ajax({
-		url: "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&period=12month&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit="+NumOfImage
+		url: "https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&period=12month&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit="+NumOfImage
 	})
 	.done(function(data) {
 		xmlDoc=data;

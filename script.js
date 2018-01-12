@@ -55,12 +55,14 @@ $(document).ready(function() {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
         }
 
-        if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
-        GetTopArtists();
-        GetNowPlaying();
-            window.MusicLoaded = true;
-        }
+        // if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
+       
+            // window.MusicLoaded = true;
+        // }
     }
+
+    GetTopArtists();
+    GetNowPlaying();
 
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
     $(".ProjectMedia").slick({
