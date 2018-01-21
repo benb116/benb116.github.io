@@ -87,7 +87,7 @@ function GetTopArtists(){
 }
 
 function getBPMInfo(artist, track) {
-	$.get("http://www.penncoursesearch.com/last/tempo").done(function (songBPM) {
+	$.get("http://last.penncoursesearch.com/tempo").done(function (songBPM) {
 		console.log(songBPM);
 		var BPS = songBPM / 60;
 		var halfPeriod = 1 / (2 * BPS);
