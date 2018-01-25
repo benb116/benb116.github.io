@@ -101,6 +101,8 @@
   display:  inline-block;
   /* margin-left: 200px; */
 }
+
+
 .ProjectDesc {
   width: 33%;
   /* margin-left: 2%; */
@@ -131,6 +133,16 @@
   }
   .ProjectMedia {
     width: 95%;
+  }
+  .ProjectMedia > div {
+    width: 130vw;
+    display:  inline-block;
+    /* margin-left: 200px; */
+  }
+  .slick-slide {
+    /* height: 300px; */
+    margin-top: .15em;
+    margin-bottom: .15em;
   }
   .slick-list {
     display:  inline-block;
