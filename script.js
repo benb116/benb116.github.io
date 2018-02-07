@@ -80,7 +80,7 @@ $(document).ready(function() {
         }
         $(this).find('div').toggleClass('patch-open');
         $('.patch-item').not(this).find('div').removeClass('patch-open');
-        calcAnchors();
+        setTimeout(function() {calcAnchors();}, 1000);
     });
     function calcAnchors() {
         ProjectsAnchor = $('#ProjectsPage').offset().top;
