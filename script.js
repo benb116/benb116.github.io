@@ -130,7 +130,7 @@ $(document).ready(function() {
                     }, 1000);
                 } else {
                     $('#Bart').css('opacity', 0);
-                };
+                }
             });
 
             cheet('a s t r o', function () {    
@@ -150,6 +150,6 @@ $(document).ready(function() {
             cheet.disable('b a c k');
             cheet.disable('b a r t');
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
-        };
+        }
     });
 });
