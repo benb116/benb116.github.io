@@ -71,7 +71,7 @@
 }
 
 .ablock {
-    width: 19%;
+    width: 20%;
     height: 50px;
     max-width: 250px;
     color: white;
@@ -80,7 +80,8 @@
     line-height: 50px;
     text-align: center;
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
+    float: left;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     box-sizing: border-box;
@@ -107,7 +108,7 @@
     background-image: url(/Icons%20and%20Attr/Code/icon_20826.svg);
 }
 
-#SchoolCell > div {
+#LifeWatchCell > div {
     background-image: url(/Icons%20and%20Attr/Book/icon_4584.svg);
 }
 
@@ -127,8 +128,8 @@
     border-bottom-color: #3A8FC7;
 }
 
-#SchoolCell {
-    border-bottom-color: #F3B712;
+#LifeWatchCell {
+    border-bottom-color: #FFBE00;
 }
 
 #MusicCell {
@@ -147,8 +148,8 @@
     background-color: #3A8FC7;
 }
 
-#SchoolCell:hover {
-    background-color: #F3B712;
+#LifeWatchCell:hover {
+    background-color: #FFBE00;
 }
 
 #MusicCell:hover {
