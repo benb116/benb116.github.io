@@ -1,6 +1,7 @@
 body {
 	font-family: 'Open Sans', 'sans-serif';
 	margin: 0 auto;
+	margin-top: -40px;
 	background-color: #F2F2F2;
 	text-align: center;
 	-webkit-transition: -webkit-filter .5s ease-in-out;
@@ -77,11 +78,11 @@ a {
     height: 49px;
 }
 .CodeBar,     #CodePage {background-color: #3A8FC7;}
-.SchoolBar,   #SchoolPage {background-color: #F3B712;}
+.LifeWatchBar,   #LifeWatchPage {background-color: #FFBE00;}
 .MusicBar,    #MusicPage {background-color: #c0392b;}
 .ProjectsBar, #ProjectsPage {background-color: #27ae60;}
 
-#CodePage, #MusicPage, #SchoolPage, #ProjectsPage {
+#CodePage, #MusicPage, #LifeWatchPage, #ProjectsPage {
 	position: relative;
 	clear: both;
 	width: 100%;

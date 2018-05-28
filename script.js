@@ -6,9 +6,9 @@ $(document).ready(function() {
     window.MusicLoaded = false;
     window.cheatsenabled = false;
     // Determine anchor positions
+    var LifeWatchAnchor = $('#LifeWatchPage').offset().top;
     var ProjectsAnchor = $('#ProjectsPage').offset().top;
     var CodeAnchor = $('#CodePage').offset().top;
-    var SchoolAnchor = $('#SchoolPage').offset().top;
     var MusicAnchor = $('#MusicPage').offset().top;
     UpdateIcon();
     $(window).scroll(function() {
@@ -25,26 +25,26 @@ $(document).ready(function() {
             } else {
                 window.CurrentIcon = "";
             }
-        }  
-        if (scroll >= ProjectsAnchor && scroll < CodeAnchor) { // If at Code section
-            window.CurrentIcon = "url(/Icons%20and%20Attr/Earth/icon_10812.svg)";
+        }
+        if (scroll >= LifeWatchAnchor && scroll < ProjectsAnchor) { // If at LifeWatch section
+            window.CurrentIcon = "url(/Icons%20and%20Attr/LifeWatch/WhiteIcon.svg)";
+            $('#LifeWatchCell').addClass("LifeWatchBar");
+        } else {
+            $('#LifeWatchCell').removeClass("LifeWatchBar");
+        }
+        if (scroll >= ProjectsAnchor && scroll < CodeAnchor) { // If at Project section
+            window.CurrentIcon = "url(/Icons%20and%20Attr/Wrench/noun_399553_cc.svg)";
             $('#ProjectsCell').addClass("ProjectsBar");
         } else {
             $('#ProjectsCell').removeClass("ProjectsBar");
         }
-        if (scroll >= CodeAnchor && scroll < SchoolAnchor) { // If at School section
+        if (scroll >= CodeAnchor && scroll < MusicAnchor) { // If at Code section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Code/icon_20826.svg)";
             $('#CodeCell').addClass("CodeBar"); // Add Menubar highlight
         } else {
             $('#CodeCell').removeClass("CodeBar"); // Remove Menubar highlight
         }
-        if (scroll >= SchoolAnchor && scroll < MusicAnchor) { // If at Music section
-            window.CurrentIcon = "url(/Icons%20and%20Attr/Book/icon_4584.svg)";
-            $('#SchoolCell').addClass("SchoolBar");
-        } else {
-            $('#SchoolCell').removeClass("SchoolBar");
-        }
-        if (scroll >= MusicAnchor) { // If at Projects section
+        if (scroll >= MusicAnchor) { // If at Music section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
             $('#MusicCell').addClass("MusicBar");
         } else {
@@ -55,7 +55,7 @@ $(document).ready(function() {
             $('#IconOverlay').css('background-image', window.CurrentIcon); // Set current icon
         }
 
-        // if (scroll >= SchoolAnchor && window.MusicLoaded === false) {
+        // if (scroll >= LifeWatchAnchor && window.MusicLoaded === false) {
        
             // window.MusicLoaded = true;
         // }
@@ -85,7 +85,7 @@ $(document).ready(function() {
     function calcAnchors() {
         ProjectsAnchor = $('#ProjectsPage').offset().top;
         CodeAnchor = $('#CodePage').offset().top;
-        SchoolAnchor = $('#SchoolPage').offset().top;
+        LifeWatchAnchor = $('#LifeWatchPage').offset().top;
         MusicAnchor = $('#MusicPage').offset().top;
     }
 
@@ -119,18 +119,6 @@ $(document).ready(function() {
                 $('#LinkedInIcon').css('background-image', 'url(/Icons%20and%20Attr/Profiles/linkedin_white.svg)');
                 $('#GithubIcon').css('background-image', 'url(/Icons%20and%20Attr/Profiles/github_white.svg)');
                 $('#CreditsIcon').css('background-image', 'url(/Icons%20and%20Attr/List/icon_11515_white.svg)');
-            });
-
-            cheet('b a r t', function () {
-                if ($('#Bart').css('opacity') == 0) {
-                    $('#Bart').css('opacity', 1);
-                    // $('#SchoolPage h2').animate("scroll", 500);
-                    $('html,body').animate({
-                        scrollTop: SchoolAnchor
-                    }, 1000);
-                } else {
-                    $('#Bart').css('opacity', 0);
-                }
             });
 
             cheet('a s t r o', function () {    

@@ -13,9 +13,9 @@
 		<link rel="stylesheet" href="/Styles/index.css"> <!--Base styles-->
 		<link rel="stylesheet" type="text/css" href="/Styles/Menu.css">
 		<link rel="stylesheet" type="text/css" href="/Styles/Hello.css">
+		<link defer rel="stylesheet" type="text/css" href="/Styles/LifeWatch.css">
 		<link defer rel="stylesheet" type="text/css" href="/Styles/Projects.css">
 		<link defer rel="stylesheet" type="text/css" href="/Styles/Code.css">
-		<link defer rel="stylesheet" type="text/css" href="/Styles/School.css">
 		<link defer rel="stylesheet" type="text/css" href="/Styles/Music.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script defer type="text/javascript" src="functions.js"></script>
@@ -37,6 +37,12 @@
 				        <div class="TopBarIcon"></div>
 				    </div>
 				</a>
+				<a href="#LifeWatch">
+				    <div class="ablock" id="LifeWatchCell">
+				    	<span class="TopBarWord">LifeWatch</span>
+				        <div class="TopBarIcon"></div>
+				    </div>
+				</a>
 				<a href="#Projects">
 				    <div class="ablock" id="ProjectsCell">
 				    	<span class="TopBarWord">Projects</span>
@@ -46,12 +52,6 @@
 				<a href="#Code">
 				    <div class="ablock" id="CodeCell">
 				    	<span class="TopBarWord">Code</span>
-				        <div class="TopBarIcon"></div>
-				    </div>
-				</a>
-				<a href="#School">
-				    <div class="ablock" id="SchoolCell">
-				    	<span class="TopBarWord">School</span>
 				        <div class="TopBarIcon"></div>
 				    </div>
 				</a>
@@ -70,7 +70,7 @@
 					<h3>Icons - The Noun Project</h3>
 					<p>Basketball Hoop by Gabriele Fumero</p>
 					<p>Laptop by Steve Stomp</p>
-					<p>Globe by Nicholas Menghini</p>
+					<p>Pencil and wrench by Chameleon Design</p>
 					<p>Code by Luboš Volkov</p>
 					<p>Music by Cris Dobbins</p>
 					<p>Fishing Hook by Massimiliano Mauro</p>
@@ -102,7 +102,7 @@
 		   	<div id="IntroHead">
 	   			<div id="topart"></div>
 				<div id="bighello">Hi!<br>I'm Ben.</div>
-				<div id="BioPar"><p>I'm a senior at UPenn who's fascinated by technology and engineering. I'm also interested in science, sports, history, and music. When I'm not CAD-ing or coding, I like to hang out with friends, play the guitar, and longboard. I hope to work in robotics and mechanical design and eventually change the world.</p></div>
+				<div id="BioPar"><p>I'm a masters student at UPenn who's fascinated by technology and engineering. I'm also interested in science, sports, history, and music. When I'm not CAD-ing or coding, I like to hang out with friends, play the guitar, and longboard. I hope to work in robotics and mechanical design and eventually change the world.</p></div>
   			</div>
 
 		  	<div id="BottomMenu">
@@ -129,13 +129,22 @@
 	   		</div>
 
 			<div id="MobileBar">
+				<a href="#LifeWatch"><div class="LifeWatchBar">LifeWatch</div></a>
 				<a href="#Projects"><div class="ProjectsBar">Projects</div></a>
 				<a href="#Code"><div class="CodeBar">Code</div></a>
-				<a href="#School"><div class="SchoolBar">School</div></a>
 				<a href="#Music"><div class="MusicBar">Music</div></a>
 			</div>
 		</section>
-		<div class="AnchorMargin"><a id="Projects"></a></div>
+		<div class="AnchorMargin"><a id="LifeWatch"></a></div>
+		<section id="LifeWatchPage">
+			<div class="PageHeader">
+				<h1>LifeWatch</h1>
+				<h2>The next generation auto-injector</h2>
+			</div>
+			<div style="background-image:url(/Resources/Projects/LifeWatch/FullExplodeIso.png);background-size: contain;background-repeat: no-repeat;background-position: center;width:80vw;height:30vw;margin:0 auto"></div>
+			<h3><a href="http://projectlifewatch.com">Click here for more information</a></h3>
+		</section>
+		<div class="AnchorMargin LifeWatchBar"><a id="Projects"></a></div>
 		<section id="ProjectsPage">
 			<div class="PageHeader">
 				<h1>Projects</h1>
@@ -538,35 +547,7 @@
 				</div>
 			</div></a>
 		</section>
-		<div class="AnchorMargin CodeBar"><a id="School"></a></div>
-		<section id="SchoolPage">
-			<div class="PageHeader">
-				<h1>School</h1>
-				<h2>Learning in the past, present, and future</h2>
-			</div>
-			<div id="EdCareer">
-				<div><ul>
-					<li><a href="http://seas.upenn.edu">University of Pennsylvania</a></li>
-					<li><ul>
-						<li><i>Masters:</i>Robotics - Class of 2019</li>
-						<li><i>Bachelors:</i>Mechanical Engineering and Applied Mechanics - Class of 2018</li>
-						<li><i>Other areas of study:</i>Electrical Engineering, Astrophysics, History</li>
-						<li><i>Selected Courses:</i></li>
-						<li><ul>
-							<li>Machine Design and Manufacturing: Machining and CNC manufacturing</li>
-							<li>Design of Mechatronic Systems: Mechanical, electrical, and software design for robots</li>
-							<li>Silicon Garage: Introduction to circuits and Arduino</li>
-							<li>Integrated CAD, CAM, Analysis: Advanced manufacturing techniques</li>
-							<li>Design for Manufacturability: Product design and development lifecycles</li>
-						</ul></li>
-					</ul></li>
-				</ul></div>
-				<div id="Bart"></div>
-				<div id="Eraser"></div>
-				<div id="WriteChalk">&nbsp;</div>
-			</div>
-		</section>
-		<div class="AnchorMargin SchoolBar"><a id="Music"></a></div>
+		<div class="AnchorMargin CodeBar"><a id="Music"></a></div>
 		<section id="MusicPage">
 			<div class="PageHeader">
 				<h1>Music</h1>
