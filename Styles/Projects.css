@@ -164,7 +164,7 @@
 }
 
 .patch-item[data-patch-panel='BugBot']      > div {background-image: url('/Resources/Projects/BugBot2/BugBot1.jpg');}
-.patch-item[data-patch-panel='Engine']      > div {background-image: url('/Resources/Projects/Engine/EnginePhoto.jpg');}
+.patch-item[data-patch-panel='Engine']      > div {background-image: url('/Resources/Projects/Engine/EngineLight.jpg');}
 .patch-item[data-patch-panel='Nerf']        > div {background-image: url('/Resources/Projects/Nerf/MaverickFull.jpg');}
 .patch-item[data-patch-panel='Tank']        > div {background-image: url('/Resources/Projects/Tank/TankIso.jpg');}
 .patch-item[data-patch-panel='Hoverboard']  > div {background-image: url('/Resources/Projects/Scooter/Scooter1.jpg');}
