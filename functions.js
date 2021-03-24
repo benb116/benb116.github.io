@@ -71,6 +71,7 @@ function GetTopArtists(){
 		for (var i = 0; i < NumOfImage; i++) {
 			try {
 				var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+2)].childNodes[0].nodeValue;
+				console.log(imageLink);
 				$('#TopArtists div').get(i).style.backgroundImage = "url("+imageLink+")";
 			}
 			catch(err) {
