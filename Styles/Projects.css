@@ -180,6 +180,7 @@
 .patch-item[data-patch-panel='Inject']      > div {background-image: url('/Resources/Projects/Inject/Side.jpg')}
 .patch-item[data-patch-panel='CuttingEdge'] > div {background-image: url('/Resources/Projects/CuttingEdge/CNCFull.jpg')}
 .patch-item[data-patch-panel='PCB']         > div {background-image: url('/Resources/Projects/PCB/PCBFront.jpg')}
+.patch-item[data-patch-panel='Etch']         > div {background-image: url('/Resources/Projects/Etch/EtchMonaLisa.jpg')}
 
 .ProjectOverlay {
 	width:10em;
