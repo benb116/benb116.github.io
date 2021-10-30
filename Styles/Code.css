@@ -86,6 +86,14 @@
 	-webkit-transform: rotate(4-5deg);
 }
 
+#BSTable {
+	background-image: url(/Icons%20and%20Attr/Football/noun_Football_972559.svg);
+}
+
+#ArbTable {
+	background-image: url(/Icons%20and%20Attr/Trade/noun_trading_4352554.svg);
+}
+
 #PCSTable {
 	background-image: url(/Icons%20and%20Attr/Search/search_icon.svg);
 }
