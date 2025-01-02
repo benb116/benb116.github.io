@@ -97,13 +97,13 @@ a {
 	margin: 0 auto;
 	text-align: center;
 }
-.PageHeader h1 {
+.PageHeader > h1 {
 	font-size: 3em;
 	font-family: 'Oxygen', 'sans-serif';
 	font-weight: normal;
 	line-height: .75em;
 }
-.PageHeader h2 {
+.PageHeader > h2 {
 	font-family: 'PT Sans', 'sans-serif';
 	font-size: 1.25em;
 	font-weight: lighter;
@@ -156,6 +156,7 @@ a {
 	font-family: 'Sniglet', 'cursive';
 	text-align: left;
 	padding-left: 3em;
+	padding-right: 3em;
 	color: black;
 	background-color: white;
 	border: 8px solid gray;

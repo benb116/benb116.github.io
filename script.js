@@ -8,6 +8,7 @@ $(document).ready(function() {
     var LifeWatchAnchor = $('#LifeWatchPage').offset().top;
     var ProjectsAnchor = $('#ProjectsPage').offset().top;
     var CodeAnchor = $('#CodePage').offset().top;
+    var MusicAnchor = $('#MusicPage').offset().top;
     UpdateIcon();
     $(window).scroll(function() {
         UpdateIcon();
@@ -36,11 +37,17 @@ $(document).ready(function() {
         } else {
             $('#ProjectsCell').removeClass("ProjectsBar");
         }
-        if (scroll >= CodeAnchor) { // If at Code section
+        if (scroll >= CodeAnchor && scroll < MusicAnchor) { // If at Code section
             window.CurrentIcon = "url(/Icons%20and%20Attr/Code/icon_20826.svg)";
             $('#CodeCell').addClass("CodeBar"); // Add Menubar highlight
         } else {
             $('#CodeCell').removeClass("CodeBar"); // Remove Menubar highlight
+        }
+        if (scroll >= MusicAnchor) { // If at Music section
+            window.CurrentIcon = "url(/Icons%20and%20Attr/Music/icon_8996.svg)";
+            $('#MusicCell').addClass("MusicBar");
+        } else {
+            $('#MusicCell').removeClass("MusicBar");
         }
 
         if ($('#IconOverlay').css('background-image') != window.CurrentIcon) {
@@ -52,7 +59,8 @@ $(document).ready(function() {
             // window.MusicLoaded = true;
         // }
     }
-
+    GetTopArtists();
+    GetNowPlaying();
     $('a[rel*=leanModal]').leanModal({ top : 70, closeButton: ".modal_close" }); // Define modal close button
     $(".ProjectMedia").slick({
         dots: true,
@@ -86,7 +94,7 @@ $(document).ready(function() {
             window.cheatsenabled = true;
             alertify.log("You have enabled easter eggs.");
             setTimeout(function(){
-                alertify.log("Type back, glasses, astro, or bart.");
+                alertify.log("Type back, glasses, or astro.");
             },4000);
             $(window).scrollTop($(window).scrollTop()+1); // Reset home icon by triggering $(window).scroll()
 

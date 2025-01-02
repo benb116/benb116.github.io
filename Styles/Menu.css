@@ -60,6 +60,9 @@
     margin-left: 125px;
     margin-right: 125px;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 @media all and (max-width: 899px) {
     #MenuContainer {
@@ -68,10 +71,11 @@
 }
 #MenuContainer > a {
     text-decoration: none;
+    width: 100%;
 }
 
 .ablock {
-    width: 20%;
+    width: 100%;
     height: 50px;
     max-width: 250px;
     color: white;

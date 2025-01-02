@@ -46,7 +46,7 @@ function GetNowPlaying(){
 			if(playval == "true") {
 				document.getElementById("NowRecent").innerHTML = "Now Playing";
 				document.getElementById("TrackArt").className = "pulse-grow";
-				getBPMInfo(theartist, thetrack);
+				// getBPMInfo(theartist, thetrack);
 			} else {
 				document.getElementById("NowRecent").innerHTML = "Recently Played";
 				document.getElementById("TrackArt").className = "Other";
@@ -60,29 +60,28 @@ function GetNowPlaying(){
 }
 
 function GetTopArtists(){
-	var NumOfImage = document.getElementById('TopArtists').getElementsByTagName('div').length;
+	var NumOfImage = 10;
 
 	$.ajax({
-		url: "https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&period=12month&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit="+NumOfImage
+		url: "https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=Benb116&period=12month&api_key=d6b2ab49b0a34737be62158c0ddfd7c5&limit=10"
 	})
 	.done(function(data) {
 		xmlDoc=data;
 
 		for (var i = 0; i < NumOfImage; i++) {
-			try {
-				var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+2)].childNodes[0].nodeValue;
-				console.log(imageLink);
-				$('#TopArtists div').get(i).style.backgroundImage = "url("+imageLink+")";
-			}
-			catch(err) {
-				console.log("No Artist image found for artist " + i.toString());
-			}
+			// try {
+			// 	var imageLink = xmlDoc.getElementsByTagName("image")[(5*i+2)].childNodes[0].nodeValue;
+			// 	console.log(imageLink);
+			// 	$('#TopArtists div').get(i).style.backgroundImage = "url("+imageLink+")";
+			// }
+			// catch(err) {
+			// 	console.log("No Artist image found for artist " + i.toString());
+			// }
 
 			var ArtistName = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			$('#TopArtists span').get(i).innerHTML=ArtistName;
-
 			var ArtistLink = xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue;
 			$('#TopArtists a').get(i).href=ArtistLink;
+			$('#TopArtists a').get(i).innerHTML=ArtistName;
 		}
 	});
 }

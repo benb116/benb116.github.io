@@ -22,7 +22,7 @@
 }
 
 #TopArtists {
-	width: 50%;
+	width: 30%;
 	padding-bottom: 50px;
 }
 
@@ -101,6 +101,11 @@
 
 #TopArtists div:hover {
 	opacity: 1;
+}
+
+#TopArtists li {
+	text-align: left;
+	font-size: 1.5em;
 }
 
 #TopArtists span {
